@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sun Oct 13 01:28:39 PM EDT 2024</p>
+	<p>Running at Sun Oct 13 05:29:05 PM EDT 2024</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -452,13 +452,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary44" class="success">
+  <div id="summary44" class="failure">
     <h2><a href="java_logs.html#javalog44">Assignment 44</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog44-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog44-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog44-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog44-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -1982,7 +1982,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.727112521376755E12
+Data Access Took: 1.727126929808631E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2430,23 +2430,23 @@ total vertices:12648
 Set size: 12648
 Grid
 ===grid stats===
-0)Source Point:-53.6605410708361,-54.928639756366834
-0)[ALG]Closest Point: -73.9222475,40.6128304
-0)[ALG]Min Dist:97.66631592858184
-0)[BFA]Closest Point: -73.9222475,40.6128304
-0)[BFA]Min Dist:97.66631592858184
+0)Source Point:-6.423782072414738,-34.88119782620494
+0)[ALG]Closest Point: -73.917196,40.616092
+0)[ALG]Min Dist:101.26796973723897
+0)[BFA]Closest Point: -73.917196,40.616092
+0)[BFA]Min Dist:101.26796973723897
 0)Difference:0.0
-Source Point:-40.609365035978456,40.65115471499263
-Source Point:-71.44218955746985,40.61819416709239
-Source Point:-44.10821635046118,40.63001781583772
-Source Point:-57.213825543614234,40.75621527228291
-Source Point:-59.92737619584701,40.7308924850069
-Source Point:-20.84318066557296,40.63818560441678
-Source Point:-16.68960823261461,40.80559582555815
-Source Point:-27.677213708509335,40.65637242391093
-Source Point:-72.87249692908036,40.651622676101155
-Source Point:-72.70977983027286,40.76104542607898
-num cells examined:11
+Source Point:-20.58344333029956,40.806771804176165
+Source Point:-4.507111139201015,40.707300563955215
+Source Point:-39.205685152840545,40.776015172837496
+Source Point:-2.054734423698207,40.74786064359424
+Source Point:-29.184990606078266,40.770254440121604
+Source Point:-39.377505770077676,40.74882097681135
+Source Point:-47.05357130746303,40.768484898407536
+Source Point:-1.500038540238478,40.6927732913681
+Source Point:-53.24806122117582,40.66910035025547
+Source Point:-53.26976577713596,40.791109549109024
+num cells examined:8
 
 Check Your Visualization at the following link:
 
@@ -2476,31 +2476,16 @@ http://bridges-cs.herokuapp.com/assignments/43/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/44-MST-Cities/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog44-runanswer">Run Answer for Assignment 44</h3>
 <pre><code>Guessing primMSTCities.java is the right java file where main is
 
 URL: http://bridgesdata.herokuapp.com/api/us_cities?state=NC&amp;minPopulation=100000
-Num Cities:10
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/244/bridges_testing
-
-
-MST Min. Cost: 488.11194
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/244/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/244/bridges_testing
-
-
+Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503
+	at bridges.connect.DataSource.getUSCitiesData(DataSource.java:260)
+	at primMSTCities.buildNCGraph(primMSTCities.java:48)
+	at primMSTCities.main(primMSTCities.java:24)
+could not run java_answer for assignment in ../assignmentdb/44-MST-Cities/java_answer
 </code></pre>
 </div>
     
@@ -3218,7 +3203,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.14016
+Pi val: 3.14032
 
 Check Your Visualization at the following link:
 

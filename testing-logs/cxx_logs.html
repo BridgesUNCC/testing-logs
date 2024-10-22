@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for C++</h1>
-	<p>Running at Tue Oct 22 01:11:57 PM EDT 2024</p>
+	<p>Running at Tue Oct 22 05:11:08 PM EDT 2024</p>
   <div id="summary0" class="success">
     <h2><a href="cxx_logs.html#cxxlog0">Assignment 0</a> </h2>
     <p>
@@ -407,18 +407,18 @@ background-color: springgreen;
     <p>
       <ul>
         <li> Build Scaffold : <a href="cxx_logs.html#cxxlog39-buildscaffold">error</a></li>
-        <li> Build Answer : <a href="cxx_logs.html#cxxlog39-buildanswer">error</a></li>
+        <li> Build Answer : <a href="cxx_logs.html#cxxlog39-buildanswer">success</a></li>
         <li> Run Answer : <a href="cxx_logs.html#cxxlog39-runanswer">error</a></li>
       </ul>
     </p>
   </div>
-  <div id="summary40" class="failure">
+  <div id="summary40" class="success">
     <h2><a href="cxx_logs.html#cxxlog40">Assignment 40</a> </h2>
     <p>
       <ul>
-        <li> Build Scaffold : <a href="cxx_logs.html#cxxlog40-buildscaffold">error</a></li>
-        <li> Build Answer : <a href="cxx_logs.html#cxxlog40-buildanswer">error</a></li>
-        <li> Run Answer : <a href="cxx_logs.html#cxxlog40-runanswer">error</a></li>
+        <li> Build Scaffold : <a href="cxx_logs.html#cxxlog40-buildscaffold">success</a></li>
+        <li> Build Answer : <a href="cxx_logs.html#cxxlog40-buildanswer">success</a></li>
+        <li> Run Answer : <a href="cxx_logs.html#cxxlog40-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -588,7 +588,7 @@ background-color: springgreen;
       <ul>
         <li> Build Scaffold : <a href="cxx_logs.html#cxxlog57-buildscaffold">error</a></li>
         <li> Build Answer : <a href="cxx_logs.html#cxxlog57-buildanswer">success</a></li>
-        <li> Run Answer : <a href="cxx_logs.html#cxxlog57-runanswer">error</a></li>
+        <li> Run Answer : <a href="cxx_logs.html#cxxlog57-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -4953,7 +4953,7 @@ could not run c++_answer for assignment in ../assignmentdb/38-GeologicalSurvey/c
 <pre><code>assignment 39 has no c++ directory
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="cxxlog39-buildanswer">Build Answer for Assignment 39</h3>
 <pre><code>Compiling c++_answer/ for assignment in ../assignmentdb/39-BookDistance/c++_answer
 rm BookDistance.o
@@ -4976,18 +4976,23 @@ In file included from /home/bridges-testing/bridges-cxx-install/include/rapidjso
 /home/bridges-testing/bridges-cxx-install/include/rapidjson/rapidjson.h:406: note: this is the location of the previous definition
   406 | #define RAPIDJSON_ASSERT(x) assert(x)
       | 
-BookDistance.cpp: In function ‘int main()’:
-BookDistance.cpp:25:17: error: ‘class bridges::Bridges’ has no member named ‘detDescription’; did you mean ‘getDescription’?
-   25 |         bridges.detDescription(&quot;Implement a word frequency list for a book and use it to compare similarity to other books.&quot;);
-      |                 ^~~~~~~~~~~~~~
-      |                 getDescription
-make: *** [Makefile:26: BookDistance.o] Error 1
-could not compile c++_answer/ for assignment in ../assignmentdb/39-BookDistance/c++_answer
+g++ -o book_analysis BookDistance.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
 </code></pre>
 </div>
 <div class="failure">
 <h3 id="cxxlog39-runanswer">Run Answer for Assignment 39</h3>
-<pre><code>can't guess a binary file to run
+<pre><code>Guessing ./book_analysis is the right binary file where main is
+
+Querying Mark Twain
+http://bridges-data-server-gutenberg.bridgesuncc.org//search?search=Mark%20Twain&amp;type=author
+Querying Shakespeare, William
+http://bridges-data-server-gutenberg.bridgesuncc.org//search?search=Shakespeare%2C%20William&amp;type=author
+Querying Dickens, Charles
+http://bridges-data-server-gutenberg.bridgesuncc.org//search?search=Dickens%2C%20Charles&amp;type=author
+Querying Homer
+http://bridges-data-server-gutenberg.bridgesuncc.org//search?search=Homer&amp;type=author
+Computing distances between 80 books..
+Alarm clock
 could not run c++_answer for assignment in ../assignmentdb/39-BookDistance/c++_answer
 </code></pre>
 </div>
@@ -4996,7 +5001,7 @@ could not run c++_answer for assignment in ../assignmentdb/39-BookDistance/c++_a
     <div id="cxxlog40" class="logdetails">
       <h2>Assignment 40 full log</h2>
     
-<div class="failure">
+<div class="success">
 <h3 id="cxxlog40-buildscaffold">Build Scaffold for Assignment 40</h3>
 <pre><code>Compiling c++/ for assignment in ../assignmentdb/40-ImageProcessing/c++
 rm ImageProcess.o
@@ -5020,25 +5025,10 @@ In file included from /home/bridges-testing/bridges-cxx-install/include/rapidjso
 /home/bridges-testing/bridges-cxx-install/include/rapidjson/rapidjson.h:406: note: this is the location of the previous definition
   406 | #define RAPIDJSON_ASSERT(x) assert(x)
       | 
-ImageProcess.cpp:9:26: warning: missing terminating &quot; character
-    9 |         bridges.setTitle(&quot;Image Processing);
-      |                          ^
-ImageProcess.cpp:9:26: error: missing terminating &quot; character
-    9 |         bridges.setTitle(&quot;Image Processing);
-      |                          ^~~~~~~~~~~~~~~~~~~
-ImageProcess.cpp: In function ‘int main()’:
-ImageProcess.cpp:10:156: error: expected ‘)’ before ‘;’ token
-   10 |         bridges.setDescription(&quot;Students are provided with sample images in a simple text format that they read and display using the ColorGrid datatype.&quot;);
-      |                                                                                                                                                            ^
-      |                                                                                                                                                            )
-ImageProcess.cpp:9:25: note: to match this ‘(’
-    9 |         bridges.setTitle(&quot;Image Processing);
-      |                         ^
-make: *** [Makefile:26: ImageProcess.o] Error 1
-could not compile c++/ for assignment in ../assignmentdb/40-ImageProcessing/c++
+g++ -o ImageProcess ImageProcess.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="cxxlog40-buildanswer">Build Answer for Assignment 40</h3>
 <pre><code>Compiling c++_answer/ for assignment in ../assignmentdb/40-ImageProcessing/c++_answer
 rm ImageProcess.o
@@ -5062,28 +5052,45 @@ In file included from /home/bridges-testing/bridges-cxx-install/include/rapidjso
 /home/bridges-testing/bridges-cxx-install/include/rapidjson/rapidjson.h:406: note: this is the location of the previous definition
   406 | #define RAPIDJSON_ASSERT(x) assert(x)
       | 
-ImageProcess.cpp:15:26: warning: missing terminating &quot; character
-   15 |         bridges.setTitle(&quot;Image Processing);
-      |                          ^
-ImageProcess.cpp:15:26: error: missing terminating &quot; character
-   15 |         bridges.setTitle(&quot;Image Processing);
-      |                          ^~~~~~~~~~~~~~~~~~~
-ImageProcess.cpp: In function ‘int main()’:
-ImageProcess.cpp:16:156: error: expected ‘)’ before ‘;’ token
-   16 |         bridges.setDescription(&quot;Students are provided with sample images in a simple text format that they read and display using the ColorGrid datatype.&quot;);
-      |                                                                                                                                                            ^
-      |                                                                                                                                                            )
-ImageProcess.cpp:15:25: note: to match this ‘(’
-   15 |         bridges.setTitle(&quot;Image Processing);
-      |                         ^
-make: *** [Makefile:26: ImageProcess.o] Error 1
-could not compile c++_answer/ for assignment in ../assignmentdb/40-ImageProcessing/c++_answer
+g++ -o ImageProcess ImageProcess.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="cxxlog40-runanswer">Run Answer for Assignment 40</h3>
-<pre><code>can't guess a binary file to run
-could not run c++_answer for assignment in ../assignmentdb/40-ImageProcessing/c++_answer
+<pre><code>Guessing ./ImageProcess is the right binary file where main is
+
+width,height, maxval:1038,807,255
+Success: Assignment posted to the server. 
+Check out your visualization at:
+
+http://bridges-cs.herokuapp.com/assignments/140/bridges_testing
+
+Success: Assignment posted to the server. 
+Check out your visualization at:
+
+http://bridges-cs.herokuapp.com/assignments/140/bridges_testing
+
+Success: Assignment posted to the server. 
+Check out your visualization at:
+
+http://bridges-cs.herokuapp.com/assignments/140/bridges_testing
+
+Success: Assignment posted to the server. 
+Check out your visualization at:
+
+http://bridges-cs.herokuapp.com/assignments/140/bridges_testing
+
+Success: Assignment posted to the server. 
+Check out your visualization at:
+
+http://bridges-cs.herokuapp.com/assignments/140/bridges_testing
+
+width,height, maxval:512,512,255
+Success: Assignment posted to the server. 
+Check out your visualization at:
+
+http://bridges-cs.herokuapp.com/assignments/140/bridges_testing
+
 </code></pre>
 </div>
     
@@ -5299,7 +5306,7 @@ Check out your visualization at:
 
 http://bridges-cs.herokuapp.com/assignments/143/bridges_testing
 
-elapsed time: 0.137378s
+elapsed time: 0.129607s
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
@@ -5886,7 +5893,7 @@ In file included from /home/bridges-testing/bridges-cxx-install/include/rapidjso
 g++ -o book_analysis book_analysis.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="cxxlog57-runanswer">Run Answer for Assignment 57</h3>
 <pre><code>Guessing ./book_analysis is the right binary file where main is
 
@@ -5987,8 +5994,43 @@ A Romance of Indian Oregon. 19th Edition.
 	The Iliad
 	Ομήρου Οδύσσεια Τόμος Α
 Computing distances between 80 books..
-Alarm clock
-could not run c++_answer for assignment in ../assignmentdb/57-BookAnalysis/c++_answer
+Adding vertices to graph.. 
+Success: Assignment posted to the server. 
+Check out your visualization at:
+
+http://bridges-cs.herokuapp.com/assignments/157/bridges_testing
+
+Adding edges to graph.. 
+Success: Assignment posted to the server. 
+Check out your visualization at:
+
+http://bridges-cs.herokuapp.com/assignments/157/bridges_testing
+
+Success: Assignment posted to the server. 
+Check out your visualization at:
+
+http://bridges-cs.herokuapp.com/assignments/157/bridges_testing
+
+Success: Assignment posted to the server. 
+Check out your visualization at:
+
+http://bridges-cs.herokuapp.com/assignments/157/bridges_testing
+
+Success: Assignment posted to the server. 
+Check out your visualization at:
+
+http://bridges-cs.herokuapp.com/assignments/157/bridges_testing
+
+Success: Assignment posted to the server. 
+Check out your visualization at:
+
+http://bridges-cs.herokuapp.com/assignments/157/bridges_testing
+
+Success: Assignment posted to the server. 
+Check out your visualization at:
+
+http://bridges-cs.herokuapp.com/assignments/157/bridges_testing
+
 </code></pre>
 </div>
     
@@ -6872,6 +6914,13 @@ In file included from /home/bridges-testing/bridges-cxx-install/include/SocketCo
 /home/bridges-testing/bridges-cxx-install/include/DataStructure.h:105:46: note:     ‘virtual void bridges::datastructure::DataStructure::getDataStructureRepresentation(rapidjson::Document&amp;) const’
   105 |                                 virtual void getDataStructureRepresentation(rapidjson::Document&amp; d) const = 0;
       |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+wordle.cpp: In constructor ‘Wordle::Wordle(int, std::string, std::string)’:
+wordle.cpp:30:25: error: expected primary-expression before ‘.’ token
+   30 |                         .set_title(&quot;WordleBot&quot;);
+      |                         ^
+wordle.cpp:31:25: error: expected primary-expression before ‘.’ token
+   31 |                         .set_description(&quot;Press Spacebar for each guess. Green squares represent exact match, Orange for existing letter in answer, and Blue for not in answer.&quot;);
+      |                         ^
 make: *** [Makefile:26: wordle.o] Error 1
 could not compile c++/ for assignment in ../assignmentdb/70-WordleBot/c++
 </code></pre>
@@ -6924,6 +6973,13 @@ In file included from /home/bridges-testing/bridges-cxx-install/include/SocketCo
 /home/bridges-testing/bridges-cxx-install/include/DataStructure.h:105:46: note:     ‘virtual void bridges::datastructure::DataStructure::getDataStructureRepresentation(rapidjson::Document&amp;) const’
   105 |                                 virtual void getDataStructureRepresentation(rapidjson::Document&amp; d) const = 0;
       |                                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+wordle.cpp: In constructor ‘Wordle::Wordle(int, std::string, std::string)’:
+wordle.cpp:26:25: error: expected primary-expression before ‘.’ token
+   26 |                         .set_title(&quot;WordleBot&quot;);
+      |                         ^
+wordle.cpp:27:25: error: expected primary-expression before ‘.’ token
+   27 |                         .set_description(&quot;Press Spacebar for each guess. Green squares represent exact match, Orange for existing letter in answer, and Blue for not in answer.&quot;);
+      |                         ^
 make: *** [Makefile:26: wordle.o] Error 1
 could not compile c++_answer/ for assignment in ../assignmentdb/70-WordleBot/c++_answer
 </code></pre>
@@ -7562,34 +7618,7 @@ make: [Makefile:31: clean] Error 1 (ignored)
 rm main
 rm: cannot remove 'main': No such file or directory
 make: [Makefile:32: clean] Error 1 (ignored)
-g++ -g  -std=c++14 -I /home/bridges-testing/bridges-cxx-install/include/ -c main.cpp -o main.o
-In file included from /home/bridges-testing/bridges-cxx-install/include/Bridges.h:13,
-                 from main.cpp:6:
-/home/bridges-testing/bridges-cxx-install/include/JSONutil.h:21: warning: &quot;RAPIDJSON_ASSERT&quot; redefined
-   21 | #define RAPIDJSON_ASSERT(x) if (!( x )) { throw rapidjson_exception( #x, __FILE__, __LINE__ ) ;}
-      | 
-In file included from /home/bridges-testing/bridges-cxx-install/include/rapidjson/allocators.h:18,
-                 from /home/bridges-testing/bridges-cxx-install/include/rapidjson/reader.h:20,
-                 from /home/bridges-testing/bridges-cxx-install/include/rapidjson/document.h:20,
-                 from /home/bridges-testing/bridges-cxx-install/include/DataStructure.h:41,
-                 from /home/bridges-testing/bridges-cxx-install/include/Bridges.h:8:
-/home/bridges-testing/bridges-cxx-install/include/rapidjson/rapidjson.h:406: note: this is the location of the previous definition
-  406 | #define RAPIDJSON_ASSERT(x) assert(x)
-      | 
-main.cpp: In function ‘int main(int, char**)’:
-main.cpp:72:9: error: ‘class bridges::datastructure::BarChart’ has no member named ‘setBinsLabel’
-   72 |     bar.setBinsLabel(&quot;Country&quot;);
-      |         ^~~~~~~~~~~~
-main.cpp:73:9: error: ‘class bridges::datastructure::BarChart’ has no member named ‘setSeriesLabel’
-   73 |     bar.setSeriesLabel(&quot;Killowatt hours&quot;);
-      |         ^~~~~~~~~~~~~~
-main.cpp:74:9: error: ‘class bridges::datastructure::BarChart’ has no member named ‘setBarAlignment’
-   74 |     bar.setBarAlignment(&quot;vertical&quot;);
-      |         ^~~~~~~~~~~~~~~
-main.cpp:77:9: error: ‘class bridges::datastructure::BarChart’ has no member named ‘setSeriesBins’
-   77 |     bar.setSeriesBins(bins);
-      |         ^~~~~~~~~~~~~
-make: *** [Makefile:26: main.o] Error 1
+make: *** No rule to make target 'main.o', needed by 'main'.  Stop.
 could not compile c++_answer/ for assignment in ../assignmentdb/84-Energy/c++_answer
 </code></pre>
 </div>
@@ -7606,7 +7635,10 @@ could not run c++_answer for assignment in ../assignmentdb/84-Energy/c++_answer
     
 <div class="failure">
 <h3 id="cxxlog85-buildscaffold">Build Scaffold for Assignment 85</h3>
-<pre><code>assignment 85 has no c++ directory
+<pre><code>Compiling c++/ for assignment in ../assignmentdb/85-ForestCov/c++
+make: *** No rule to make target 'clean'.  Stop.
+make: *** No targets specified and no makefile found.  Stop.
+could not compile c++/ for assignment in ../assignmentdb/85-ForestCov/c++
 </code></pre>
 </div>
 <div class="failure">

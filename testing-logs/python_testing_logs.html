@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Fri Nov  1 09:12:19 AM EDT 2024</p>
+	<p>Running at Fri Nov  1 01:11:21 PM EDT 2024</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -84,11 +84,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarycancer_snippet.py" class="failure">
+  <div id="summarycancer_snippet.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogcancer_snippet.py">Test cancer_snippet.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogcancer_snippet.py-runtest">error</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogcancer_snippet.py-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -172,19 +172,19 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarygame_snippet.py" class="failure">
+  <div id="summarygame_snippet.py" class="success">
     <h2><a href="python_testing_logs.html#pythonloggame_snippet.py">Test game_snippet.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonloggame_snippet.py-runtest">error</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonloggame_snippet.py-runtest">success</a></li>
       </ul>
     </p>
   </div>
-  <div id="summarygraph_alist.py" class="failure">
+  <div id="summarygraph_alist.py" class="success">
     <h2><a href="python_testing_logs.html#pythonloggraph_alist.py">Test graph_alist.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonloggraph_alist.py-runtest">error</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonloggraph_alist.py-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1051,7 +1051,7 @@ http://bridges-cs.herokuapp.com/assignments/3008/bridges_testing
     <div id="pythonlogcancer_snippet.py" class="logdetails">
       <h2>Test cancer_snippet.py full log</h2>
     
-<div class="failure">
+<div class="success">
 <h3 id="pythonlogcancer_snippet.py-runtest">Run Test for test cancer_snippet.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1081,33 +1081,15 @@ http://bridges-cs.herokuapp.com/assignments/3008/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Traceback (most recent call last):
-  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
-    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/cancer_snippet.py&quot;, line 37, in &lt;module&gt;
-    main()
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/cancer_snippet.py&quot;, line 17, in main
-    my_list = get_cancer_incident_data()
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 516, in get_cancer_incident_data
-  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-could not run test cancer_snippet.py
+Record 1:
+	Type: Mortality
+	Year: 2000
+	Population: 2302835
+	Race: All Races
+	Gender: 
+	CrudeRate: 192.2(more rate information available) 
+	Location: 32.799, -86.8073
+	Count: 0
 </code></pre>
 </div>
     
@@ -1319,7 +1301,7 @@ http://bridges-cs.herokuapp.com/assignments/3013/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x77f14110fb60&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7b3e8a3eaa20&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1461,10 +1443,10 @@ First 10 elevations:
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Magnitude: 1.06
-Date: 2024-11-01 12:51:22
-Location:2 km  of The Geysers, CA
-Lat/Long:38.7928352355957,-122.764335632324
+Magnitude: 2.1
+Date: 2024-11-01 16:44:00
+Location:25 km ESE of Susitna North, Alaska
+Lat/Long:62.0708,-149.3923
 </code></pre>
 </div>
     
@@ -1563,7 +1545,7 @@ http://bridges-cs.herokuapp.com/assignments/3018/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x713d212697c0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x748ccc859850&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1580,7 +1562,7 @@ disconnected
     <div id="pythonloggame_snippet.py" class="logdetails">
       <h2>Test game_snippet.py full log</h2>
     
-<div class="failure">
+<div class="success">
 <h3 id="pythonloggame_snippet.py-runtest">Run Test for test game_snippet.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1610,33 +1592,10 @@ disconnected
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Traceback (most recent call last):
-  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
-    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/game_snippet.py&quot;, line 30, in &lt;module&gt;
-    main()
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/game_snippet.py&quot;, line 17, in main
-    my_list = get_game_data()
-              ^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 94, in get_game_data
-  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-could not run test game_snippet.py
+Fight Night Champion
+PlayStation 3
+8
+['Sports']
 </code></pre>
 </div>
     
@@ -1644,7 +1603,7 @@ could not run test game_snippet.py
     <div id="pythonloggraph_alist.py" class="logdetails">
       <h2>Test graph_alist.py full log</h2>
     
-<div class="failure">
+<div class="success">
 <h3 id="pythonloggraph_alist.py-runtest">Run Test for test graph_alist.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1675,33 +1634,12 @@ could not run test game_snippet.py
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 Visualization Title restricted to50 characters. truncated title...
-Traceback (most recent call last):
-  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
-    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 
-During handling of the above exception, another exception occurred:
+Check Your Visualization at the following link:
 
-Traceback (most recent call last):
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/graph_alist.py&quot;, line 98, in &lt;module&gt;
-    main()
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/graph_alist.py&quot;, line 21, in main
-    actor_movie_data = get_actor_movie_imdb_data(1813)
-                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 303, in get_actor_movie_imdb_data
-  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-could not run test graph_alist.py
+http://bridges-cs.herokuapp.com/assignments/3021/bridges_testing
+
+
 </code></pre>
 </div>
     
@@ -2020,8 +1958,8 @@ C
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Al_Pacino
-Devil's_Advocate,_The_(1997)
+Alyson_Hannigan
+Impure_Thoughts_(1985)
 </code></pre>
 </div>
     
@@ -2059,7 +1997,7 @@ Devil's_Advocate,_The_(1997)
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x789222b84620&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7817e3bddb20&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2212,7 +2150,7 @@ http://bridges-cs.herokuapp.com/assignments/3030/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x71610c7e5ac0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7b111c60b710&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2507,21 +2445,21 @@ Cartesian Coordinate of first vertex: 827.1273231300758, -5144.073405550668
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Title: Met Police officer who shot Chris Kaba cleared of murder
-Author: sjw_7
-Score: 1736
-Comment Count: 223
+Title: Church leader charged with sexually abusing children in Washtenaw County
+Author: WoofWoofster
+Score: 6945
+Comment Count: 284
 Subreddit: news
-Title: Egypt declared malaria-free by World Health Organization
-Title: Cuba grid collapses again as hurricane looms
-Title: Oregon man found guilty after police say he held a woman hostage in a cinder block dungeon
 Title: One of the last Navajo Code Talkers from World War II dies at 107
-Title: Six-time Olympic gold medal cyclist Chris Hoy reveals terminal cancer diagnosis
 Title: New Zealand airport causes stir with sign capping goodbye cuddles to 3 minutes
 Title: Multiple people killed, including a child, when helicopter crashed into a Houston communications tower
 Title: India’s airline industry in chaos after 90 hoax bomb threats in a week
 Title: Trump sued by Central Park Five for defamation over claims made during Harris debate
 Title: Funeral home in Poland apologises after body falls from hearse into traffic | Poland
+Title: Met Police officer who shot Chris Kaba cleared of murder
+Title: Infants died at higher rates after abortion bans in the US, research shows
+Title: Liam Payne had multiple drugs in body at time of death: Sources
+Title: Vermont man charged with drunk driving in Ottawa Valley thought he was still in U.S., police say
 =====
 Available subreddits:
 gadgets
@@ -2572,35 +2510,39 @@ UpliftingNews
 InternetIsBeautiful
 science
 =====
-Title: Why does Iceland not have good farming soil if the island sees so much volcanic activity?
-Author: ComradePruski
-Score: 291
-Vote Ratio: 0.86
-Comment Count: 60
-Subreddit: askscience
-PostTime: 1706458150
-URL: https://www.reddit.com/r/askscience/comments/1ad60fu/why_does_iceland_not_have_good_farming_soil_if/
-Text: Throughout history volcanoes have created super fertile soils for farming, but super small portion of Iceland's area is farmable.
-
-Title: Why are there so few diamond mines in the United States?
-Author: drummingadler
-Score: 392
-Vote Ratio: 0.81
-Comment Count: 119
-Subreddit: askscience
-PostTime: 1706491488
-URL: https://www.reddit.com/r/askscience/comments/1adiy7v/why_are_there_so_few_diamond_mines_in_the_united/
-Text: There’s only one diamond mine in the United States, in Arkansas. Why is that the only diamond mine?
-
 Title: If we were to have a conversation out in the open on Mars, would the thinner atmosphere mean we would have to speak louder than normal to be heard?
 Author: BoosherCacow
-Score: 434
+Score: 435
 Vote Ratio: 0.9
 Comment Count: 73
 Subreddit: askscience
 PostTime: 1706511408
 URL: https://www.reddit.com/r/askscience/comments/1adp5q8/if_we_were_to_have_a_conversation_out_in_the_open/
 Text: I just listened to an audio clip of a dust devil on Mars and it sounded muted. I thought it could have been the recording equipment but NASA has a reputation for top of the line equipment. Does the thinner atmosphere sort of muffle the sound or just make it seem quieter?
+
+Title: Are snowfall totals independent from one winter to the next?
+Author: dimonium_anonimo
+Score: 36
+Vote Ratio: 0.84
+Comment Count: 8
+Subreddit: askscience
+PostTime: 1706549484
+URL: https://www.reddit.com/r/askscience/comments/1ae0x06/are_snowfall_totals_independent_from_one_winter/
+Text: Nov-22 through Apr-23 had some record breaking snowfall in Minnesota (probably some other places, but I don't track other places' snowfall)
+
+We're now approaching Nov-23 through Feb-24 with only one thing that I think could be considered a snowstorm which laid down, like, 2 inches.
+
+Is this just regression to the mean? Completely random chance? Or is there a higher chance of light snowfall the year after a winter with heavy snowfall?
+
+Title: Why did the hooves of Deer/cow/elk, evolve so differently from the hooves of horses?
+Author: Exynth
+Score: 108
+Vote Ratio: 0.78
+Comment Count: 36
+Subreddit: askscience
+PostTime: 1706596257
+URL: https://www.reddit.com/r/askscience/comments/1aehxyu/why_did_the_hooves_of_deercowelk_evolve_so/
+Text: 
 
 </code></pre>
 </div>
@@ -2639,35 +2581,39 @@ Text: I just listened to an audio clip of a dust devil on Mars and it sounded mu
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Title: Why does Iceland not have good farming soil if the island sees so much volcanic activity?
-Author: ComradePruski
-Score: 291
-Vote Ratio: 0.86
-Comment Count: 60
-Subreddit: askscience
-PostTime: 1706458150
-URL: https://www.reddit.com/r/askscience/comments/1ad60fu/why_does_iceland_not_have_good_farming_soil_if/
-Text: Throughout history volcanoes have created super fertile soils for farming, but super small portion of Iceland's area is farmable.
-
-Title: Why are there so few diamond mines in the United States?
-Author: drummingadler
-Score: 392
-Vote Ratio: 0.81
-Comment Count: 119
-Subreddit: askscience
-PostTime: 1706491488
-URL: https://www.reddit.com/r/askscience/comments/1adiy7v/why_are_there_so_few_diamond_mines_in_the_united/
-Text: There’s only one diamond mine in the United States, in Arkansas. Why is that the only diamond mine?
-
 Title: If we were to have a conversation out in the open on Mars, would the thinner atmosphere mean we would have to speak louder than normal to be heard?
 Author: BoosherCacow
-Score: 434
+Score: 435
 Vote Ratio: 0.9
 Comment Count: 73
 Subreddit: askscience
 PostTime: 1706511408
 URL: https://www.reddit.com/r/askscience/comments/1adp5q8/if_we_were_to_have_a_conversation_out_in_the_open/
 Text: I just listened to an audio clip of a dust devil on Mars and it sounded muted. I thought it could have been the recording equipment but NASA has a reputation for top of the line equipment. Does the thinner atmosphere sort of muffle the sound or just make it seem quieter?
+
+Title: Are snowfall totals independent from one winter to the next?
+Author: dimonium_anonimo
+Score: 36
+Vote Ratio: 0.84
+Comment Count: 8
+Subreddit: askscience
+PostTime: 1706549484
+URL: https://www.reddit.com/r/askscience/comments/1ae0x06/are_snowfall_totals_independent_from_one_winter/
+Text: Nov-22 through Apr-23 had some record breaking snowfall in Minnesota (probably some other places, but I don't track other places' snowfall)
+
+We're now approaching Nov-23 through Feb-24 with only one thing that I think could be considered a snowstorm which laid down, like, 2 inches.
+
+Is this just regression to the mean? Completely random chance? Or is there a higher chance of light snowfall the year after a winter with heavy snowfall?
+
+Title: Why did the hooves of Deer/cow/elk, evolve so differently from the hooves of horses?
+Author: Exynth
+Score: 108
+Vote Ratio: 0.78
+Comment Count: 36
+Subreddit: askscience
+PostTime: 1706596257
+URL: https://www.reddit.com/r/askscience/comments/1aehxyu/why_did_the_hooves_of_deercowelk_evolve_so/
+Text: 
 
 </code></pre>
 </div>
@@ -2706,11 +2652,11 @@ Text: I just listened to an audio clip of a dust devil on Mars and it sounded mu
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Sonnet 24
+Sonnet 139
 poem
-Mine eye hath played the painter and hath stelled,
- Thy beauty's form in table of my heart,
- My body
+O call not me to justify the wrong,
+ That thy unkindness lays upon my heart,
+ Wound me not with thin
 </code></pre>
 </div>
     
@@ -4420,15 +4366,15 @@ First 3 records:
 
 0)Actor-Movie Data:
 	Movie: Q237116, Marty
-	Actor: Q102551, Ernest Borgnine
+	Actor: Q1418567, Minerva Urecal
 
 1)Actor-Movie Data:
 	Movie: Q237116, Marty
-	Actor: Q180251, Paddy Chayefsky
+	Actor: Q1699321, John Beradino
 
 2)Actor-Movie Data:
 	Movie: Q237116, Marty
-	Actor: Q266416, Betsy Blair
+	Actor: Q2388158, Frank Sutton
 
 </code></pre>
 </div>

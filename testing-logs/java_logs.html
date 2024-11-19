@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Nov 19 06:24:09 AM EST 2024</p>
+	<p>Running at Tue Nov 19 10:01:44 AM EST 2024</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -102,13 +102,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary9" class="failure">
+  <div id="summary9" class="success">
     <h2><a href="java_logs.html#javalog9">Assignment 9</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog9-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog9-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog9-runanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog9-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -242,13 +242,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary23" class="failure">
+  <div id="summary23" class="success">
     <h2><a href="java_logs.html#javalog23">Assignment 23</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog23-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog23-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog23-runanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog23-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -442,13 +442,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary43" class="failure">
+  <div id="summary43" class="success">
     <h2><a href="java_logs.html#javalog43">Assignment 43</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog43-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog43-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog43-runanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog43-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -1171,12 +1171,22 @@ http://bridges-cs.herokuapp.com/assignments/8/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/9-ShortestPathOSM/java_answer
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalog9-runanswer">Run Answer for Assignment 9</h3>
 <pre><code>Guessing osm.java is the right java file where main is
 
-Alarm clock
-could not run java_answer for assignment in ../assignmentdb/9-ShortestPathOSM/java_answer
+
+Check Your Visualization at the following link:
+
+http://bridges-cs.herokuapp.com/assignments/9/bridges_testing
+
+
+
+Check Your Visualization at the following link:
+
+http://bridges-cs.herokuapp.com/assignments/9/bridges_testing
+
+
 </code></pre>
 </div>
     
@@ -1571,12 +1581,16 @@ Shutting down ...
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/23-MountainPaths/java_answer
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalog23-runanswer">Run Answer for Assignment 23</h3>
 <pre><code>Guessing mount_path.java is the right java file where main is
 
-Alarm clock
-could not run java_answer for assignment in ../assignmentdb/23-MountainPaths/java_answer
+
+Check Your Visualization at the following link:
+
+http://bridges-cs.herokuapp.com/assignments/23/bridges_testing
+
+
 </code></pre>
 </div>
     
@@ -1968,7 +1982,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.730284512591321E12
+Data Access Took: 1.730297329474465E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2258,7 +2272,17 @@ http://bridges-cs.herokuapp.com/assignments/38/bridges_testing
 <h3 id="javalog39-runanswer">Run Answer for Assignment 39</h3>
 <pre><code>Guessing BookDistance.java is the right java file where main is
 
-Alarm clock
+Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: Http Request Failed. Error Code:502. Message:&lt;html&gt;
+&lt;head&gt;&lt;title&gt;502 Bad Gateway&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;502 Bad Gateway&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.18.0 (Ubuntu)&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+	at bridges.connect.DataSource.requestJSON(DataSource.java:1228)
+	at bridges.connect.DataSource.getGutenbergBookMetaData(DataSource.java:1251)
+	at BookDistance.main(BookDistance.java:115)
 could not run java_answer for assignment in ../assignmentdb/39-BookDistance/java_answer
 </code></pre>
 </div>
@@ -2417,12 +2441,43 @@ http://bridges-cs.herokuapp.com/assignments/42/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/43-SpatialIndexing/java_answer
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalog43-runanswer">Run Answer for Assignment 43</h3>
 <pre><code>Guessing closestPoint.java is the right java file where main is
 
-Alarm clock
-could not run java_answer for assignment in ../assignmentdb/43-SpatialIndexing/java_answer
+total vertices:12648
+Set size: 12648
+Grid
+===grid stats===
+0)Source Point:-12.979680854221542,-68.28094595016799
+0)[ALG]Closest Point: -73.9222475,40.6128304
+0)[ALG]Min Dist:124.78722273203918
+0)[BFA]Closest Point: -73.9222475,40.6128304
+0)[BFA]Min Dist:124.78722273203918
+0)Difference:0.0
+Source Point:-2.054809865361264,40.616263092804736
+Source Point:-13.342064174821076,40.64158767306962
+Source Point:-68.94669912746727,40.69057332515373
+Source Point:-28.358527741431168,40.62793153271164
+Source Point:-24.57549008384681,40.6294272362102
+Source Point:-52.2232271085197,40.70074482420759
+Source Point:-28.533580365726984,40.79473867243142
+Source Point:-35.77893344961272,40.717510532482436
+Source Point:-29.408514576115735,40.718999314168414
+Source Point:-45.8699203971002,40.63618066426237
+num cells examined:5
+
+Check Your Visualization at the following link:
+
+http://bridges-cs.herokuapp.com/assignments/43/bridges_testing
+
+
+
+Check Your Visualization at the following link:
+
+http://bridges-cs.herokuapp.com/assignments/43/bridges_testing
+
+
 </code></pre>
 </div>
     
@@ -2752,7 +2807,17 @@ http://bridges-cs.herokuapp.com/assignments/56/bridges_testing
 <h3 id="javalog57-runanswer">Run Answer for Assignment 57</h3>
 <pre><code>Guessing book_analysis.java is the right java file where main is
 
-Alarm clock
+Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: Http Request Failed. Error Code:502. Message:&lt;html&gt;
+&lt;head&gt;&lt;title&gt;502 Bad Gateway&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;502 Bad Gateway&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.18.0 (Ubuntu)&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+	at bridges.connect.DataSource.requestJSON(DataSource.java:1228)
+	at bridges.connect.DataSource.getGutenbergBookMetaData(DataSource.java:1251)
+	at book_analysis.main(book_analysis.java:114)
 could not run java_answer for assignment in ../assignmentdb/57-BookAnalysis/java_answer
 </code></pre>
 </div>
@@ -2975,7 +3040,12 @@ http://bridges-cs.herokuapp.com/assignments/64/bridges_testing
 <h3 id="javalog65-runanswer">Run Answer for Assignment 65</h3>
 <pre><code>Guessing reddit.java is the right java file where main is
 
-Alarm clock
+Exception in thread &quot;main&quot; java.lang.StringIndexOutOfBoundsException: begin 0, end -1, length 0
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4606)
+	at java.base/java.lang.String.substring(String.java:2709)
+	at bridges.base.LineChart.getDataStructureRepresentation(LineChart.java:385)
+	at bridges.connect.Bridges.visualize(Bridges.java:545)
+	at reddit.main(reddit.java:55)
 could not run java_answer for assignment in ../assignmentdb/65-Reddit/java_answer
 </code></pre>
 </div>
@@ -3140,7 +3210,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.14412
+Pi val: 3.14504
 
 Check Your Visualization at the following link:
 

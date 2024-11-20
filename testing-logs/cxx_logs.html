@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for C++</h1>
-	<p>Running at Wed Nov 20 01:14:22 AM EST 2024</p>
+	<p>Running at Wed Nov 20 05:13:19 AM EST 2024</p>
   <div id="summary0" class="success">
     <h2><a href="cxx_logs.html#cxxlog0">Assignment 0</a> </h2>
     <p>
@@ -22,13 +22,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary1" class="failure">
+  <div id="summary1" class="success">
     <h2><a href="cxx_logs.html#cxxlog1">Assignment 1</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="cxx_logs.html#cxxlog1-buildscaffold">success</a></li>
         <li> Build Answer : <a href="cxx_logs.html#cxxlog1-buildanswer">success</a></li>
-        <li> Run Answer : <a href="cxx_logs.html#cxxlog1-runanswer">error</a></li>
+        <li> Run Answer : <a href="cxx_logs.html#cxxlog1-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -318,7 +318,7 @@ background-color: springgreen;
       <ul>
         <li> Build Scaffold : <a href="cxx_logs.html#cxxlog30-buildscaffold">error</a></li>
         <li> Build Answer : <a href="cxx_logs.html#cxxlog30-buildanswer">success</a></li>
-        <li> Run Answer : <a href="cxx_logs.html#cxxlog30-runanswer">error</a></li>
+        <li> Run Answer : <a href="cxx_logs.html#cxxlog30-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -987,53 +987,15 @@ In file included from /home/bridges-testing/bridges-cxx-install/include/rapidjso
 g++ -o ListIMDB ListIMDB.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="cxxlog1-runanswer">Run Answer for Assignment 1</h3>
 <pre><code>Guessing ./ListIMDB is the right binary file where main is
 
-terminate called after throwing an instance of 'bridges::HTTPException'
-  what():  HTTPException raised when hitting http://bridgesdata.herokuapp.com/api/imdb?limit=0
-HTTP code: 503
-HTTP/1.1 503 Service Unavailable
-Connection: keep-alive
-Server: Cowboy
-Date: Wed, 20 Nov 2024 06:15:08 GMT
-Content-Length: 506
-Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?ts=1732083279&amp;sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6&amp;s=eXsFDTZ9foY82iPkOrxH2g30ucO%2FmjYYV5epmIV3UD0%3D&quot;}]}
-Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1732083279&amp;sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6&amp;s=eXsFDTZ9foY82iPkOrxH2g30ucO%2FmjYYV5epmIV3UD0%3D
-Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.005,&quot;failure_fraction&quot;:0.05,&quot;response_headers&quot;:[&quot;Via&quot;]}
-Content-Type: text/html; charset=utf-8
-Cache-Control: no-cache, no-store
+Success: Assignment posted to the server. 
+Check out your visualization at:
 
+http://bridges-cs.herokuapp.com/assignments/101/bridges_testing
 
-&lt;!DOCTYPE html&gt;
-	&lt;html&gt;
-	  &lt;head&gt;
-		&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-		&lt;meta charset=&quot;utf-8&quot;&gt;
-		&lt;title&gt;Application Error&lt;/title&gt;
-		&lt;style media=&quot;screen&quot;&gt;
-		  html,body,iframe {
-			margin: 0;
-			padding: 0;
-		  }
-		  html,body {
-			height: 100%;
-			overflow: hidden;
-		  }
-		  iframe {
-			width: 100%;
-			height: 100%;
-			border: 0;
-		  }
-		&lt;/style&gt;
-	  &lt;/head&gt;
-	  &lt;body&gt;
-		&lt;iframe src=&quot;//www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
-	  &lt;/body&gt;
-	&lt;/html&gt;
-Aborted (core dumped)
-could not run c++_answer for assignment in ../assignmentdb/1-ListIMDB/c++_answer
 </code></pre>
 </div>
     
@@ -1977,8 +1939,8 @@ g++ -o 2048 2048.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread
 <h3 id="cxxlog11-runanswer">Run Answer for Assignment 11</h3>
 <pre><code>Guessing ./2048 is the right binary file where main is
 
-[2024-11-20 01:17:21] [connect] Successful connection
-[2024-11-20 01:17:21] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083441 101
+[2024-11-20 05:15:23] [connect] Successful connection
+[2024-11-20 05:15:23] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732097723 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -1986,7 +1948,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/111/bridges_testing
 
-[2024-11-20 01:17:21] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:15:23] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2052,8 +2014,8 @@ g++ -o AStarMaze pathfinder.o -g -L /home/bridges-testing/bridges-cxx-install/li
 <h3 id="cxxlog12-runanswer">Run Answer for Assignment 12</h3>
 <pre><code>Guessing ./AStarMaze is the right binary file where main is
 
-[2024-11-20 01:17:32] [connect] Successful connection
-[2024-11-20 01:17:32] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083452 101
+[2024-11-20 05:15:33] [connect] Successful connection
+[2024-11-20 05:15:33] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732097733 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2061,7 +2023,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/112/bridges_testing
 
-[2024-11-20 01:17:33] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:15:33] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2127,8 +2089,8 @@ g++ -o InfiniteRunner runner.o -g -L /home/bridges-testing/bridges-cxx-install/l
 <h3 id="cxxlog13-runanswer">Run Answer for Assignment 13</h3>
 <pre><code>Guessing ./InfiniteRunner is the right binary file where main is
 
-[2024-11-20 01:17:43] [connect] Successful connection
-[2024-11-20 01:17:43] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083463 101
+[2024-11-20 05:15:43] [connect] Successful connection
+[2024-11-20 05:15:43] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732097743 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2136,7 +2098,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/113/bridges_testing
 
-[2024-11-20 01:17:43] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:15:44] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2202,8 +2164,8 @@ g++ -o SpreadingFire SpreadingFire.o -g -L /home/bridges-testing/bridges-cxx-ins
 <h3 id="cxxlog14-runanswer">Run Answer for Assignment 14</h3>
 <pre><code>Guessing ./SpreadingFire is the right binary file where main is
 
-[2024-11-20 01:17:53] [connect] Successful connection
-[2024-11-20 01:17:53] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083473 101
+[2024-11-20 05:15:54] [connect] Successful connection
+[2024-11-20 05:15:54] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732097754 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2211,7 +2173,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/0/bridges_testing
 
-[2024-11-20 01:17:53] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:15:54] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2277,8 +2239,8 @@ g++ -o FallingSand FallingSand.o -g -L /home/bridges-testing/bridges-cxx-install
 <h3 id="cxxlog15-runanswer">Run Answer for Assignment 15</h3>
 <pre><code>Guessing ./FallingSand is the right binary file where main is
 
-[2024-11-20 01:18:04] [connect] Successful connection
-[2024-11-20 01:18:04] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083484 101
+[2024-11-20 05:16:04] [connect] Successful connection
+[2024-11-20 05:16:04] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732097764 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2286,7 +2248,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/115/bridges_testing
 
-[2024-11-20 01:18:04] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:16:05] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2418,8 +2380,8 @@ g++ -o ControlsTutorial Controls_Tutorial.o -g -L /home/bridges-testing/bridges-
 <h3 id="cxxlog17-runanswer">Run Answer for Assignment 17</h3>
 <pre><code>Guessing ./ControlsTutorial is the right binary file where main is
 
-[2024-11-20 01:18:21] [connect] Successful connection
-[2024-11-20 01:18:21] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083501 101
+[2024-11-20 05:16:22] [connect] Successful connection
+[2024-11-20 05:16:22] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732097782 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2427,7 +2389,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/0/bridges_testing
 
-[2024-11-20 01:18:21] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:16:22] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2493,8 +2455,8 @@ g++ -o ControlsTutorial2 Controls_Tutorial2.o -g -L /home/bridges-testing/bridge
 <h3 id="cxxlog18-runanswer">Run Answer for Assignment 18</h3>
 <pre><code>Guessing ./ControlsTutorial2 is the right binary file where main is
 
-[2024-11-20 01:18:31] [connect] Successful connection
-[2024-11-20 01:18:31] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083511 101
+[2024-11-20 05:16:32] [connect] Successful connection
+[2024-11-20 05:16:32] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732097792 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2502,7 +2464,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/0/bridges_testing
 
-[2024-11-20 01:18:32] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:16:32] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2572,8 +2534,8 @@ g++ -o BugStomp BugStomp.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ 
 <h3 id="cxxlog19-runanswer">Run Answer for Assignment 19</h3>
 <pre><code>Guessing ./BugStomp is the right binary file where main is
 
-[2024-11-20 01:18:42] [connect] Successful connection
-[2024-11-20 01:18:42] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083522 101
+[2024-11-20 05:16:42] [connect] Successful connection
+[2024-11-20 05:16:42] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732097802 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2581,7 +2543,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/119/bridges_testing
 
-[2024-11-20 01:18:42] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:16:43] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2647,8 +2609,8 @@ g++ -o Minesweeper minesweeper.o -g -L /home/bridges-testing/bridges-cxx-install
 <h3 id="cxxlog20-runanswer">Run Answer for Assignment 20</h3>
 <pre><code>Guessing ./Minesweeper is the right binary file where main is
 
-[2024-11-20 01:18:52] [connect] Successful connection
-[2024-11-20 01:18:53] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083532 101
+[2024-11-20 05:16:53] [connect] Successful connection
+[2024-11-20 05:16:53] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732097813 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2656,7 +2618,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/120/bridges_testing
 
-[2024-11-20 01:18:53] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:16:53] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2722,8 +2684,8 @@ g++ -o RaceCar RaceCar.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -p
 <h3 id="cxxlog21-runanswer">Run Answer for Assignment 21</h3>
 <pre><code>Guessing ./RaceCar is the right binary file where main is
 
-[2024-11-20 01:19:03] [connect] Successful connection
-[2024-11-20 01:19:03] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083543 101
+[2024-11-20 05:17:03] [connect] Successful connection
+[2024-11-20 05:17:03] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732097823 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2731,7 +2693,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/121/bridges_testing
 
-[2024-11-20 01:19:04] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:17:03] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2797,8 +2759,8 @@ g++ -o Snake Snake.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthre
 <h3 id="cxxlog22-runanswer">Run Answer for Assignment 22</h3>
 <pre><code>Guessing ./Snake is the right binary file where main is
 
-[2024-11-20 01:19:13] [connect] Successful connection
-[2024-11-20 01:19:13] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083553 101
+[2024-11-20 05:17:13] [connect] Successful connection
+[2024-11-20 05:17:13] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732097833 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2806,7 +2768,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/0/bridges_testing
 
-[2024-11-20 01:19:14] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:17:13] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -3289,8 +3251,8 @@ g++ -o SmileyFace SmileyFace.o -g -L /home/bridges-testing/bridges-cxx-install/l
 <h3 id="cxxlog27-runanswer">Run Answer for Assignment 27</h3>
 <pre><code>Guessing ./SmileyFace is the right binary file where main is
 
-[2024-11-20 01:19:55] [connect] Successful connection
-[2024-11-20 01:19:55] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083595 101
+[2024-11-20 05:17:55] [connect] Successful connection
+[2024-11-20 05:17:55] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732097875 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -3298,7 +3260,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/127/bridges_testing
 
-[2024-11-20 01:19:55] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:17:56] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -3462,12 +3424,11 @@ g++ -g  -std=c++14 -I /home/bridges-testing/bridges-cxx-install/include/ -c wiki
 g++ -o TemporalBaconNumber wikidata_actor.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="cxxlog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing ./TemporalBaconNumber is the right binary file where main is
 
-********Alarm clock
-could not run c++_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/c++_answer
+*Malformed JSON
 </code></pre>
 </div>
     
@@ -3495,7 +3456,35 @@ g++ -o TemporalPageRank wikidata_actor.o -g -L /home/bridges-testing/bridges-cxx
 <h3 id="cxxlog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing ./TemporalPageRank is the right binary file where main is
 
-Alarm clock
+terminate called after throwing an instance of 'bridges::HTTPException'
+  what():  HTTPException raised when hitting https://query.wikidata.org/sparql?query=SELECT%20%3Fmovie%20%3FmovieLabel%20%3Factor%20%3FactorLabel%20WHERE%20%7B%20%20%3Fmovie%20wdt%3AP31%20wd%3AQ11424.%20%20%3Fmovie%20wdt%3AP161%20%3Factor.%20%20%3Fmovie%20wdt%3AP364%20wd%3AQ1860.%20%20%3Fmovie%20wdt%3AP577%20%3Fdate.%20%20FILTER%28YEAR%28%3Fdate%29%20%3E%3D%202000%20%26%26%20YEAR%28%3Fdate%29%20%3C%3D%202000%29.%20%20%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22en%22.%20%7D%20%7D&amp;format=json
+HTTP code: 502
+HTTP/2 502 
+server: nginx/1.18.0
+date: Wed, 20 Nov 2024 10:21:23 GMT
+content-type: text/html
+content-length: 157
+x-served-by: wdqs1015
+access-control-allow-origin: *
+age: 37
+x-cache: cp1106 miss, cp1106 miss
+x-cache-status: miss
+server-timing: cache;desc=&quot;miss&quot;, host;desc=&quot;cp1106&quot;
+strict-transport-security: max-age=106384710; includeSubDomains; preload
+report-to: { &quot;group&quot;: &quot;wm_nel&quot;, &quot;max_age&quot;: 604800, &quot;endpoints&quot;: [{ &quot;url&quot;: &quot;https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&amp;schema_uri=/w3c/reportingapi/network_error/1.0.0&quot; }] }
+nel: { &quot;report_to&quot;: &quot;wm_nel&quot;, &quot;max_age&quot;: 604800, &quot;failure_fraction&quot;: 0.05, &quot;success_fraction&quot;: 0.0}
+x-client-ip: 152.15.112.164
+
+
+&lt;html&gt;
+&lt;head&gt;&lt;title&gt;502 Bad Gateway&lt;/title&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;center&gt;&lt;h1&gt;502 Bad Gateway&lt;/h1&gt;&lt;/center&gt;
+&lt;hr&gt;&lt;center&gt;nginx/1.18.0&lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+Aborted (core dumped)
 could not run c++_answer for assignment in ../assignmentdb/31-TemporalPageRank/c++_answer
 </code></pre>
 </div>
@@ -3570,8 +3559,8 @@ g++ -o TicTacToe tic_tac_toe.o -g -L /home/bridges-testing/bridges-cxx-install/l
 <h3 id="cxxlog32-runanswer">Run Answer for Assignment 32</h3>
 <pre><code>Guessing ./TicTacToe is the right binary file where main is
 
-[2024-11-20 01:25:03] [connect] Successful connection
-[2024-11-20 01:25:03] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083902 101
+[2024-11-20 05:21:30] [connect] Successful connection
+[2024-11-20 05:21:30] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732098090 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -3579,7 +3568,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/132/bridges_testing
 
-[2024-11-20 01:25:03] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:21:31] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -3726,8 +3715,8 @@ g++ -o GameTutorial GameTutorial.o -g -L /home/bridges-testing/bridges-cxx-insta
 <h3 id="cxxlog34-runanswer">Run Answer for Assignment 34</h3>
 <pre><code>Guessing ./GameTutorial is the right binary file where main is
 
-[2024-11-20 01:25:17] [connect] Successful connection
-[2024-11-20 01:25:17] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083917 101
+[2024-11-20 05:21:45] [connect] Successful connection
+[2024-11-20 05:21:45] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732098105 101
 sockopen on namespace /
 Size:10,10
 Setting framelimit to 10
@@ -3736,7 +3725,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/134/bridges_testing
 
-[2024-11-20 01:25:17] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:21:45] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -3802,8 +3791,8 @@ g++ -o connect4 connect4.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ 
 <h3 id="cxxlog35-runanswer">Run Answer for Assignment 35</h3>
 <pre><code>Guessing ./connect4 is the right binary file where main is
 
-[2024-11-20 01:25:27] [connect] Successful connection
-[2024-11-20 01:25:27] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083927 101
+[2024-11-20 05:21:55] [connect] Successful connection
+[2024-11-20 05:21:55] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732098115 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -3811,7 +3800,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/135/bridges_testing
 
-[2024-11-20 01:25:28] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:21:55] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -3877,8 +3866,8 @@ g++ -o pong pong.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread
 <h3 id="cxxlog36-runanswer">Run Answer for Assignment 36</h3>
 <pre><code>Guessing ./pong is the right binary file where main is
 
-[2024-11-20 01:25:38] [connect] Successful connection
-[2024-11-20 01:25:38] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083938 101
+[2024-11-20 05:22:04] [connect] Successful connection
+[2024-11-20 05:22:04] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732098124 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -3886,7 +3875,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/136/bridges_testing
 
-[2024-11-20 01:25:39] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:22:05] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -4077,7 +4066,7 @@ terminate called after throwing an instance of 'bridges::HTTPException'
 HTTP code: 502
 HTTP/1.1 502 Bad Gateway
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 20 Nov 2024 06:26:03 GMT
+Date: Wed, 20 Nov 2024 10:22:31 GMT
 Content-Type: text/html
 Content-Length: 166
 Connection: keep-alive
@@ -4245,8 +4234,8 @@ g++ -o SpaceInvaders SpaceInvaders.o -g -L /home/bridges-testing/bridges-cxx-ins
 <h3 id="cxxlog41-runanswer">Run Answer for Assignment 41</h3>
 <pre><code>Guessing ./SpaceInvaders is the right binary file where main is
 
-[2024-11-20 01:26:20] [connect] Successful connection
-[2024-11-20 01:26:20] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732083980 101
+[2024-11-20 05:22:46] [connect] Successful connection
+[2024-11-20 05:22:46] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732098166 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -4254,7 +4243,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/141/bridges_testing
 
-[2024-11-20 01:26:21] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:22:47] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -4355,7 +4344,7 @@ Check out your visualization at:
 
 http://bridges-cs.herokuapp.com/assignments/143/bridges_testing
 
-elapsed time: 0.143614s
+elapsed time: 0.143651s
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
@@ -4517,8 +4506,8 @@ g++ -o ExplorerRobot ExplorerRobot.o -g -L /home/bridges-testing/bridges-cxx-ins
 <h3 id="cxxlog45-runanswer">Run Answer for Assignment 45</h3>
 <pre><code>Guessing ./ExplorerRobot is the right binary file where main is
 
-[2024-11-20 01:26:50] [connect] Successful connection
-[2024-11-20 01:26:50] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732084009 101
+[2024-11-20 05:23:15] [connect] Successful connection
+[2024-11-20 05:23:15] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732098195 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -4526,7 +4515,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/145/bridges_testing
 
-[2024-11-20 01:26:55] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:23:21] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -4893,7 +4882,7 @@ terminate called after throwing an instance of 'bridges::HTTPException'
 HTTP code: 502
 HTTP/1.1 502 Bad Gateway
 Server: nginx/1.18.0 (Ubuntu)
-Date: Wed, 20 Nov 2024 06:27:22 GMT
+Date: Wed, 20 Nov 2024 10:23:49 GMT
 Content-Type: text/html
 Content-Length: 166
 Connection: keep-alive
@@ -5522,8 +5511,8 @@ g++ -o ControlsTutorialThree Controls_Tutorial_Three.o -g -L /home/bridges-testi
 <h3 id="cxxlog67-runanswer">Run Answer for Assignment 67</h3>
 <pre><code>Guessing ./ControlsTutorialThree is the right binary file where main is
 
-[2024-11-20 01:28:54] [connect] Successful connection
-[2024-11-20 01:28:54] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732084134 101
+[2024-11-20 05:25:19] [connect] Successful connection
+[2024-11-20 05:25:19] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732098319 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -5531,7 +5520,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/167/bridges_testing
 
-[2024-11-20 01:28:54] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:25:19] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -5668,8 +5657,8 @@ g++ -o snake Snake.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthre
 <h3 id="cxxlog69-runanswer">Run Answer for Assignment 69</h3>
 <pre><code>Guessing ./snake is the right binary file where main is
 
-[2024-11-20 01:29:07] [connect] Successful connection
-[2024-11-20 01:29:07] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732084147 101
+[2024-11-20 05:25:32] [connect] Successful connection
+[2024-11-20 05:25:32] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732098332 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -5677,7 +5666,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/169/bridges_testing
 
-[2024-11-20 01:29:08] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:25:33] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -5743,8 +5732,8 @@ g++ -o wordle wordle.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pth
 <h3 id="cxxlog70-runanswer">Run Answer for Assignment 70</h3>
 <pre><code>Guessing ./wordle is the right binary file where main is
 
-[2024-11-20 01:29:18] [connect] Successful connection
-[2024-11-20 01:29:18] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732084158 101
+[2024-11-20 05:25:42] [connect] Successful connection
+[2024-11-20 05:25:42] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732098342 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -5752,7 +5741,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/170/bridges_testing
 
-[2024-11-20 01:29:18] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:25:42] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -5883,8 +5872,8 @@ g++ -o Pixel Pixels.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthr
 <h3 id="cxxlog72-runanswer">Run Answer for Assignment 72</h3>
 <pre><code>Guessing ./Pixel is the right binary file where main is
 
-[2024-11-20 01:29:35] [connect] Successful connection
-[2024-11-20 01:29:35] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732084175 101
+[2024-11-20 05:26:00] [connect] Successful connection
+[2024-11-20 05:26:00] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1732098360 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -5892,7 +5881,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/172/bridges_testing
 
-[2024-11-20 01:29:35] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2024-11-20 05:26:00] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     

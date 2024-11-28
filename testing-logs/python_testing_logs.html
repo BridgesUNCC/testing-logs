@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Thu Nov 28 09:11:22 AM EST 2024</p>
+	<p>Running at Thu Nov 28 01:13:20 PM EST 2024</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -84,11 +84,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarycancer_snippet.py" class="success">
+  <div id="summarycancer_snippet.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogcancer_snippet.py">Test cancer_snippet.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogcancer_snippet.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogcancer_snippet.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -172,11 +172,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarygame_snippet.py" class="success">
+  <div id="summarygame_snippet.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonloggame_snippet.py">Test game_snippet.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonloggame_snippet.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonloggame_snippet.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1051,7 +1051,7 @@ http://bridges-cs.herokuapp.com/assignments/3008/bridges_testing
     <div id="pythonlogcancer_snippet.py" class="logdetails">
       <h2>Test cancer_snippet.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogcancer_snippet.py-runtest">Run Test for test cancer_snippet.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1081,15 +1081,33 @@ http://bridges-cs.herokuapp.com/assignments/3008/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Record 1:
-	Type: Mortality
-	Year: 2000
-	Population: 2302835
-	Race: All Races
-	Gender: 
-	CrudeRate: 192.2(more rate information available) 
-	Location: 32.799, -86.8073
-	Count: 0
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
+    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/cancer_snippet.py&quot;, line 37, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/cancer_snippet.py&quot;, line 17, in main
+    my_list = get_cancer_incident_data()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 516, in get_cancer_incident_data
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+could not run test cancer_snippet.py
 </code></pre>
 </div>
     
@@ -1301,7 +1319,7 @@ http://bridges-cs.herokuapp.com/assignments/3013/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7d54efcf6d80&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7935fb2f3b60&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1443,10 +1461,10 @@ First 10 elevations:
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Magnitude: 1.76
-Date: 2024-11-28 13:41:52
-Location:6 km S of Volcano, Hawaii
-Lat/Long:19.3824996948242,-155.242172241211
+Magnitude: 1.8
+Date: 2024-11-28 17:50:06
+Location:12 km NNE of Dixon Lane-Meadow Creek, CA
+Lat/Long:37.4949989318848,-118.401496887207
 </code></pre>
 </div>
     
@@ -1545,7 +1563,7 @@ http://bridges-cs.herokuapp.com/assignments/3018/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7966be2e1700&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x781ca5f9be60&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1562,7 +1580,7 @@ disconnected
     <div id="pythonloggame_snippet.py" class="logdetails">
       <h2>Test game_snippet.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonloggame_snippet.py-runtest">Run Test for test game_snippet.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1592,10 +1610,33 @@ disconnected
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Secret Service: Security Breach
-PC
-4.4
-['Shooter']
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
+    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/game_snippet.py&quot;, line 30, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/game_snippet.py&quot;, line 17, in main
+    my_list = get_game_data()
+              ^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 94, in get_game_data
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+could not run test game_snippet.py
 </code></pre>
 </div>
     
@@ -1905,8 +1946,8 @@ could not run test gutenberg_snippet.py
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Arnold_Schwarzenegger
-End_of_Days:_The_Beginning_(2000)
+Denzel_Washington
+Power_(1986)
 </code></pre>
 </div>
     
@@ -1944,7 +1985,7 @@ End_of_Days:_The_Beginning_(2000)
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x70202dff15e0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x78793324be60&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2097,7 +2138,7 @@ http://bridges-cs.herokuapp.com/assignments/3030/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x77228b306e40&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x73a5c84b4c20&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2392,21 +2433,21 @@ Cartesian Coordinate of first vertex: 827.1273231300758, -5144.073405550668
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Title: Landslide win for Sri Lanka’s leftist coalition in snap general elections
-Author: Vpered_Cosmism
-Score: 1947
-Comment Count: 27
+Title: CDC confirms Oregon's first human case of bird flu.
+Author: DontPokeMe91
+Score: 19102
+Comment Count: 1524
 Subreddit: news
-Title: The Onion wins Alex Jones' Infowars in bankruptcy auction
-Title: Exclusive: Ben &amp; Jerry's says parent Unilever silenced it over Gaza stance
-Title: 10-year-old walks alone a mile away from Georgia home, leading to his mother's arrest
-Title: Indiana ban on gender transition treatment for minors upheld by U.S. appeals court
-Title: Kraft Heinz must face Mac &amp; Cheese lawsuit, judge rules
 Title: Sheriff’s deputy fired, charged with killing 7 dogs during animal welfare check
 Title: After suicide of nonbinary teen, DOE finds multiple Title IX violations at Oklahoma school district
 Title: Human rights groups raise alarm on crackdown by COP29 hosts
 Title: A pregnant woman sues for the right to an abortion in challenge to Kentucky’s near-total ban
 Title: Lawsuit claiming Elon Musk rigged dogecoin ends
+Title: Landslide win for Sri Lanka’s leftist coalition in snap general elections
+Title: Man accused of attempted burglary while nude in Fort Myers; covers head with white cloth
+Title: The daughters of Malcolm X sue the CIA, FBI and NYPD over the civil rights leader's assassination
+Title: Advance Auto Parts is closing more than 700 locations
+Title: 2 Missouri officers accused of stealing nude photos from dozens of women's phones at traffic stops
 =====
 Available subreddits:
 gadgets
@@ -2459,7 +2500,7 @@ science
 =====
 Title: Why is itching a part of an immune response to an infection?
 Author: Streptomycin_InaCoat
-Score: 499
+Score: 490
 Vote Ratio: 0.9
 Comment Count: 93
 Subreddit: askscience
@@ -2469,7 +2510,7 @@ Text: I know histamines are usually released during an immune response and they 
 
 Title: What is the radiation risk if a nuclear submarine or aircraft carrier takes damage and sinks?
 Author: WartimeHotTot
-Score: 499
+Score: 495
 Vote Ratio: 0.86
 Comment Count: 242
 Subreddit: askscience
@@ -2479,7 +2520,7 @@ Text: Would there be a current of death for centuries after? Would it just diffu
 
 Title: If our earth is getting warmer, does that mean bird migration is going to change?
 Author: Savings-Leather4921
-Score: 527
+Score: 532
 Vote Ratio: 0.86
 Comment Count: 127
 Subreddit: askscience
@@ -2526,7 +2567,7 @@ Text: This might be a dumb question. I understand Climate change to be a blanket
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 Title: Why is itching a part of an immune response to an infection?
 Author: Streptomycin_InaCoat
-Score: 499
+Score: 490
 Vote Ratio: 0.9
 Comment Count: 93
 Subreddit: askscience
@@ -2536,7 +2577,7 @@ Text: I know histamines are usually released during an immune response and they 
 
 Title: What is the radiation risk if a nuclear submarine or aircraft carrier takes damage and sinks?
 Author: WartimeHotTot
-Score: 499
+Score: 495
 Vote Ratio: 0.86
 Comment Count: 242
 Subreddit: askscience
@@ -2546,7 +2587,7 @@ Text: Would there be a current of death for centuries after? Would it just diffu
 
 Title: If our earth is getting warmer, does that mean bird migration is going to change?
 Author: Savings-Leather4921
-Score: 527
+Score: 532
 Vote Ratio: 0.86
 Comment Count: 127
 Subreddit: askscience
@@ -2591,18 +2632,11 @@ Text: This might be a dumb question. I understand Climate change to be a blanket
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Love's Labour's Lost
-play
-1595
-
-LOVE'S LABOUR'S LOST
-
-by William Shakespeare
-
-Dramatis Personae.
-
- FERDINAND, King of Navarre
-
+Sonnet 79
+poem
+Whilst I alone did call upon thy aid,
+ My verse alone had all thy gentle grace,
+ But now my gracious
 </code></pre>
 </div>
     
@@ -4151,8 +4185,8 @@ http://bridges-cs.herokuapp.com/assignments/3068/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
 Charlotte, NC: population: 874579, elevation: 229, lat/long: 35.22709,-80.84313
+Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
 Fayetteville, NC: population: 201963, elevation: 29, lat/long: 35.05266,-78.87836
 Greensboro, NC: population: 285342, elevation: 266, lat/long: 36.07264,-79.79198
 Raleigh, NC: population: 451066, elevation: 96, lat/long: 35.7721,-78.63861
@@ -4195,8 +4229,8 @@ West Raleigh, NC: population: 338759, elevation: 122, lat/long: 35.78682,-78.663
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.4-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
 Charlotte, NC: population: 874579, elevation: 229, lat/long: 35.22709,-80.84313
+Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
 Fayetteville, NC: population: 201963, elevation: 29, lat/long: 35.05266,-78.87836
 Greensboro, NC: population: 285342, elevation: 266, lat/long: 36.07264,-79.79198
 Raleigh, NC: population: 451066, elevation: 96, lat/long: 35.7721,-78.63861
@@ -4208,23 +4242,23 @@ Cities with negative elevation..
 Bradenton Beach, FL: population: 1171, elevation: -3, lat/long: 27.46698,-82.70399
 Timberlane, LA: population: 10243, elevation: -1, lat/long: 29.87743,-90.03202
 Terrytown, LA: population: 23319, elevation: -1, lat/long: 29.91021,-90.03257
-Calipatria, CA: population: 7424, elevation: -55, lat/long: 33.1256,-115.51415
-Brawley, CA: population: 25897, elevation: -34, lat/long: 32.97866,-115.53027
-Desert Shores, CA: population: 1104, elevation: -60, lat/long: 33.4042,-116.03972
-Heber, CA: population: 4275, elevation: -3, lat/long: 32.73089,-115.52972
-El Centro, CA: population: 43956, elevation: -12, lat/long: 32.792,-115.56305
-Indio, CA: population: 87533, elevation: -4, lat/long: 33.7207,-116.21677
-Holtville, CA: population: 6404, elevation: -3, lat/long: 32.81116,-115.38026
 Coachella, CA: population: 44635, elevation: -21, lat/long: 33.6803,-116.17389
+Brawley, CA: population: 25897, elevation: -34, lat/long: 32.97866,-115.53027
+El Centro, CA: population: 43956, elevation: -12, lat/long: 32.792,-115.56305
+Calipatria, CA: population: 7424, elevation: -55, lat/long: 33.1256,-115.51415
+Desert Shores, CA: population: 1104, elevation: -60, lat/long: 33.4042,-116.03972
 Imperial, CA: population: 17095, elevation: -18, lat/long: 32.84755,-115.56944
-Oasis, CA: population: 6890, elevation: -44, lat/long: 33.46586,-116.09889
-Niland, CA: population: 1006, elevation: -43, lat/long: 33.24004,-115.51888
+Holtville, CA: population: 6404, elevation: -3, lat/long: 32.81116,-115.38026
 Mecca, CA: population: 8577, elevation: -57, lat/long: 33.57219,-116.0782
+Heber, CA: population: 4275, elevation: -3, lat/long: 32.73089,-115.52972
+Indio, CA: population: 87533, elevation: -4, lat/long: 33.7207,-116.21677
+Niland, CA: population: 1006, elevation: -43, lat/long: 33.24004,-115.51888
+Oasis, CA: population: 6890, elevation: -44, lat/long: 33.46586,-116.09889
 Salton City, CA: population: 3763, elevation: -38, lat/long: 33.29865,-115.95611
-Seeley, CA: population: 1739, elevation: -11, lat/long: 32.79311,-115.69111
-Westmorland, CA: population: 2267, elevation: -50, lat/long: 33.03727,-115.62138
 Thermal, CA: population: 2865, elevation: -36, lat/long: 33.6403,-116.13945
 Vista Santa Rosa, CA: population: 2926, elevation: -21, lat/long: 33.6278,-116.21806
+Seeley, CA: population: 1739, elevation: -11, lat/long: 32.79311,-115.69111
+Westmorland, CA: population: 2267, elevation: -50, lat/long: 33.03727,-115.62138
 </code></pre>
 </div>
     

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Dec 31 04:55:37 AM EST 2024</p>
+	<p>Running at Tue Dec 31 10:26:13 AM EST 2024</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -52,11 +52,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary4" class="failure">
+  <div id="summary4" class="success">
     <h2><a href="java_logs.html#javalog4">Assignment 4</a> </h2>
     <p>
       <ul>
-        <li> Build Scaffold : <a href="java_logs.html#javalog4-buildscaffold">error</a></li>
+        <li> Build Scaffold : <a href="java_logs.html#javalog4-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog4-buildanswer">success</a></li>
         <li> Run Answer : <a href="java_logs.html#javalog4-runanswer">success</a></li>
       </ul>
@@ -328,7 +328,7 @@ background-color: springgreen;
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog31-buildscaffold">error</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog31-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog31-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog31-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -988,16 +988,9 @@ http://bridges-cs.herokuapp.com/assignments/3/bridges_testing
     <div id="javalog4" class="logdetails">
       <h2>Assignment 4 full log</h2>
     
-<div class="failure">
+<div class="success">
 <h3 id="javalog4-buildscaffold">Build Scaffold for Assignment 4</h3>
 <pre><code>Compiling java/ for assignment in ../assignmentdb/4-GraphEQ/java
-GraphEQ.java:45: error: cannot find symbol
-    bridges.setMap(WorldMap());
-                   ^
-  symbol:   method WorldMap()
-  location: class GraphEQ
-1 error
-could not compile java/ for assignment in ../assignmentdb/4-GraphEQ/java
 </code></pre>
 </div>
 <div class="success">
@@ -1989,7 +1982,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.733904228193569E12
+Data Access Took: 1.733924009796194E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2009,44 +2002,15 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Took: 1.73390433500889E12
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/31/bridges_testing
-
-
-Q41142
-Q55468
-Q60306
-Q157191
-Q176139
-Q310217
-Q443823
-Q446064
-Q539828
-Q722337
-Took: 1.73390434196197E12
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/31/bridges_testing
-
-
-Q60306
-Q157191
-Q176139
-Q310217
-Q443823
-Q446064
-Q539828
-Q722337
-Q1096611
-Q1339933
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1530)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1458)
+	at WikiDataActor.main(WikiDataActor.java:68)
+could not run java_answer for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
     
@@ -2467,23 +2431,23 @@ total vertices:22389
 Set size: 22389
 Grid
 ===grid stats===
-0)Source Point:-7.606335620035409,-40.02306877920812
-0)[ALG]Closest Point: -80.7434938,35.1315954
-0)[ALG]Min Dist:104.86785710850923
-0)[BFA]Closest Point: -80.7434938,35.1315954
-0)[BFA]Min Dist:104.86785710850923
+0)Source Point:-33.58425111669779,-58.34658986743901
+0)[ALG]Closest Point: -80.7475392,35.1288036
+0)[ALG]Min Dist:104.69968923889458
+0)[BFA]Closest Point: -80.7475392,35.1288036
+0)[BFA]Min Dist:104.69968923889458
 0)Difference:0.0
-Source Point:-79.5691541646456,35.268949105443184
-Source Point:-52.81270513954574,35.26028885043237
-Source Point:-28.956172399935717,35.19191120140707
-Source Point:-76.13967613514747,35.28502797805247
-Source Point:-66.94113035886053,35.21393356108146
-Source Point:-67.87589722072428,35.318511586363954
-Source Point:-18.153902081009022,35.16007008025911
-Source Point:-49.20081948430985,35.22064509836187
-Source Point:-19.399764448475302,35.269595089366106
-Source Point:-60.393274821262594,35.22771050022295
-num cells examined:11
+Source Point:-63.70229293729466,35.21481691785044
+Source Point:-70.17853947759895,35.13498551013693
+Source Point:-49.39148920302134,35.187758766211296
+Source Point:-37.23766071995319,35.22718699372811
+Source Point:-41.16450229906072,35.27126121346518
+Source Point:-46.55821301691214,35.132293019758855
+Source Point:-47.62658120975,35.144486140927725
+Source Point:-44.931719119602,35.19137665394417
+Source Point:-41.49765093029127,35.31151363537737
+Source Point:-66.83721422469617,35.152737713839564
+num cells examined:8
 
 Check Your Visualization at the following link:
 
@@ -3246,7 +3210,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.143
+Pi val: 3.1426
 
 Check Your Visualization at the following link:
 

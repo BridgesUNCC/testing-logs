@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Jan  2 11:10:32 AM EST 2025</p>
+	<p>Running at Thu Jan  2 04:33:14 PM EST 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -678,6 +678,15 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
+  <div id="summarytut_us_map_overlay.java" class="failure">
+    <h2><a href="java_testing_logs.html#javalogtut_us_map_overlay.java">Test tut_us_map_overlay.java</a> </h2>
+    <p>
+      <ul>
+        <li> Build Test : <a href="java_testing_logs.html#javalogtut_us_map_overlay.java-buildtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogtut_us_map_overlay.java-runtest">error</a></li>
+      </ul>
+    </p>
+  </div>
   <div id="summarytut_us_map_p1.java" class="success">
     <h2><a href="java_testing_logs.html#javalogtut_us_map_p1.java">Test tut_us_map_p1.java</a> </h2>
     <p>
@@ -1226,10 +1235,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.2
-	Date:Jan 02 2025  15:43:08.306 UTC
-	Location: 13 km NNW of Sand Springs, Texas
-	Lat/Long:32.396,-101.408
+	Magnitude:1.6
+	Date:Jan 02 2025  21:19:34.587 UTC
+	Location: 35 km NNW of Valdez, Alaska
+	Lat/Long:61.4262,-146.5865
 </code></pre>
 </div>
     
@@ -1286,10 +1295,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Remember Me
-PlayStation 3
-5.9
-[Action, Adventure]
+<pre><code>Tetris Worlds
+PC
+5.7
+[Puzzle]
 </code></pre>
 </div>
     
@@ -1423,8 +1432,8 @@ could not run test gutenberg_snippet.java
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Leonard_Nimoy
-History_Happened_Here_(2001)
+<pre><code>Cary_Grant
+Suspicion_(1941)
 </code></pre>
 </div>
     
@@ -2109,11 +2118,17 @@ Text: Both are very similar metals, however when you scratch gold (of any karat)
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 134
-poem
-So now I have confessed that he is thine,
- And I my self am mortgaged to thy will,
- My self I'll for...
+<pre><code>The Two Gentlemen Of Verona
+play
+1595
+
+THE TWO GENTLEMEN OF VERONA
+
+by William Shakespeare
+
+DRAMATIS PERSONAE
+
+ DUKE OF MILAN, father...
 </code></pre>
 </div>
     
@@ -2849,13 +2864,35 @@ http://bridges-cs.herokuapp.com/assignments/2072/bridges_testing
 <h3 id="javalogtut_us_cities_snippet.java-runtest">Run Test for test tut_us_cities_snippet.java</h3>
 <pre><code>Upto 25 cities in North Carolina with population between 200K and 1M
 US Cities Retrieved
-	Charlotte, NC:  Population: 874579, Elevation: 229, Lat/Long: 35.22709,-80.84313
 	Durham, NC:  Population: 257636, Elevation: 123, Lat/Long: 35.99403,-78.89862
+	Charlotte, NC:  Population: 874579, Elevation: 229, Lat/Long: 35.22709,-80.84313
 	Fayetteville, NC:  Population: 201963, Elevation: 29, Lat/Long: 35.05266,-78.87836
-	Greensboro, NC:  Population: 285342, Elevation: 266, Lat/Long: 36.07264,-79.79198
-	Raleigh, NC:  Population: 451066, Elevation: 96, Lat/Long: 35.7721,-78.63861
-	West Raleigh, NC:  Population: 338759, Elevation: 122, Lat/Long: 35.78682,-78.66389
 	Winston-Salem, NC:  Population: 241218, Elevation: 293, Lat/Long: 36.09986,-80.24422
+	Greensboro, NC:  Population: 285342, Elevation: 266, Lat/Long: 36.07264,-79.79198
+	West Raleigh, NC:  Population: 338759, Elevation: 122, Lat/Long: 35.78682,-78.66389
+	Raleigh, NC:  Population: 451066, Elevation: 96, Lat/Long: 35.7721,-78.63861
+</code></pre>
+</div>
+    
+    </div>
+    <div id="javalogtut_us_map_overlay.java" class="logdetails">
+      <h2>Test tut_us_map_overlay.java full log</h2>
+    
+<div class="failure">
+<h3 id="javalogtut_us_map_overlay.java-buildtest">Build Test for test tut_us_map_overlay.java</h3>
+<pre><code>Compiling test tut_us_map_overlay.java
+tut_us_map_overlay.java:17: error: class tut_us_map_p3 is public, should be declared in a file named tut_us_map_p3.java
+public class tut_us_map_p3 {
+       ^
+1 error
+could not compile java_answer/ for assignment in
+</code></pre>
+</div>
+<div class="failure">
+<h3 id="javalogtut_us_map_overlay.java-runtest">Run Test for test tut_us_map_overlay.java</h3>
+<pre><code>Error: Could not find or load main class tut_us_map_overlay
+Caused by: java.lang.ClassNotFoundException: tut_us_map_overlay
+could not run test tut_us_map_overlay.java
 </code></pre>
 </div>
     
@@ -2873,7 +2910,7 @@ US Cities Retrieved
 <pre><code>
 Check Your Visualization at the following link:
 
-http://bridges-cs.herokuapp.com/assignments/2074/bridges_testing
+http://bridges-cs.herokuapp.com/assignments/2075/bridges_testing
 
 
 </code></pre>
@@ -2893,7 +2930,7 @@ http://bridges-cs.herokuapp.com/assignments/2074/bridges_testing
 <pre><code>
 Check Your Visualization at the following link:
 
-http://bridges-cs.herokuapp.com/assignments/2075/bridges_testing
+http://bridges-cs.herokuapp.com/assignments/2076/bridges_testing
 
 
 </code></pre>
@@ -2913,7 +2950,7 @@ http://bridges-cs.herokuapp.com/assignments/2075/bridges_testing
 <pre><code>
 Check Your Visualization at the following link:
 
-http://bridges-cs.herokuapp.com/assignments/2076/bridges_testing
+http://bridges-cs.herokuapp.com/assignments/2077/bridges_testing
 
 
 </code></pre>
@@ -2932,19 +2969,19 @@ http://bridges-cs.herokuapp.com/assignments/2076/bridges_testing
 <h3 id="javalogus_cities_snippet.java-runtest">Run Test for test us_cities_snippet.java</h3>
 <pre><code>Testing 'limit = 25', 'population = 200000' and 'lat/long'  attribute..got 13 cities
 US Cities Retrieved
-	Charlotte, NC:  Population: 874579, Elevation: 229, Lat/Long: 35.22709,-80.84313
-	Cary, NC:  Population: 159769, Elevation: 152, Lat/Long: 35.79154,-78.78112
 	Durham, NC:  Population: 257636, Elevation: 123, Lat/Long: 35.99403,-78.89862
-	Fayetteville, NC:  Population: 201963, Elevation: 29, Lat/Long: 35.05266,-78.87836
-	Greensboro, NC:  Population: 285342, Elevation: 266, Lat/Long: 36.07264,-79.79198
 	High Point, NC:  Population: 110268, Elevation: 281, Lat/Long: 35.95569,-80.00532
-	Raleigh, NC:  Population: 451066, Elevation: 96, Lat/Long: 35.7721,-78.63861
-	West Raleigh, NC:  Population: 338759, Elevation: 122, Lat/Long: 35.78682,-78.66389
+	Cary, NC:  Population: 159769, Elevation: 152, Lat/Long: 35.79154,-78.78112
+	Charlotte, NC:  Population: 874579, Elevation: 229, Lat/Long: 35.22709,-80.84313
 	Wilmington, NC:  Population: 115933, Elevation: 9, Lat/Long: 34.22573,-77.94471
+	Fayetteville, NC:  Population: 201963, Elevation: 29, Lat/Long: 35.05266,-78.87836
 	Winston-Salem, NC:  Population: 241218, Elevation: 293, Lat/Long: 36.09986,-80.24422
-	Knoxville, TN:  Population: 185291, Elevation: 276, Lat/Long: 35.96064,-83.92074
-	Chattanooga, TN:  Population: 176588, Elevation: 206, Lat/Long: 35.04563,-85.30968
+	Greensboro, NC:  Population: 285342, Elevation: 266, Lat/Long: 36.07264,-79.79198
+	West Raleigh, NC:  Population: 338759, Elevation: 122, Lat/Long: 35.78682,-78.66389
+	Raleigh, NC:  Population: 451066, Elevation: 96, Lat/Long: 35.7721,-78.63861
 	East Chattanooga, TN:  Population: 154024, Elevation: 208, Lat/Long: 35.06535,-85.24912
+	Chattanooga, TN:  Population: 176588, Elevation: 206, Lat/Long: 35.04563,-85.30968
+	Knoxville, TN:  Population: 185291, Elevation: 276, Lat/Long: 35.96064,-83.92074
 </code></pre>
 </div>
     
@@ -2962,7 +2999,7 @@ US Cities Retrieved
 <pre><code>
 Check Your Visualization at the following link:
 
-http://bridges-cs.herokuapp.com/assignments/2078/bridges_testing
+http://bridges-cs.herokuapp.com/assignments/2079/bridges_testing
 
 
 </code></pre>
@@ -2982,16 +3019,16 @@ http://bridges-cs.herokuapp.com/assignments/2078/bridges_testing
 <pre><code>Data Records in 1955: 4643
 
 Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q3172585 &quot;Jean Hébey&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q102551 &quot;Ernest Borgnine&quot;
 
 Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q3173436 &quot;Jean Martinelli&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q180251 &quot;Paddy Chayefsky&quot;
 
 Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q3425870 &quot;René Blancard&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q266416 &quot;Betsy Blair&quot;
 
 </code></pre>
 </div>
@@ -3010,7 +3047,7 @@ Actor-Movie Data:
 <pre><code>
 Check Your Visualization at the following link:
 
-http://bridges-cs.herokuapp.com/assignments/2080/bridges_testing
+http://bridges-cs.herokuapp.com/assignments/2081/bridges_testing
 
 
 </code></pre>
@@ -3030,7 +3067,7 @@ http://bridges-cs.herokuapp.com/assignments/2080/bridges_testing
 <pre><code>
 Check Your Visualization at the following link:
 
-http://bridges-cs.herokuapp.com/assignments/2081/bridges_testing
+http://bridges-cs.herokuapp.com/assignments/2082/bridges_testing
 
 
 </code></pre>

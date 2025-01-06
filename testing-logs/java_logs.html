@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sun Jan  5 09:26:48 PM EST 2025</p>
+	<p>Running at Mon Jan  6 12:40:30 AM EST 2025</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -242,13 +242,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary23" class="success">
+  <div id="summary23" class="failure">
     <h2><a href="java_logs.html#javalog23">Assignment 23</a> </h2>
     <p>
       <ul>
-        <li> Build Scaffold : <a href="java_logs.html#javalog23-buildscaffold">success</a></li>
-        <li> Build Answer : <a href="java_logs.html#javalog23-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog23-runanswer">success</a></li>
+        <li> Build Scaffold : <a href="java_logs.html#javalog23-buildscaffold">error</a></li>
+        <li> Build Answer : <a href="java_logs.html#javalog23-buildanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog23-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -1571,26 +1571,315 @@ Shutting down ...
     <div id="javalog23" class="logdetails">
       <h2>Assignment 23 full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="javalog23-buildscaffold">Build Scaffold for Assignment 23</h3>
 <pre><code>Compiling java/ for assignment in ../assignmentdb/23-MountainPaths/java
+mount_path.java:1: error: package bridges.connect does not exist
+import bridges.connect.Bridges;
+                      ^
+mount_path.java:2: error: package bridges.base does not exist
+import bridges.base.Color;
+                   ^
+mount_path.java:3: error: package bridges.base does not exist
+import bridges.base.ColorGrid;
+                   ^
+mount_path.java:4: error: package bridges.connect does not exist
+import bridges.connect.DataSource;
+                      ^
+mount_path.java:46: error: cannot find symbol
+  public static ColorGrid getImage(ElevationData elev) {
+                                   ^
+  symbol:   class ElevationData
+  location: class mount_path
+mount_path.java:46: error: cannot find symbol
+  public static ColorGrid getImage(ElevationData elev) {
+                ^
+  symbol:   class ColorGrid
+  location: class mount_path
+mount_path.java:63: error: cannot find symbol
+  public static void findPath(ElevationData elev, int startRow, ColorGrid cg) {
+                              ^
+  symbol:   class ElevationData
+  location: class mount_path
+mount_path.java:63: error: cannot find symbol
+  public static void findPath(ElevationData elev, int startRow, ColorGrid cg) {
+                                                                ^
+  symbol:   class ColorGrid
+  location: class mount_path
+mount_path.java:5: error: package bridges.data_src_dependent does not exist
+import bridges.data_src_dependent.*;
+^
+mount_path.java:17: error: cannot find symbol
+    Bridges bridges = new Bridges(23, &quot;BRIDGES_USER_ID&quot;, &quot;BRIDGES_API_KEY&quot;);
+    ^
+  symbol:   class Bridges
+  location: class mount_path
+mount_path.java:17: error: cannot find symbol
+    Bridges bridges = new Bridges(23, &quot;BRIDGES_USER_ID&quot;, &quot;BRIDGES_API_KEY&quot;);
+                          ^
+  symbol:   class Bridges
+  location: class mount_path
+mount_path.java:20: error: cannot find symbol
+    DataSource ds = bridges.getDataSource();
+    ^
+  symbol:   class DataSource
+  location: class mount_path
+mount_path.java:24: error: cannot find symbol
+    ElevationData ele_data = ds.getElevationData(6.02, 44.10, 
+    ^
+  symbol:   class ElevationData
+  location: class mount_path
+mount_path.java:33: error: cannot find symbol
+    ColorGrid cg = getImage(ele_data);
+    ^
+  symbol:   class ColorGrid
+  location: class mount_path
+mount_path.java:48: error: cannot find symbol
+      ColorGrid cg = null;
+      ^
+  symbol:   class ColorGrid
+  location: class mount_path
+15 errors
+could not compile java/ for assignment in ../assignmentdb/23-MountainPaths/java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog23-buildanswer">Build Answer for Assignment 23</h3>
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/23-MountainPaths/java_answer
+mount_path.java:1: error: package bridges.connect does not exist
+import bridges.connect.Bridges;
+                      ^
+mount_path.java:2: error: package bridges.base does not exist
+import bridges.base.Color;
+                   ^
+mount_path.java:3: error: package bridges.base does not exist
+import bridges.base.ColorGrid;
+                   ^
+mount_path.java:4: error: package bridges.connect does not exist
+import bridges.connect.DataSource;
+                      ^
+mount_path.java:46: error: cannot find symbol
+  public static ColorGrid getImage(ElevationData elev) {
+                                   ^
+  symbol:   class ElevationData
+  location: class mount_path
+mount_path.java:46: error: cannot find symbol
+  public static ColorGrid getImage(ElevationData elev) {
+                ^
+  symbol:   class ColorGrid
+  location: class mount_path
+mount_path.java:68: error: cannot find symbol
+  public static void findPath(ElevationData elev, int startRow, ColorGrid cg) {
+                              ^
+  symbol:   class ElevationData
+  location: class mount_path
+mount_path.java:68: error: cannot find symbol
+  public static void findPath(ElevationData elev, int startRow, ColorGrid cg) {
+                                                                ^
+  symbol:   class ColorGrid
+  location: class mount_path
+mount_path.java:5: error: package bridges.data_src_dependent does not exist
+import bridges.data_src_dependent.*;
+^
+mount_path_dp.java:1: error: package bridges.connect does not exist
+import bridges.connect.Bridges;
+                      ^
+mount_path_dp.java:2: error: package bridges.base does not exist
+import bridges.base.Color;
+                   ^
+mount_path_dp.java:3: error: package bridges.base does not exist
+import bridges.base.ColorGrid;
+                   ^
+mount_path_dp.java:4: error: package bridges.connect does not exist
+import bridges.connect.DataSource;
+                      ^
+mount_path_dp.java:6: error: package bridges.base does not exist
+import bridges.base.Array2D;
+                   ^
+mount_path_dp.java:51: error: cannot find symbol
+    public static ColorGrid getImage(ElevationData elev) {
+                                     ^
+  symbol:   class ElevationData
+  location: class mount_path_dp
+mount_path_dp.java:51: error: cannot find symbol
+    public static ColorGrid getImage(ElevationData elev) {
+                  ^
+  symbol:   class ColorGrid
+  location: class mount_path_dp
+mount_path_dp.java:67: error: cannot find symbol
+    public static Array2D&lt;Integer&gt; style(Array2D&lt;Integer&gt; arr) {
+                                         ^
+  symbol:   class Array2D
+  location: class mount_path_dp
+mount_path_dp.java:67: error: cannot find symbol
+    public static Array2D&lt;Integer&gt; style(Array2D&lt;Integer&gt; arr) {
+                  ^
+  symbol:   class Array2D
+  location: class mount_path_dp
+mount_path_dp.java:104: error: cannot find symbol
+    public static void fillDP(ElevationData elev,
+                              ^
+  symbol:   class ElevationData
+  location: class mount_path_dp
+mount_path_dp.java:105: error: cannot find symbol
+			      Array2D&lt;Integer&gt; dp_table,
+			      ^
+  symbol:   class Array2D
+  location: class mount_path_dp
+mount_path_dp.java:106: error: cannot find symbol
+			      Array2D&lt; Integer&gt; decision_table) {
+			      ^
+  symbol:   class Array2D
+  location: class mount_path_dp
+mount_path_dp.java:141: error: cannot find symbol
+    public static void findPath(ElevationData elev, int startRow, ColorGrid cg,
+                                ^
+  symbol:   class ElevationData
+  location: class mount_path_dp
+mount_path_dp.java:141: error: cannot find symbol
+    public static void findPath(ElevationData elev, int startRow, ColorGrid cg,
+                                                                  ^
+  symbol:   class ColorGrid
+  location: class mount_path_dp
+mount_path_dp.java:142: error: cannot find symbol
+				Array2D&lt;Integer&gt; dp_table,
+				^
+  symbol:   class Array2D
+  location: class mount_path_dp
+mount_path_dp.java:143: error: cannot find symbol
+				Array2D&lt; Integer&gt; decision_table) {
+				^
+  symbol:   class Array2D
+  location: class mount_path_dp
+mount_path_dp.java:5: error: package bridges.data_src_dependent does not exist
+import bridges.data_src_dependent.*;
+^
+mount_path.java:17: error: cannot find symbol
+    Bridges bridges = new Bridges(23, &quot;BRIDGES_USER_ID&quot;, &quot;BRIDGES_API_KEY&quot;);
+    ^
+  symbol:   class Bridges
+  location: class mount_path
+mount_path.java:17: error: cannot find symbol
+    Bridges bridges = new Bridges(23, &quot;BRIDGES_USER_ID&quot;, &quot;BRIDGES_API_KEY&quot;);
+                          ^
+  symbol:   class Bridges
+  location: class mount_path
+mount_path.java:20: error: cannot find symbol
+    DataSource ds = bridges.getDataSource();
+    ^
+  symbol:   class DataSource
+  location: class mount_path
+mount_path.java:24: error: cannot find symbol
+    ElevationData ele_data = ds.getElevationData(6.02, 44.10, 
+    ^
+  symbol:   class ElevationData
+  location: class mount_path
+mount_path.java:33: error: cannot find symbol
+    ColorGrid cg = getImage(ele_data);
+    ^
+  symbol:   class ColorGrid
+  location: class mount_path
+mount_path.java:48: error: cannot find symbol
+    ColorGrid cg = new ColorGrid(elev.getRows(), elev.getCols());
+    ^
+  symbol:   class ColorGrid
+  location: class mount_path
+mount_path.java:48: error: cannot find symbol
+    ColorGrid cg = new ColorGrid(elev.getRows(), elev.getCols());
+                       ^
+  symbol:   class ColorGrid
+  location: class mount_path
+mount_path.java:58: error: cannot find symbol
+	  cg.set(j, k, new Color(gray, gray, gray));
+	                   ^
+  symbol:   class Color
+  location: class mount_path
+mount_path.java:98: error: cannot find symbol
+      cg.set(row, col, new Color(255,0,255));
+                           ^
+  symbol:   class Color
+  location: class mount_path
+mount_path_dp.java:18: error: cannot find symbol
+	Bridges bridges = new Bridges(23, &quot;BRIDGES_USER_ID&quot;, &quot;BRIDGES_API_KEY&quot;);
+	^
+  symbol:   class Bridges
+  location: class mount_path_dp
+mount_path_dp.java:18: error: cannot find symbol
+	Bridges bridges = new Bridges(23, &quot;BRIDGES_USER_ID&quot;, &quot;BRIDGES_API_KEY&quot;);
+	                      ^
+  symbol:   class Bridges
+  location: class mount_path_dp
+mount_path_dp.java:22: error: cannot find symbol
+	DataSource ds = bridges.getDataSource();
+	^
+  symbol:   class DataSource
+  location: class mount_path_dp
+mount_path_dp.java:29: error: cannot find symbol
+	ElevationData ele_data = ds.getElevationData(35.58, -117.46, 36.8, -115.67, 0.02);
+	^
+  symbol:   class ElevationData
+  location: class mount_path_dp
+mount_path_dp.java:32: error: cannot find symbol
+	ColorGrid cg = getImage(ele_data);
+	^
+  symbol:   class ColorGrid
+  location: class mount_path_dp
+mount_path_dp.java:34: error: cannot find symbol
+	Array2D&lt;Integer&gt; dp_table = new Array2D&lt;Integer&gt; (ele_data.getRows(), ele_data.getCols());
+	^
+  symbol:   class Array2D
+  location: class mount_path_dp
+mount_path_dp.java:34: error: cannot find symbol
+	Array2D&lt;Integer&gt; dp_table = new Array2D&lt;Integer&gt; (ele_data.getRows(), ele_data.getCols());
+	                                ^
+  symbol:   class Array2D
+  location: class mount_path_dp
+mount_path_dp.java:35: error: cannot find symbol
+	Array2D&lt;Integer&gt; decision_table = new Array2D&lt;Integer&gt; (ele_data.getRows(), ele_data.getCols()); // decision is -1, 0, or +1
+	^
+  symbol:   class Array2D
+  location: class mount_path_dp
+mount_path_dp.java:35: error: cannot find symbol
+	Array2D&lt;Integer&gt; decision_table = new Array2D&lt;Integer&gt; (ele_data.getRows(), ele_data.getCols()); // decision is -1, 0, or +1
+	                                      ^
+  symbol:   class Array2D
+  location: class mount_path_dp
+mount_path_dp.java:52: error: cannot find symbol
+	ColorGrid cg = new ColorGrid(elev.getRows(), elev.getCols());
+	^
+  symbol:   class ColorGrid
+  location: class mount_path_dp
+mount_path_dp.java:52: error: cannot find symbol
+	ColorGrid cg = new ColorGrid(elev.getRows(), elev.getCols());
+	                   ^
+  symbol:   class ColorGrid
+  location: class mount_path_dp
+mount_path_dp.java:62: error: cannot find symbol
+		cg.set(j, k, new Color(gray, gray, gray));
+		                 ^
+  symbol:   class Color
+  location: class mount_path_dp
+mount_path_dp.java:92: error: cannot find symbol
+		arr.getElement(row, col).setColor(new Color(intensity, intensity, intensity));
+		                                      ^
+  symbol:   class Color
+  location: class mount_path_dp
+mount_path_dp.java:155: error: cannot find symbol
+	    cg.set(row, col, new Color(255,0,255));
+	                         ^
+  symbol:   class Color
+  location: class mount_path_dp
+49 errors
+could not compile java_answer/ for assignment in ../assignmentdb/23-MountainPaths/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog23-runanswer">Run Answer for Assignment 23</h3>
 <pre><code>Guessing mount_path.java is the right java file where main is
 
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/23/bridges_testing
-
-
+Error: Could not find or load main class mount_path
+Caused by: java.lang.ClassNotFoundException: mount_path
+could not run java_answer for assignment in ../assignmentdb/23-MountainPaths/java_answer
 </code></pre>
 </div>
     
@@ -1886,6 +2175,8 @@ http://bridges-games.herokuapp.com/assignments/27/bridges_testing
 
 
 Setting framelimit to 10!
+[Ljava.lang.Object;@2976bbe7
+The server closed the connection.
 Shutting down ...
 </code></pre>
 </div>
@@ -1982,7 +2273,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.734395145341446E12
+Data Access Took: 1.734406771515699E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2006,40 +2297,40 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Took: 1.734395309669759E12
+Took: 1.734406926426828E12
 
 Check Your Visualization at the following link:
 
 http://bridges-cs.herokuapp.com/assignments/31/bridges_testing
 
 
-Q458459
-Q462118
-Q725931
-Q1918910
+Q19155
+Q97609
+Q100258
+Q123351
+Q124427
+Q181899
+Q313047
+Q370026
+Q499097
+Q741184
+Took: 1.734406955394039E12
+
+Check Your Visualization at the following link:
+
+http://bridges-cs.herokuapp.com/assignments/31/bridges_testing
+
+
+Q3174565
+Q3479658
+Q3938408
+Q20676051
 Q60306
 Q157191
 Q176139
 Q310217
 Q443823
 Q446064
-Took: 1.734395317948639E12
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/31/bridges_testing
-
-
-Q310217
-Q443823
-Q446064
-Q539828
-Q722337
-Q1096611
-Q1339933
-Q1395882
-Q1849086
-Q2741618
 </code></pre>
 </div>
     
@@ -2392,6 +2683,8 @@ http://bridges-games.herokuapp.com/assignments/41/bridges_testing
 
 
 Setting framelimit to 10!
+[Ljava.lang.Object;@183423e7
+The server closed the connection.
 Shutting down ...
 </code></pre>
 </div>
@@ -2447,23 +2740,23 @@ total vertices:22389
 Set size: 22389
 Grid
 ===grid stats===
-0)Source Point:-57.0488242779484,-9.699307957325985
-0)[ALG]Closest Point: -80.7475392,35.1288036
-0)[ALG]Min Dist:50.70688981541596
-0)[BFA]Closest Point: -80.7475392,35.1288036
-0)[BFA]Min Dist:50.70688981541596
+0)Source Point:-18.88530458561778,-38.66595177924198
+0)[ALG]Closest Point: -80.7434938,35.1315954
+0)[ALG]Min Dist:96.29389151215541
+0)[BFA]Closest Point: -80.7434938,35.1315954
+0)[BFA]Min Dist:96.29389151215541
 0)Difference:0.0
-Source Point:-38.54359538062695,35.21823465529292
-Source Point:-18.90449601579816,35.27945464574329
-Source Point:-48.47810048439226,35.303473298211436
-Source Point:-76.50202598433853,35.31560900228833
-Source Point:-1.4278636811907433,35.215301474956426
-Source Point:-71.33591187741328,35.20021859982462
-Source Point:-56.95157192737535,35.22129276612252
-Source Point:-28.38774483625869,35.174517197905494
-Source Point:-12.192715451272662,35.30758292567328
-Source Point:-15.482191255558078,35.29282058511851
-num cells examined:8
+Source Point:-29.244351040388025,35.286485234212556
+Source Point:-41.586689318461964,35.20905092896341
+Source Point:-18.099620472770837,35.14539972834285
+Source Point:-62.77049226195447,35.23213179126766
+Source Point:-70.8439720420384,35.29400500766398
+Source Point:-28.546933333305255,35.20570534767348
+Source Point:-1.010264886355941,35.13114304991887
+Source Point:-24.411810518923232,35.247972446668236
+Source Point:-76.28111961831884,35.28051568315863
+Source Point:-38.184595296022536,35.20040661705835
+num cells examined:11
 
 Check Your Visualization at the following link:
 
@@ -3212,7 +3505,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.14768
+Pi val: 3.14212
 
 Check Your Visualization at the following link:
 

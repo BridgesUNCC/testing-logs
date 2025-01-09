@@ -11,24 +11,24 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Wed Jan  8 05:26:31 PM EST 2025</p>
-  <div id="summary0" class="success">
+	<p>Running at Wed Jan  8 08:53:15 PM EST 2025</p>
+  <div id="summary0" class="failure">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog0-buildscaffold">success</a></li>
-        <li> Build Answer : <a href="java_logs.html#javalog0-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog0-runanswer">success</a></li>
+        <li> Build Answer : <a href="java_logs.html#javalog0-buildanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog0-runanswer">error</a></li>
       </ul>
     </p>
   </div>
-  <div id="summary1" class="success">
+  <div id="summary1" class="failure">
     <h2><a href="java_logs.html#javalog1">Assignment 1</a> </h2>
     <p>
       <ul>
-        <li> Build Scaffold : <a href="java_logs.html#javalog1-buildscaffold">success</a></li>
-        <li> Build Answer : <a href="java_logs.html#javalog1-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog1-runanswer">success</a></li>
+        <li> Build Scaffold : <a href="java_logs.html#javalog1-buildscaffold">error</a></li>
+        <li> Build Answer : <a href="java_logs.html#javalog1-buildanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog1-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -880,18 +880,49 @@ background-color: springgreen;
 <pre><code>Compiling java/ for assignment in ../assignmentdb/0-Setup/java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog0-buildanswer">Build Answer for Assignment 0</h3>
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/0-Setup/java_answer
+Setup.java:1: error: package bridges.connect does not exist
+import bridges.connect.Bridges;
+                      ^
+Setup.java:2: error: package bridges.base does not exist
+import bridges.base.Array1D;
+                   ^
+Setup.java:3: error: package bridges.base does not exist
+import bridges.base.Element;
+                   ^
+Setup.java:9: error: cannot find symbol
+    Bridges bridges = new Bridges(0, &quot;BRIDGES_USER_ID&quot;, &quot;BRIDGES_API_KEY&quot;);
+    ^
+  symbol:   class Bridges
+  location: class Setup
+Setup.java:9: error: cannot find symbol
+    Bridges bridges = new Bridges(0, &quot;BRIDGES_USER_ID&quot;, &quot;BRIDGES_API_KEY&quot;);
+                          ^
+  symbol:   class Bridges
+  location: class Setup
+Setup.java:17: error: cannot find symbol
+    Array1D&lt;Integer&gt; arr = new Array1D&lt;Integer&gt; (arraySize);
+    ^
+  symbol:   class Array1D
+  location: class Setup
+Setup.java:17: error: cannot find symbol
+    Array1D&lt;Integer&gt; arr = new Array1D&lt;Integer&gt; (arraySize);
+                               ^
+  symbol:   class Array1D
+  location: class Setup
+7 errors
+could not compile java_answer/ for assignment in ../assignmentdb/0-Setup/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog0-runanswer">Run Answer for Assignment 0</h3>
 <pre><code>Guessing Setup.java is the right java file where main is
 
-Server returned error response: HTTP 413 while processing the request POST http://bridges-cs.herokuapp.com/assignments/0.00?apikey=1321549621122&amp;username=bridges_testing HTTP/1.1
-There was a problem sending the visualization representation to the server. 
-Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
+Error: Could not find or load main class Setup
+Caused by: java.lang.ClassNotFoundException: Setup
+could not run java_answer for assignment in ../assignmentdb/0-Setup/java_answer
 </code></pre>
 </div>
     
@@ -899,26 +930,121 @@ Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of
     <div id="javalog1" class="logdetails">
       <h2>Assignment 1 full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="javalog1-buildscaffold">Build Scaffold for Assignment 1</h3>
 <pre><code>Compiling java/ for assignment in ../assignmentdb/1-ListIMDB/java
+ListIMDB.java:4: error: package bridges.connect does not exist
+import bridges.connect.Bridges;
+                      ^
+ListIMDB.java:5: error: package bridges.base does not exist
+import bridges.base.SLelement;
+                   ^
+ListIMDB.java:6: error: package bridges.data_src_dependent does not exist
+import bridges.data_src_dependent.ActorMovieIMDB;
+                                 ^
+ListIMDB.java:7: error: package bridges.connect does not exist
+import bridges.connect.DataSource;
+                      ^
+ListIMDB.java:17: error: cannot find symbol
+    Bridges bridges = new Bridges(1, &quot;BRIDGES_USER_ID&quot;, &quot;BRIDGES_API_KEY&quot;);
+    ^
+  symbol:   class Bridges
+  location: class ListIMDB
+ListIMDB.java:17: error: cannot find symbol
+    Bridges bridges = new Bridges(1, &quot;BRIDGES_USER_ID&quot;, &quot;BRIDGES_API_KEY&quot;);
+                          ^
+  symbol:   class Bridges
+  location: class ListIMDB
+ListIMDB.java:39: error: cannot find symbol
+    SLelement&lt;ActorMovieIMDB&gt; head = null;
+    ^
+  symbol:   class SLelement
+  location: class ListIMDB
+ListIMDB.java:39: error: cannot find symbol
+    SLelement&lt;ActorMovieIMDB&gt; head = null;
+              ^
+  symbol:   class ActorMovieIMDB
+  location: class ListIMDB
+8 errors
+could not compile java/ for assignment in ../assignmentdb/1-ListIMDB/java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog1-buildanswer">Build Answer for Assignment 1</h3>
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/1-ListIMDB/java_answer
+ListIMDB.java:4: error: package bridges.connect does not exist
+import bridges.connect.Bridges;
+                      ^
+ListIMDB.java:5: error: package bridges.base does not exist
+import bridges.base.SLelement;
+                   ^
+ListIMDB.java:6: error: package bridges.data_src_dependent does not exist
+import bridges.data_src_dependent.ActorMovieIMDB;
+                                 ^
+ListIMDB.java:7: error: package bridges.connect does not exist
+import bridges.connect.DataSource;
+                      ^
+ListIMDB.java:16: error: cannot find symbol
+     Bridges bridges = new Bridges(1, &quot;BRIDGES_USER_ID&quot;, &quot;BRIDGES_API_KEY&quot;);
+     ^
+  symbol:   class Bridges
+  location: class ListIMDB
+ListIMDB.java:16: error: cannot find symbol
+     Bridges bridges = new Bridges(1, &quot;BRIDGES_USER_ID&quot;, &quot;BRIDGES_API_KEY&quot;);
+                           ^
+  symbol:   class Bridges
+  location: class ListIMDB
+ListIMDB.java:24: error: cannot find symbol
+    DataSource ds = bridges.getDataSource();
+    ^
+  symbol:   class DataSource
+  location: class ListIMDB
+ListIMDB.java:27: error: cannot find symbol
+    List&lt;ActorMovieIMDB&gt; mylist = ds.getActorMovieIMDBData(1814);
+         ^
+  symbol:   class ActorMovieIMDB
+  location: class ListIMDB
+ListIMDB.java:31: error: cannot find symbol
+	SLelement&lt;ActorMovieIMDB&gt; prev = null, head = null;
+	^
+  symbol:   class SLelement
+  location: class ListIMDB
+ListIMDB.java:31: error: cannot find symbol
+	SLelement&lt;ActorMovieIMDB&gt; prev = null, head = null;
+	          ^
+  symbol:   class ActorMovieIMDB
+  location: class ListIMDB
+ListIMDB.java:37: error: cannot find symbol
+			SLelement&lt;ActorMovieIMDB&gt; element = new SLelement&lt;ActorMovieIMDB&gt;();
+			^
+  symbol:   class SLelement
+  location: class ListIMDB
+ListIMDB.java:37: error: cannot find symbol
+			SLelement&lt;ActorMovieIMDB&gt; element = new SLelement&lt;ActorMovieIMDB&gt;();
+			          ^
+  symbol:   class ActorMovieIMDB
+  location: class ListIMDB
+ListIMDB.java:37: error: cannot find symbol
+			SLelement&lt;ActorMovieIMDB&gt; element = new SLelement&lt;ActorMovieIMDB&gt;();
+			                                        ^
+  symbol:   class SLelement
+  location: class ListIMDB
+ListIMDB.java:37: error: cannot find symbol
+			SLelement&lt;ActorMovieIMDB&gt; element = new SLelement&lt;ActorMovieIMDB&gt;();
+			                                                  ^
+  symbol:   class ActorMovieIMDB
+  location: class ListIMDB
+14 errors
+could not compile java_answer/ for assignment in ../assignmentdb/1-ListIMDB/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog1-runanswer">Run Answer for Assignment 1</h3>
 <pre><code>Guessing ListIMDB.java is the right java file where main is
 
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/1/bridges_testing
-
-
+Error: Could not find or load main class ListIMDB
+Caused by: java.lang.ClassNotFoundException: ListIMDB
+could not run java_answer for assignment in ../assignmentdb/1-ListIMDB/java_answer
 </code></pre>
 </div>
     
@@ -1982,7 +2108,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.734639717823839E12
+Data Access Took: 1.734652090441459E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2006,24 +2132,10 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Took: 1.734639877910194E12
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/31/bridges_testing
-
-
-Q69444
-Q90045
-Q94992
-Q95691
-Q97622
-Q182450
-Q355125
-Q361461
-Q516630
-Q598939
-Alarm clock
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1535)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1463)
+	at WikiDataActor.main(WikiDataActor.java:68)
 could not run java_answer for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
@@ -2432,23 +2544,23 @@ total vertices:20821
 Set size: 20821
 Grid
 ===grid stats===
-0)Source Point:-15.77691603690645,-39.47369574538028
+0)Source Point:-38.6994834950106,-38.67624037549985
 0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:98.9630023380589
+0)[ALG]Min Dist:86.75759722775737
 0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:98.9630023380589
+0)[BFA]Min Dist:86.75759722775737
 0)Difference:0.0
-Source Point:-71.76238748587592,40.71623481626581
-Source Point:-16.043468501798394,40.648893269581855
-Source Point:-31.706720284485023,40.669696850426185
-Source Point:-32.016010338172066,40.70798412752778
-Source Point:-54.21866980377659,40.61312790239302
-Source Point:-54.84807730335837,40.63750334665776
-Source Point:-7.778487948258004,40.744950035588666
-Source Point:-12.457418173592018,40.76183037490051
-Source Point:-47.209863638735825,40.66069660965353
-Source Point:-54.96792938751883,40.74788404036095
-num cells examined:5
+Source Point:-25.63468614361109,40.63625232488138
+Source Point:-34.24006088695588,40.77429217121009
+Source Point:-55.27984203922486,40.66012056483047
+Source Point:-11.80610375094983,40.71882678009051
+Source Point:-47.82287364891322,40.73605189417678
+Source Point:-59.4095155313934,40.79323506721324
+Source Point:-52.073260380642736,40.64291747284455
+Source Point:-38.971032459134285,40.658987979921484
+Source Point:-23.41516478559432,40.80143658990221
+Source Point:-8.780637151797862,40.616856115235
+num cells examined:10
 
 Check Your Visualization at the following link:
 
@@ -3197,7 +3309,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.14456
+Pi val: 3.1394
 
 Check Your Visualization at the following link:
 

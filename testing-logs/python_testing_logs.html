@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Wed Jan 29 09:12:10 AM EST 2025</p>
+	<p>Running at Wed Jan 29 01:13:10 PM EST 2025</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -172,11 +172,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarygame_snippet.py" class="success">
+  <div id="summarygame_snippet.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonloggame_snippet.py">Test game_snippet.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonloggame_snippet.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonloggame_snippet.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1301,7 +1301,7 @@ http://bridges-cs.herokuapp.com/assignments/3013/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7695c4fe23c0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7103d895fb00&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1443,10 +1443,10 @@ First 10 elevations:
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Magnitude: 1.57
-Date: 2025-01-29 13:40:25
-Location:2 km NNE of The Geysers, CA
-Lat/Long:38.796501159668,-122.747169494629
+Magnitude: 0.97
+Date: 2025-01-29 17:54:37
+Location:5 km SSW of Redlands, CA
+Lat/Long:34.0128333,-117.207
 </code></pre>
 </div>
     
@@ -1545,7 +1545,7 @@ http://bridges-cs.herokuapp.com/assignments/3018/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x75dbfde16030&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x75df7d4d20c0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1562,7 +1562,7 @@ client disconnect disconnected
     <div id="pythonloggame_snippet.py" class="logdetails">
       <h2>Test game_snippet.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonloggame_snippet.py-runtest">Run Test for test game_snippet.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1592,10 +1592,33 @@ client disconnect disconnected
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Glover
-Nintendo 64
-8.3
-['Platformer']
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
+    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/game_snippet.py&quot;, line 30, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/game_snippet.py&quot;, line 17, in main
+    my_list = get_game_data()
+              ^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 94, in get_game_data
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+could not run test game_snippet.py
 </code></pre>
 </div>
     
@@ -1903,8 +1926,8 @@ could not run test gutenberg_snippet.py
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-James_Earl_Jones
-Twister:_A_Musical_Catastrophe_(2000)
+Christina_Ricci
+Sleepy_Hollow_(1999)
 </code></pre>
 </div>
     
@@ -1942,7 +1965,7 @@ Twister:_A_Musical_Catastrophe_(2000)
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x785d97fbee40&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x77fba83f4170&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2095,7 +2118,7 @@ http://bridges-cs.herokuapp.com/assignments/3030/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x73bfa5d595e0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7675808e81a0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2390,13 +2413,11 @@ Cartesian Coordinate of first vertex: 834.4847597780021, -5147.953884206995
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Title: Costco's unionized workers vote to authorize nationwide strike
-Author: panda-rampage
-Score: 23606
-Comment Count: 1207
+Title: Trump withdraws from Paris climate agreement, again
+Author: AudibleNod
+Score: 31280
+Comment Count: 1453
 Subreddit: news
-Title: TikTok starts restoring service in the U.S. after shutting down over divest-or-ban law
-Title: Arvada pays $2 million to settle lawsuit after police officer killed pregnant woman
 Title: Elementary school teacher arrested after allegedly abusing student, giving birth to his child
 Title: As ceasefire takes hold, Hamas returns 3 Israeli hostages and Israel frees 90 Palestinian prisoners
 Title: Biden pardons Fauci and Milley in an effort to guard against potential 'revenge' by Trump
@@ -2405,6 +2426,8 @@ Title: Alabama and Mississippi will also honor Robert E. Lee on Martin Luther Ki
 Title: Child labor in slaughterhouses spotlighted by 3 settlements this week
 Title: Indigenous activist Leonard Peltier granted clemency by President Biden
 Title: Donald Trump officially sworn in as the 47th President of the United States, JD Vance as the 50th Vice-President
+Title: Costco's unionized workers vote to authorize nationwide strike
+Title: Trump administration canceling flights for nearly 1,660 Afghan refugees, say U.S official, advocate
 =====
 Available subreddits:
 gadgets
@@ -2455,20 +2478,9 @@ UpliftingNews
 InternetIsBeautiful
 science
 =====
-Title: Why does bleach on your skin make it feel slippery even after washing it?
-Author: Stobley_meow
-Score: 830
-Vote Ratio: 0.89
-Comment Count: 226
-Subreddit: askscience
-PostTime: 1712852217
-URL: https://www.reddit.com/r/askscience/comments/1c1j50g/why_does_bleach_on_your_skin_make_it_feel/
-Text: What is does the bleach do to your skin?
-
-
 Title: What is happening with our skin if something itches and why does it feel good if we scratch that spot?
 Author: g3RUDO
-Score: 556
+Score: 550
 Vote Ratio: 0.9
 Comment Count: 78
 Subreddit: askscience
@@ -2478,7 +2490,7 @@ Text:
 
 Title: Do all energy sources derive from gravity?
 Author: aggasalk
-Score: 125
+Score: 122
 Vote Ratio: 0.65
 Comment Count: 139
 Subreddit: askscience
@@ -2503,6 +2515,20 @@ I'm not trying to suggest something profound like &quot;is gravity the only real
 **edit 2**
 
 No one is talking about **entropy**. Am I getting at the fact (it is a fact, right?) that gravity is always reducing entropy, and that by 'releasing energy' we are simply increasing the entropy again? And that the other forces don't really have this kind of effect, of reducing entropy at macro scales? (I'm just making stuff up now).
+
+Title: How can an asteroid &quot;fall into&quot; a stable orbit? Doesn't that violate time-reversibility?
+Author: Lazy_and_Sad
+Score: 184
+Vote Ratio: 0.71
+Comment Count: 72
+Subreddit: askscience
+PostTime: 1712962805
+URL: https://www.reddit.com/r/askscience/comments/1c2myih/how_can_an_asteroid_fall_into_a_stable_orbit/
+Text: I heard that asteroids or dwarf planets can sometimes get &quot;caught&quot; by larger planets and become moons. But if the intuitions of orbital mechanics I got from playing Kerbal Space Program are correct, there's no way of approaching a body such that you immediately get an orbit. You can only get a fly-by and then reduce that into an orbit by accelerating retrograde.
+
+It also seems like it should violate time reversibility of classical physics. Imagine if an asteroid fell towards a planet with the right angle and velocity to get a stable elliptical orbit and then completes 5 laps around it. If we now suddenly and perfectly reversed its velocity, the asteroid should trace back the way it came from, right? So would it move back along the same ellipse 5 times in the opposite direction before suddenly being flung out into space, despite no other forces acting on it?
+
+It seems to me that if orbital mechanics are time-reversible, then if they are stable forwards in time, they must also be stable backwards in time. So how can stable orbits be created through mere encounters?
 
 </code></pre>
 </div>
@@ -2541,20 +2567,9 @@ No one is talking about **entropy**. Am I getting at the fact (it is a fact, rig
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Title: Why does bleach on your skin make it feel slippery even after washing it?
-Author: Stobley_meow
-Score: 830
-Vote Ratio: 0.89
-Comment Count: 226
-Subreddit: askscience
-PostTime: 1712852217
-URL: https://www.reddit.com/r/askscience/comments/1c1j50g/why_does_bleach_on_your_skin_make_it_feel/
-Text: What is does the bleach do to your skin?
-
-
 Title: What is happening with our skin if something itches and why does it feel good if we scratch that spot?
 Author: g3RUDO
-Score: 556
+Score: 550
 Vote Ratio: 0.9
 Comment Count: 78
 Subreddit: askscience
@@ -2564,7 +2579,7 @@ Text:
 
 Title: Do all energy sources derive from gravity?
 Author: aggasalk
-Score: 125
+Score: 122
 Vote Ratio: 0.65
 Comment Count: 139
 Subreddit: askscience
@@ -2589,6 +2604,20 @@ I'm not trying to suggest something profound like &quot;is gravity the only real
 **edit 2**
 
 No one is talking about **entropy**. Am I getting at the fact (it is a fact, right?) that gravity is always reducing entropy, and that by 'releasing energy' we are simply increasing the entropy again? And that the other forces don't really have this kind of effect, of reducing entropy at macro scales? (I'm just making stuff up now).
+
+Title: How can an asteroid &quot;fall into&quot; a stable orbit? Doesn't that violate time-reversibility?
+Author: Lazy_and_Sad
+Score: 184
+Vote Ratio: 0.71
+Comment Count: 72
+Subreddit: askscience
+PostTime: 1712962805
+URL: https://www.reddit.com/r/askscience/comments/1c2myih/how_can_an_asteroid_fall_into_a_stable_orbit/
+Text: I heard that asteroids or dwarf planets can sometimes get &quot;caught&quot; by larger planets and become moons. But if the intuitions of orbital mechanics I got from playing Kerbal Space Program are correct, there's no way of approaching a body such that you immediately get an orbit. You can only get a fly-by and then reduce that into an orbit by accelerating retrograde.
+
+It also seems like it should violate time reversibility of classical physics. Imagine if an asteroid fell towards a planet with the right angle and velocity to get a stable elliptical orbit and then completes 5 laps around it. If we now suddenly and perfectly reversed its velocity, the asteroid should trace back the way it came from, right? So would it move back along the same ellipse 5 times in the opposite direction before suddenly being flung out into space, despite no other forces acting on it?
+
+It seems to me that if orbital mechanics are time-reversible, then if they are stable forwards in time, they must also be stable backwards in time. So how can stable orbits be created through mere encounters?
 
 </code></pre>
 </div>
@@ -2627,11 +2656,11 @@ No one is talking about **entropy**. Am I getting at the fact (it is a fact, rig
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Sonnet 136
+Sonnet 122
 poem
-If thy soul check thee that I come so near,
- Swear to thy blind soul that I was thy 'Will',
- And wil
+Thy gift, thy tables, are within my brain
+ Full charactered with lasting memory,
+ Which shall above 
 </code></pre>
 </div>
     
@@ -4084,12 +4113,12 @@ http://bridges-cs.herokuapp.com/assignments/3068/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 Charlotte, NC: population: 874579, elevation: 229, lat/long: 35.22709,-80.84313
+Greensboro, NC: population: 285342, elevation: 266, lat/long: 36.07264,-79.79198
 Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
 Fayetteville, NC: population: 201963, elevation: 29, lat/long: 35.05266,-78.87836
-Greensboro, NC: population: 285342, elevation: 266, lat/long: 36.07264,-79.79198
 Raleigh, NC: population: 451066, elevation: 96, lat/long: 35.7721,-78.63861
-West Raleigh, NC: population: 338759, elevation: 122, lat/long: 35.78682,-78.66389
 Winston-Salem, NC: population: 241218, elevation: 293, lat/long: 36.09986,-80.24422
+West Raleigh, NC: population: 338759, elevation: 122, lat/long: 35.78682,-78.66389
 </code></pre>
 </div>
     
@@ -4128,34 +4157,34 @@ Winston-Salem, NC: population: 241218, elevation: 293, lat/long: 36.09986,-80.24
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 Charlotte, NC: population: 874579, elevation: 229, lat/long: 35.22709,-80.84313
+Greensboro, NC: population: 285342, elevation: 266, lat/long: 36.07264,-79.79198
 Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
 Fayetteville, NC: population: 201963, elevation: 29, lat/long: 35.05266,-78.87836
-Greensboro, NC: population: 285342, elevation: 266, lat/long: 36.07264,-79.79198
 Raleigh, NC: population: 451066, elevation: 96, lat/long: 35.7721,-78.63861
-West Raleigh, NC: population: 338759, elevation: 122, lat/long: 35.78682,-78.66389
 Winston-Salem, NC: population: 241218, elevation: 293, lat/long: 36.09986,-80.24422
+West Raleigh, NC: population: 338759, elevation: 122, lat/long: 35.78682,-78.66389
 
 Cities with negative elevation..
 
 Bradenton Beach, FL: population: 1171, elevation: -3, lat/long: 27.46698,-82.70399
-Timberlane, LA: population: 10243, elevation: -1, lat/long: 29.87743,-90.03202
 Terrytown, LA: population: 23319, elevation: -1, lat/long: 29.91021,-90.03257
+Timberlane, LA: population: 10243, elevation: -1, lat/long: 29.87743,-90.03202
 Calipatria, CA: population: 7424, elevation: -55, lat/long: 33.1256,-115.51415
 Brawley, CA: population: 25897, elevation: -34, lat/long: 32.97866,-115.53027
-Coachella, CA: population: 44635, elevation: -21, lat/long: 33.6803,-116.17389
 Heber, CA: population: 4275, elevation: -3, lat/long: 32.73089,-115.52972
-Desert Shores, CA: population: 1104, elevation: -60, lat/long: 33.4042,-116.03972
+Coachella, CA: population: 44635, elevation: -21, lat/long: 33.6803,-116.17389
 El Centro, CA: population: 43956, elevation: -12, lat/long: 32.792,-115.56305
-Holtville, CA: population: 6404, elevation: -3, lat/long: 32.81116,-115.38026
-Indio, CA: population: 87533, elevation: -4, lat/long: 33.7207,-116.21677
+Desert Shores, CA: population: 1104, elevation: -60, lat/long: 33.4042,-116.03972
 Niland, CA: population: 1006, elevation: -43, lat/long: 33.24004,-115.51888
 Imperial, CA: population: 17095, elevation: -18, lat/long: 32.84755,-115.56944
+Holtville, CA: population: 6404, elevation: -3, lat/long: 32.81116,-115.38026
+Indio, CA: population: 87533, elevation: -4, lat/long: 33.7207,-116.21677
 Mecca, CA: population: 8577, elevation: -57, lat/long: 33.57219,-116.0782
 Oasis, CA: population: 6890, elevation: -44, lat/long: 33.46586,-116.09889
-Salton City, CA: population: 3763, elevation: -38, lat/long: 33.29865,-115.95611
 Vista Santa Rosa, CA: population: 2926, elevation: -21, lat/long: 33.6278,-116.21806
 Seeley, CA: population: 1739, elevation: -11, lat/long: 32.79311,-115.69111
 Thermal, CA: population: 2865, elevation: -36, lat/long: 33.6403,-116.13945
+Salton City, CA: population: 3763, elevation: -38, lat/long: 33.29865,-115.95611
 Westmorland, CA: population: 2267, elevation: -50, lat/long: 33.03727,-115.62138
 </code></pre>
 </div>
@@ -4238,21 +4267,21 @@ http://bridges-cs.herokuapp.com/assignments/3071/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 wikidata-actormovie-1955-1955
-Data Records in 1955: 4684
+Data Records in 1955: 4679
 
 First 3 records:
 
 0)Actor-Movie Data:
-	Movie: Q73944, Two Tickets to Broadway
-	Actor: Q430625, Taylor Holmes
+	Movie: Q427534, The Court-Martial of Billy Mitchell
+	Actor: Q273215, Rod Steiger
 
 1)Actor-Movie Data:
-	Movie: Q73944, Two Tickets to Broadway
-	Actor: Q447891, Gloria DeHaven
+	Movie: Q427534, The Court-Martial of Billy Mitchell
+	Actor: Q346833, Ian Wolfe
 
 2)Actor-Movie Data:
-	Movie: Q73944, Two Tickets to Broadway
-	Actor: Q725874, Tony Martin
+	Movie: Q427534, The Court-Martial of Billy Mitchell
+	Actor: Q364135, Ralph Bellamy
 
 </code></pre>
 </div>

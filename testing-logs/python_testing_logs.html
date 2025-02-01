@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Fri Jan 31 05:12:42 PM EST 2025</p>
+	<p>Running at Fri Jan 31 09:12:10 PM EST 2025</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -124,11 +124,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarydisplay_game.py" class="success">
+  <div id="summarydisplay_game.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogdisplay_game.py">Test display_game.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogdisplay_game.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogdisplay_game.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -164,11 +164,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarygame_size_test.py" class="success">
+  <div id="summarygame_size_test.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonloggame_size_test.py">Test game_size_test.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonloggame_size_test.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonloggame_size_test.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -236,11 +236,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryinput_game.py" class="success">
+  <div id="summaryinput_game.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonloginput_game.py">Test input_game.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonloginput_game.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonloginput_game.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -260,11 +260,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryminimal_game.py" class="success">
+  <div id="summaryminimal_game.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogminimal_game.py">Test minimal_game.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogminimal_game.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogminimal_game.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1271,7 +1271,7 @@ http://bridges-cs.herokuapp.com/assignments/3013/bridges_testing
     <div id="pythonlogdisplay_game.py" class="logdetails">
       <h2>Test display_game.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogdisplay_game.py-runtest">Run Test for test display_game.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1301,16 +1301,22 @@ http://bridges-cs.herokuapp.com/assignments/3013/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7167c1ff6930&gt;
-limiting number of frame to 10
-
-Check Your Visualization at the following link:
-
-http://bridges-games.herokuapp.com/assignments/3014/bridges_testing
-
-
-frame limit of 10 frames reached
-client disconnect disconnected
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/display_game.py&quot;, line 34, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/display_game.py&quot;, line 29, in main
+    game = DisplayGame(int(args[0]), args[1], args[2])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/display_game.py&quot;, line 9, in __init__
+    super().__init__(assid, user_id,  api_key, 10, 10)
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/non_blocking_game.py&quot;, line 149, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 30, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 55, in game_base_init
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/socket_connection.py&quot;, line 28, in setup_connection
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_socketio-5.12.1-py3.12.egg/socketio/client.py&quot;, line 159, in connect
+    raise exceptions.ConnectionError(exc.args[0]) from None
+socketio.exceptions.ConnectionError: Connection error
+could not run test display_game.py
 </code></pre>
 </div>
     
@@ -1443,10 +1449,10 @@ First 10 elevations:
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Magnitude: 1.15
-Date: 2025-01-31 21:58:11
-Location:16 km WNW of Ocotillo, CA
-Lat/Long:32.8093338,-116.1443329
+Magnitude: 1.9
+Date: 2025-02-01 02:02:11
+Location:33 km SE of Mina, Nevada
+Lat/Long:38.1987,-117.8195
 </code></pre>
 </div>
     
@@ -1515,7 +1521,7 @@ http://bridges-cs.herokuapp.com/assignments/3018/bridges_testing
     <div id="pythonloggame_size_test.py" class="logdetails">
       <h2>Test game_size_test.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonloggame_size_test.py-runtest">Run Test for test game_size_test.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1545,16 +1551,22 @@ http://bridges-cs.herokuapp.com/assignments/3018/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x74c21dd6a3c0&gt;
-limiting number of frame to 10
-
-Check Your Visualization at the following link:
-
-http://bridges-games.herokuapp.com/assignments/3019/bridges_testing
-
-
-frame limit of 10 frames reached
-client disconnect disconnected
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/game_size_test.py&quot;, line 34, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/game_size_test.py&quot;, line 28, in main
+    game = GameSizeTest(int(args[0]), args[1], args[2])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/game_size_test.py&quot;, line 9, in __init__
+    super().__init__(assid, user_id,  api_key, 10, 20)
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/non_blocking_game.py&quot;, line 149, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 30, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 55, in game_base_init
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/socket_connection.py&quot;, line 28, in setup_connection
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_socketio-5.12.1-py3.12.egg/socketio/client.py&quot;, line 159, in connect
+    raise exceptions.ConnectionError(exc.args[0]) from None
+socketio.exceptions.ConnectionError: Connection error
+could not run test game_size_test.py
 </code></pre>
 </div>
     
@@ -1592,10 +1604,10 @@ client disconnect disconnected
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Ed, Edd n Eddy: The Mis-Edventures
-Xbox
-5.1
-['Action', 'Adventure']
+UberSoldier II
+PC
+6.8
+['Shooter']
 </code></pre>
 </div>
     
@@ -1903,8 +1915,8 @@ could not run test gutenberg_snippet.py
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Adam_Sandler_(I)
-Going_Overboard_(1989)
+James_Stewart_(I)
+Just_One_More_Time_(1974)
 </code></pre>
 </div>
     
@@ -1912,7 +1924,7 @@ Going_Overboard_(1989)
     <div id="pythonloginput_game.py" class="logdetails">
       <h2>Test input_game.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonloginput_game.py-runtest">Run Test for test input_game.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1942,16 +1954,22 @@ Going_Overboard_(1989)
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7349afdabc50&gt;
-limiting number of frame to 10
-
-Check Your Visualization at the following link:
-
-http://bridges-games.herokuapp.com/assignments/3028/bridges_testing
-
-
-frame limit of 10 frames reached
-client disconnect disconnected
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/input_game.py&quot;, line 38, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/input_game.py&quot;, line 33, in main
+    game = InputGame(int(args[0]), args[1], args[2])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/input_game.py&quot;, line 8, in __init__
+    super().__init__(assid, user_id,  api_key, 10, 10)
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/non_blocking_game.py&quot;, line 149, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 30, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 55, in game_base_init
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/socket_connection.py&quot;, line 28, in setup_connection
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_socketio-5.12.1-py3.12.egg/socketio/client.py&quot;, line 159, in connect
+    raise exceptions.ConnectionError(exc.args[0]) from None
+socketio.exceptions.ConnectionError: Connection error
+could not run test input_game.py
 </code></pre>
 </div>
     
@@ -2065,7 +2083,7 @@ http://bridges-cs.herokuapp.com/assignments/3030/bridges_testing
     <div id="pythonlogminimal_game.py" class="logdetails">
       <h2>Test minimal_game.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogminimal_game.py-runtest">Run Test for test minimal_game.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -2095,16 +2113,22 @@ http://bridges-cs.herokuapp.com/assignments/3030/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7bf59a65c2c0&gt;
-limiting number of frame to 10
-
-Check Your Visualization at the following link:
-
-http://bridges-games.herokuapp.com/assignments/3031/bridges_testing
-
-
-frame limit of 10 frames reached
-client disconnect disconnected
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/minimal_game.py&quot;, line 25, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/minimal_game.py&quot;, line 20, in main
+    game = MinimalGame(int(args[0]), args[1], args[2])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/minimal_game.py&quot;, line 8, in __init__
+    super().__init__(assid, user_id,  api_key, 10, 10)
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/non_blocking_game.py&quot;, line 149, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 30, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 55, in game_base_init
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/socket_connection.py&quot;, line 28, in setup_connection
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_socketio-5.12.1-py3.12.egg/socketio/client.py&quot;, line 159, in connect
+    raise exceptions.ConnectionError(exc.args[0]) from None
+socketio.exceptions.ConnectionError: Connection error
+could not run test minimal_game.py
 </code></pre>
 </div>
     
@@ -2390,21 +2414,21 @@ Cartesian Coordinate of first vertex: 834.4847597780021, -5147.953884206995
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Title: Mexican border states prepare migrant shelters as Trump begins deportation campaign
-Author: AwkwardTickler
-Score: 2704
-Comment Count: 302
+Title: UK teenager jailed for minimum of 52 years for Southport girls’ murders
+Author: westphall
+Score: 603
+Comment Count: 78
 Subreddit: news
-Title: Trump administration directs all federal diversity, equity and inclusion staff be put on leave by 5.p.m tomorrow
-Title: Trump administration directs federal health agencies to pause communications
-Title: Trump grants temporary security clearances to officials who have not been fully vetted
-Title: After a couple struck a deer in Alabama, a fire chief who stopped to help was fatally shot
-Title: Convicted US Capitol rioter turns down Trump pardon
-Title: U.S. pilot who vanished during Vietnam War spy mission finally accounted for
-Title: At least 2 students shot at Nashville high school, police say | CNN
-Title: Elephants are not people, US court rules
 Title: Recently pardoned Jan6 rioter arrested one day later on gun charges
-Title: Missy Woods, DNA analyst in CBI scandal, charged with 102 felonies
+Title: Freed Capitol riot ringleaders regroup - and vow 'retribution'
+Title: New wildfire near Los Angeles explodes to 9,400 acres, forces evacuations
+Title: Thailand holds its 1st same-sex weddings as new marriage equality law takes effect
+Title: 7 cops shot in San Antonio while responding to call for help from apartment
+Title: Indiana woman sentenced to 6 years killing 10-year-old foster son by lying on him for several minutes
+Title: CBS 58 weather reporter Sam Kuffel is out after criticizing Elon Musk arm gesture
+Title: Bloomberg to fund UN climate agency after US exit from Paris accord
+Title: NV SOS Launches Investigations Into Election Fraud
+Title: Man known as 'Truck Stop Serial Killer' convicted in third murder
 =====
 Available subreddits:
 gadgets
@@ -2457,7 +2481,7 @@ science
 =====
 Title: AskScience AMA Series: I work with the Large Hadron Collider at CERN, studying the building blocks of the universe. My new book is all about experimental oddities and how they effect our understanding of the universe. AMA!
 Author: AskScienceModerator
-Score: 271
+Score: 273
 Vote Ratio: 0.91
 Comment Count: 82
 Subreddit: askscience
@@ -2475,7 +2499,7 @@ Username: /u/Harry_V_Cliff
 
 Title: Why are wind turbines 3 bladed, but wind mills on small farms have 12 or more?
 Author: helipod
-Score: 938
+Score: 941
 Vote Ratio: 0.9
 Comment Count: 184
 Subreddit: askscience
@@ -2487,8 +2511,8 @@ I guess the overall question is whay do you gain and lose as you increase the nu
 
 Title: Why does glacier melt not neutralize ocean acidification?
 Author: wiz28ultra
-Score: 34
-Vote Ratio: 0.68
+Score: 28
+Vote Ratio: 0.66
 Comment Count: 11
 Subreddit: askscience
 PostTime: 1713311875
@@ -2534,7 +2558,7 @@ Text: From 1994 to 2007, the ocean absorbed around 34 billion tons of CO2. Durin
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 Title: AskScience AMA Series: I work with the Large Hadron Collider at CERN, studying the building blocks of the universe. My new book is all about experimental oddities and how they effect our understanding of the universe. AMA!
 Author: AskScienceModerator
-Score: 271
+Score: 273
 Vote Ratio: 0.91
 Comment Count: 82
 Subreddit: askscience
@@ -2552,7 +2576,7 @@ Username: /u/Harry_V_Cliff
 
 Title: Why are wind turbines 3 bladed, but wind mills on small farms have 12 or more?
 Author: helipod
-Score: 938
+Score: 941
 Vote Ratio: 0.9
 Comment Count: 184
 Subreddit: askscience
@@ -2564,8 +2588,8 @@ I guess the overall question is whay do you gain and lose as you increase the nu
 
 Title: Why does glacier melt not neutralize ocean acidification?
 Author: wiz28ultra
-Score: 34
-Vote Ratio: 0.68
+Score: 28
+Vote Ratio: 0.66
 Comment Count: 11
 Subreddit: askscience
 PostTime: 1713311875
@@ -2609,17 +2633,11 @@ Text: From 1994 to 2007, the ocean absorbed around 34 billion tons of CO2. Durin
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-The Third Part Of King Henry The Sixth
-play
-1591
-
-THE THIRD PART OF KING HENRY THE SIXTH
-
-by William Shakespeare
-
-DRAMATIS PERSONAE
-
- KING HENRY
+Sonnet 141
+poem
+In faith I do not love thee with mine eyes,
+ For they in thee a thousand errors note,
+ But 'tis my h
 </code></pre>
 </div>
     
@@ -4231,16 +4249,16 @@ Data Records in 1955: 4673
 First 3 records:
 
 0)Actor-Movie Data:
-	Movie: Q237116, Marty
-	Actor: Q1381411, Jerry Paris
+	Movie: Q331017, To Catch a Thief
+	Actor: Q3925, Grace Kelly
 
 1)Actor-Movie Data:
-	Movie: Q237116, Marty
-	Actor: Q1418567, Minerva Urecal
+	Movie: Q331017, To Catch a Thief
+	Actor: Q7374, Alfred Hitchcock
 
 2)Actor-Movie Data:
-	Movie: Q237116, Marty
-	Actor: Q1699321, John Beradino
+	Movie: Q331017, To Catch a Thief
+	Actor: Q83410, Cary Grant
 
 </code></pre>
 </div>

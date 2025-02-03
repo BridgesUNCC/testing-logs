@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Mon Feb  3 09:12:05 AM EST 2025</p>
+	<p>Running at Mon Feb  3 01:12:23 PM EST 2025</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -124,11 +124,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarydisplay_game.py" class="success">
+  <div id="summarydisplay_game.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogdisplay_game.py">Test display_game.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogdisplay_game.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogdisplay_game.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -164,11 +164,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarygame_size_test.py" class="success">
+  <div id="summarygame_size_test.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonloggame_size_test.py">Test game_size_test.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonloggame_size_test.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonloggame_size_test.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -236,11 +236,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryinput_game.py" class="success">
+  <div id="summaryinput_game.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonloginput_game.py">Test input_game.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonloginput_game.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonloginput_game.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -260,11 +260,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryminimal_game.py" class="success">
+  <div id="summaryminimal_game.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogminimal_game.py">Test minimal_game.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogminimal_game.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogminimal_game.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1271,7 +1271,7 @@ http://bridges-cs.herokuapp.com/assignments/3013/bridges_testing
     <div id="pythonlogdisplay_game.py" class="logdetails">
       <h2>Test display_game.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogdisplay_game.py-runtest">Run Test for test display_game.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1301,16 +1301,22 @@ http://bridges-cs.herokuapp.com/assignments/3013/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x72b47455f200&gt;
-limiting number of frame to 10
-
-Check Your Visualization at the following link:
-
-http://bridges-games.herokuapp.com/assignments/3014/bridges_testing
-
-
-frame limit of 10 frames reached
-client disconnect disconnected
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/display_game.py&quot;, line 34, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/display_game.py&quot;, line 29, in main
+    game = DisplayGame(int(args[0]), args[1], args[2])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/display_game.py&quot;, line 9, in __init__
+    super().__init__(assid, user_id,  api_key, 10, 10)
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/non_blocking_game.py&quot;, line 149, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 30, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 55, in game_base_init
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/socket_connection.py&quot;, line 28, in setup_connection
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_socketio-5.12.1-py3.12.egg/socketio/client.py&quot;, line 159, in connect
+    raise exceptions.ConnectionError(exc.args[0]) from None
+socketio.exceptions.ConnectionError: Connection error
+could not run test display_game.py
 </code></pre>
 </div>
     
@@ -1443,10 +1449,10 @@ First 10 elevations:
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Magnitude: 1.24
-Date: 2025-02-03 14:00:56
-Location:2 km SW of Walnut Creek, CA
-Lat/Long:37.890998840332,-122.081169128418
+Magnitude: 0.99
+Date: 2025-02-03 17:19:28
+Location:8 km NNW of The Geysers, CA
+Lat/Long:38.8338317871094,-122.818336486816
 </code></pre>
 </div>
     
@@ -1515,7 +1521,7 @@ http://bridges-cs.herokuapp.com/assignments/3018/bridges_testing
     <div id="pythonloggame_size_test.py" class="logdetails">
       <h2>Test game_size_test.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonloggame_size_test.py-runtest">Run Test for test game_size_test.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1545,16 +1551,22 @@ http://bridges-cs.herokuapp.com/assignments/3018/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7e9e5fb6a6f0&gt;
-limiting number of frame to 10
-
-Check Your Visualization at the following link:
-
-http://bridges-games.herokuapp.com/assignments/3019/bridges_testing
-
-
-frame limit of 10 frames reached
-client disconnect disconnected
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/game_size_test.py&quot;, line 34, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/game_size_test.py&quot;, line 28, in main
+    game = GameSizeTest(int(args[0]), args[1], args[2])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/game_size_test.py&quot;, line 9, in __init__
+    super().__init__(assid, user_id,  api_key, 10, 20)
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/non_blocking_game.py&quot;, line 149, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 30, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 55, in game_base_init
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/socket_connection.py&quot;, line 28, in setup_connection
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_socketio-5.12.1-py3.12.egg/socketio/client.py&quot;, line 159, in connect
+    raise exceptions.ConnectionError(exc.args[0]) from None
+socketio.exceptions.ConnectionError: Connection error
+could not run test game_size_test.py
 </code></pre>
 </div>
     
@@ -1592,10 +1604,10 @@ client disconnect disconnected
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Band Hero (Band Kit)
-PlayStation 3
-7.9
-['Music']
+Ninja Gaiden (NES)
+Wii
+9
+['Action']
 </code></pre>
 </div>
     
@@ -1903,8 +1915,8 @@ could not run test gutenberg_snippet.py
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Christopher_Lee_(I)
-Funny_Man_(1994)
+James_Stewart_(I)
+Pot_o'_Gold_(1941)
 </code></pre>
 </div>
     
@@ -1912,7 +1924,7 @@ Funny_Man_(1994)
     <div id="pythonloginput_game.py" class="logdetails">
       <h2>Test input_game.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonloginput_game.py-runtest">Run Test for test input_game.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1942,16 +1954,22 @@ Funny_Man_(1994)
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x702f3a55c1d0&gt;
-limiting number of frame to 10
-
-Check Your Visualization at the following link:
-
-http://bridges-games.herokuapp.com/assignments/3028/bridges_testing
-
-
-frame limit of 10 frames reached
-client disconnect disconnected
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/input_game.py&quot;, line 38, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/input_game.py&quot;, line 33, in main
+    game = InputGame(int(args[0]), args[1], args[2])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/input_game.py&quot;, line 8, in __init__
+    super().__init__(assid, user_id,  api_key, 10, 10)
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/non_blocking_game.py&quot;, line 149, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 30, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 55, in game_base_init
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/socket_connection.py&quot;, line 28, in setup_connection
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_socketio-5.12.1-py3.12.egg/socketio/client.py&quot;, line 159, in connect
+    raise exceptions.ConnectionError(exc.args[0]) from None
+socketio.exceptions.ConnectionError: Connection error
+could not run test input_game.py
 </code></pre>
 </div>
     
@@ -2065,7 +2083,7 @@ http://bridges-cs.herokuapp.com/assignments/3030/bridges_testing
     <div id="pythonlogminimal_game.py" class="logdetails">
       <h2>Test minimal_game.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogminimal_game.py-runtest">Run Test for test minimal_game.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -2095,16 +2113,22 @@ http://bridges-cs.herokuapp.com/assignments/3030/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x75f62bcd1670&gt;
-limiting number of frame to 10
-
-Check Your Visualization at the following link:
-
-http://bridges-games.herokuapp.com/assignments/3031/bridges_testing
-
-
-frame limit of 10 frames reached
-client disconnect disconnected
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/minimal_game.py&quot;, line 25, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/minimal_game.py&quot;, line 20, in main
+    game = MinimalGame(int(args[0]), args[1], args[2])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/minimal_game.py&quot;, line 8, in __init__
+    super().__init__(assid, user_id,  api_key, 10, 10)
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/non_blocking_game.py&quot;, line 149, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 30, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/gamebase.py&quot;, line 55, in game_base_init
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/socket_connection.py&quot;, line 28, in setup_connection
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_socketio-5.12.1-py3.12.egg/socketio/client.py&quot;, line 159, in connect
+    raise exceptions.ConnectionError(exc.args[0]) from None
+socketio.exceptions.ConnectionError: Connection error
+could not run test minimal_game.py
 </code></pre>
 </div>
     
@@ -2390,21 +2414,21 @@ Cartesian Coordinate of first vertex: 834.4847597780021, -5147.953884206995
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Title: Dingoes bite two children on K'gari (Fraser Island) in as many days
-Author: AudibleNod
-Score: 627
-Comment Count: 103
+Title: South Korea: Yoon charged with insurrection over martial law attempt
+Author: PlayShelf
+Score: 5369
+Comment Count: 154
 Subreddit: news
 Title: U.S Air Force removes course that included videos of Tuskegee Airmen, female WWII pilots
 Title: Nearly half a century after Honolulu teen’s killing, modern DNA testing leads to arrest of a former schoolmate
 Title: Explosion rocks Dutch museum before gold masterpieces stolen: &quot;This is a dark day&quot;
-Title: Several employees at Upstate Correctional fell ill again to an unknown substance
 Title: Colombia turns away two US military flights with deported migrants, official says
 Title: Bear that attacked man in Pennsylvania had rabies, officials confirm
 Title: Kansas tuberculosis outbreak is now America's largest in recorded history
 Title: New AI tool counters health insurance denials decided by automated algorithms | US healthcare
 Title: EPD: Parents refused to pick up teen from hospital for over 6 hours
 Title: Fort Worth ISD substitute teacher urges ICE to remove students from high school
+Title: Dingoes bite two children on K'gari (Fraser Island) in as many days
 =====
 Available subreddits:
 gadgets
@@ -2457,7 +2481,7 @@ science
 =====
 Title: Why mountain peaks are made of rocks while others are made of soil?
 Author: None
-Score: 193
+Score: 194
 Vote Ratio: 0.75
 Comment Count: 35
 Subreddit: askscience
@@ -2467,8 +2491,8 @@ Text: Why do some mountains have soil on top, while others are made of rocks? Do
 
 Title: Drug resistant bacteria aboard the ISS, would the mutations revert when brought back to earth? 
 Author: SubstantialPressure3
-Score: 34
-Vote Ratio: 0.6
+Score: 37
+Vote Ratio: 0.61
 Comment Count: 13
 Subreddit: askscience
 PostTime: 1713627308
@@ -2481,8 +2505,8 @@ Will this change procedures of quarantine after being in space?
 
 Title: How do we know what earth's outer core can transmit seismically versus the inner core, when all waves have to pass through the inner core anyway?
 Author: None
-Score: 6
-Vote Ratio: 0.66
+Score: 5
+Vote Ratio: 0.63
 Comment Count: 5
 Subreddit: askscience
 PostTime: 1713646509
@@ -2528,7 +2552,7 @@ Text:  I've long read that the inner core was solid due to pressure, but this qu
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 Title: Why mountain peaks are made of rocks while others are made of soil?
 Author: None
-Score: 193
+Score: 194
 Vote Ratio: 0.75
 Comment Count: 35
 Subreddit: askscience
@@ -2538,8 +2562,8 @@ Text: Why do some mountains have soil on top, while others are made of rocks? Do
 
 Title: Drug resistant bacteria aboard the ISS, would the mutations revert when brought back to earth? 
 Author: SubstantialPressure3
-Score: 34
-Vote Ratio: 0.6
+Score: 37
+Vote Ratio: 0.61
 Comment Count: 13
 Subreddit: askscience
 PostTime: 1713627308
@@ -2552,8 +2576,8 @@ Will this change procedures of quarantine after being in space?
 
 Title: How do we know what earth's outer core can transmit seismically versus the inner core, when all waves have to pass through the inner core anyway?
 Author: None
-Score: 6
-Vote Ratio: 0.66
+Score: 5
+Vote Ratio: 0.63
 Comment Count: 5
 Subreddit: askscience
 PostTime: 1713646509
@@ -2597,11 +2621,11 @@ Text:  I've long read that the inner core was solid due to pressure, but this qu
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Sonnet 123
+Sonnet 98
 poem
-No! Time, thou shalt not boast that I do change,
- Thy pyramids built up with newer might
- To me are 
+From you have I been absent in the spring,
+ When proud-pied April (dressed in all his trim)
+ Hath pu
 </code></pre>
 </div>
     

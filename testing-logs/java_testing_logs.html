@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sun Feb  9 01:04:16 PM EST 2025</p>
+	<p>Running at Sun Feb  9 05:03:40 PM EST 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -399,12 +399,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryshakespeare_snippet.java" class="success">
+  <div id="summaryshakespeare_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogshakespeare_snippet.java">Test shakespeare_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogshakespeare_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogshakespeare_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogshakespeare_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -453,12 +453,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarysong_lyrics_snippet.java" class="success">
+  <div id="summarysong_lyrics_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogsong_lyrics_snippet.java">Test song_lyrics_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -669,12 +669,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarytut_us_cities_snippet.java" class="success">
+  <div id="summarytut_us_cities_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogtut_us_cities_snippet.java">Test tut_us_cities_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogtut_us_cities_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogtut_us_cities_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogtut_us_cities_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1235,10 +1235,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.29
-	Date:Feb 09 2025  12:56:55.400 EST
-	Location: 7 km WNW of Cobb, CA
-	Lat/Long:38.833667755127,-122.805000305176
+	Magnitude:1.1
+	Date:Feb 09 2025  16:46:11.150 EST
+	Location: 15 km ENE of Coso Junction, CA
+	Lat/Long:36.1204987,-117.8078308
 </code></pre>
 </div>
     
@@ -1295,9 +1295,9 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Bomberman Land
-Wii
-7.2
+<pre><code>Pac-Man: Special Color Edition
+Game Boy Color
+8.0
 [Action]
 </code></pre>
 </div>
@@ -1432,8 +1432,8 @@ could not run test gutenberg_snippet.java
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Leonard_Nimoy
-Brain_Eaters,_The_(1959)
+<pre><code>Carrie_Fisher
+Mr._Mike's_Mondo_Video_(1979)
 </code></pre>
 </div>
     
@@ -2132,20 +2132,14 @@ As per title. Do below points factor into the ability of the object to scratch a
 <pre><code>Compiling test shakespeare_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>The Tempest
-play
-1612
-
-THE TEMPEST
-
-by William Shakespeare
-
-DRAMATIS PERSONAE
-
- ALONSO, King of Naples
- SEBASTIAN, hi...
+<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503
+	at bridges.connect.DataSource.getShakespeareData(DataSource.java:478)
+	at bridges.connect.DataSource.getShakespeareData(DataSource.java:488)
+	at bridges.connect.DataSource.getShakespeareData(DataSource.java:422)
+	at shakespeare_snippet.main(shakespeare_snippet.java:17)
+could not run test shakespeare_snippet.java
 </code></pre>
 </div>
     
@@ -2270,13 +2264,37 @@ http://bridges-cs.herokuapp.com/assignments/2048/bridges_testing
 <pre><code>Compiling test song_lyrics_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogsong_lyrics_snippet.java-runtest">Run Test for test song_lyrics_snippet.java</h3>
-<pre><code>Harder, Better, Faster, Stronger
-Daft Punk
-Homework / Discovery / Alive 1997
-2001-02-26
-
+<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503. Message: &lt;!DOCTYPE html&gt;
+	&lt;html&gt;
+	  &lt;head&gt;
+		&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+		&lt;meta charset=&quot;utf-8&quot;&gt;
+		&lt;title&gt;Application Error&lt;/title&gt;
+		&lt;style media=&quot;screen&quot;&gt;
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		&lt;/style&gt;
+	  &lt;/head&gt;
+	  &lt;body&gt;
+		&lt;iframe src=&quot;//www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
+	  &lt;/body&gt;
+	&lt;/html&gt;
+	at bridges.connect.DataSource.getSong(DataSource.java:888)
+	at song_lyrics_snippet.main(song_lyrics_snippet.java:24)
+could not run test song_lyrics_snippet.java
 </code></pre>
 </div>
     
@@ -2877,17 +2895,12 @@ http://bridges-cs.herokuapp.com/assignments/2072/bridges_testing
 <pre><code>Compiling test tut_us_cities_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogtut_us_cities_snippet.java-runtest">Run Test for test tut_us_cities_snippet.java</h3>
-<pre><code>Upto 25 cities in North Carolina with population between 200K and 1M
-US Cities Retrieved
-	Durham, NC:  Population: 257636, Elevation: 123, Lat/Long: 35.99403,-78.89862
-	Charlotte, NC:  Population: 874579, Elevation: 229, Lat/Long: 35.22709,-80.84313
-	Fayetteville, NC:  Population: 201963, Elevation: 29, Lat/Long: 35.05266,-78.87836
-	Greensboro, NC:  Population: 285342, Elevation: 266, Lat/Long: 36.07264,-79.79198
-	Raleigh, NC:  Population: 451066, Elevation: 96, Lat/Long: 35.7721,-78.63861
-	West Raleigh, NC:  Population: 338759, Elevation: 122, Lat/Long: 35.78682,-78.66389
-	Winston-Salem, NC:  Population: 241218, Elevation: 293, Lat/Long: 36.09986,-80.24422
+<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503
+	at bridges.connect.DataSource.getUSCitiesData(DataSource.java:264)
+	at tut_us_cities_snippet.main(tut_us_cities_snippet.java:48)
+could not run test tut_us_cities_snippet.java
 </code></pre>
 </div>
     
@@ -2984,18 +2997,18 @@ http://bridges-cs.herokuapp.com/assignments/2077/bridges_testing
 <h3 id="javalogus_cities_snippet.java-runtest">Run Test for test us_cities_snippet.java</h3>
 <pre><code>Testing 'limit = 25', 'population = 200000' and 'lat/long'  attribute..got 13 cities
 US Cities Retrieved
-	High Point, NC:  Population: 110268, Elevation: 281, Lat/Long: 35.95569,-80.00532
 	Cary, NC:  Population: 159769, Elevation: 152, Lat/Long: 35.79154,-78.78112
-	Durham, NC:  Population: 257636, Elevation: 123, Lat/Long: 35.99403,-78.89862
 	Charlotte, NC:  Population: 874579, Elevation: 229, Lat/Long: 35.22709,-80.84313
+	Durham, NC:  Population: 257636, Elevation: 123, Lat/Long: 35.99403,-78.89862
 	Fayetteville, NC:  Population: 201963, Elevation: 29, Lat/Long: 35.05266,-78.87836
+	High Point, NC:  Population: 110268, Elevation: 281, Lat/Long: 35.95569,-80.00532
 	Greensboro, NC:  Population: 285342, Elevation: 266, Lat/Long: 36.07264,-79.79198
 	Raleigh, NC:  Population: 451066, Elevation: 96, Lat/Long: 35.7721,-78.63861
-	Wilmington, NC:  Population: 115933, Elevation: 9, Lat/Long: 34.22573,-77.94471
 	West Raleigh, NC:  Population: 338759, Elevation: 122, Lat/Long: 35.78682,-78.66389
 	Winston-Salem, NC:  Population: 241218, Elevation: 293, Lat/Long: 36.09986,-80.24422
-	East Chattanooga, TN:  Population: 154024, Elevation: 208, Lat/Long: 35.06535,-85.24912
+	Wilmington, NC:  Population: 115933, Elevation: 9, Lat/Long: 34.22573,-77.94471
 	Chattanooga, TN:  Population: 176588, Elevation: 206, Lat/Long: 35.04563,-85.30968
+	East Chattanooga, TN:  Population: 154024, Elevation: 208, Lat/Long: 35.06535,-85.24912
 	Knoxville, TN:  Population: 185291, Elevation: 276, Lat/Long: 35.96064,-83.92074
 </code></pre>
 </div>
@@ -3034,16 +3047,16 @@ http://bridges-cs.herokuapp.com/assignments/2079/bridges_testing
 <pre><code>Data Records in 1955: 4673
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q180251 &quot;Paddy Chayefsky&quot;
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q292227 &quot;Brigitte Auber&quot;
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q266416 &quot;Betsy Blair&quot;
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q513849 &quot;Bess Flowers&quot;
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q421707 &quot;Jerry Orbach&quot;
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q541270 &quot;Jessie Royce Landis&quot;
 
 </code></pre>
 </div>

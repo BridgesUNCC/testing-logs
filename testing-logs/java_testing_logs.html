@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Feb 27 05:04:02 AM EST 2025</p>
+	<p>Running at Thu Feb 27 09:04:09 AM EST 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -732,12 +732,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1235,10 +1235,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.5
-	Date:Feb 27 2025  04:34:51.226 EST
-	Location: 34 km W of Happy Valley, Alaska
-	Lat/Long:59.9909,-152.3491
+	Magnitude:1.9
+	Date:Feb 27 2025  08:51:07.129 EST
+	Location: 23 km WNW of Petersville, Alaska
+	Lat/Long:62.5422,-151.2043
 </code></pre>
 </div>
     
@@ -1295,10 +1295,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Star Wars Galaxies: An Empire Divided
-PC
-8.0
-[RPG]
+<pre><code>Dead to Rights
+PlayStation 2
+8.1
+[Action]
 </code></pre>
 </div>
     
@@ -1432,8 +1432,8 @@ could not run test gutenberg_snippet.java
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Clark_Gable
-Free_Soul,_A_(1931)
+<pre><code>Brigitte_Bardot
+Don_Juan_ou_Si_Don_Juan_etait_une_femme..._(1973)
 </code></pre>
 </div>
     
@@ -2134,11 +2134,11 @@ As per title. Do below points factor into the ability of the object to scratch a
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 147
+<pre><code>Sonnet 129
 poem
-My love is as a fever longing still,
- For that which longer nurseth the disease,
- Feeding on that wh...
+Th' expense of spirit in a waste of shame
+ Is lust in action, and till action, lust
+ Is perjured, mu...
 </code></pre>
 </div>
     
@@ -3022,22 +3022,13 @@ http://bridges-cs.herokuapp.com/assignments/2079/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 4670
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q102462 &quot;James Stewart&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1535)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1463)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sun Apr  6 05:04:27 AM EDT 2025</p>
+	<p>Running at Sun Apr  6 09:05:02 AM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -732,12 +732,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1235,10 +1235,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.0
-	Date:Apr 06 2025  04:48:45.054 EDT
-	Location: 15 km ESE of Livengood, Alaska
-	Lat/Long:65.4696,-148.226
+	Magnitude:1.96
+	Date:Apr 06 2025  08:52:15.070 EDT
+	Location: 7 km WNW of Cobb, CA
+	Lat/Long:38.8348350524902,-122.800331115723
 </code></pre>
 </div>
     
@@ -1295,10 +1295,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>The Sims 3
-Nintendo DS
-7.5
-[Simulation]
+<pre><code>Super Monkey Ball
+N-Gage
+6.6
+[Puzzle, Action]
 </code></pre>
 </div>
     
@@ -1432,8 +1432,8 @@ could not run test gutenberg_snippet.java
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>K.K._Dodds
-Being_John_Malkovich_(1999)
+<pre><code>Catherine_Zeta-Jones
+Phantom,_The_(1996)
 </code></pre>
 </div>
     
@@ -2110,11 +2110,11 @@ As per title. Do below points factor into the ability of the object to scratch a
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 128
+<pre><code>Sonnet 142
 poem
-How oft when thou, my music, music play'st,
- Upon that blessed wood whose motion sounds
- With thy sw...
+Love is my sin, and thy dear virtue hate,
+ Hate of my sin, grounded on sinful loving,
+ O but with mi...
 </code></pre>
 </div>
     
@@ -2998,22 +2998,13 @@ http://bridges-cs.herokuapp.com/assignments/2079/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 4993
-
-Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q102551 &quot;Ernest Borgnine&quot;
-
-Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q180251 &quot;Paddy Chayefsky&quot;
-
-Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q266416 &quot;Betsy Blair&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1535)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1463)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

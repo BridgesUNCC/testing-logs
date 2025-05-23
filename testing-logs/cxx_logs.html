@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for C++</h1>
-	<p>Running at Thu May 22 05:16:31 PM EDT 2025</p>
+	<p>Running at Thu May 22 09:15:45 PM EDT 2025</p>
   <div id="summary0" class="success">
     <h2><a href="cxx_logs.html#cxxlog0">Assignment 0</a> </h2>
     <p>
@@ -52,13 +52,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary4" class="success">
+  <div id="summary4" class="failure">
     <h2><a href="cxx_logs.html#cxxlog4">Assignment 4</a> </h2>
     <p>
       <ul>
-        <li> Build Scaffold : <a href="cxx_logs.html#cxxlog4-buildscaffold">success</a></li>
-        <li> Build Answer : <a href="cxx_logs.html#cxxlog4-buildanswer">success</a></li>
-        <li> Run Answer : <a href="cxx_logs.html#cxxlog4-runanswer">success</a></li>
+        <li> Build Scaffold : <a href="cxx_logs.html#cxxlog4-buildscaffold">error</a></li>
+        <li> Build Answer : <a href="cxx_logs.html#cxxlog4-buildanswer">error</a></li>
+        <li> Run Answer : <a href="cxx_logs.html#cxxlog4-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -112,13 +112,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary10" class="success">
+  <div id="summary10" class="failure">
     <h2><a href="cxx_logs.html#cxxlog10">Assignment 10</a> </h2>
     <p>
       <ul>
-        <li> Build Scaffold : <a href="cxx_logs.html#cxxlog10-buildscaffold">success</a></li>
-        <li> Build Answer : <a href="cxx_logs.html#cxxlog10-buildanswer">success</a></li>
-        <li> Run Answer : <a href="cxx_logs.html#cxxlog10-runanswer">success</a></li>
+        <li> Build Scaffold : <a href="cxx_logs.html#cxxlog10-buildscaffold">error</a></li>
+        <li> Build Answer : <a href="cxx_logs.html#cxxlog10-buildanswer">error</a></li>
+        <li> Run Answer : <a href="cxx_logs.html#cxxlog10-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -392,13 +392,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary38" class="success">
+  <div id="summary38" class="failure">
     <h2><a href="cxx_logs.html#cxxlog38">Assignment 38</a> </h2>
     <p>
       <ul>
-        <li> Build Scaffold : <a href="cxx_logs.html#cxxlog38-buildscaffold">success</a></li>
-        <li> Build Answer : <a href="cxx_logs.html#cxxlog38-buildanswer">success</a></li>
-        <li> Run Answer : <a href="cxx_logs.html#cxxlog38-runanswer">success</a></li>
+        <li> Build Scaffold : <a href="cxx_logs.html#cxxlog38-buildscaffold">error</a></li>
+        <li> Build Answer : <a href="cxx_logs.html#cxxlog38-buildanswer">error</a></li>
+        <li> Run Answer : <a href="cxx_logs.html#cxxlog38-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -622,13 +622,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary61" class="success">
+  <div id="summary61" class="failure">
     <h2><a href="cxx_logs.html#cxxlog61">Assignment 61</a> </h2>
     <p>
       <ul>
-        <li> Build Scaffold : <a href="cxx_logs.html#cxxlog61-buildscaffold">success</a></li>
-        <li> Build Answer : <a href="cxx_logs.html#cxxlog61-buildanswer">success</a></li>
-        <li> Run Answer : <a href="cxx_logs.html#cxxlog61-runanswer">success</a></li>
+        <li> Build Scaffold : <a href="cxx_logs.html#cxxlog61-buildscaffold">error</a></li>
+        <li> Build Answer : <a href="cxx_logs.html#cxxlog61-buildanswer">error</a></li>
+        <li> Run Answer : <a href="cxx_logs.html#cxxlog61-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -1032,7 +1032,7 @@ http://bridges-cs.herokuapp.com/assignments/103/bridges_testing
     <div id="cxxlog4" class="logdetails">
       <h2>Assignment 4 full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="cxxlog4-buildscaffold">Build Scaffold for Assignment 4</h3>
 <pre><code>Compiling c++/ for assignment in ../assignmentdb/4-GraphEQ/c++
 rm GraphEQ.o
@@ -1040,10 +1040,66 @@ rm GraphEQ
 rm: cannot remove 'GraphEQ': No such file or directory
 make: [Makefile:32: clean] Error 1 (ignored)
 g++ -g  -std=c++14 -I /home/bridges-testing/bridges-cxx-install/include/ -c GraphEQ.cpp -o GraphEQ.o
-g++ -o GraphEQ GraphEQ.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
+In file included from GraphEQ.cpp:6:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getDataStructureRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:56:48: error: ‘JSONencode’ was not declared in this scope; did you mean ‘bridges::JSONUtil::JSONencode’?
+   56 |                                         return JSONencode(&quot;mapdummy&quot;) + COLON + JSONencode(true) + CLOSE_CURLY;
+      |                                                ^~~~~~~~~~
+      |                                                bridges::JSONUtil::JSONencode
+In file included from /home/bridges-testing/bridges-cxx-install/include/Bridges.h:13,
+                 from GraphEQ.cpp:1:
+/home/bridges-testing/bridges-cxx-install/include/JSONutil.h:102:36: note: ‘bridges::JSONUtil::JSONencode’ declared here
+  102 |                 inline std::string JSONencode(const float&amp; d, int precision = -1) {
+      |                                    ^~~~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getMapRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:97:49: error: expected primary-expression before ‘if’
+   97 |                                                 if (cntry.getCounties().size()) // case where counties are on
+      |                                                 ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘void bridges::datastructure::WorldMap::setStateData(std::vector&lt;bridges::dataset::USState&gt;)’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:132:56: error: no match for ‘operator=’ (operand types are ‘std::vector&lt;bridges::dataset::Country&gt;’ and ‘std::vector&lt;bridges::dataset::USState&gt;’)
+  132 |                                         country_data = cntry_data;
+      |                                                        ^~~~~~~~~~
+In file included from /usr/include/c++/13/vector:72,
+                 from /home/bridges-testing/bridges-cxx-install/include/ServerComm.h:5,
+                 from /home/bridges-testing/bridges-cxx-install/include/Bridges.h:9:
+/usr/include/c++/13/bits/vector.tcc:210:5: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(const std::vector&lt;_Tp, _Alloc&gt;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  210 |     vector&lt;_Tp, _Alloc&gt;::
+      |     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/vector.tcc:211:42: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘const std::vector&lt;bridges::dataset::Country&gt;&amp;’
+  211 |     operator=(const vector&lt;_Tp, _Alloc&gt;&amp; __x)
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/c++/13/vector:66:
+/usr/include/c++/13/bits/stl_vector.h:766:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::vector&lt;_Tp, _Alloc&gt;&amp;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:766:26: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::vector&lt;bridges::dataset::Country&gt;&amp;&amp;’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |                 ~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:788:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::initializer_list&lt;_Tp&gt;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:788:46: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::initializer_list&lt;bridges::dataset::Country&gt;’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+GraphEQ.cpp: In function ‘int main()’:
+GraphEQ.cpp:61:12: error: no matching function for call to ‘bridges::datastructure::WorldMap::WorldMap()’
+   61 |   WorldMap wm;
+      |            ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(std::vector&lt;bridges::dataset::Country&gt;)’
+  111 |                                 WorldMap(vector&lt;Country&gt; cntry_data) {
+      |                                 ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(const bridges::datastructure::WorldMap&amp;)’
+   49 |                 class WorldMap :  public Map, public DataStructure {
+      |                       ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(bridges::datastructure::WorldMap&amp;&amp;)’
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+make: *** [Makefile:26: GraphEQ.o] Error 1
+could not compile c++/ for assignment in ../assignmentdb/4-GraphEQ/c++
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="cxxlog4-buildanswer">Build Answer for Assignment 4</h3>
 <pre><code>Compiling c++_answer/ for assignment in ../assignmentdb/4-GraphEQ/c++_answer
 rm GraphEQ.o
@@ -1051,33 +1107,69 @@ rm GraphEQ
 rm: cannot remove 'GraphEQ': No such file or directory
 make: [Makefile:32: clean] Error 1 (ignored)
 g++ -g  -std=c++14 -I /home/bridges-testing/bridges-cxx-install/include/ -c GraphEQ.cpp -o GraphEQ.o
-g++ -o GraphEQ GraphEQ.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
+In file included from GraphEQ.cpp:6:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getDataStructureRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:56:48: error: ‘JSONencode’ was not declared in this scope; did you mean ‘bridges::JSONUtil::JSONencode’?
+   56 |                                         return JSONencode(&quot;mapdummy&quot;) + COLON + JSONencode(true) + CLOSE_CURLY;
+      |                                                ^~~~~~~~~~
+      |                                                bridges::JSONUtil::JSONencode
+In file included from /home/bridges-testing/bridges-cxx-install/include/Bridges.h:13,
+                 from GraphEQ.cpp:1:
+/home/bridges-testing/bridges-cxx-install/include/JSONutil.h:102:36: note: ‘bridges::JSONUtil::JSONencode’ declared here
+  102 |                 inline std::string JSONencode(const float&amp; d, int precision = -1) {
+      |                                    ^~~~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getMapRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:97:49: error: expected primary-expression before ‘if’
+   97 |                                                 if (cntry.getCounties().size()) // case where counties are on
+      |                                                 ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘void bridges::datastructure::WorldMap::setStateData(std::vector&lt;bridges::dataset::USState&gt;)’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:132:56: error: no match for ‘operator=’ (operand types are ‘std::vector&lt;bridges::dataset::Country&gt;’ and ‘std::vector&lt;bridges::dataset::USState&gt;’)
+  132 |                                         country_data = cntry_data;
+      |                                                        ^~~~~~~~~~
+In file included from /usr/include/c++/13/vector:72,
+                 from /home/bridges-testing/bridges-cxx-install/include/ServerComm.h:5,
+                 from /home/bridges-testing/bridges-cxx-install/include/Bridges.h:9:
+/usr/include/c++/13/bits/vector.tcc:210:5: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(const std::vector&lt;_Tp, _Alloc&gt;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  210 |     vector&lt;_Tp, _Alloc&gt;::
+      |     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/vector.tcc:211:42: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘const std::vector&lt;bridges::dataset::Country&gt;&amp;’
+  211 |     operator=(const vector&lt;_Tp, _Alloc&gt;&amp; __x)
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/c++/13/vector:66:
+/usr/include/c++/13/bits/stl_vector.h:766:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::vector&lt;_Tp, _Alloc&gt;&amp;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:766:26: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::vector&lt;bridges::dataset::Country&gt;&amp;&amp;’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |                 ~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:788:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::initializer_list&lt;_Tp&gt;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:788:46: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::initializer_list&lt;bridges::dataset::Country&gt;’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+GraphEQ.cpp: In function ‘int main()’:
+GraphEQ.cpp:92:12: error: no matching function for call to ‘bridges::datastructure::WorldMap::WorldMap()’
+   92 |   WorldMap wm;
+      |            ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(std::vector&lt;bridges::dataset::Country&gt;)’
+  111 |                                 WorldMap(vector&lt;Country&gt; cntry_data) {
+      |                                 ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(const bridges::datastructure::WorldMap&amp;)’
+   49 |                 class WorldMap :  public Map, public DataStructure {
+      |                       ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(bridges::datastructure::WorldMap&amp;&amp;)’
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+make: *** [Makefile:26: GraphEQ.o] Error 1
+could not compile c++_answer/ for assignment in ../assignmentdb/4-GraphEQ/c++_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="cxxlog4-runanswer">Run Answer for Assignment 4</h3>
-<pre><code>Guessing ./GraphEQ is the right binary file where main is
-
-Success: Assignment posted to the server. 
-Check out your visualization at:
-
-http://bridges-cs.herokuapp.com/assignments/104/bridges_testing
-
-Success: Assignment posted to the server. 
-Check out your visualization at:
-
-http://bridges-cs.herokuapp.com/assignments/104/bridges_testing
-
-Success: Assignment posted to the server. 
-Check out your visualization at:
-
-http://bridges-cs.herokuapp.com/assignments/104/bridges_testing
-
-Success: Assignment posted to the server. 
-Check out your visualization at:
-
-http://bridges-cs.herokuapp.com/assignments/104/bridges_testing
-
+<pre><code>can't guess a binary file to run
+could not run c++_answer for assignment in ../assignmentdb/4-GraphEQ/c++_answer
 </code></pre>
 </div>
     
@@ -1493,7 +1585,7 @@ http://bridges-cs.herokuapp.com/assignments/109/bridges_testing
     <div id="cxxlog10" class="logdetails">
       <h2>Assignment 10 full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="cxxlog10-buildscaffold">Build Scaffold for Assignment 10</h3>
 <pre><code>Compiling c++/ for assignment in ../assignmentdb/10-HurricaneTracker/c++
 rm hurricane.o main.o
@@ -1506,10 +1598,66 @@ hurricane.cpp:24:1: warning: no return statement in function returning non-void 
    24 | }
       | ^
 g++ -g  -std=c++14 -I /home/bridges-testing/bridges-cxx-install/include/ -c main.cpp -o main.o
-g++ -o Hurricane hurricane.o main.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
+In file included from main.cpp:3:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getDataStructureRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:56:48: error: ‘JSONencode’ was not declared in this scope; did you mean ‘bridges::JSONUtil::JSONencode’?
+   56 |                                         return JSONencode(&quot;mapdummy&quot;) + COLON + JSONencode(true) + CLOSE_CURLY;
+      |                                                ^~~~~~~~~~
+      |                                                bridges::JSONUtil::JSONencode
+In file included from /home/bridges-testing/bridges-cxx-install/include/Bridges.h:13,
+                 from hurricane.h:6,
+                 from main.cpp:1:
+/home/bridges-testing/bridges-cxx-install/include/JSONutil.h:102:36: note: ‘bridges::JSONUtil::JSONencode’ declared here
+  102 |                 inline std::string JSONencode(const float&amp; d, int precision = -1) {
+      |                                    ^~~~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getMapRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:97:49: error: expected primary-expression before ‘if’
+   97 |                                                 if (cntry.getCounties().size()) // case where counties are on
+      |                                                 ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘void bridges::datastructure::WorldMap::setStateData(std::vector&lt;bridges::dataset::USState&gt;)’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:132:56: error: no match for ‘operator=’ (operand types are ‘std::vector&lt;bridges::dataset::Country&gt;’ and ‘std::vector&lt;bridges::dataset::USState&gt;’)
+  132 |                                         country_data = cntry_data;
+      |                                                        ^~~~~~~~~~
+In file included from /usr/include/c++/13/vector:72,
+                 from hurricane.h:5:
+/usr/include/c++/13/bits/vector.tcc:210:5: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(const std::vector&lt;_Tp, _Alloc&gt;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  210 |     vector&lt;_Tp, _Alloc&gt;::
+      |     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/vector.tcc:211:42: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘const std::vector&lt;bridges::dataset::Country&gt;&amp;’
+  211 |     operator=(const vector&lt;_Tp, _Alloc&gt;&amp; __x)
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/c++/13/vector:66:
+/usr/include/c++/13/bits/stl_vector.h:766:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::vector&lt;_Tp, _Alloc&gt;&amp;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:766:26: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::vector&lt;bridges::dataset::Country&gt;&amp;&amp;’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |                 ~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:788:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::initializer_list&lt;_Tp&gt;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:788:46: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::initializer_list&lt;bridges::dataset::Country&gt;’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+main.cpp: In function ‘int main()’:
+main.cpp:13:12: error: no matching function for call to ‘bridges::datastructure::WorldMap::WorldMap()’
+   13 |   WorldMap wm;
+      |            ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(std::vector&lt;bridges::dataset::Country&gt;)’
+  111 |                                 WorldMap(vector&lt;Country&gt; cntry_data) {
+      |                                 ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(const bridges::datastructure::WorldMap&amp;)’
+   49 |                 class WorldMap :  public Map, public DataStructure {
+      |                       ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(bridges::datastructure::WorldMap&amp;&amp;)’
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+make: *** [Makefile:26: main.o] Error 1
+could not compile c++/ for assignment in ../assignmentdb/10-HurricaneTracker/c++
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="cxxlog10-buildanswer">Build Answer for Assignment 10</h3>
 <pre><code>Compiling c++_answer/ for assignment in ../assignmentdb/10-HurricaneTracker/c++_answer
 rm hurricane.o main.o
@@ -1518,18 +1666,69 @@ rm: cannot remove 'Hurricane': No such file or directory
 make: [Makefile:32: clean] Error 1 (ignored)
 g++ -g  -std=c++14 -I /home/bridges-testing/bridges-cxx-install/include/ -c hurricane.cpp -o hurricane.o
 g++ -g  -std=c++14 -I /home/bridges-testing/bridges-cxx-install/include/ -c main.cpp -o main.o
-g++ -o Hurricane hurricane.o main.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
+In file included from main.cpp:5:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getDataStructureRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:56:48: error: ‘JSONencode’ was not declared in this scope; did you mean ‘bridges::JSONUtil::JSONencode’?
+   56 |                                         return JSONencode(&quot;mapdummy&quot;) + COLON + JSONencode(true) + CLOSE_CURLY;
+      |                                                ^~~~~~~~~~
+      |                                                bridges::JSONUtil::JSONencode
+In file included from /home/bridges-testing/bridges-cxx-install/include/Bridges.h:13,
+                 from hurricane.h:6,
+                 from main.cpp:3:
+/home/bridges-testing/bridges-cxx-install/include/JSONutil.h:102:36: note: ‘bridges::JSONUtil::JSONencode’ declared here
+  102 |                 inline std::string JSONencode(const float&amp; d, int precision = -1) {
+      |                                    ^~~~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getMapRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:97:49: error: expected primary-expression before ‘if’
+   97 |                                                 if (cntry.getCounties().size()) // case where counties are on
+      |                                                 ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘void bridges::datastructure::WorldMap::setStateData(std::vector&lt;bridges::dataset::USState&gt;)’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:132:56: error: no match for ‘operator=’ (operand types are ‘std::vector&lt;bridges::dataset::Country&gt;’ and ‘std::vector&lt;bridges::dataset::USState&gt;’)
+  132 |                                         country_data = cntry_data;
+      |                                                        ^~~~~~~~~~
+In file included from /usr/include/c++/13/vector:72,
+                 from main.cpp:2:
+/usr/include/c++/13/bits/vector.tcc:210:5: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(const std::vector&lt;_Tp, _Alloc&gt;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  210 |     vector&lt;_Tp, _Alloc&gt;::
+      |     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/vector.tcc:211:42: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘const std::vector&lt;bridges::dataset::Country&gt;&amp;’
+  211 |     operator=(const vector&lt;_Tp, _Alloc&gt;&amp; __x)
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/c++/13/vector:66:
+/usr/include/c++/13/bits/stl_vector.h:766:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::vector&lt;_Tp, _Alloc&gt;&amp;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:766:26: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::vector&lt;bridges::dataset::Country&gt;&amp;&amp;’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |                 ~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:788:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::initializer_list&lt;_Tp&gt;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:788:46: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::initializer_list&lt;bridges::dataset::Country&gt;’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+main.cpp: In function ‘int main()’:
+main.cpp:62:12: error: no matching function for call to ‘bridges::datastructure::WorldMap::WorldMap()’
+   62 |   WorldMap wm;
+      |            ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(std::vector&lt;bridges::dataset::Country&gt;)’
+  111 |                                 WorldMap(vector&lt;Country&gt; cntry_data) {
+      |                                 ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(const bridges::datastructure::WorldMap&amp;)’
+   49 |                 class WorldMap :  public Map, public DataStructure {
+      |                       ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(bridges::datastructure::WorldMap&amp;&amp;)’
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+make: *** [Makefile:26: main.o] Error 1
+could not compile c++_answer/ for assignment in ../assignmentdb/10-HurricaneTracker/c++_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="cxxlog10-runanswer">Run Answer for Assignment 10</h3>
-<pre><code>Guessing ./Hurricane is the right binary file where main is
-
-Success: Assignment posted to the server. 
-Check out your visualization at:
-
-http://bridges-cs.herokuapp.com/assignments/110/bridges_testing
-
+<pre><code>can't guess a binary file to run
+could not run c++_answer for assignment in ../assignmentdb/10-HurricaneTracker/c++_answer
 </code></pre>
 </div>
     
@@ -1571,8 +1770,8 @@ g++ -o 2048 2048.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread
 <h3 id="cxxlog11-runanswer">Run Answer for Assignment 11</h3>
 <pre><code>Guessing ./2048 is the right binary file where main is
 
-[2025-05-22 17:18:31] [connect] Successful connection
-[2025-05-22 17:18:31] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747948711 101
+[2025-05-22 21:17:43] [connect] Successful connection
+[2025-05-22 21:17:43] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963063 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -1580,7 +1779,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/111/bridges_testing
 
-[2025-05-22 17:18:31] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:17:44] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1614,8 +1813,8 @@ g++ -o AStarMaze pathfinder.o -g -L /home/bridges-testing/bridges-cxx-install/li
 <h3 id="cxxlog12-runanswer">Run Answer for Assignment 12</h3>
 <pre><code>Guessing ./AStarMaze is the right binary file where main is
 
-[2025-05-22 17:18:41] [connect] Successful connection
-[2025-05-22 17:18:41] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747948721 101
+[2025-05-22 21:17:54] [connect] Successful connection
+[2025-05-22 21:17:54] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963074 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -1623,7 +1822,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/112/bridges_testing
 
-[2025-05-22 17:18:42] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:17:55] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1657,8 +1856,8 @@ g++ -o InfiniteRunner runner.o -g -L /home/bridges-testing/bridges-cxx-install/l
 <h3 id="cxxlog13-runanswer">Run Answer for Assignment 13</h3>
 <pre><code>Guessing ./InfiniteRunner is the right binary file where main is
 
-[2025-05-22 17:18:52] [connect] Successful connection
-[2025-05-22 17:18:52] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747948732 101
+[2025-05-22 21:18:04] [connect] Successful connection
+[2025-05-22 21:18:04] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963084 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -1666,7 +1865,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/113/bridges_testing
 
-[2025-05-22 17:18:52] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:18:05] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1700,8 +1899,8 @@ g++ -o SpreadingFire SpreadingFire.o -g -L /home/bridges-testing/bridges-cxx-ins
 <h3 id="cxxlog14-runanswer">Run Answer for Assignment 14</h3>
 <pre><code>Guessing ./SpreadingFire is the right binary file where main is
 
-[2025-05-22 17:19:02] [connect] Successful connection
-[2025-05-22 17:19:02] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747948742 101
+[2025-05-22 21:18:15] [connect] Successful connection
+[2025-05-22 21:18:15] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963095 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -1709,7 +1908,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/0/bridges_testing
 
-[2025-05-22 17:19:02] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:18:15] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1743,8 +1942,8 @@ g++ -o FallingSand FallingSand.o -g -L /home/bridges-testing/bridges-cxx-install
 <h3 id="cxxlog15-runanswer">Run Answer for Assignment 15</h3>
 <pre><code>Guessing ./FallingSand is the right binary file where main is
 
-[2025-05-22 17:19:12] [connect] Successful connection
-[2025-05-22 17:19:12] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747948752 101
+[2025-05-22 21:18:25] [connect] Successful connection
+[2025-05-22 21:18:25] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963105 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -1752,7 +1951,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/115/bridges_testing
 
-[2025-05-22 17:19:13] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:18:26] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1826,8 +2025,8 @@ g++ -o ControlsTutorial Controls_Tutorial.o -g -L /home/bridges-testing/bridges-
 <h3 id="cxxlog17-runanswer">Run Answer for Assignment 17</h3>
 <pre><code>Guessing ./ControlsTutorial is the right binary file where main is
 
-[2025-05-22 17:19:30] [connect] Successful connection
-[2025-05-22 17:19:30] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747948770 101
+[2025-05-22 21:18:45] [connect] Successful connection
+[2025-05-22 21:18:45] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963125 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -1835,7 +2034,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/117/bridges_testing
 
-[2025-05-22 17:19:31] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:18:46] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1869,8 +2068,8 @@ g++ -o ControlsTutorial2 Controls_Tutorial2.o -g -L /home/bridges-testing/bridge
 <h3 id="cxxlog18-runanswer">Run Answer for Assignment 18</h3>
 <pre><code>Guessing ./ControlsTutorial2 is the right binary file where main is
 
-[2025-05-22 17:19:49] [connect] Successful connection
-[2025-05-22 17:19:49] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747948789 101
+[2025-05-22 21:18:55] [connect] Successful connection
+[2025-05-22 21:18:55] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963135 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -1878,7 +2077,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/0/bridges_testing
 
-[2025-05-22 17:19:49] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:18:55] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1916,8 +2115,8 @@ g++ -o BugStomp BugStomp.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ 
 <h3 id="cxxlog19-runanswer">Run Answer for Assignment 19</h3>
 <pre><code>Guessing ./BugStomp is the right binary file where main is
 
-[2025-05-22 17:19:59] [connect] Successful connection
-[2025-05-22 17:19:59] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747948799 101
+[2025-05-22 21:19:06] [connect] Successful connection
+[2025-05-22 21:19:06] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963146 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -1925,7 +2124,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/119/bridges_testing
 
-[2025-05-22 17:19:59] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:19:06] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1959,8 +2158,8 @@ g++ -o Minesweeper minesweeper.o -g -L /home/bridges-testing/bridges-cxx-install
 <h3 id="cxxlog20-runanswer">Run Answer for Assignment 20</h3>
 <pre><code>Guessing ./Minesweeper is the right binary file where main is
 
-[2025-05-22 17:20:09] [connect] Successful connection
-[2025-05-22 17:20:09] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747948809 101
+[2025-05-22 21:19:15] [connect] Successful connection
+[2025-05-22 21:19:15] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963155 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -1968,7 +2167,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/120/bridges_testing
 
-[2025-05-22 17:20:10] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:19:15] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2002,8 +2201,8 @@ g++ -o RaceCar RaceCar.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -p
 <h3 id="cxxlog21-runanswer">Run Answer for Assignment 21</h3>
 <pre><code>Guessing ./RaceCar is the right binary file where main is
 
-[2025-05-22 17:20:19] [connect] Successful connection
-[2025-05-22 17:20:19] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747948819 101
+[2025-05-22 21:19:23] [connect] Successful connection
+[2025-05-22 21:19:24] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963163 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2011,7 +2210,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/121/bridges_testing
 
-[2025-05-22 17:20:20] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:19:24] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2045,8 +2244,8 @@ g++ -o Snake Snake.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthre
 <h3 id="cxxlog22-runanswer">Run Answer for Assignment 22</h3>
 <pre><code>Guessing ./Snake is the right binary file where main is
 
-[2025-05-22 17:20:30] [connect] Successful connection
-[2025-05-22 17:20:30] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747948830 101
+[2025-05-22 21:19:35] [connect] Successful connection
+[2025-05-22 21:19:35] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963175 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2054,7 +2253,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/0/bridges_testing
 
-[2025-05-22 17:20:31] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:19:35] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2402,8 +2601,8 @@ g++ -o SmileyFace SmileyFace.o -g -L /home/bridges-testing/bridges-cxx-install/l
 <h3 id="cxxlog27-runanswer">Run Answer for Assignment 27</h3>
 <pre><code>Guessing ./SmileyFace is the right binary file where main is
 
-[2025-05-22 17:21:22] [connect] Successful connection
-[2025-05-22 17:21:22] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747948882 101
+[2025-05-22 21:20:19] [connect] Successful connection
+[2025-05-22 21:20:19] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963219 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2411,7 +2610,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/127/bridges_testing
 
-[2025-05-22 17:21:22] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:20:19] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2525,7 +2724,7 @@ g++ -o TemporalBaconNumber wikidata_actor.o -g -L /home/bridges-testing/bridges-
 <h3 id="cxxlog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing ./TemporalBaconNumber is the right binary file where main is
 
-*********Alarm clock
+********Alarm clock
 could not run c++_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/c++_answer
 </code></pre>
 </div>
@@ -2597,8 +2796,8 @@ g++ -o TicTacToe tic_tac_toe.o -g -L /home/bridges-testing/bridges-cxx-install/l
 <h3 id="cxxlog32-runanswer">Run Answer for Assignment 32</h3>
 <pre><code>Guessing ./TicTacToe is the right binary file where main is
 
-[2025-05-22 17:26:34] [connect] Successful connection
-[2025-05-22 17:26:34] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747949194 101
+[2025-05-22 21:25:31] [connect] Successful connection
+[2025-05-22 21:25:31] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963531 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2606,7 +2805,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/132/bridges_testing
 
-[2025-05-22 17:26:35] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:25:32] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2693,8 +2892,8 @@ g++ -o GameTutorial GameTutorial.o -g -L /home/bridges-testing/bridges-cxx-insta
 <h3 id="cxxlog34-runanswer">Run Answer for Assignment 34</h3>
 <pre><code>Guessing ./GameTutorial is the right binary file where main is
 
-[2025-05-22 17:26:52] [connect] Successful connection
-[2025-05-22 17:26:52] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747949212 101
+[2025-05-22 21:25:50] [connect] Successful connection
+[2025-05-22 21:25:50] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963550 101
 sockopen on namespace /
 Size:10,10
 Setting framelimit to 10
@@ -2703,7 +2902,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/134/bridges_testing
 
-[2025-05-22 17:26:53] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:25:50] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2737,8 +2936,8 @@ g++ -o connect4 connect4.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ 
 <h3 id="cxxlog35-runanswer">Run Answer for Assignment 35</h3>
 <pre><code>Guessing ./connect4 is the right binary file where main is
 
-[2025-05-22 17:27:02] [connect] Successful connection
-[2025-05-22 17:27:02] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747949222 101
+[2025-05-22 21:26:01] [connect] Successful connection
+[2025-05-22 21:26:01] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963561 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2746,7 +2945,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/135/bridges_testing
 
-[2025-05-22 17:27:03] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:26:02] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2780,8 +2979,8 @@ g++ -o pong pong.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread
 <h3 id="cxxlog36-runanswer">Run Answer for Assignment 36</h3>
 <pre><code>Guessing ./pong is the right binary file where main is
 
-[2025-05-22 17:27:14] [connect] Successful connection
-[2025-05-22 17:27:14] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747949234 101
+[2025-05-22 21:26:11] [connect] Successful connection
+[2025-05-22 21:26:11] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963571 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -2789,7 +2988,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/136/bridges_testing
 
-[2025-05-22 17:27:14] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:26:12] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2850,7 +3049,7 @@ http://bridges-cs.herokuapp.com/assignments/137/bridges_testing
     <div id="cxxlog38" class="logdetails">
       <h2>Assignment 38 full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="cxxlog38-buildscaffold">Build Scaffold for Assignment 38</h3>
 <pre><code>Compiling c++/ for assignment in ../assignmentdb/38-GeologicalSurvey/c++
 rm geological_survey.o
@@ -2858,10 +3057,66 @@ rm geological_survey
 rm: cannot remove 'geological_survey': No such file or directory
 make: [Makefile:32: clean] Error 1 (ignored)
 g++ -g  -std=c++14 -I /home/bridges-testing/bridges-cxx-install/include/ -c geological_survey.cpp -o geological_survey.o
-g++ -o geological_survey geological_survey.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
+In file included from geological_survey.cpp:4:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getDataStructureRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:56:48: error: ‘JSONencode’ was not declared in this scope; did you mean ‘bridges::JSONUtil::JSONencode’?
+   56 |                                         return JSONencode(&quot;mapdummy&quot;) + COLON + JSONencode(true) + CLOSE_CURLY;
+      |                                                ^~~~~~~~~~
+      |                                                bridges::JSONUtil::JSONencode
+In file included from /home/bridges-testing/bridges-cxx-install/include/Bridges.h:13,
+                 from geological_survey.cpp:2:
+/home/bridges-testing/bridges-cxx-install/include/JSONutil.h:102:36: note: ‘bridges::JSONUtil::JSONencode’ declared here
+  102 |                 inline std::string JSONencode(const float&amp; d, int precision = -1) {
+      |                                    ^~~~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getMapRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:97:49: error: expected primary-expression before ‘if’
+   97 |                                                 if (cntry.getCounties().size()) // case where counties are on
+      |                                                 ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘void bridges::datastructure::WorldMap::setStateData(std::vector&lt;bridges::dataset::USState&gt;)’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:132:56: error: no match for ‘operator=’ (operand types are ‘std::vector&lt;bridges::dataset::Country&gt;’ and ‘std::vector&lt;bridges::dataset::USState&gt;’)
+  132 |                                         country_data = cntry_data;
+      |                                                        ^~~~~~~~~~
+In file included from /usr/include/c++/13/vector:72,
+                 from /home/bridges-testing/bridges-cxx-install/include/ServerComm.h:5,
+                 from /home/bridges-testing/bridges-cxx-install/include/Bridges.h:9:
+/usr/include/c++/13/bits/vector.tcc:210:5: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(const std::vector&lt;_Tp, _Alloc&gt;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  210 |     vector&lt;_Tp, _Alloc&gt;::
+      |     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/vector.tcc:211:42: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘const std::vector&lt;bridges::dataset::Country&gt;&amp;’
+  211 |     operator=(const vector&lt;_Tp, _Alloc&gt;&amp; __x)
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/c++/13/vector:66:
+/usr/include/c++/13/bits/stl_vector.h:766:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::vector&lt;_Tp, _Alloc&gt;&amp;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:766:26: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::vector&lt;bridges::dataset::Country&gt;&amp;&amp;’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |                 ~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:788:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::initializer_list&lt;_Tp&gt;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:788:46: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::initializer_list&lt;bridges::dataset::Country&gt;’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+geological_survey.cpp: In function ‘int main(int, char**)’:
+geological_survey.cpp:28:18: error: no matching function for call to ‘bridges::datastructure::WorldMap::WorldMap()’
+   28 |         WorldMap wm;
+      |                  ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(std::vector&lt;bridges::dataset::Country&gt;)’
+  111 |                                 WorldMap(vector&lt;Country&gt; cntry_data) {
+      |                                 ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(const bridges::datastructure::WorldMap&amp;)’
+   49 |                 class WorldMap :  public Map, public DataStructure {
+      |                       ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(bridges::datastructure::WorldMap&amp;&amp;)’
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+make: *** [Makefile:26: geological_survey.o] Error 1
+could not compile c++/ for assignment in ../assignmentdb/38-GeologicalSurvey/c++
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="cxxlog38-buildanswer">Build Answer for Assignment 38</h3>
 <pre><code>Compiling c++_answer/ for assignment in ../assignmentdb/38-GeologicalSurvey/c++_answer
 rm geological_survey.o
@@ -2869,18 +3124,69 @@ rm geological_survey
 rm: cannot remove 'geological_survey': No such file or directory
 make: [Makefile:32: clean] Error 1 (ignored)
 g++ -g  -std=c++14 -I /home/bridges-testing/bridges-cxx-install/include/ -c geological_survey.cpp -o geological_survey.o
-g++ -o geological_survey geological_survey.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
+In file included from geological_survey.cpp:4:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getDataStructureRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:56:48: error: ‘JSONencode’ was not declared in this scope; did you mean ‘bridges::JSONUtil::JSONencode’?
+   56 |                                         return JSONencode(&quot;mapdummy&quot;) + COLON + JSONencode(true) + CLOSE_CURLY;
+      |                                                ^~~~~~~~~~
+      |                                                bridges::JSONUtil::JSONencode
+In file included from /home/bridges-testing/bridges-cxx-install/include/Bridges.h:13,
+                 from geological_survey.cpp:2:
+/home/bridges-testing/bridges-cxx-install/include/JSONutil.h:102:36: note: ‘bridges::JSONUtil::JSONencode’ declared here
+  102 |                 inline std::string JSONencode(const float&amp; d, int precision = -1) {
+      |                                    ^~~~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getMapRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:97:49: error: expected primary-expression before ‘if’
+   97 |                                                 if (cntry.getCounties().size()) // case where counties are on
+      |                                                 ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘void bridges::datastructure::WorldMap::setStateData(std::vector&lt;bridges::dataset::USState&gt;)’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:132:56: error: no match for ‘operator=’ (operand types are ‘std::vector&lt;bridges::dataset::Country&gt;’ and ‘std::vector&lt;bridges::dataset::USState&gt;’)
+  132 |                                         country_data = cntry_data;
+      |                                                        ^~~~~~~~~~
+In file included from /usr/include/c++/13/vector:72,
+                 from /home/bridges-testing/bridges-cxx-install/include/ServerComm.h:5,
+                 from /home/bridges-testing/bridges-cxx-install/include/Bridges.h:9:
+/usr/include/c++/13/bits/vector.tcc:210:5: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(const std::vector&lt;_Tp, _Alloc&gt;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  210 |     vector&lt;_Tp, _Alloc&gt;::
+      |     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/vector.tcc:211:42: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘const std::vector&lt;bridges::dataset::Country&gt;&amp;’
+  211 |     operator=(const vector&lt;_Tp, _Alloc&gt;&amp; __x)
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/c++/13/vector:66:
+/usr/include/c++/13/bits/stl_vector.h:766:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::vector&lt;_Tp, _Alloc&gt;&amp;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:766:26: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::vector&lt;bridges::dataset::Country&gt;&amp;&amp;’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |                 ~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:788:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::initializer_list&lt;_Tp&gt;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:788:46: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::initializer_list&lt;bridges::dataset::Country&gt;’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+geological_survey.cpp: In function ‘int main(int, char**)’:
+geological_survey.cpp:28:18: error: no matching function for call to ‘bridges::datastructure::WorldMap::WorldMap()’
+   28 |         WorldMap wm;
+      |                  ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(std::vector&lt;bridges::dataset::Country&gt;)’
+  111 |                                 WorldMap(vector&lt;Country&gt; cntry_data) {
+      |                                 ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(const bridges::datastructure::WorldMap&amp;)’
+   49 |                 class WorldMap :  public Map, public DataStructure {
+      |                       ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(bridges::datastructure::WorldMap&amp;&amp;)’
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+make: *** [Makefile:26: geological_survey.o] Error 1
+could not compile c++_answer/ for assignment in ../assignmentdb/38-GeologicalSurvey/c++_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="cxxlog38-runanswer">Run Answer for Assignment 38</h3>
-<pre><code>Guessing ./geological_survey is the right binary file where main is
-
-Success: Assignment posted to the server. 
-Check out your visualization at:
-
-http://bridges-cs.herokuapp.com/assignments/138/bridges_testing
-
+<pre><code>can't guess a binary file to run
+could not run c++_answer for assignment in ../assignmentdb/38-GeologicalSurvey/c++_answer
 </code></pre>
 </div>
     
@@ -2915,7 +3221,7 @@ terminate called after throwing an instance of 'bridges::HTTPException'
 HTTP code: 502
 HTTP/1.1 502 Bad Gateway
 Server: nginx/1.18.0 (Ubuntu)
-Date: Thu, 22 May 2025 21:27:41 GMT
+Date: Fri, 23 May 2025 01:26:33 GMT
 Content-Type: text/html
 Content-Length: 166
 Connection: keep-alive
@@ -3029,8 +3335,8 @@ g++ -o SpaceInvaders SpaceInvaders.o -g -L /home/bridges-testing/bridges-cxx-ins
 <h3 id="cxxlog41-runanswer">Run Answer for Assignment 41</h3>
 <pre><code>Guessing ./SpaceInvaders is the right binary file where main is
 
-[2025-05-22 17:27:58] [connect] Successful connection
-[2025-05-22 17:27:58] [connect] WebSocket Connection 174.129.128.48:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747949278 101
+[2025-05-22 21:26:49] [connect] Successful connection
+[2025-05-22 21:26:49] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963609 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -3038,7 +3344,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/141/bridges_testing
 
-[2025-05-22 17:27:59] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:26:49] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -3113,7 +3419,7 @@ Check out your visualization at:
 
 http://bridges-cs.herokuapp.com/assignments/143/bridges_testing
 
-elapsed time: 0.1427s
+elapsed time: 0.158957s
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
@@ -3192,8 +3498,8 @@ g++ -o ExplorerRobot ExplorerRobot.o -g -L /home/bridges-testing/bridges-cxx-ins
 <h3 id="cxxlog45-runanswer">Run Answer for Assignment 45</h3>
 <pre><code>Guessing ./ExplorerRobot is the right binary file where main is
 
-[2025-05-22 17:28:35] [connect] Successful connection
-[2025-05-22 17:28:35] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747949315 101
+[2025-05-22 21:27:26] [connect] Successful connection
+[2025-05-22 21:27:26] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963646 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -3201,7 +3507,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/145/bridges_testing
 
-[2025-05-22 17:28:41] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:27:31] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -3499,7 +3805,7 @@ terminate called after throwing an instance of 'bridges::HTTPException'
 HTTP code: 502
 HTTP/1.1 502 Bad Gateway
 Server: nginx/1.18.0 (Ubuntu)
-Date: Thu, 22 May 2025 21:29:08 GMT
+Date: Fri, 23 May 2025 01:27:59 GMT
 Content-Type: text/html
 Content-Length: 166
 Connection: keep-alive
@@ -3633,7 +3939,7 @@ http://bridges-cs.herokuapp.com/assignments/160/bridges_testing
     <div id="cxxlog61" class="logdetails">
       <h2>Assignment 61 full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="cxxlog61-buildscaffold">Build Scaffold for Assignment 61</h3>
 <pre><code>Compiling c++/ for assignment in ../assignmentdb/61-Flight-Data/c++
 rm flight.o
@@ -3641,10 +3947,67 @@ rm flight
 rm: cannot remove 'flight': No such file or directory
 make: [Makefile:32: clean] Error 1 (ignored)
 g++ -g  -std=c++14 -I /home/bridges-testing/bridges-cxx-install/include/ -c flight.cpp -o flight.o
-g++ -o flight flight.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
+In file included from flight.cpp:12:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getDataStructureRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:56:48: error: ‘JSONencode’ was not declared in this scope; did you mean ‘bridges::JSONUtil::JSONencode’?
+   56 |                                         return JSONencode(&quot;mapdummy&quot;) + COLON + JSONencode(true) + CLOSE_CURLY;
+      |                                                ^~~~~~~~~~
+      |                                                bridges::JSONUtil::JSONencode
+In file included from /home/bridges-testing/bridges-cxx-install/include/GraphAdjList.h:7,
+                 from flight.cpp:10:
+/home/bridges-testing/bridges-cxx-install/include/JSONutil.h:102:36: note: ‘bridges::JSONUtil::JSONencode’ declared here
+  102 |                 inline std::string JSONencode(const float&amp; d, int precision = -1) {
+      |                                    ^~~~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getMapRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:97:49: error: expected primary-expression before ‘if’
+   97 |                                                 if (cntry.getCounties().size()) // case where counties are on
+      |                                                 ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘void bridges::datastructure::WorldMap::setStateData(std::vector&lt;bridges::dataset::USState&gt;)’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:132:56: error: no match for ‘operator=’ (operand types are ‘std::vector&lt;bridges::dataset::Country&gt;’ and ‘std::vector&lt;bridges::dataset::USState&gt;’)
+  132 |                                         country_data = cntry_data;
+      |                                                        ^~~~~~~~~~
+In file included from /usr/include/c++/13/vector:72,
+                 from /usr/include/c++/13/bits/random.h:34,
+                 from /usr/include/c++/13/random:51,
+                 from flight.cpp:3:
+/usr/include/c++/13/bits/vector.tcc:210:5: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(const std::vector&lt;_Tp, _Alloc&gt;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  210 |     vector&lt;_Tp, _Alloc&gt;::
+      |     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/vector.tcc:211:42: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘const std::vector&lt;bridges::dataset::Country&gt;&amp;’
+  211 |     operator=(const vector&lt;_Tp, _Alloc&gt;&amp; __x)
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/c++/13/vector:66:
+/usr/include/c++/13/bits/stl_vector.h:766:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::vector&lt;_Tp, _Alloc&gt;&amp;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:766:26: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::vector&lt;bridges::dataset::Country&gt;&amp;&amp;’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |                 ~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:788:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::initializer_list&lt;_Tp&gt;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:788:46: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::initializer_list&lt;bridges::dataset::Country&gt;’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+flight.cpp: In function ‘int main()’:
+flight.cpp:74:14: error: no matching function for call to ‘bridges::datastructure::WorldMap::WorldMap()’
+   74 |     WorldMap wm;
+      |              ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(std::vector&lt;bridges::dataset::Country&gt;)’
+  111 |                                 WorldMap(vector&lt;Country&gt; cntry_data) {
+      |                                 ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(const bridges::datastructure::WorldMap&amp;)’
+   49 |                 class WorldMap :  public Map, public DataStructure {
+      |                       ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(bridges::datastructure::WorldMap&amp;&amp;)’
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+make: *** [Makefile:26: flight.o] Error 1
+could not compile c++/ for assignment in ../assignmentdb/61-Flight-Data/c++
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="cxxlog61-buildanswer">Build Answer for Assignment 61</h3>
 <pre><code>Compiling c++_answer/ for assignment in ../assignmentdb/61-Flight-Data/c++_answer
 rm flight.o
@@ -3652,18 +4015,70 @@ rm flight
 rm: cannot remove 'flight': No such file or directory
 make: [Makefile:32: clean] Error 1 (ignored)
 g++ -g  -std=c++14 -I /home/bridges-testing/bridges-cxx-install/include/ -c flight.cpp -o flight.o
-g++ -o flight flight.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
+In file included from flight.cpp:12:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getDataStructureRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:56:48: error: ‘JSONencode’ was not declared in this scope; did you mean ‘bridges::JSONUtil::JSONencode’?
+   56 |                                         return JSONencode(&quot;mapdummy&quot;) + COLON + JSONencode(true) + CLOSE_CURLY;
+      |                                                ^~~~~~~~~~
+      |                                                bridges::JSONUtil::JSONencode
+In file included from /home/bridges-testing/bridges-cxx-install/include/GraphAdjList.h:7,
+                 from flight.cpp:10:
+/home/bridges-testing/bridges-cxx-install/include/JSONutil.h:102:36: note: ‘bridges::JSONUtil::JSONencode’ declared here
+  102 |                 inline std::string JSONencode(const float&amp; d, int precision = -1) {
+      |                                    ^~~~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘virtual const std::string bridges::datastructure::WorldMap::getMapRepresentation() const’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:97:49: error: expected primary-expression before ‘if’
+   97 |                                                 if (cntry.getCounties().size()) // case where counties are on
+      |                                                 ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h: In member function ‘void bridges::datastructure::WorldMap::setStateData(std::vector&lt;bridges::dataset::USState&gt;)’:
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:132:56: error: no match for ‘operator=’ (operand types are ‘std::vector&lt;bridges::dataset::Country&gt;’ and ‘std::vector&lt;bridges::dataset::USState&gt;’)
+  132 |                                         country_data = cntry_data;
+      |                                                        ^~~~~~~~~~
+In file included from /usr/include/c++/13/vector:72,
+                 from /usr/include/c++/13/bits/random.h:34,
+                 from /usr/include/c++/13/random:51,
+                 from flight.cpp:3:
+/usr/include/c++/13/bits/vector.tcc:210:5: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(const std::vector&lt;_Tp, _Alloc&gt;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  210 |     vector&lt;_Tp, _Alloc&gt;::
+      |     ^~~~~~~~~~~~~~~~~~~
+/usr/include/c++/13/bits/vector.tcc:211:42: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘const std::vector&lt;bridges::dataset::Country&gt;&amp;’
+  211 |     operator=(const vector&lt;_Tp, _Alloc&gt;&amp; __x)
+      |               ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+In file included from /usr/include/c++/13/vector:66:
+/usr/include/c++/13/bits/stl_vector.h:766:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::vector&lt;_Tp, _Alloc&gt;&amp;&amp;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:766:26: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::vector&lt;bridges::dataset::Country&gt;&amp;&amp;’
+  766 |       operator=(vector&amp;&amp; __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |                 ~~~~~~~~~^~~
+/usr/include/c++/13/bits/stl_vector.h:788:7: note: candidate: ‘std::vector&lt;_Tp, _Alloc&gt;&amp; std::vector&lt;_Tp, _Alloc&gt;::operator=(std::initializer_list&lt;_Tp&gt;) [with _Tp = bridges::dataset::Country; _Alloc = std::allocator&lt;bridges::dataset::Country&gt;]’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |       ^~~~~~~~
+/usr/include/c++/13/bits/stl_vector.h:788:46: note:   no known conversion for argument 1 from ‘std::vector&lt;bridges::dataset::USState&gt;’ to ‘std::initializer_list&lt;bridges::dataset::Country&gt;’
+  788 |       operator=(initializer_list&lt;value_type&gt; __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+flight.cpp: In function ‘int main()’:
+flight.cpp:94:14: error: no matching function for call to ‘bridges::datastructure::WorldMap::WorldMap()’
+   94 |     WorldMap wm;
+      |              ^~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(std::vector&lt;bridges::dataset::Country&gt;)’
+  111 |                                 WorldMap(vector&lt;Country&gt; cntry_data) {
+      |                                 ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:111:33: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(const bridges::datastructure::WorldMap&amp;)’
+   49 |                 class WorldMap :  public Map, public DataStructure {
+      |                       ^~~~~~~~
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note: candidate: ‘bridges::datastructure::WorldMap::WorldMap(bridges::datastructure::WorldMap&amp;&amp;)’
+/home/bridges-testing/bridges-cxx-install/include/WorldMap.h:49:23: note:   candidate expects 1 argument, 0 provided
+make: *** [Makefile:26: flight.o] Error 1
+could not compile c++_answer/ for assignment in ../assignmentdb/61-Flight-Data/c++_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="cxxlog61-runanswer">Run Answer for Assignment 61</h3>
-<pre><code>Guessing ./flight is the right binary file where main is
-
-Success: Assignment posted to the server. 
-Check out your visualization at:
-
-http://bridges-cs.herokuapp.com/assignments/161/bridges_testing
-
+<pre><code>can't guess a binary file to run
+could not run c++_answer for assignment in ../assignmentdb/61-Flight-Data/c++_answer
 </code></pre>
 </div>
     
@@ -3936,8 +4351,8 @@ g++ -o ControlsTutorialThree Controls_Tutorial_Three.o -g -L /home/bridges-testi
 <h3 id="cxxlog67-runanswer">Run Answer for Assignment 67</h3>
 <pre><code>Guessing ./ControlsTutorialThree is the right binary file where main is
 
-[2025-05-22 17:30:38] [connect] Successful connection
-[2025-05-22 17:30:38] [connect] WebSocket Connection 54.235.77.118:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747949438 101
+[2025-05-22 21:29:25] [connect] Successful connection
+[2025-05-22 21:29:25] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963765 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -3945,7 +4360,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/167/bridges_testing
 
-[2025-05-22 17:30:39] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:29:26] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -4026,8 +4441,8 @@ g++ -o snake Snake.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthre
 <h3 id="cxxlog69-runanswer">Run Answer for Assignment 69</h3>
 <pre><code>Guessing ./snake is the right binary file where main is
 
-[2025-05-22 17:30:55] [connect] Successful connection
-[2025-05-22 17:30:55] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747949455 101
+[2025-05-22 21:29:40] [connect] Successful connection
+[2025-05-22 21:29:40] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963780 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -4035,7 +4450,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/169/bridges_testing
 
-[2025-05-22 17:30:55] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:29:41] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -4069,8 +4484,8 @@ g++ -o wordle wordle.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pth
 <h3 id="cxxlog70-runanswer">Run Answer for Assignment 70</h3>
 <pre><code>Guessing ./wordle is the right binary file where main is
 
-[2025-05-22 17:31:07] [connect] Successful connection
-[2025-05-22 17:31:07] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747949467 101
+[2025-05-22 21:29:51] [connect] Successful connection
+[2025-05-22 21:29:51] [connect] WebSocket Connection 18.211.231.38:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963791 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -4078,7 +4493,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/170/bridges_testing
 
-[2025-05-22 17:31:07] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:29:52] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -4151,8 +4566,8 @@ g++ -o Pixel Pixels.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthr
 <h3 id="cxxlog72-runanswer">Run Answer for Assignment 72</h3>
 <pre><code>Guessing ./Pixel is the right binary file where main is
 
-[2025-05-22 17:31:26] [connect] Successful connection
-[2025-05-22 17:31:26] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747949486 101
+[2025-05-22 21:30:09] [connect] Successful connection
+[2025-05-22 21:30:09] [connect] WebSocket Connection 54.205.8.205:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1747963809 101
 sockopen on namespace /
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -4160,7 +4575,7 @@ Check out your visualization at:
 
 http://bridges-games.herokuapp.com/assignments/172/bridges_testing
 
-[2025-05-22 17:31:27] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2025-05-22 21:30:10] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     

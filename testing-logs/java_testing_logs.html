@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Jun  2 09:06:00 PM EDT 2025</p>
+	<p>Running at Tue Jun  3 01:10:42 AM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -345,12 +345,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryosm.java" class="success">
+  <div id="summaryosm.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogosm.java">Test osm.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogosm.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogosm.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogosm.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -363,12 +363,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryosm_snippet.java" class="success">
+  <div id="summaryosm_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogosm_snippet.java">Test osm_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogosm_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogosm_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogosm_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1244,10 +1244,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.9
-	Date:Jun 02 2025  20:45:27.667 EDT
-	Location: 34 km NNE of Big Lake, Texas
-	Lat/Long:31.481,-101.318
+	Magnitude:1.7
+	Date:Jun 03 2025  00:54:57.611 EDT
+	Location: 13 km SSE of Anchorage, Alaska
+	Lat/Long:61.1085,-149.7776
 </code></pre>
 </div>
     
@@ -1263,15 +1263,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.9
-	Date:Jun 02 2025  20:45:27.667 EDT
-	Location: 34 km NNE of Big Lake, Texas
-	Lat/Long:31.481,-101.318
+	Magnitude:1.7
+	Date:Jun 03 2025  00:54:57.611 EDT
+	Location: 13 km SSE of Anchorage, Alaska
+	Lat/Long:61.1085,-149.7776
 Earthquake 0:
-	Magnitude:1.38
-	Date:Dec 14 2023  23:27:55.020 EST
-	Location: 2 km ESE of Berkeley, CA
-	Lat/Long:37.8660011,-122.2473297
+	Magnitude:1.7
+	Date:Dec 15 2023  03:37:39.042 EST
+	Location: 6 km S of Willow, Alaska
+	Lat/Long:61.6919,-150.0179
 </code></pre>
 </div>
     
@@ -1328,10 +1328,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Nanostray 2
+<pre><code>TMNT
 Nintendo DS
-8.1
-[Shooter]
+5.5
+[Action]
 </code></pre>
 </div>
     
@@ -1465,8 +1465,8 @@ could not run test gutenberg_snippet.java
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christina_Ricci
-Addams_Family,_The_(1991)
+<pre><code>John_Malkovich
+Cannes_Man_(1996)
 </code></pre>
 </div>
     
@@ -1689,14 +1689,10 @@ Shutting down ...
 <pre><code>Compiling test osm.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogosm.java-runtest">Run Test for test osm.java</h3>
-<pre><code>
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/2037/bridges_testing
-
-
+<pre><code>Alarm clock
+could not run test osm.java
 </code></pre>
 </div>
     
@@ -1754,11 +1750,10 @@ http://bridges-cs.herokuapp.com/assignments/2037/bridges_testing
 <pre><code>Compiling test osm_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogosm_snippet.java-runtest">Run Test for test osm_snippet.java</h3>
-<pre><code>Number of Vertices [Charlotte]:1588
-Number of Edges [Charlotte]:3317
-Location of first vertex [Cartesian Coord]: -657.974041556194,-4700.217494637191
+<pre><code>Alarm clock
+could not run test osm_snippet.java
 </code></pre>
 </div>
     
@@ -2111,11 +2106,19 @@ Text: This is more about hypothetical biology, but it is the chemical processes 
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 48
-poem
-How careful was I when I took my way,
- Each trifle under truest bars to thrust,
- That to my use it m...
+<pre><code>King John
+play
+1597
+
+KING JOHN
+
+by William Shakespeare
+
+DRAMATIS PERSONAE
+
+ KING JOHN
+ PRINCE HENRY, his son
+ ARTHU...
 </code></pre>
 </div>
     
@@ -3004,16 +3007,16 @@ http://bridges-cs.herokuapp.com/assignments/2080/bridges_testing
 <pre><code>Data Records in 1955: 5046
 
 Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q3193130 &quot;Karen Steele&quot;
 
 Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q102551 &quot;Ernest Borgnine&quot;
 
 Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q102462 &quot;James Stewart&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q180251 &quot;Paddy Chayefsky&quot;
 
 </code></pre>
 </div>

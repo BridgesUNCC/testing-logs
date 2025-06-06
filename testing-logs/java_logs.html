@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Fri Jun  6 09:32:05 AM EDT 2025</p>
+	<p>Running at Fri Jun  6 01:32:38 PM EDT 2025</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -52,13 +52,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary4" class="success">
+  <div id="summary4" class="failure">
     <h2><a href="java_logs.html#javalog4">Assignment 4</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog4-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog4-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog4-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog4-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -112,13 +112,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary10" class="success">
+  <div id="summary10" class="failure">
     <h2><a href="java_logs.html#javalog10">Assignment 10</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog10-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog10-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog10-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog10-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -392,13 +392,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary38" class="success">
+  <div id="summary38" class="failure">
     <h2><a href="java_logs.html#javalog38">Assignment 38</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog38-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog38-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog38-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog38-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -622,13 +622,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary61" class="success">
+  <div id="summary61" class="failure">
     <h2><a href="java_logs.html#javalog61">Assignment 61</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog61-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog61-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog61-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog61-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -998,16 +998,15 @@ http://bridges-cs.herokuapp.com/assignments/3/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/4-GraphEQ/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog4-runanswer">Run Answer for Assignment 4</h3>
 <pre><code>Guessing GraphEQ.java is the right java file where main is
 
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/4/bridges_testing
-
-
+Exception in thread &quot;main&quot; java.lang.NullPointerException: Cannot invoke &quot;java.util.ArrayList.iterator()&quot; because &quot;this.country_data&quot; is null
+	at bridges.base.WorldMap.getMapRepresentation(WorldMap.java:63)
+	at bridges.connect.Bridges.setMap(Bridges.java:289)
+	at GraphEQ.main(GraphEQ.java:62)
+could not run java_answer for assignment in ../assignmentdb/4-GraphEQ/java_answer
 </code></pre>
 </div>
     
@@ -1204,17 +1203,15 @@ http://bridges-cs.herokuapp.com/assignments/9/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/10-HurricaneTracker/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog10-runanswer">Run Answer for Assignment 10</h3>
 <pre><code>Guessing HurricaneTracker.java is the right java file where main is
 
-130
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/10/bridges_testing
-
-
+Exception in thread &quot;main&quot; java.lang.NullPointerException: Cannot invoke &quot;java.util.ArrayList.iterator()&quot; because &quot;this.country_data&quot; is null
+	at bridges.base.WorldMap.getMapRepresentation(WorldMap.java:63)
+	at bridges.connect.Bridges.setMap(Bridges.java:289)
+	at HurricaneTracker.main(HurricaneTracker.java:72)
+could not run java_answer for assignment in ../assignmentdb/10-HurricaneTracker/java_answer
 </code></pre>
 </div>
     
@@ -1982,7 +1979,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.747468381588667E12
+Data Access Took: 1.747482804085742E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2006,7 +2003,7 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Took: 1.747468535114012E12
+Took: 1.747482977664913E12
 
 Check Your Visualization at the following link:
 
@@ -2023,7 +2020,7 @@ Q6491198
 Q15441011
 Q61552
 Q102813
-Took: 1.747468543537867E12
+Took: 1.74748298914306E12
 
 Check Your Visualization at the following link:
 
@@ -2263,16 +2260,15 @@ http://bridges-cs.herokuapp.com/assignments/237/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/38-GeologicalSurvey/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog38-runanswer">Run Answer for Assignment 38</h3>
 <pre><code>Guessing geological_survey.java is the right java file where main is
 
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/38/bridges_testing
-
-
+Exception in thread &quot;main&quot; java.lang.NullPointerException: Cannot invoke &quot;java.util.ArrayList.iterator()&quot; because &quot;this.country_data&quot; is null
+	at bridges.base.WorldMap.getMapRepresentation(WorldMap.java:63)
+	at bridges.connect.Bridges.setMap(Bridges.java:289)
+	at geological_survey.main(geological_survey.java:28)
+could not run java_answer for assignment in ../assignmentdb/38-GeologicalSurvey/java_answer
 </code></pre>
 </div>
     
@@ -2302,8 +2298,8 @@ Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseExceptio
 &lt;/body&gt;
 &lt;/html&gt;
 
-	at bridges.connect.DataSource.requestJSON(DataSource.java:1347)
-	at bridges.connect.DataSource.getGutenbergBookMetaData(DataSource.java:1370)
+	at bridges.connect.DataSource.requestJSON(DataSource.java:1381)
+	at bridges.connect.DataSource.getGutenbergBookMetaData(DataSource.java:1404)
 	at BookDistance.main(BookDistance.java:115)
 could not run java_answer for assignment in ../assignmentdb/39-BookDistance/java_answer
 </code></pre>
@@ -2447,23 +2443,23 @@ total vertices:21987
 Set size: 21987
 Grid
 ===grid stats===
-0)Source Point:-40.21493519002994,-59.744441631196665
+0)Source Point:-0.5550442891966014,-66.46468943860216
 0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:105.86483676456372
+0)[ALG]Min Dist:129.79612295643494
 0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:105.86483676456372
+0)[BFA]Min Dist:129.79612295643494
 0)Difference:0.0
-Source Point:-46.9447640309305,40.80924516547798
-Source Point:-1.9457385061746635,40.78742296859028
-Source Point:-70.82950425789866,40.67849555389767
-Source Point:-10.935528003874381,40.62819219901963
-Source Point:-17.385421814972375,40.676607033931546
-Source Point:-33.506175271854346,40.756259617936806
-Source Point:-63.030008083396595,40.670873183814564
-Source Point:-63.436690968624866,40.73784954713128
-Source Point:-59.496983926980946,40.6229302549771
-Source Point:-34.98379334569551,40.75218426795516
-num cells examined:5
+Source Point:-2.934379878852667,40.642781547998766
+Source Point:-41.93176838598793,40.74138460000408
+Source Point:-13.623262541537883,40.6498670965072
+Source Point:-57.282583288056586,40.68987078336763
+Source Point:-60.76575687494336,40.66939459042673
+Source Point:-54.05299205150668,40.621120861103634
+Source Point:-55.15335734417104,40.715527494912024
+Source Point:-44.12196834310565,40.78026493497422
+Source Point:-59.9203159412351,40.62486779314837
+Source Point:-18.03828441770186,40.80573381095756
+num cells examined:3
 
 Check Your Visualization at the following link:
 
@@ -2800,8 +2796,8 @@ Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseExceptio
 &lt;/body&gt;
 &lt;/html&gt;
 
-	at bridges.connect.DataSource.requestJSON(DataSource.java:1347)
-	at bridges.connect.DataSource.getGutenbergBookMetaData(DataSource.java:1370)
+	at bridges.connect.DataSource.requestJSON(DataSource.java:1381)
+	at bridges.connect.DataSource.getGutenbergBookMetaData(DataSource.java:1404)
 	at book_analysis.main(book_analysis.java:114)
 could not run java_answer for assignment in ../assignmentdb/57-BookAnalysis/java_answer
 </code></pre>
@@ -2902,16 +2898,15 @@ http://bridges-cs.herokuapp.com/assignments/60/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/61-Flight-Data/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog61-runanswer">Run Answer for Assignment 61</h3>
 <pre><code>Guessing Flight.java is the right java file where main is
 
-
-Check Your Visualization at the following link:
-
-http://bridges-cs.herokuapp.com/assignments/61/bridges_testing
-
-
+Exception in thread &quot;main&quot; java.lang.NullPointerException: Cannot invoke &quot;java.util.ArrayList.iterator()&quot; because &quot;this.country_data&quot; is null
+	at bridges.base.WorldMap.getMapRepresentation(WorldMap.java:63)
+	at bridges.connect.Bridges.setMap(Bridges.java:289)
+	at Flight.main(Flight.java:58)
+could not run java_answer for assignment in ../assignmentdb/61-Flight-Data/java_answer
 </code></pre>
 </div>
     
@@ -3232,7 +3227,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.15008
+Pi val: 3.13332
 
 Check Your Visualization at the following link:
 

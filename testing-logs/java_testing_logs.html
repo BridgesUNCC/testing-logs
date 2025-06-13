@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Fri Jun 13 01:05:30 PM EDT 2025</p>
+	<p>Running at Fri Jun 13 05:05:25 PM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -183,12 +183,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryeq_test.java" class="success">
+  <div id="summaryeq_test.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogeq_test.java">Test eq_test.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogeq_test.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogeq_test.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogeq_test.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1271,10 +1271,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.05
-	Date:Jun 13 2025  12:43:51.510 EDT
-	Location: 7 km NNW of The Geysers, CA
-	Lat/Long:38.8235015869141,-122.808502197266
+	Magnitude:1.2
+	Date:Jun 13 2025  16:59:29.790 EDT
+	Location: 2 km NNW of The Geysers, CA
+	Lat/Long:38.7879981994629,-122.767669677734
 </code></pre>
 </div>
     
@@ -1287,18 +1287,12 @@ first 10 elevations:
 <pre><code>Compiling test eq_test.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
-<pre><code>Earthquake 0:
-	Magnitude:1.05
-	Date:Jun 13 2025  12:43:51.510 EDT
-	Location: 7 km NNW of The Geysers, CA
-	Lat/Long:38.8235015869141,-122.808502197266
-Earthquake 0:
-	Magnitude:1.14
-	Date:Jan 18 2024  21:24:22.430 EST
-	Location: 7 km SSW of Idyllwild, CA
-	Lat/Long:33.6839981,-116.7553329
+<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503
+	at bridges.connect.DataSource.getEarthquakeUSGSData(DataSource.java:465)
+	at eq_test.main(eq_test.java:20)
+could not run test eq_test.java
 </code></pre>
 </div>
     
@@ -1355,10 +1349,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>The Baconing
-PC
-6.0
-[Action, RPG]
+<pre><code>AquaPazza
+PlayStation 3
+7.0
+[Fighting]
 </code></pre>
 </div>
     
@@ -1492,8 +1486,8 @@ could not run test gutenberg_snippet.java
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christopher_Lee_(I)
-New_Magic_(1983)
+<pre><code>Alec_Guinness
+Pasternak_(1965)
 </code></pre>
 </div>
     
@@ -2150,11 +2144,16 @@ Thanks!
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 64
+<pre><code>A Lover's Complaint
 poem
-When I have seen by Time's fell hand defaced
- The rich-proud cost of outworn buried age,
- When somet...
+1609
+
+A LOVER'S COMPLAINT
+
+by William Shakespeare
+
+ From off a hill whose concave womb reworded
+ A p...
 </code></pre>
 </div>
     
@@ -3055,8 +3054,8 @@ US Cities Retrieved
 	Fayetteville, NC:  Population: 201963, Elevation: 29, Lat/Long: 35.05266,-78.87836
 	Greensboro, NC:  Population: 285342, Elevation: 266, Lat/Long: 36.07264,-79.79198
 	Durham, NC:  Population: 257636, Elevation: 123, Lat/Long: 35.99403,-78.89862
-	High Point, NC:  Population: 110268, Elevation: 281, Lat/Long: 35.95569,-80.00532
 	Raleigh, NC:  Population: 451066, Elevation: 96, Lat/Long: 35.7721,-78.63861
+	High Point, NC:  Population: 110268, Elevation: 281, Lat/Long: 35.95569,-80.00532
 	West Raleigh, NC:  Population: 338759, Elevation: 122, Lat/Long: 35.78682,-78.66389
 	Winston-Salem, NC:  Population: 241218, Elevation: 293, Lat/Long: 36.09986,-80.24422
 	Wilmington, NC:  Population: 115933, Elevation: 9, Lat/Long: 34.22573,-77.94471
@@ -3100,16 +3099,16 @@ http://bridges-cs.herokuapp.com/assignments/2083/bridges_testing
 <pre><code>Data Records in 1955: 5046
 
 Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q102551 &quot;Ernest Borgnine&quot;
 
 Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q180251 &quot;Paddy Chayefsky&quot;
 
 Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q102462 &quot;James Stewart&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q266416 &quot;Betsy Blair&quot;
 
 </code></pre>
 </div>

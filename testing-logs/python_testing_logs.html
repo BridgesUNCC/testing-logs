@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Fri Jun 13 05:14:37 PM EDT 2025</p>
+	<p>Running at Fri Jun 13 09:15:23 PM EDT 2025</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -84,11 +84,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarycancer_snippet.py" class="success">
+  <div id="summarycancer_snippet.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogcancer_snippet.py">Test cancer_snippet.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogcancer_snippet.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogcancer_snippet.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -212,11 +212,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarygraph_amatrix.py" class="success">
+  <div id="summarygraph_amatrix.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonloggraph_amatrix.py">Test graph_amatrix.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonloggraph_amatrix.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonloggraph_amatrix.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1059,7 +1059,7 @@ http://bridges-cs.herokuapp.com/assignments/3008/bridges_testing
     <div id="pythonlogcancer_snippet.py" class="logdetails">
       <h2>Test cancer_snippet.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogcancer_snippet.py-runtest">Run Test for test cancer_snippet.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1089,15 +1089,33 @@ http://bridges-cs.herokuapp.com/assignments/3008/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Record 1:
-	Type: Mortality
-	Year: 2000
-	Population: 2302835
-	Race: All Races
-	Gender: 
-	CrudeRate: 192.2(more rate information available) 
-	Location: 32.799, -86.8073
-	Count: 0
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
+    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/cancer_snippet.py&quot;, line 37, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/cancer_snippet.py&quot;, line 17, in main
+    my_list = get_cancer_incident_data()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 559, in get_cancer_incident_data
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+could not run test cancer_snippet.py
 </code></pre>
 </div>
     
@@ -1309,7 +1327,7 @@ http://bridges-cs.herokuapp.com/assignments/3013/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7d573d5b10a0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7afecb5b2900&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1451,10 +1469,10 @@ First 10 elevations:
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Magnitude: 1.2
-Date: 2025-06-13 20:59:29
-Location:2 km NNW of The Geysers, CA
-Lat/Long:38.7879981994629,-122.767669677734
+Magnitude: 1.7
+Date: 2025-06-14 00:32:03
+Location:51 km W of Beaver, Alaska
+Lat/Long:66.4194,-148.5379
 </code></pre>
 </div>
     
@@ -1492,14 +1510,14 @@ Lat/Long:38.7879981994629,-122.767669677734
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Magnitude: 1.2
-Date: 2025-06-13 20:59:29
-Location:2 km NNW of The Geysers, CA
-Lat/Long:38.7879981994629,-122.767669677734
-Magnitude: 1.91
-Date: 2024-01-19 10:14:20
-Location:5 km NNW of Viola, CA
-Lat/Long:40.5600014,-121.7040024
+Magnitude: 1.7
+Date: 2025-06-14 00:32:03
+Location:51 km W of Beaver, Alaska
+Lat/Long:66.4194,-148.5379
+Magnitude: 2
+Date: 2024-01-19 11:49:25
+Location:24 km N of Pāhala, Hawaii
+Lat/Long:19.4204998016357,-155.479995727539
 </code></pre>
 </div>
     
@@ -1598,7 +1616,7 @@ http://bridges-cs.herokuapp.com/assignments/3019/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7a9e0f313c80&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7edd70d53f20&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1645,10 +1663,10 @@ client disconnect disconnected
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Tony Hawks Pro Skater 3
-PlayStation
-9.6
-['Sports']
+Rayman Raving Rabbids
+Xbox 360
+5.8
+['Party']
 </code></pre>
 </div>
     
@@ -1773,7 +1791,7 @@ http://bridges-cs.herokuapp.com/assignments/3022/bridges_testing
     <div id="pythonloggraph_amatrix.py" class="logdetails">
       <h2>Test graph_amatrix.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonloggraph_amatrix.py-runtest">Run Test for test graph_amatrix.py</h3>
 <pre><code>/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/graph_adj_list.py:12: SyntaxWarning: invalid escape sequence '\c'
@@ -1803,12 +1821,33 @@ http://bridges-cs.herokuapp.com/assignments/3022/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
+    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 
-Check Your Visualization at the following link:
+During handling of the above exception, another exception occurred:
 
-http://bridges-cs.herokuapp.com/assignments/3025/bridges_testing
-
-
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/graph_amatrix.py&quot;, line 85, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/graph_amatrix.py&quot;, line 20, in main
+    actor_movie_data = get_actor_movie_imdb_data(1813)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 350, in get_actor_movie_imdb_data
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+could not run test graph_amatrix.py
 </code></pre>
 </div>
     
@@ -1956,8 +1995,8 @@ could not run test gutenberg_snippet.py
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Billy_Bob_Thornton
-Trouble_Bound_(1993)
+Clark_Gable
+Dancing_Lady_(1933)
 </code></pre>
 </div>
     
@@ -1995,7 +2034,7 @@ Trouble_Bound_(1993)
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x74e1d6762420&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x720a65cecc20&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2148,7 +2187,7 @@ http://bridges-cs.herokuapp.com/assignments/3031/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x72e5fecb1790&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x71968957a900&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2441,21 +2480,21 @@ Cartesian Coordinate of first vertex: 834.4847597780021, -5147.953884206995
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Title: Puerto Rico Supreme Court allows 'X' as a third gender choice on birth certificates
-Author: hybridaaroncarroll
-Score: 29423
-Comment Count: 834
+Title: Hundreds of prisoners escape after earthquake in Pakistan
+Author: AudibleNod
+Score: 649
+Comment Count: 33
 Subreddit: news
-Title: Social Security checks may be smaller starting in June for some, as student loan garnishments begin
-Title: FBI investigating 'targeted terror attack' in Boulder, Colorado, director says
-Title: United plane makes wrong turn, nearly colliding with other flight mid-air: FAA
-Title: Climax mayor, wife arrested and charged on child sex crimes
 Title: Oreo maker Mondelez sues Aldi, alleging chain copies packaging to confuse shoppers
-Title: Iran poised to dismiss US nuclear proposal, Iranian diplomat says
-Title: Italy’s Mount Etna, Europe’s largest active volcano, spews plumes of ash
 Title: King of the Hill actor Jonathan Joss dies aged 59 after shooting in Texas
 Title: Healey ‘demands answers,’ community members rally after ICE detains Milford High School student
-Title: Stabbing attack at homeless shelter sends 11 people to hospital, man in custody
+Title: Puerto Rico Supreme Court allows 'X' as a third gender choice on birth certificates
+Title: Hundreds of peonies destroyed at University of Michigan garden
+Title: Tulsa, Oklahoma, plans more than $105m in reparations for America's 'hidden' massacre
+Title: Portuguese and German police renew search for Madeleine McCann
+Title: ‘Life sentence of failure:’ 275 students displaced by Atterbury Job Corps shut down
+Title: 'They took my moment away': Calif. HS runner loses track title over celebration
+Title: US man charged for framing immigrant in fake plot to kill Trump
 =====
 Available subreddits:
 gadgets
@@ -2506,35 +2545,35 @@ UpliftingNews
 InternetIsBeautiful
 science
 =====
-Title: If a person is hanging in mid-air, gripping a live power line with one hand on each wire, will they get electrocuted? Why or why not?
-Author: Raskreian
-Score: 1898
-Vote Ratio: 0.92
-Comment Count: 352
+Title: Were there any terrestrial trilobites? 
+Author: StupidVetulicolian
+Score: 98
+Vote Ratio: 0.9
+Comment Count: 16
 Subreddit: askscience
-PostTime: 1722865369
-URL: https://www.reddit.com/r/askscience/comments/1eko423/if_a_person_is_hanging_in_midair_gripping_a_live/
-Text: My friends said, the body needed to touch ground for the electric to pass and electrocute him. In my defence I said, the charge from one wire to other will make the current difference burn him. Help.
+PostTime: 1722986851
+URL: https://www.reddit.com/r/askscience/comments/1elwlyu/were_there_any_terrestrial_trilobites/
+Text: Considering how long trilobites are around and how many arthropod groups have adapted to land to varying extents is it possible that at least one lineage adapted for life on land? 
 
-Title: Are moon rocks provably not from earth or are they indistinguishable from earth rocks?
-Author: None
-Score: 138
-Vote Ratio: 0.91
-Comment Count: 18
+Title: Why do we start out with cartilaginous bones that calcify over time? Is there any advantage to delaying the development of ossified bones? And conversely, is there any advantage of ossified bone over cartilage besides calcium storage?
+Author: 15MinuteUpload
+Score: 164
+Vote Ratio: 0.82
+Comment Count: 21
 Subreddit: askscience
-PostTime: 1722887275
-URL: https://www.reddit.com/r/askscience/comments/1ekx7q8/are_moon_rocks_provably_not_from_earth_or_are/
-Text: Obviously they are from the moon and they're not fakes, I'm just curious if you could give them to a geologist and they'd be able to guess they are from the moon.
+PostTime: 1722988406
+URL: https://www.reddit.com/r/askscience/comments/1elx6tu/why_do_we_start_out_with_cartilaginous_bones_that/
+Text: 
 
-Title: Many animals have larger brains than humans. Why aren’t they smarter than us?
-Author: mehum
-Score: 876
-Vote Ratio: 0.88
-Comment Count: 406
+Title: Do any differences arise from the huge age difference between the eastern and western US seaboards?
+Author: lib_toni
+Score: 271
+Vote Ratio: 0.85
+Comment Count: 12
 Subreddit: askscience
-PostTime: 1722925358
-URL: https://www.reddit.com/r/askscience/comments/1elako0/many_animals_have_larger_brains_than_humans_why/
-Text: The human brain uses a significant amount of energy, that our relatively small bodies have to feed— compared with say whales, elephants or bears they must have far more neurones — why doesn’t that translate to greater intelligence? A rhino or hippo brain must be huge compared with humans, but as far as I know they’re not especially smart. Why not?
+PostTime: 1723030135
+URL: https://www.reddit.com/r/askscience/comments/1em9cbe/do_any_differences_arise_from_the_huge_age/
+Text: Question popped up in my head after seeing a map of Pangaea and realizing that California, Washington, Oregon have been coastal for about an extra 100 million years while Florida, New York, and the Carolinas were landlocked until the split. So could that extra 100 million years have lead to differences we can see/measure today. For example could the west coast have bigger or deeper water aquifers due to the millions of years of hurricanes dumping water inland that the east coast didn't get? could the soil be saltier due to tidal flooding? could there be more offshore oil on the west coast due to the extra 100 million years of whales, sharks, plankton, and other sea life or larger calcium deposits from the extra shellfish species?
 
 </code></pre>
 </div>
@@ -2573,35 +2612,35 @@ Text: The human brain uses a significant amount of energy, that our relatively s
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Title: If a person is hanging in mid-air, gripping a live power line with one hand on each wire, will they get electrocuted? Why or why not?
-Author: Raskreian
-Score: 1898
-Vote Ratio: 0.92
-Comment Count: 352
+Title: Were there any terrestrial trilobites? 
+Author: StupidVetulicolian
+Score: 98
+Vote Ratio: 0.9
+Comment Count: 16
 Subreddit: askscience
-PostTime: 1722865369
-URL: https://www.reddit.com/r/askscience/comments/1eko423/if_a_person_is_hanging_in_midair_gripping_a_live/
-Text: My friends said, the body needed to touch ground for the electric to pass and electrocute him. In my defence I said, the charge from one wire to other will make the current difference burn him. Help.
+PostTime: 1722986851
+URL: https://www.reddit.com/r/askscience/comments/1elwlyu/were_there_any_terrestrial_trilobites/
+Text: Considering how long trilobites are around and how many arthropod groups have adapted to land to varying extents is it possible that at least one lineage adapted for life on land? 
 
-Title: Are moon rocks provably not from earth or are they indistinguishable from earth rocks?
-Author: None
-Score: 138
-Vote Ratio: 0.91
-Comment Count: 18
+Title: Why do we start out with cartilaginous bones that calcify over time? Is there any advantage to delaying the development of ossified bones? And conversely, is there any advantage of ossified bone over cartilage besides calcium storage?
+Author: 15MinuteUpload
+Score: 164
+Vote Ratio: 0.82
+Comment Count: 21
 Subreddit: askscience
-PostTime: 1722887275
-URL: https://www.reddit.com/r/askscience/comments/1ekx7q8/are_moon_rocks_provably_not_from_earth_or_are/
-Text: Obviously they are from the moon and they're not fakes, I'm just curious if you could give them to a geologist and they'd be able to guess they are from the moon.
+PostTime: 1722988406
+URL: https://www.reddit.com/r/askscience/comments/1elx6tu/why_do_we_start_out_with_cartilaginous_bones_that/
+Text: 
 
-Title: Many animals have larger brains than humans. Why aren’t they smarter than us?
-Author: mehum
-Score: 876
-Vote Ratio: 0.88
-Comment Count: 406
+Title: Do any differences arise from the huge age difference between the eastern and western US seaboards?
+Author: lib_toni
+Score: 271
+Vote Ratio: 0.85
+Comment Count: 12
 Subreddit: askscience
-PostTime: 1722925358
-URL: https://www.reddit.com/r/askscience/comments/1elako0/many_animals_have_larger_brains_than_humans_why/
-Text: The human brain uses a significant amount of energy, that our relatively small bodies have to feed— compared with say whales, elephants or bears they must have far more neurones — why doesn’t that translate to greater intelligence? A rhino or hippo brain must be huge compared with humans, but as far as I know they’re not especially smart. Why not?
+PostTime: 1723030135
+URL: https://www.reddit.com/r/askscience/comments/1em9cbe/do_any_differences_arise_from_the_huge_age/
+Text: Question popped up in my head after seeing a map of Pangaea and realizing that California, Washington, Oregon have been coastal for about an extra 100 million years while Florida, New York, and the Carolinas were landlocked until the split. So could that extra 100 million years have lead to differences we can see/measure today. For example could the west coast have bigger or deeper water aquifers due to the millions of years of hurricanes dumping water inland that the east coast didn't get? could the soil be saltier due to tidal flooding? could there be more offshore oil on the west coast due to the extra 100 million years of whales, sharks, plankton, and other sea life or larger calcium deposits from the extra shellfish species?
 
 </code></pre>
 </div>
@@ -2640,11 +2679,11 @@ Text: The human brain uses a significant amount of energy, that our relatively s
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/rectangle.py:6: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
-Sonnet 99
+Sonnet 97
 poem
-The forward violet thus did I chide,
- Sweet thief, whence didst thou steal thy sweet that smells,
- I
+How like a winter hath my absence been
+ From thee, the pleasure of the fleeting year!
+ What freezing
 </code></pre>
 </div>
     
@@ -4097,9 +4136,9 @@ http://bridges-cs.herokuapp.com/assignments/3069/bridges_testing
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 Charlotte, NC: population: 874579, elevation: 229, lat/long: 35.22709,-80.84313
+Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
 Fayetteville, NC: population: 201963, elevation: 29, lat/long: 35.05266,-78.87836
 Greensboro, NC: population: 285342, elevation: 266, lat/long: 36.07264,-79.79198
-Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
 Raleigh, NC: population: 451066, elevation: 96, lat/long: 35.7721,-78.63861
 West Raleigh, NC: population: 338759, elevation: 122, lat/long: 35.78682,-78.66389
 Winston-Salem, NC: population: 241218, elevation: 293, lat/long: 36.09986,-80.24422
@@ -4141,9 +4180,9 @@ Winston-Salem, NC: population: 241218, elevation: 293, lat/long: 36.09986,-80.24
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 /home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.4.6-py3.12.egg/bridges/polyline.py:5: SyntaxWarning: invalid escape sequence '\s'
 Charlotte, NC: population: 874579, elevation: 229, lat/long: 35.22709,-80.84313
+Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
 Fayetteville, NC: population: 201963, elevation: 29, lat/long: 35.05266,-78.87836
 Greensboro, NC: population: 285342, elevation: 266, lat/long: 36.07264,-79.79198
-Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
 Raleigh, NC: population: 451066, elevation: 96, lat/long: 35.7721,-78.63861
 West Raleigh, NC: population: 338759, elevation: 122, lat/long: 35.78682,-78.66389
 Winston-Salem, NC: population: 241218, elevation: 293, lat/long: 36.09986,-80.24422
@@ -4155,19 +4194,19 @@ Timberlane, LA: population: 10243, elevation: -1, lat/long: 29.87743,-90.03202
 Terrytown, LA: population: 23319, elevation: -1, lat/long: 29.91021,-90.03257
 Brawley, CA: population: 25897, elevation: -34, lat/long: 32.97866,-115.53027
 Calipatria, CA: population: 7424, elevation: -55, lat/long: 33.1256,-115.51415
-Coachella, CA: population: 44635, elevation: -21, lat/long: 33.6803,-116.17389
-Desert Shores, CA: population: 1104, elevation: -60, lat/long: 33.4042,-116.03972
 El Centro, CA: population: 43956, elevation: -12, lat/long: 32.792,-115.56305
-Holtville, CA: population: 6404, elevation: -3, lat/long: 32.81116,-115.38026
+Desert Shores, CA: population: 1104, elevation: -60, lat/long: 33.4042,-116.03972
 Imperial, CA: population: 17095, elevation: -18, lat/long: 32.84755,-115.56944
 Heber, CA: population: 4275, elevation: -3, lat/long: 32.73089,-115.52972
+Holtville, CA: population: 6404, elevation: -3, lat/long: 32.81116,-115.38026
+Coachella, CA: population: 44635, elevation: -21, lat/long: 33.6803,-116.17389
 Indio, CA: population: 87533, elevation: -4, lat/long: 33.7207,-116.21677
 Mecca, CA: population: 8577, elevation: -57, lat/long: 33.57219,-116.0782
-Oasis, CA: population: 6890, elevation: -44, lat/long: 33.46586,-116.09889
 Niland, CA: population: 1006, elevation: -43, lat/long: 33.24004,-115.51888
-Salton City, CA: population: 3763, elevation: -38, lat/long: 33.29865,-115.95611
 Seeley, CA: population: 1739, elevation: -11, lat/long: 32.79311,-115.69111
+Salton City, CA: population: 3763, elevation: -38, lat/long: 33.29865,-115.95611
 Thermal, CA: population: 2865, elevation: -36, lat/long: 33.6403,-116.13945
+Oasis, CA: population: 6890, elevation: -44, lat/long: 33.46586,-116.09889
 Vista Santa Rosa, CA: population: 2926, elevation: -21, lat/long: 33.6278,-116.21806
 Westmorland, CA: population: 2267, elevation: -50, lat/long: 33.03727,-115.62138
 </code></pre>
@@ -4256,16 +4295,16 @@ Data Records in 1955: 5046
 First 3 records:
 
 0)Actor-Movie Data:
-	Movie: Q34414, Rear Window
-	Actor: Q3925, Grace Kelly
+	Movie: Q237116, Marty
+	Actor: Q2388158, Frank Sutton
 
 1)Actor-Movie Data:
-	Movie: Q34414, Rear Window
-	Actor: Q7374, Alfred Hitchcock
+	Movie: Q237116, Marty
+	Actor: Q3058981, Esther Minciotti
 
 2)Actor-Movie Data:
-	Movie: Q34414, Rear Window
-	Actor: Q102462, James Stewart
+	Movie: Q237116, Marty
+	Actor: Q3182090, John Milford
 
 </code></pre>
 </div>

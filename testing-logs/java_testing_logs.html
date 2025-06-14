@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Fri Jun 13 05:05:25 PM EDT 2025</p>
+	<p>Running at Fri Jun 13 09:06:29 PM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -183,12 +183,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryeq_test.java" class="failure">
+  <div id="summaryeq_test.java" class="success">
     <h2><a href="java_testing_logs.html#javalogeq_test.java">Test eq_test.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogeq_test.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogeq_test.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogeq_test.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -462,12 +462,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarysong_lyrics_snippet.java" class="success">
+  <div id="summarysong_lyrics_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogsong_lyrics_snippet.java">Test song_lyrics_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1271,10 +1271,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.2
-	Date:Jun 13 2025  16:59:29.790 EDT
-	Location: 2 km NNW of The Geysers, CA
-	Lat/Long:38.7879981994629,-122.767669677734
+	Magnitude:1.7
+	Date:Jun 13 2025  20:32:03.154 EDT
+	Location: 51 km W of Beaver, Alaska
+	Lat/Long:66.4194,-148.5379
 </code></pre>
 </div>
     
@@ -1287,12 +1287,18 @@ first 10 elevations:
 <pre><code>Compiling test eq_test.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
-<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503
-	at bridges.connect.DataSource.getEarthquakeUSGSData(DataSource.java:465)
-	at eq_test.main(eq_test.java:20)
-could not run test eq_test.java
+<pre><code>Earthquake 0:
+	Magnitude:1.7
+	Date:Jun 13 2025  20:32:03.154 EDT
+	Location: 51 km W of Beaver, Alaska
+	Lat/Long:66.4194,-148.5379
+Earthquake 0:
+	Magnitude:2.0
+	Date:Jan 19 2024  06:49:25.400 EST
+	Location: 24 km N of Pāhala, Hawaii
+	Lat/Long:19.4204998016357,-155.479995727539
 </code></pre>
 </div>
     
@@ -1349,10 +1355,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>AquaPazza
-PlayStation 3
-7.0
-[Fighting]
+<pre><code>Star Trek: Deep Space Nine: The Fallen
+PC
+7.8
+[Action]
 </code></pre>
 </div>
     
@@ -1486,8 +1492,8 @@ could not run test gutenberg_snippet.java
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Alec_Guinness
-Pasternak_(1965)
+<pre><code>Al_Pacino
+Panic_in_Needle_Park,_The_(1971)
 </code></pre>
 </div>
     
@@ -1879,7 +1885,7 @@ science
 ID: 1fyavzv
 Title: Why are there so many ways to heat things up but no ways to make something cold (besides refrigeration)?
 Author: wetlittleidiot
-Score: 851
+Score: 846
 VoteRatio: 0.82
 CommentCount: 244
 Subreddit: askscience
@@ -1890,8 +1896,8 @@ Text: Ovens, microwave, fire, there are plenty of ways to make something nice an
 ID: 1jokqiv
 Title: How long will sunscreen continue to work if you don't spend a lot of time in the sun?
 Author: MachacaConHuevos
-Score: 40
-VoteRatio: 0.75
+Score: 34
+VoteRatio: 0.72
 CommentCount: 36
 Subreddit: askscience
 PostTime: 1743473415
@@ -1903,8 +1909,8 @@ I understand it's like a barrier that UV rays can eventually break through, but 
 ID: 1fkiim6
 Title: Are there other boundaries in the geological record like the K-PG boundary?
 Author: Dbgb4
-Score: 89
-VoteRatio: 0.89
+Score: 91
+VoteRatio: 0.9
 CommentCount: 6
 Subreddit: askscience
 PostTime: 1726745376
@@ -1931,7 +1937,7 @@ I'm pretty confused on how species handled this huge change in climate without t
 ID: 1ewpq21
 Title: How does a Virus variant become too &quot;Variant&quot; that it becomes it's own Virus species? How arbitrary is this distinction?
 Author: darthindica
-Score: 56
+Score: 59
 VoteRatio: 0.78
 CommentCount: 10
 Subreddit: askscience
@@ -1942,7 +1948,7 @@ Text:
 ID: 1g5qoza
 Title: Does increased cell turnover equal increased risk of cancer and sped up aging?
 Author: MetalGuitarKaladin
-Score: 115
+Score: 113
 VoteRatio: 0.96
 CommentCount: 7
 Subreddit: askscience
@@ -1953,7 +1959,7 @@ Text: Mutations often happen during cell replication. Similarly telomeres are sh
 ID: 1kx12j3
 Title: Is there a time when Earth had no mountains?
 Author: 69noob69master69
-Score: 360
+Score: 355
 VoteRatio: 0.92
 CommentCount: 32
 Subreddit: askscience
@@ -1964,7 +1970,7 @@ Text: Basically the question above. Just curious if the tectonic plates were lev
 ID: 1jthf1l
 Title: How does your body prevent herpes simplex one?
 Author: Critical-Blitz
-Score: 142
+Score: 138
 VoteRatio: 0.84
 CommentCount: 37
 Subreddit: askscience
@@ -1986,7 +1992,7 @@ Text: Title says it all
 ID: 1iabjpu
 Title: How do they seal the rotating glove joint on a spacesuit?
 Author: stupid_spoon
-Score: 209
+Score: 205
 VoteRatio: 0.89
 CommentCount: 61
 Subreddit: askscience
@@ -2013,7 +2019,7 @@ Thanks!
 <pre><code>ID: 1fyavzv
 Title: Why are there so many ways to heat things up but no ways to make something cold (besides refrigeration)?
 Author: wetlittleidiot
-Score: 851
+Score: 846
 VoteRatio: 0.82
 CommentCount: 244
 Subreddit: askscience
@@ -2024,8 +2030,8 @@ Text: Ovens, microwave, fire, there are plenty of ways to make something nice an
 ID: 1jokqiv
 Title: How long will sunscreen continue to work if you don't spend a lot of time in the sun?
 Author: MachacaConHuevos
-Score: 40
-VoteRatio: 0.75
+Score: 34
+VoteRatio: 0.72
 CommentCount: 36
 Subreddit: askscience
 PostTime: 1743473415
@@ -2037,8 +2043,8 @@ I understand it's like a barrier that UV rays can eventually break through, but 
 ID: 1fkiim6
 Title: Are there other boundaries in the geological record like the K-PG boundary?
 Author: Dbgb4
-Score: 89
-VoteRatio: 0.89
+Score: 91
+VoteRatio: 0.9
 CommentCount: 6
 Subreddit: askscience
 PostTime: 1726745376
@@ -2065,7 +2071,7 @@ I'm pretty confused on how species handled this huge change in climate without t
 ID: 1ewpq21
 Title: How does a Virus variant become too &quot;Variant&quot; that it becomes it's own Virus species? How arbitrary is this distinction?
 Author: darthindica
-Score: 56
+Score: 59
 VoteRatio: 0.78
 CommentCount: 10
 Subreddit: askscience
@@ -2076,7 +2082,7 @@ Text:
 ID: 1g5qoza
 Title: Does increased cell turnover equal increased risk of cancer and sped up aging?
 Author: MetalGuitarKaladin
-Score: 115
+Score: 113
 VoteRatio: 0.96
 CommentCount: 7
 Subreddit: askscience
@@ -2087,7 +2093,7 @@ Text: Mutations often happen during cell replication. Similarly telomeres are sh
 ID: 1kx12j3
 Title: Is there a time when Earth had no mountains?
 Author: 69noob69master69
-Score: 360
+Score: 355
 VoteRatio: 0.92
 CommentCount: 32
 Subreddit: askscience
@@ -2098,7 +2104,7 @@ Text: Basically the question above. Just curious if the tectonic plates were lev
 ID: 1jthf1l
 Title: How does your body prevent herpes simplex one?
 Author: Critical-Blitz
-Score: 142
+Score: 138
 VoteRatio: 0.84
 CommentCount: 37
 Subreddit: askscience
@@ -2120,7 +2126,7 @@ Text: Title says it all
 ID: 1iabjpu
 Title: How do they seal the rotating glove joint on a spacesuit?
 Author: stupid_spoon
-Score: 209
+Score: 205
 VoteRatio: 0.89
 CommentCount: 61
 Subreddit: askscience
@@ -2144,16 +2150,11 @@ Thanks!
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>A Lover's Complaint
+<pre><code>Sonnet 153
 poem
-1609
-
-A LOVER'S COMPLAINT
-
-by William Shakespeare
-
- From off a hill whose concave womb reworded
- A p...
+Cupid laid by his brand and fell asleep,
+ A maid of Dian's this advantage found,
+ And his love-kindl...
 </code></pre>
 </div>
     
@@ -2278,13 +2279,37 @@ http://bridges-cs.herokuapp.com/assignments/2049/bridges_testing
 <pre><code>Compiling test song_lyrics_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogsong_lyrics_snippet.java-runtest">Run Test for test song_lyrics_snippet.java</h3>
-<pre><code>Harder, Better, Faster, Stronger
-Daft Punk
-Homework / Discovery / Alive 1997
-2001-02-26
-
+<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503. Message: &lt;!DOCTYPE html&gt;
+	&lt;html&gt;
+	  &lt;head&gt;
+		&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+		&lt;meta charset=&quot;utf-8&quot;&gt;
+		&lt;title&gt;Application Error&lt;/title&gt;
+		&lt;style media=&quot;screen&quot;&gt;
+		  html,body,iframe {
+			margin: 0;
+			padding: 0;
+		  }
+		  html,body {
+			height: 100%;
+			overflow: hidden;
+		  }
+		  iframe {
+			width: 100%;
+			height: 100%;
+			border: 0;
+		  }
+		&lt;/style&gt;
+	  &lt;/head&gt;
+	  &lt;body&gt;
+		&lt;iframe src=&quot;//www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
+	  &lt;/body&gt;
+	&lt;/html&gt;
+	at bridges.connect.DataSource.getSong(DataSource.java:974)
+	at song_lyrics_snippet.main(song_lyrics_snippet.java:24)
+could not run test song_lyrics_snippet.java
 </code></pre>
 </div>
     
@@ -2949,13 +2974,6 @@ http://bridges-cs.herokuapp.com/assignments/2076/bridges_testing
 <h3 id="javalogtut_us_cities_snippet.java-runtest">Run Test for test tut_us_cities_snippet.java</h3>
 <pre><code>Upto 25 cities in North Carolina with population between 200K and 1M
 US Cities Retrieved
-	Charlotte, NC:  Population: 874579, Elevation: 229, Lat/Long: 35.22709,-80.84313
-	Fayetteville, NC:  Population: 201963, Elevation: 29, Lat/Long: 35.05266,-78.87836
-	Greensboro, NC:  Population: 285342, Elevation: 266, Lat/Long: 36.07264,-79.79198
-	Durham, NC:  Population: 257636, Elevation: 123, Lat/Long: 35.99403,-78.89862
-	Raleigh, NC:  Population: 451066, Elevation: 96, Lat/Long: 35.7721,-78.63861
-	West Raleigh, NC:  Population: 338759, Elevation: 122, Lat/Long: 35.78682,-78.66389
-	Winston-Salem, NC:  Population: 241218, Elevation: 293, Lat/Long: 36.09986,-80.24422
 </code></pre>
 </div>
     
@@ -3047,21 +3065,8 @@ Received an empty JSON response from the server.
 </div>
 <div class="success">
 <h3 id="javalogus_cities_snippet.java-runtest">Run Test for test us_cities_snippet.java</h3>
-<pre><code>Testing 'limit = 25', 'population = 200000' and 'lat/long'  attribute..got 13 cities
+<pre><code>Testing 'limit = 25', 'population = 200000' and 'lat/long'  attribute..got 0 cities
 US Cities Retrieved
-	Cary, NC:  Population: 159769, Elevation: 152, Lat/Long: 35.79154,-78.78112
-	Charlotte, NC:  Population: 874579, Elevation: 229, Lat/Long: 35.22709,-80.84313
-	Fayetteville, NC:  Population: 201963, Elevation: 29, Lat/Long: 35.05266,-78.87836
-	Greensboro, NC:  Population: 285342, Elevation: 266, Lat/Long: 36.07264,-79.79198
-	Durham, NC:  Population: 257636, Elevation: 123, Lat/Long: 35.99403,-78.89862
-	Raleigh, NC:  Population: 451066, Elevation: 96, Lat/Long: 35.7721,-78.63861
-	High Point, NC:  Population: 110268, Elevation: 281, Lat/Long: 35.95569,-80.00532
-	West Raleigh, NC:  Population: 338759, Elevation: 122, Lat/Long: 35.78682,-78.66389
-	Winston-Salem, NC:  Population: 241218, Elevation: 293, Lat/Long: 36.09986,-80.24422
-	Wilmington, NC:  Population: 115933, Elevation: 9, Lat/Long: 34.22573,-77.94471
-	Chattanooga, TN:  Population: 176588, Elevation: 206, Lat/Long: 35.04563,-85.30968
-	Knoxville, TN:  Population: 185291, Elevation: 276, Lat/Long: 35.96064,-83.92074
-	East Chattanooga, TN:  Population: 154024, Elevation: 208, Lat/Long: 35.06535,-85.24912
 </code></pre>
 </div>
     
@@ -3099,16 +3104,16 @@ http://bridges-cs.herokuapp.com/assignments/2083/bridges_testing
 <pre><code>Data Records in 1955: 5046
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q102551 &quot;Ernest Borgnine&quot;
+	Movie: Q73944 &quot;Two Tickets to Broadway&quot;
+	Actor: Q166212 &quot;Eddie Bracken&quot;
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q180251 &quot;Paddy Chayefsky&quot;
+	Movie: Q73944 &quot;Two Tickets to Broadway&quot;
+	Actor: Q205314 &quot;Janet Leigh&quot;
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q266416 &quot;Betsy Blair&quot;
+	Movie: Q73944 &quot;Two Tickets to Broadway&quot;
+	Actor: Q237864 &quot;Vera Miles&quot;
 
 </code></pre>
 </div>

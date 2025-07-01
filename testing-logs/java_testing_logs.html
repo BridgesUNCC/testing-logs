@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Jul  1 05:06:15 AM EDT 2025</p>
+	<p>Running at Tue Jul  1 09:06:14 AM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -768,12 +768,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1271,10 +1271,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.36
-	Date:Jul 01 2025  04:18:31.050 EDT
-	Location: 2 km N of Palomar Observatory, CA
-	Lat/Long:33.3720016,-116.8659973
+	Magnitude:1.01
+	Date:Jul 01 2025  08:26:05.070 EDT
+	Location: 17 km WSW of Johannesburg, CA
+	Lat/Long:35.3175,-117.8063333
 </code></pre>
 </div>
     
@@ -1290,15 +1290,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.36
-	Date:Jul 01 2025  04:18:31.050 EDT
-	Location: 2 km N of Palomar Observatory, CA
-	Lat/Long:33.3720016,-116.8659973
+	Magnitude:1.01
+	Date:Jul 01 2025  08:26:05.070 EDT
+	Location: 17 km WSW of Johannesburg, CA
+	Lat/Long:35.3175,-117.8063333
 Earthquake 0:
-	Magnitude:2.44
-	Date:Feb 01 2024  20:25:21.100 EST
-	Location: 11 km E of Pāhala, Hawaii
-	Lat/Long:19.2198333740234,-155.367004394531
+	Magnitude:2.29
+	Date:Feb 01 2024  21:47:21.770 EST
+	Location: 7 km SW of Volcano, Hawaii
+	Lat/Long:19.3859996795654,-155.280166625977
 </code></pre>
 </div>
     
@@ -1355,10 +1355,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Ultimate Shooting Collection
-Wii
-6.9
-[Shooter]
+<pre><code>Elemental: War of Magic
+PC
+6.0
+[Strategy]
 </code></pre>
 </div>
     
@@ -1492,8 +1492,8 @@ could not run test gutenberg_snippet.java
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christopher_Lee_(I)
-Curse_of_Frankenstein,_The_(1957)
+<pre><code>Clark_Gable
+Screen_Snapshots:_Memories_in_Uniform_(1954)
 </code></pre>
 </div>
     
@@ -2146,18 +2146,11 @@ Text: Title says it all
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Cymbeline
-play
-1609
-
-CYMBELINE
-
-by William Shakespeare
-
-Dramatis Personae
-
- CYMBELINE, King of Britain
- CLOTEN, son...
+<pre><code>Sonnet 55
+poem
+Not marble, nor the gilded monuments
+ Of princes shall outlive this powerful rhyme,
+ But you shall s...
 </code></pre>
 </div>
     
@@ -3098,18 +3091,22 @@ http://bridges-cs.herokuapp.com/assignments/2083/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 0
+<pre><code>Data Records in 1955: 5070
 
-Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-	at java.base/java.util.Objects.checkIndex(Objects.java:361)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:37)
-could not run test wikidata_actor_snippet.java
+Actor-Movie Data:
+	Movie: Q427534 &quot;The Court-Martial of Billy Mitchell&quot;
+	Actor: Q93957 &quot;Gary Cooper&quot;
+
+Actor-Movie Data:
+	Movie: Q427534 &quot;The Court-Martial of Billy Mitchell&quot;
+	Actor: Q156532 &quot;Peter Graves&quot;
+
+Actor-Movie Data:
+	Movie: Q427534 &quot;The Court-Martial of Billy Mitchell&quot;
+	Actor: Q233843 &quot;Elizabeth Montgomery&quot;
+
 </code></pre>
 </div>
     

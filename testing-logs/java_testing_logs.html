@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Jul 14 05:05:55 AM EDT 2025</p>
+	<p>Running at Mon Jul 14 09:05:59 AM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -768,12 +768,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1271,10 +1271,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.6
-	Date:Jul 14 2025  04:50:26.460 EDT
-	Location: 54 km WNW of Valdez, Alaska
-	Lat/Long:61.3025,-147.2909
+	Magnitude:2.0
+	Date:Jul 14 2025  08:31:50.948 EDT
+	Location: 63 km WSW of Akhiok, Alaska
+	Lat/Long:56.6621,-155.0758
 </code></pre>
 </div>
     
@@ -1290,15 +1290,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.6
-	Date:Jul 14 2025  04:50:26.460 EDT
-	Location: 54 km WNW of Valdez, Alaska
-	Lat/Long:61.3025,-147.2909
+	Magnitude:2.0
+	Date:Jul 14 2025  08:31:50.948 EDT
+	Location: 63 km WSW of Akhiok, Alaska
+	Lat/Long:56.6621,-155.0758
 Earthquake 0:
-	Magnitude:2.1400001
-	Date:Mar 02 2024  22:20:23.220 EST
-	Location: 5 km SSW of Pāhala, Hawaii
-	Lat/Long:19.1618328094482,-155.50016784668
+	Magnitude:2.1500001
+	Date:Mar 03 2024  00:05:42.210 EST
+	Location: 12 km ESE of Pāhala, Hawaii
+	Lat/Long:19.155834197998,-155.368835449219
 </code></pre>
 </div>
     
@@ -1355,10 +1355,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Cartoon Network Speedway
-Game Boy Advance
-3.0
-[Racing]
+<pre><code>AND 1 Streetball
+Xbox
+4.1
+[Sports, Action]
 </code></pre>
 </div>
     
@@ -1492,8 +1492,8 @@ could not run test gutenberg_snippet.java
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Paul_Reubens
-Star_Tours_(1987)
+<pre><code>Carrie_Fisher
+Man_with_One_Red_Shoe,_The_(1985)
 </code></pre>
 </div>
     
@@ -1595,8 +1595,6 @@ http://bridges-games.herokuapp.com/assignments/2032/bridges_testing
 
 
 Setting framelimit to 10!
-[Ljava.lang.Object;@62fef39d
-The server closed the connection.
 Shutting down ...
 </code></pre>
 </div>
@@ -2152,11 +2150,11 @@ Thanks!
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 111
+<pre><code>Sonnet 57
 poem
-O for my sake do you with Fortune chide,
- The guilty goddess of my harmful deeds,
- That did not bett...
+Being your slave what should I do but tend,
+ Upon the hours, and times of your desire?
+ I have no pr...
 </code></pre>
 </div>
     
@@ -3097,22 +3095,13 @@ http://bridges-cs.herokuapp.com/assignments/2083/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5071
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q102462 &quot;James Stewart&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1621)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1549)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

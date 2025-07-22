@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Jul 22 01:06:46 PM EDT 2025</p>
+	<p>Running at Tue Jul 22 05:06:48 PM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -462,12 +462,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarysong_lyrics_snippet.java" class="success">
+  <div id="summarysong_lyrics_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogsong_lyrics_snippet.java">Test song_lyrics_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1289,10 +1289,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.31
-	Date:Jul 22 2025  13:04:54.420 EDT
-	Location: 14 km SSW of Searles Valley, CA
-	Lat/Long:35.6508331,-117.4598312
+	Magnitude:1.4
+	Date:Jul 22 2025  16:49:24.924 EDT
+	Location: 8 km SSE of Cordova, Alaska
+	Lat/Long:60.4726,-145.6978
 </code></pre>
 </div>
     
@@ -1308,15 +1308,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.31
-	Date:Jul 22 2025  13:04:54.420 EDT
-	Location: 14 km SSW of Searles Valley, CA
-	Lat/Long:35.6508331,-117.4598312
+	Magnitude:1.4
+	Date:Jul 22 2025  16:49:24.924 EDT
+	Location: 8 km SSE of Cordova, Alaska
+	Lat/Long:60.4726,-145.6978
 Earthquake 0:
-	Magnitude:1.14
-	Date:Mar 30 2024  00:02:52.000 EDT
-	Location: 11 km NW of The Geysers, CA
-	Lat/Long:38.8484993,-122.8483353
+	Magnitude:1.8
+	Date:Mar 30 2024  04:00:46.323 EDT
+	Location: 7 km WSW of Happy Valley, Alaska
+	Lat/Long:59.9288,-151.8643
 </code></pre>
 </div>
     
@@ -1373,10 +1373,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Prince of Persia: Warrior Within
-PC
-8.6
-[Action, Adventure]
+<pre><code>Rainbow Moon
+PlayStation 3
+8.0
+[Strategy, RPG]
 </code></pre>
 </div>
     
@@ -1649,8 +1649,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Cary_Grant
-I_Was_a_Male_War_Bride_(1949)
+<pre><code>John_Malkovich
+Knockaround_Guys_(2001)
 </code></pre>
 </div>
     
@@ -2307,11 +2307,17 @@ Thanks!
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 7
-poem
-Lo in the orient when the gracious light
- Lifts up his burning head, each under eye
- Doth homage to ...
+<pre><code>Much Ado About Nothing
+play
+1599
+
+MUCH ADO ABOUT NOTHING
+
+by William Shakespeare
+
+Dramatis Personae
+
+ Don Pedro, Prince of Arrag...
 </code></pre>
 </div>
     
@@ -2436,13 +2442,39 @@ http://assignments.bridgesuncc.org/assignments/2049/bridges_testing
 <pre><code>Compiling test song_lyrics_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogsong_lyrics_snippet.java-runtest">Run Test for test song_lyrics_snippet.java</h3>
-<pre><code>Harder, Better, Faster, Stronger
-Daft Punk
-Homework / Discovery / Alive 1997
-2001-02-26
+<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503. Message: &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Application Error&lt;/title&gt;
+    &lt;style media=&quot;screen&quot;&gt;
+      html,body,iframe {
+        margin: 0;
+        padding: 0;
+      }
 
+      html,body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;https://www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+	at bridges.connect.DataSource.getSong(DataSource.java:974)
+	at song_lyrics_snippet.main(song_lyrics_snippet.java:24)
+could not run test song_lyrics_snippet.java
 </code></pre>
 </div>
     
@@ -3294,16 +3326,16 @@ http://assignments.bridgesuncc.org/assignments/2085/bridges_testing
 <pre><code>Data Records in 1955: 5071
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q1368948 &quot;Glenn Strange&quot;
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q513849 &quot;Bess Flowers&quot;
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q1374412 &quot;Joe Mantell&quot;
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q541270 &quot;Jessie Royce Landis&quot;
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q1381411 &quot;Jerry Paris&quot;
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q921945 &quot;John Williams&quot;
 
 </code></pre>
 </div>

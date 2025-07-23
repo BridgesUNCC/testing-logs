@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Wed Jul 23 01:06:50 PM EDT 2025</p>
+	<p>Running at Wed Jul 23 05:07:03 PM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -372,21 +372,21 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarypurposefully_breaking.java" class="success">
+  <div id="summarypurposefully_breaking.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogpurposefully_breaking.java">Test purposefully_breaking.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogpurposefully_breaking.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogpurposefully_breaking.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogpurposefully_breaking.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
-  <div id="summarypurposefully_breaking2.java" class="success">
+  <div id="summarypurposefully_breaking2.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogpurposefully_breaking2.java">Test purposefully_breaking2.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogpurposefully_breaking2.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogpurposefully_breaking2.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogpurposefully_breaking2.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -804,12 +804,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryworld_overlay.java" class="failure">
+  <div id="summaryworld_overlay.java" class="success">
     <h2><a href="java_testing_logs.html#javalogworld_overlay.java">Test world_overlay.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogworld_overlay.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogworld_overlay.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogworld_overlay.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1289,10 +1289,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.23
-	Date:Jul 23 2025  12:38:31.870 EDT
-	Location: 6 km W of Lake Elsinore, CA
-	Lat/Long:33.6763333,-117.3921667
+	Magnitude:1.01
+	Date:Jul 23 2025  16:39:47.480 EDT
+	Location: 9 km SW of Idyllwild, CA
+	Lat/Long:33.6841667,-116.7923333
 </code></pre>
 </div>
     
@@ -1308,15 +1308,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.23
-	Date:Jul 23 2025  12:38:31.870 EDT
-	Location: 6 km W of Lake Elsinore, CA
-	Lat/Long:33.6763333,-117.3921667
+	Magnitude:1.01
+	Date:Jul 23 2025  16:39:47.480 EDT
+	Location: 9 km SW of Idyllwild, CA
+	Lat/Long:33.6841667,-116.7923333
 Earthquake 0:
-	Magnitude:1.4
-	Date:Mar 31 2024  01:22:12.695 EDT
-	Location: 14 km N of Four Mile Road, Alaska
-	Lat/Long:64.7368,-149.1121
+	Magnitude:0.96
+	Date:Mar 31 2024  05:08:51.260 EDT
+	Location: 14 km S of Anza, CA
+	Lat/Long:33.4314995,-116.6551666
 </code></pre>
 </div>
     
@@ -1373,10 +1373,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>All Star Tennis 99
-Nintendo 64
-7.0
-[Sports]
+<pre><code>Top Gun
+iPhone
+8.2
+[Action]
 </code></pre>
 </div>
     
@@ -1649,8 +1649,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Morgan_Freeman_(I)
-Coriolanus_(1979)
+<pre><code>James_Stewart_(I)
+American_Tail:_Fievel_Goes_West,_An_(1991)
 </code></pre>
 </div>
     
@@ -1955,11 +1955,17 @@ Location of first vertex [Cartesian Coord]: -657.974041556194,-4700.217494637191
 <pre><code>Compiling test purposefully_breaking.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogpurposefully_breaking.java-runtest">Run Test for test purposefully_breaking.java</h3>
 <pre><code>Server returned error response: HTTP 413 while processing the request POST http://assignments.bridgesuncc.org/assignments/2040.00?apikey=1321549621122&amp;username=bridges_testing HTTP/1.1
 There was a problem sending the visualization representation to the server. 
 Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
+Exception in thread &quot;main&quot; java.io.IOException: Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:522)
+	at bridges.connect.Connector.post(Connector.java:600)
+	at bridges.connect.Bridges.visualize(Bridges.java:590)
+	at purposefully_breaking.main(purposefully_breaking.java:45)
+could not run test purposefully_breaking.java
 </code></pre>
 </div>
     
@@ -1972,11 +1978,17 @@ Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of
 <pre><code>Compiling test purposefully_breaking2.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogpurposefully_breaking2.java-runtest">Run Test for test purposefully_breaking2.java</h3>
 <pre><code>Server returned error response: HTTP 413 while processing the request POST http://assignments.bridgesuncc.org/assignments/2041.00?apikey=1321549621122&amp;username=bridges_testing HTTP/1.1
 There was a problem sending the visualization representation to the server. 
 Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
+Exception in thread &quot;main&quot; java.io.IOException: Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:522)
+	at bridges.connect.Connector.post(Connector.java:600)
+	at bridges.connect.Bridges.visualize(Bridges.java:590)
+	at purposefully_breaking2.main(purposefully_breaking2.java:45)
+could not run test purposefully_breaking2.java
 </code></pre>
 </div>
     
@@ -2307,11 +2319,11 @@ Thanks!
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 20
+<pre><code>Sonnet 48
 poem
-A woman's face with nature's own hand painted,
- Hast thou the master mistress of my passion,
- A woma...
+How careful was I when I took my way,
+ Each trifle under truest bars to thrust,
+ That to my use it m...
 </code></pre>
 </div>
     
@@ -3300,16 +3312,16 @@ http://assignments.bridgesuncc.org/assignments/2085/bridges_testing
 <pre><code>Data Records in 1955: 5071
 
 Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q45553 &quot;Robert J. Wilke&quot;
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q3925 &quot;Grace Kelly&quot;
 
 Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q78505 &quot;Peter Lorre&quot;
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q7374 &quot;Alfred Hitchcock&quot;
 
 Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q104027 &quot;Kirk Douglas&quot;
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q83410 &quot;Cary Grant&quot;
 
 </code></pre>
 </div>
@@ -3343,13 +3355,14 @@ http://assignments.bridgesuncc.org/assignments/2087/bridges_testing
 <pre><code>Compiling test world_overlay.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogworld_overlay.java-runtest">Run Test for test world_overlay.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.lang.NullPointerException: Cannot invoke &quot;java.util.ArrayList.iterator()&quot; because &quot;this.country_data&quot; is null
-	at bridges.base.WorldMap.getMapRepresentation(WorldMap.java:66)
-	at bridges.connect.Bridges.setMap(Bridges.java:291)
-	at world_overlay.main(world_overlay.java:20)
-could not run test world_overlay.java
+<pre><code>
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/2088/bridges_testing
+
+
 </code></pre>
 </div>
     

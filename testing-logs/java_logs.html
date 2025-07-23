@@ -11,14 +11,14 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Wed Jul 23 01:38:10 PM EDT 2025</p>
-  <div id="summary0" class="success">
+	<p>Running at Wed Jul 23 05:39:05 PM EDT 2025</p>
+  <div id="summary0" class="failure">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog0-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog0-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog0-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog0-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -52,13 +52,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary4" class="failure">
+  <div id="summary4" class="success">
     <h2><a href="java_logs.html#javalog4">Assignment 4</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog4-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog4-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog4-runanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog4-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -112,13 +112,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary10" class="failure">
+  <div id="summary10" class="success">
     <h2><a href="java_logs.html#javalog10">Assignment 10</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog10-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog10-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog10-runanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog10-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -328,7 +328,7 @@ background-color: springgreen;
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog31-buildscaffold">error</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog31-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog31-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog31-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -392,13 +392,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary38" class="failure">
+  <div id="summary38" class="success">
     <h2><a href="java_logs.html#javalog38">Assignment 38</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog38-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog38-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog38-runanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog38-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -622,13 +622,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary61" class="failure">
+  <div id="summary61" class="success">
     <h2><a href="java_logs.html#javalog61">Assignment 61</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog61-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog61-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog61-runanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog61-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -885,13 +885,19 @@ background-color: springgreen;
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/0-Setup/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog0-runanswer">Run Answer for Assignment 0</h3>
 <pre><code>Guessing Setup.java is the right java file where main is
 
 Server returned error response: HTTP 413 while processing the request POST http://assignments.bridgesuncc.org/assignments/0.00?apikey=1321549621122&amp;username=bridges_testing HTTP/1.1
 There was a problem sending the visualization representation to the server. 
 Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
+Exception in thread &quot;main&quot; java.io.IOException: Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:522)
+	at bridges.connect.Connector.post(Connector.java:600)
+	at bridges.connect.Bridges.visualize(Bridges.java:590)
+	at Setup.main(Setup.java:33)
+could not run java_answer for assignment in ../assignmentdb/0-Setup/java_answer
 </code></pre>
 </div>
     
@@ -998,15 +1004,16 @@ http://assignments.bridgesuncc.org/assignments/3/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/4-GraphEQ/java_answer
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalog4-runanswer">Run Answer for Assignment 4</h3>
 <pre><code>Guessing GraphEQ.java is the right java file where main is
 
-Exception in thread &quot;main&quot; java.lang.NullPointerException: Cannot invoke &quot;java.util.ArrayList.iterator()&quot; because &quot;this.country_data&quot; is null
-	at bridges.base.WorldMap.getMapRepresentation(WorldMap.java:66)
-	at bridges.connect.Bridges.setMap(Bridges.java:291)
-	at GraphEQ.main(GraphEQ.java:62)
-could not run java_answer for assignment in ../assignmentdb/4-GraphEQ/java_answer
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/4/bridges_testing
+
+
 </code></pre>
 </div>
     
@@ -1203,15 +1210,17 @@ http://assignments.bridgesuncc.org/assignments/9/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/10-HurricaneTracker/java_answer
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalog10-runanswer">Run Answer for Assignment 10</h3>
 <pre><code>Guessing HurricaneTracker.java is the right java file where main is
 
-Exception in thread &quot;main&quot; java.lang.NullPointerException: Cannot invoke &quot;java.util.ArrayList.iterator()&quot; because &quot;this.country_data&quot; is null
-	at bridges.base.WorldMap.getMapRepresentation(WorldMap.java:66)
-	at bridges.connect.Bridges.setMap(Bridges.java:291)
-	at HurricaneTracker.main(HurricaneTracker.java:72)
-could not run java_answer for assignment in ../assignmentdb/10-HurricaneTracker/java_answer
+130
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/10/bridges_testing
+
+
 </code></pre>
 </div>
     
@@ -1979,7 +1988,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.751539878825461E12
+Data Access Took: 1.751554323318488E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -1999,11 +2008,11 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Took: 1.751540081172776E12
+Took: 1.751554537333646E12
 
 Check Your Visualization at the following link:
 
@@ -2020,23 +2029,8 @@ Q712968
 Q961187
 Q3072931
 Q3265830
-Took: 1.751540090525286E12
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/31/bridges_testing
-
-
-Q3072931
-Q3265830
-Q6220867
-Q6387896
-Q6491198
-Q15441011
-Q61552
-Q102813
-Q126606
-Q133925
+Alarm clock
+could not run java_answer for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
     
@@ -2260,15 +2254,16 @@ http://assignments.bridgesuncc.org/assignments/237/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/38-GeologicalSurvey/java_answer
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalog38-runanswer">Run Answer for Assignment 38</h3>
 <pre><code>Guessing geological_survey.java is the right java file where main is
 
-Exception in thread &quot;main&quot; java.lang.NullPointerException: Cannot invoke &quot;java.util.ArrayList.iterator()&quot; because &quot;this.country_data&quot; is null
-	at bridges.base.WorldMap.getMapRepresentation(WorldMap.java:66)
-	at bridges.connect.Bridges.setMap(Bridges.java:291)
-	at geological_survey.main(geological_survey.java:28)
-could not run java_answer for assignment in ../assignmentdb/38-GeologicalSurvey/java_answer
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/38/bridges_testing
+
+
 </code></pre>
 </div>
     
@@ -2456,23 +2451,23 @@ total vertices:22228
 Set size: 22228
 Grid
 ===grid stats===
-0)Source Point:-65.77972833245518,-40.64149981346559
-0)[ALG]Closest Point: -73.9157579,40.6132625
-0)[ALG]Min Dist:81.66107625877675
-0)[BFA]Closest Point: -73.9157579,40.6132625
-0)[BFA]Min Dist:81.66107625877675
+0)Source Point:-51.76991227111989,-13.088431780741665
+0)[ALG]Closest Point: -73.9104829,40.6147818
+0)[ALG]Min Dist:58.08820892979215
+0)[BFA]Closest Point: -73.9104829,40.6147818
+0)[BFA]Min Dist:58.08820892979215
 0)Difference:0.0
-Source Point:-67.17670966718349,40.65163764234674
-Source Point:-70.6586891490391,40.70882085919927
-Source Point:-13.650545560916122,40.62885022694022
-Source Point:-11.381841882896026,40.702961297366045
-Source Point:-17.59206658549214,40.812272019822004
-Source Point:-24.495119457767252,40.70088378901613
-Source Point:-30.241377577790082,40.79534048373465
-Source Point:-37.15895721861237,40.641352011550566
-Source Point:-40.10437024565344,40.771492739413326
-Source Point:-24.222680084492758,40.68969591991464
-num cells examined:19
+Source Point:-25.986952227796706,40.72423267112419
+Source Point:-21.5142731202183,40.73998348441148
+Source Point:-24.574468363791148,40.692730270085114
+Source Point:-38.56002466446543,40.6161920564413
+Source Point:-69.647805891037,40.69630969314734
+Source Point:-43.03476091356798,40.67704124180782
+Source Point:-35.00592773562031,40.789543937350345
+Source Point:-69.63445180066957,40.645164572247054
+Source Point:-60.06468734755367,40.7463579263849
+Source Point:-51.25069223555228,40.62563415095237
+num cells examined:10
 
 Check Your Visualization at the following link:
 
@@ -2739,19 +2734,19 @@ http://assignments.bridgesuncc.org/assignments/52/bridges_testing
     
 <div class="failure">
 <h3 id="javalog55-buildscaffold">Build Scaffold for Assignment 55</h3>
-<pre><code>./testassignment_java.sh: 150: [: ../assignmentdb/55-FreqencyPlayer: unexpected operator
+<pre><code>./testassignment_java.sh: 157: [: ../assignmentdb/55-FreqencyPlayer: unexpected operator
 assignment 55 has no java/ directory
 </code></pre>
 </div>
 <div class="failure">
 <h3 id="javalog55-buildanswer">Build Answer for Assignment 55</h3>
-<pre><code>./testassignment_java.sh: 173: [: ../assignmentdb/55-FreqencyPlayer: unexpected operator
+<pre><code>./testassignment_java.sh: 180: [: ../assignmentdb/55-FreqencyPlayer: unexpected operator
 assignment 55 has no java_answer directory
 </code></pre>
 </div>
 <div class="failure">
 <h3 id="javalog55-runanswer">Run Answer for Assignment 55</h3>
-<pre><code>./testassignment_java.sh: 245: [: ../assignmentdb/55-FreqencyPlayer: unexpected operator
+<pre><code>./testassignment_java.sh: 252: [: ../assignmentdb/55-FreqencyPlayer: unexpected operator
 assignment 55 has no java_answer directory
 </code></pre>
 </div>
@@ -2924,15 +2919,16 @@ http://assignments.bridgesuncc.org/assignments/60/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/61-Flight-Data/java_answer
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalog61-runanswer">Run Answer for Assignment 61</h3>
 <pre><code>Guessing Flight.java is the right java file where main is
 
-Exception in thread &quot;main&quot; java.lang.NullPointerException: Cannot invoke &quot;java.util.ArrayList.iterator()&quot; because &quot;this.country_data&quot; is null
-	at bridges.base.WorldMap.getMapRepresentation(WorldMap.java:66)
-	at bridges.connect.Bridges.setMap(Bridges.java:291)
-	at Flight.main(Flight.java:58)
-could not run java_answer for assignment in ../assignmentdb/61-Flight-Data/java_answer
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/61/bridges_testing
+
+
 </code></pre>
 </div>
     
@@ -2975,19 +2971,19 @@ http://assignments.bridgesuncc.org/assignments/62/bridges_testing
     
 <div class="failure">
 <h3 id="javalog63-buildscaffold">Build Scaffold for Assignment 63</h3>
-<pre><code>./testassignment_java.sh: 150: [: ../assignmentdb/63-HuffmanCoding: unexpected operator
+<pre><code>./testassignment_java.sh: 157: [: ../assignmentdb/63-HuffmanCoding: unexpected operator
 assignment 63 has no java/ directory
 </code></pre>
 </div>
 <div class="failure">
 <h3 id="javalog63-buildanswer">Build Answer for Assignment 63</h3>
-<pre><code>./testassignment_java.sh: 173: [: ../assignmentdb/63-HuffmanCoding: unexpected operator
+<pre><code>./testassignment_java.sh: 180: [: ../assignmentdb/63-HuffmanCoding: unexpected operator
 assignment 63 has no java_answer directory
 </code></pre>
 </div>
 <div class="failure">
 <h3 id="javalog63-runanswer">Run Answer for Assignment 63</h3>
-<pre><code>./testassignment_java.sh: 245: [: ../assignmentdb/63-HuffmanCoding: unexpected operator
+<pre><code>./testassignment_java.sh: 252: [: ../assignmentdb/63-HuffmanCoding: unexpected operator
 assignment 63 has no java_answer directory
 </code></pre>
 </div>
@@ -3253,7 +3249,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.14088
+Pi val: 3.1318
 
 Check Your Visualization at the following link:
 

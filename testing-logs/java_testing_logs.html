@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Aug  7 01:06:50 PM EDT 2025</p>
+	<p>Running at Thu Aug  7 05:06:41 PM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -462,12 +462,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarysong_lyrics_snippet.java" class="success">
+  <div id="summarysong_lyrics_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogsong_lyrics_snippet.java">Test song_lyrics_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.2
-	Date:Aug 07 2025  12:40:29.711 EDT
-	Location: 48 km SE of Perryville, Alaska
-	Lat/Long:55.6474,-158.5234
+	Magnitude:1.03
+	Date:Aug 07 2025  16:48:12.640 EDT
+	Location: 10 km SSW of Idyllwild, CA
+	Lat/Long:33.6598333,-116.7566667
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.2
-	Date:Aug 07 2025  12:40:29.711 EDT
-	Location: 48 km SE of Perryville, Alaska
-	Lat/Long:55.6474,-158.5234
+	Magnitude:1.03
+	Date:Aug 07 2025  16:48:12.640 EDT
+	Location: 10 km SSW of Idyllwild, CA
+	Lat/Long:33.6598333,-116.7566667
 Earthquake 0:
-	Magnitude:1.07
-	Date:May 03 2024  03:28:23.580 EDT
-	Location: 7 km NW of The Geysers, CA
-	Lat/Long:38.8139991760254,-122.81950378418
+	Magnitude:1.79
+	Date:May 03 2024  07:20:14.030 EDT
+	Location: 5 km SSW of Volcano, Hawaii
+	Lat/Long:19.3933334350586,-155.254837036133
 </code></pre>
 </div>
     
@@ -1409,9 +1409,9 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Call of Duty: Finest Hour
-GameCube
-7.0
+<pre><code>Transformers: War for Cybertron
+PC
+9.0
 [Shooter]
 </code></pre>
 </div>
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christina_Ricci
-Gathering,_The_(2002)
+<pre><code>Christopher_Lee_(I)
+Maldicion_de_los_Karnstein,_La_(1963)
 </code></pre>
 </div>
     
@@ -2329,11 +2329,17 @@ Thanks!
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 132
-poem
-Thine eyes I love, and they as pitying me,
- Knowing thy heart torment me with disdain,
- Have put on ...
+<pre><code>The Tragedy Of Julius Caesar
+play
+1599
+
+THE TRAGEDY OF JULIUS CAESAR
+
+by William Shakespeare
+
+Dramatis Personae
+
+ JULIUS CAESAR, Roman...
 </code></pre>
 </div>
     
@@ -2458,13 +2464,39 @@ http://assignments.bridgesuncc.org/assignments/2049/bridges_testing
 <pre><code>Compiling test song_lyrics_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogsong_lyrics_snippet.java-runtest">Run Test for test song_lyrics_snippet.java</h3>
-<pre><code>Harder, Better, Faster, Stronger
-Daft Punk
-Homework / Discovery / Alive 1997
-2001-02-26
+<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503. Message: &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Application Error&lt;/title&gt;
+    &lt;style media=&quot;screen&quot;&gt;
+      html,body,iframe {
+        margin: 0;
+        padding: 0;
+      }
 
+      html,body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;https://www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+	at bridges.connect.DataSource.getSong(DataSource.java:983)
+	at song_lyrics_snippet.main(song_lyrics_snippet.java:24)
+could not run test song_lyrics_snippet.java
 </code></pre>
 </div>
     

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sun Aug 10 05:06:48 AM EDT 2025</p>
+	<p>Running at Sun Aug 10 09:06:53 AM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.5
-	Date:Aug 10 2025  04:35:32.124 EDT
-	Location: 46 km E of Chase, Alaska
-	Lat/Long:62.473,-149.2095
+	Magnitude:2.0
+	Date:Aug 10 2025  08:48:46.400 EDT
+	Location: 3 km SE of Pāhala, Hawaii
+	Lat/Long:19.1828327178955,-155.457336425781
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.5
-	Date:Aug 10 2025  04:35:32.124 EDT
-	Location: 46 km E of Chase, Alaska
-	Lat/Long:62.473,-149.2095
+	Magnitude:2.0
+	Date:Aug 10 2025  08:48:46.400 EDT
+	Location: 3 km SE of Pāhala, Hawaii
+	Lat/Long:19.1828327178955,-155.457336425781
 Earthquake 0:
-	Magnitude:1.19
-	Date:May 12 2024  01:23:47.550 EDT
-	Location: 12 km W of Anza, CA
-	Lat/Long:33.5768318,-116.8058319
+	Magnitude:1.68
+	Date:May 12 2024  05:12:43.550 EDT
+	Location: 15 km WNW of Progreso, B.C., MX
+	Lat/Long:32.6425,-115.7255
 </code></pre>
 </div>
     
@@ -1409,9 +1409,9 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Golden Axe
-Wireless
-5.0
+<pre><code>Soldier of Fortune
+PC
+9.0
 [Action]
 </code></pre>
 </div>
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Arnold_Schwarzenegger
-Commando_(1985)
+<pre><code>Brigitte_Bardot
+De_Serge_Gainsbourg_a_Gainsbarre_de_1958_-_1991_(1994)
 </code></pre>
 </div>
     
@@ -2016,11 +2016,11 @@ could not run test purposefully_breaking.java
 </div>
 <div class="failure">
 <h3 id="javalogpurposefully_breaking2.java-runtest">Run Test for test purposefully_breaking2.java</h3>
-<pre><code>Server returned error response: HTTP 413 while processing the request POST http://assignments.bridgesuncc.org/assignments/2041.00?apikey=1321549621122&amp;username=bridges_testing HTTP/1.1
-There was a problem sending the visualization representation to the server. 
-Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
-Exception in thread &quot;main&quot; java.io.IOException: Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
-	at bridges.connect.Connector.executeHTTPRequest(Connector.java:526)
+<pre><code>There was a problem sending the visualization representation to the server. 
+Received an empty JSON response from the server. 
+Exception in thread &quot;main&quot; java.io.IOException: Received an empty JSON response from the server. 
+	at bridges.connect.Connector.asJSONObject(Connector.java:272)
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:506)
 	at bridges.connect.Connector.post(Connector.java:604)
 	at bridges.connect.Bridges.visualize(Bridges.java:599)
 	at purposefully_breaking2.main(purposefully_breaking2.java:45)
@@ -2354,18 +2354,11 @@ Thanks!
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>As You Like It
-play
-1601
-
-AS YOU LIKE IT
-
-by William Shakespeare
-
-DRAMATIS PERSONAE.
-
- DUKE, living in exile
- FREDERICK,...
+<pre><code>Sonnet 142
+poem
+Love is my sin, and thy dear virtue hate,
+ Hate of my sin, grounded on sinful loving,
+ O but with mi...
 </code></pre>
 </div>
     
@@ -3434,16 +3427,16 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Data Records in 1955: 5126
 
 Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q45553 &quot;Robert J. Wilke&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q1381411 &quot;Jerry Paris&quot;
 
 Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q78505 &quot;Peter Lorre&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q1418567 &quot;Minerva Urecal&quot;
 
 Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q104027 &quot;Kirk Douglas&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q1699321 &quot;John Beradino&quot;
 
 </code></pre>
 </div>

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Aug 12 09:06:36 AM EDT 2025</p>
+	<p>Running at Tue Aug 12 01:06:47 PM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.0
-	Date:Aug 12 2025  08:47:38.948 EDT
-	Location: 25 km WSW of Salamatof, Alaska
-	Lat/Long:60.5311,-151.7535
+	Magnitude:2.0
+	Date:Aug 12 2025  12:52:17.123 EDT
+	Location: 11 km S of Salcha, Alaska
+	Lat/Long:64.4208,-146.8791
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.0
-	Date:Aug 12 2025  08:47:38.948 EDT
-	Location: 25 km WSW of Salamatof, Alaska
-	Lat/Long:60.5311,-151.7535
+	Magnitude:2.0
+	Date:Aug 12 2025  12:52:17.123 EDT
+	Location: 11 km S of Salcha, Alaska
+	Lat/Long:64.4208,-146.8791
 Earthquake 0:
-	Magnitude:1.95
-	Date:May 18 2024  12:17:23.990 EDT
-	Location: 6 km SW of Volcano, Hawaii
-	Lat/Long:19.3973331451416,-155.278335571289
+	Magnitude:1.6
+	Date:May 18 2024  13:22:29.670 EDT
+	Location: 7 km NNE of Imperial, CA
+	Lat/Long:32.9116669,-115.5486679
 </code></pre>
 </div>
     
@@ -1409,9 +1409,9 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>S.L.A.I. -Steel Lancer Arena International-
-PlayStation 2
-7.0
+<pre><code>Britneys Dance Beat
+Game Boy Advance
+5.0
 [Action]
 </code></pre>
 </div>
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>James_Stewart_(I)
-Speed_(1936)
+<pre><code>Ellen_Lutter
+Adam_Sandler_Goes_to_Hell_(2001)
 </code></pre>
 </div>
     
@@ -2016,11 +2016,11 @@ could not run test purposefully_breaking.java
 </div>
 <div class="failure">
 <h3 id="javalogpurposefully_breaking2.java-runtest">Run Test for test purposefully_breaking2.java</h3>
-<pre><code>Server returned error response: HTTP 413 while processing the request POST http://assignments.bridgesuncc.org/assignments/2041.00?apikey=1321549621122&amp;username=bridges_testing HTTP/1.1
-There was a problem sending the visualization representation to the server. 
-Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
-Exception in thread &quot;main&quot; java.io.IOException: Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
-	at bridges.connect.Connector.executeHTTPRequest(Connector.java:526)
+<pre><code>There was a problem sending the visualization representation to the server. 
+Received an empty JSON response from the server. 
+Exception in thread &quot;main&quot; java.io.IOException: Received an empty JSON response from the server. 
+	at bridges.connect.Connector.asJSONObject(Connector.java:272)
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:506)
 	at bridges.connect.Connector.post(Connector.java:604)
 	at bridges.connect.Bridges.visualize(Bridges.java:599)
 	at purposefully_breaking2.main(purposefully_breaking2.java:45)
@@ -2089,7 +2089,7 @@ science
 ID: 1fyavzv
 Title: Why are there so many ways to heat things up but no ways to make something cold (besides refrigeration)?
 Author: wetlittleidiot
-Score: 850
+Score: 853
 VoteRatio: 0.82
 CommentCount: 244
 Subreddit: askscience
@@ -2100,8 +2100,8 @@ Text: Ovens, microwave, fire, there are plenty of ways to make something nice an
 ID: 1m9fiv8
 Title: How does water become oxygenated?
 Author: Saskatchemoose
-Score: 35
-VoteRatio: 0.73
+Score: 36
+VoteRatio: 0.74
 CommentCount: 14
 Subreddit: askscience
 PostTime: 1753489522
@@ -2111,7 +2111,7 @@ Text: Totally uninformed on this whole subject but it’s something I just thoug
 ID: 1jokqiv
 Title: How long will sunscreen continue to work if you don't spend a lot of time in the sun?
 Author: MachacaConHuevos
-Score: 35
+Score: 33
 VoteRatio: 0.72
 CommentCount: 36
 Subreddit: askscience
@@ -2124,7 +2124,7 @@ I understand it's like a barrier that UV rays can eventually break through, but 
 ID: 1l1xl7v
 Title: During the Ice Ages, large areas of the Earth were buried by glaciers for thousands of years. What happened to all the life there? Was there a small mass extinction? Did it just move? How did it recover so fast?
 Author: ParagonRenegade
-Score: 499
+Score: 504
 VoteRatio: 0.93
 CommentCount: 53
 Subreddit: askscience
@@ -2141,7 +2141,7 @@ I'm pretty confused on how species handled this huge change in climate without t
 ID: 1g5qoza
 Title: Does increased cell turnover equal increased risk of cancer and sped up aging?
 Author: MetalGuitarKaladin
-Score: 117
+Score: 115
 VoteRatio: 0.96
 CommentCount: 7
 Subreddit: askscience
@@ -2152,7 +2152,7 @@ Text: Mutations often happen during cell replication. Similarly telomeres are sh
 ID: 1lny217
 Title: Has there ever been a “counter-invasion” where displaced organisms wound up inhabiting the invasive species’ original niche?
 Author: al_fletcher
-Score: 78
+Score: 79
 VoteRatio: 0.89
 CommentCount: 3
 Subreddit: askscience
@@ -2163,7 +2163,7 @@ Text:
 ID: 1kx12j3
 Title: Is there a time when Earth had no mountains?
 Author: 69noob69master69
-Score: 361
+Score: 362
 VoteRatio: 0.92
 CommentCount: 32
 Subreddit: askscience
@@ -2174,7 +2174,7 @@ Text: Basically the question above. Just curious if the tectonic plates were lev
 ID: 1jthf1l
 Title: How does your body prevent herpes simplex one?
 Author: Critical-Blitz
-Score: 140
+Score: 143
 VoteRatio: 0.84
 CommentCount: 37
 Subreddit: askscience
@@ -2185,7 +2185,7 @@ Text:
 ID: 1kyvhn9
 Title: What tree has the densest most inter-connected canopy?
 Author: Gold-Print-767
-Score: 56
+Score: 59
 VoteRatio: 0.86
 CommentCount: 7
 Subreddit: askscience
@@ -2196,7 +2196,7 @@ Text: Title says it all
 ID: 1iabjpu
 Title: How do they seal the rotating glove joint on a spacesuit?
 Author: stupid_spoon
-Score: 205
+Score: 208
 VoteRatio: 0.89
 CommentCount: 61
 Subreddit: askscience
@@ -2223,7 +2223,7 @@ Thanks!
 <pre><code>ID: 1fyavzv
 Title: Why are there so many ways to heat things up but no ways to make something cold (besides refrigeration)?
 Author: wetlittleidiot
-Score: 850
+Score: 853
 VoteRatio: 0.82
 CommentCount: 244
 Subreddit: askscience
@@ -2234,8 +2234,8 @@ Text: Ovens, microwave, fire, there are plenty of ways to make something nice an
 ID: 1m9fiv8
 Title: How does water become oxygenated?
 Author: Saskatchemoose
-Score: 35
-VoteRatio: 0.73
+Score: 36
+VoteRatio: 0.74
 CommentCount: 14
 Subreddit: askscience
 PostTime: 1753489522
@@ -2245,7 +2245,7 @@ Text: Totally uninformed on this whole subject but it’s something I just thoug
 ID: 1jokqiv
 Title: How long will sunscreen continue to work if you don't spend a lot of time in the sun?
 Author: MachacaConHuevos
-Score: 35
+Score: 33
 VoteRatio: 0.72
 CommentCount: 36
 Subreddit: askscience
@@ -2258,7 +2258,7 @@ I understand it's like a barrier that UV rays can eventually break through, but 
 ID: 1l1xl7v
 Title: During the Ice Ages, large areas of the Earth were buried by glaciers for thousands of years. What happened to all the life there? Was there a small mass extinction? Did it just move? How did it recover so fast?
 Author: ParagonRenegade
-Score: 499
+Score: 504
 VoteRatio: 0.93
 CommentCount: 53
 Subreddit: askscience
@@ -2275,7 +2275,7 @@ I'm pretty confused on how species handled this huge change in climate without t
 ID: 1g5qoza
 Title: Does increased cell turnover equal increased risk of cancer and sped up aging?
 Author: MetalGuitarKaladin
-Score: 117
+Score: 115
 VoteRatio: 0.96
 CommentCount: 7
 Subreddit: askscience
@@ -2286,7 +2286,7 @@ Text: Mutations often happen during cell replication. Similarly telomeres are sh
 ID: 1lny217
 Title: Has there ever been a “counter-invasion” where displaced organisms wound up inhabiting the invasive species’ original niche?
 Author: al_fletcher
-Score: 78
+Score: 79
 VoteRatio: 0.89
 CommentCount: 3
 Subreddit: askscience
@@ -2297,7 +2297,7 @@ Text:
 ID: 1kx12j3
 Title: Is there a time when Earth had no mountains?
 Author: 69noob69master69
-Score: 361
+Score: 362
 VoteRatio: 0.92
 CommentCount: 32
 Subreddit: askscience
@@ -2308,7 +2308,7 @@ Text: Basically the question above. Just curious if the tectonic plates were lev
 ID: 1jthf1l
 Title: How does your body prevent herpes simplex one?
 Author: Critical-Blitz
-Score: 140
+Score: 143
 VoteRatio: 0.84
 CommentCount: 37
 Subreddit: askscience
@@ -2319,7 +2319,7 @@ Text:
 ID: 1kyvhn9
 Title: What tree has the densest most inter-connected canopy?
 Author: Gold-Print-767
-Score: 56
+Score: 59
 VoteRatio: 0.86
 CommentCount: 7
 Subreddit: askscience
@@ -2330,7 +2330,7 @@ Text: Title says it all
 ID: 1iabjpu
 Title: How do they seal the rotating glove joint on a spacesuit?
 Author: stupid_spoon
-Score: 205
+Score: 208
 VoteRatio: 0.89
 CommentCount: 61
 Subreddit: askscience
@@ -2354,11 +2354,11 @@ Thanks!
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 124
+<pre><code>Sonnet 45
 poem
-If my dear love were but the child of state,
- It might for Fortune's bastard be unfathered,
- As subj...
+The other two, slight air, and purging fire,
+ Are both with thee, wherever I abide,
+ The first my th...
 </code></pre>
 </div>
     
@@ -3427,16 +3427,16 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Data Records in 1955: 5127
 
 Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q45553 &quot;Robert J. Wilke&quot;
+	Movie: Q710850 &quot;The Dam Busters&quot;
+	Actor: Q298908 &quot;Patrick McGoohan&quot;
 
 Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q78505 &quot;Peter Lorre&quot;
+	Movie: Q710850 &quot;The Dam Busters&quot;
+	Actor: Q313727 &quot;Robert Shaw&quot;
 
 Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q104027 &quot;Kirk Douglas&quot;
+	Movie: Q710850 &quot;The Dam Busters&quot;
+	Actor: Q318263 &quot;Michael Redgrave&quot;
 
 </code></pre>
 </div>

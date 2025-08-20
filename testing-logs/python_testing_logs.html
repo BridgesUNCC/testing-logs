@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Wed Aug 20 01:18:22 PM EDT 2025</p>
+	<p>Running at Wed Aug 20 05:18:10 PM EDT 2025</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -244,11 +244,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryinput_game.py" class="success">
+  <div id="summaryinput_game.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonloginput_game.py">Test input_game.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonloginput_game.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonloginput_game.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1023,7 +1023,7 @@ http://assignments.bridgesuncc.org/assignments/3013/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogdisplay_game.py-runtest">Run Test for test display_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x775e07711460&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7b624c4b6300&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1081,10 +1081,10 @@ First 10 elevations:
     
 <div class="success">
 <h3 id="pythonlogeq_snippet.py-runtest">Run Test for test eq_snippet.py</h3>
-<pre><code>Magnitude: 1.35
-Date: 2025-08-20 16:28:12
-Location:8 km N of Big Bear City, CA
-Lat/Long:34.3378333,-116.8491667
+<pre><code>Magnitude: 1.05
+Date: 2025-08-20 20:53:03
+Location:10 km NNE of Julian, CA
+Lat/Long:33.1685,-116.5766667
 </code></pre>
 </div>
     
@@ -1094,14 +1094,14 @@ Lat/Long:34.3378333,-116.8491667
     
 <div class="success">
 <h3 id="pythonlogeq_test.py-runtest">Run Test for test eq_test.py</h3>
-<pre><code>Magnitude: 1.35
-Date: 2025-08-20 16:28:12
-Location:8 km N of Big Bear City, CA
-Lat/Long:34.3378333,-116.8491667
-Magnitude: 1.6
-Date: 2024-06-07 03:46:04
-Location:39 km NNE of Chenega, Alaska
-Lat/Long:60.3996,-147.7614
+<pre><code>Magnitude: 1.05
+Date: 2025-08-20 20:53:03
+Location:10 km NNE of Julian, CA
+Lat/Long:33.1685,-116.5766667
+Magnitude: 2.38
+Date: 2024-06-09 07:50:44
+Location:7 km W of Enoch, Utah
+Lat/Long:37.771,-113.115
 </code></pre>
 </div>
     
@@ -1142,7 +1142,7 @@ http://assignments.bridgesuncc.org/assignments/3019/bridges_testing
     
 <div class="success">
 <h3 id="pythonloggame_size_test.py-runtest">Run Test for test game_size_test.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x72f092853ec0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7c2550ed22a0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1161,10 +1161,10 @@ client disconnect disconnected
     
 <div class="success">
 <h3 id="pythonloggame_snippet.py-runtest">Run Test for test game_snippet.py</h3>
-<pre><code>FIFA Soccer 11
-PlayStation Portable
-7
-['Sports']
+<pre><code>Nancy Drew: The White Wolf of Icicle Creek
+Wii
+7.5
+['Adventure']
 </code></pre>
 </div>
     
@@ -1329,8 +1329,8 @@ C
     
 <div class="success">
 <h3 id="pythonlogimdb_snippet.py-runtest">Run Test for test imdb_snippet.py</h3>
-<pre><code>Christopher_Lee_(I)
-Rainbow_Thief,_The_(1990)
+<pre><code>Bill_Murray_(I)
+Lost_on_Location:_Behind_the_Scenes_of_'Lost_in_Translation'_(2004)
 </code></pre>
 </div>
     
@@ -1338,18 +1338,74 @@ Rainbow_Thief,_The_(1990)
     <div id="pythonloginput_game.py" class="logdetails">
       <h2>Test input_game.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonloginput_game.py-runtest">Run Test for test input_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x720fab576720&gt;
-limiting number of frame to 10
+<pre><code>Traceback (most recent call last):
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_socket.py&quot;, line 118, in recv
+    bytes_ = _recv()
+             ^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_socket.py&quot;, line 97, in _recv
+    return sock.recv(bufsize)
+           ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
 
-Check Your Visualization at the following link:
+During handling of the above exception, another exception occurred:
 
-http://games.bridgesuncc.org/assignments/3029/bridges_testing
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_engineio-4.12.2-py3.12.egg/engineio/client.py&quot;, line 334, in _connect_websocket
+    ws = websocket.create_connection(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_core.py&quot;, line 646, in create_connection
+    websock.connect(url, **options)
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_core.py&quot;, line 261, in connect
+    self.handshake_response = handshake(self.sock, url, *addrs, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_handshake.py&quot;, line 65, in handshake
+    status, resp = _get_resp_headers(sock)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_handshake.py&quot;, line 141, in _get_resp_headers
+    status, resp_headers, status_message = read_headers(sock)
+                                           ^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_http.py&quot;, line 351, in read_headers
+    line = recv_line(sock)
+           ^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_socket.py&quot;, line 140, in recv_line
+    c = recv(sock, 1)
+        ^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_socket.py&quot;, line 120, in recv
+    raise WebSocketTimeoutException(&quot;Connection timed out&quot;)
+websocket._exceptions.WebSocketTimeoutException: Connection timed out
 
+During handling of the above exception, another exception occurred:
 
-frame limit of 10 frames reached
-client disconnect disconnected
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_socketio-5.13.0-py3.12.egg/socketio/client.py&quot;, line 147, in connect
+    self.eio.connect(real_url, headers=real_headers,
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_engineio-4.12.2-py3.12.egg/engineio/client.py&quot;, line 94, in connect
+    return getattr(self, '_connect_' + self.transports[0])(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_engineio-4.12.2-py3.12.egg/engineio/client.py&quot;, line 342, in _connect_websocket
+    raise exceptions.ConnectionError('Connection error')
+engineio.exceptions.ConnectionError: Connection error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/input_game.py&quot;, line 38, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/input_game.py&quot;, line 33, in main
+    game = InputGame(int(args[0]), args[1], args[2])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/input_game.py&quot;, line 8, in __init__
+    super().__init__(assid, user_id,  api_key, 10, 10)
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.0-py3.12.egg/bridges/non_blocking_game.py&quot;, line 149, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.0-py3.12.egg/bridges/gamebase.py&quot;, line 30, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.0-py3.12.egg/bridges/gamebase.py&quot;, line 55, in game_base_init
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.0-py3.12.egg/bridges/socket_connection.py&quot;, line 28, in setup_connection
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_socketio-5.13.0-py3.12.egg/socketio/client.py&quot;, line 159, in connect
+    raise exceptions.ConnectionError(exc.args[0]) from exc
+socketio.exceptions.ConnectionError: Connection error
+could not run test input_game.py
 </code></pre>
 </div>
     
@@ -1407,7 +1463,7 @@ http://assignments.bridgesuncc.org/assignments/3031/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogminimal_game.py-runtest">Run Test for test minimal_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x782d69286c60&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x74d2bccc9910&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1481,7 +1537,7 @@ http://assignments.bridgesuncc.org/assignments/3034/bridges_testing
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_state.py-runtest">Run Test for test non_blocking_game_state.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x752ecef8ee10&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x74742795bfb0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1705,18 +1761,11 @@ Text: There's a spider web in my yard that spans a gap between 2 trees about 12 
     
 <div class="success">
 <h3 id="pythonlogshakespeare_snippet.py-runtest">Run Test for test shakespeare_snippet.py</h3>
-<pre><code>The Tragedy Of King Lear
-play
-1606
-
-THE TRAGEDY OF KING LEAR
-
-by William Shakespeare
-
-Dramatis Personae
-
- Lear, King of Britain.
- 
+<pre><code>Sonnet 37
+poem
+As a decrepit father takes delight,
+ To see his active child do deeds of youth,
+ So I, made lame by 
 </code></pre>
 </div>
     
@@ -2601,7 +2650,7 @@ First 3 records:
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_fire.py-runtest">Run Test for test non_blocking_game_fire.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7846f8607c80&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7cb35490b0b0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:

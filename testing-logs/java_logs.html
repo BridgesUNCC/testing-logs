@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Aug 21 01:44:31 PM EDT 2025</p>
+	<p>Running at Thu Aug 21 05:41:48 PM EDT 2025</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -292,13 +292,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary28" class="failure">
+  <div id="summary28" class="success">
     <h2><a href="java_logs.html#javalog28">Assignment 28</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog28-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog28-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog28-runanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog28-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -402,13 +402,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary39" class="failure">
+  <div id="summary39" class="success">
     <h2><a href="java_logs.html#javalog39">Assignment 39</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog39-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog39-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog39-runanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog39-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -582,13 +582,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary57" class="failure">
+  <div id="summary57" class="success">
     <h2><a href="java_logs.html#javalog57">Assignment 57</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog57-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog57-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog57-runanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog57-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -1907,7 +1907,7 @@ Shutting down ...
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/28-BigOhMatters/java_answer
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalog28-runanswer">Run Answer for Assignment 28</h3>
 <pre><code>Guessing Complexity.java is the right java file where main is
 
@@ -1923,42 +1923,12 @@ Check Your Visualization at the following link:
 http://assignments.bridgesuncc.org/assignments/28/bridges_testing
 
 
-There was a problem sending the visualization representation to the server. 
-Connection reset
-Exception in thread &quot;main&quot; java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
-	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
-	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
-	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
-	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.apache.http.impl.conn.CPoolProxy.invoke(CPoolProxy.java:138)
-	at jdk.proxy2/jdk.proxy2.$Proxy2.receiveResponseHeader(Unknown Source)
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:253)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:194)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.apache.http.client.fluent.Executor.execute(Executor.java:215)
-	at bridges.connect.Connector.executeHTTPRequest(Connector.java:487)
-	at bridges.connect.Connector.post(Connector.java:604)
-	at bridges.connect.Bridges.visualize(Bridges.java:599)
-	at Complexity.task3(Complexity.java:161)
-	at Complexity.main(Complexity.java:174)
-could not run java_answer for assignment in ../assignmentdb/28-BigOhMatters/java_answer
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/28/bridges_testing
+
+
 </code></pre>
 </div>
     
@@ -2015,7 +1985,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.75404340177862E12
+Data Access Took: 1.754057644179702E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2039,7 +2009,7 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Took: 1.754043593856884E12
+Took: 1.754057813701007E12
 
 Check Your Visualization at the following link:
 
@@ -2308,13 +2278,35 @@ http://assignments.bridgesuncc.org/assignments/38/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/39-BookDistance/java_answer
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalog39-runanswer">Run Answer for Assignment 39</h3>
 <pre><code>Guessing BookDistance.java is the right java file where main is
 
 80
-Alarm clock
-could not run java_answer for assignment in ../assignmentdb/39-BookDistance/java_answer
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/139/bridges_testing
+
+
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/139/bridges_testing
+
+
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/139/bridges_testing
+
+
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/139/bridges_testing
+
+
 </code></pre>
 </div>
     
@@ -2456,23 +2448,23 @@ total vertices:22618
 Set size: 22618
 Grid
 ===grid stats===
-0)Source Point:-40.23916238497814,-36.03739823731968
+0)Source Point:-29.616211270350732,-12.569092276327808
 0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:83.7216491100062
+0)[ALG]Min Dist:69.21348828781747
 0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:83.7216491100062
+0)[BFA]Min Dist:69.21348828781747
 0)Difference:0.0
-Source Point:-69.13162792044054,40.63426366408818
-Source Point:-39.006816189727374,40.79915705295567
-Source Point:-6.649613572998263,40.710453220803316
-Source Point:-71.90950023398696,40.74897581913208
-Source Point:-42.30807662454045,40.73871364102485
-Source Point:-13.021126395391654,40.7793116179172
-Source Point:-49.743751536235436,40.629875525795555
-Source Point:-3.9605858473142774,40.800013815483915
-Source Point:-52.02509390933579,40.627995705340965
-Source Point:-58.50929658618614,40.70660269360535
-num cells examined:11
+Source Point:-29.58440476762599,40.67036070475175
+Source Point:-36.55200266909356,40.74646628063225
+Source Point:-13.843610431514698,40.63687674748473
+Source Point:-5.89630895489266,40.79712580231882
+Source Point:-25.785356023641803,40.64771142285061
+Source Point:-18.408672245964702,40.68779495479651
+Source Point:-54.43087950505496,40.73539125658396
+Source Point:-47.72997530836605,40.67572795978883
+Source Point:-29.35339992567974,40.80963898852505
+Source Point:-27.30141797836297,40.79724130550953
+num cells examined:3
 
 Check Your Visualization at the following link:
 
@@ -2797,13 +2789,35 @@ http://assignments.bridgesuncc.org/assignments/56/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/57-BookAnalysis/java_answer
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalog57-runanswer">Run Answer for Assignment 57</h3>
 <pre><code>Guessing book_analysis.java is the right java file where main is
 
 80
-Alarm clock
-could not run java_answer for assignment in ../assignmentdb/57-BookAnalysis/java_answer
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/157/bridges_testing
+
+
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/157/bridges_testing
+
+
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/157/bridges_testing
+
+
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/157/bridges_testing
+
+
 </code></pre>
 </div>
     
@@ -3146,10 +3160,6 @@ Shutting down ...
 <h3 id="javalog68-runanswer">Run Answer for Assignment 68</h3>
 <pre><code>Guessing MusicNotes.java is the right java file where main is
 
-Aug 21, 2025 2:17:42 PM org.apache.http.impl.execchain.RetryExec execute
-INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer
-Aug 21, 2025 2:17:42 PM org.apache.http.impl.execchain.RetryExec execute
-INFO: Retrying request
 
 Check Your Visualization at the following link:
 
@@ -3235,7 +3245,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.13968
+Pi val: 3.14912
 
 Check Your Visualization at the following link:
 

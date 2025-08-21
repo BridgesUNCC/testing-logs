@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Thu Aug 21 01:16:25 AM EDT 2025</p>
+	<p>Running at Thu Aug 21 05:17:10 AM EDT 2025</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -268,11 +268,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryminimal_game.py" class="success">
+  <div id="summaryminimal_game.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogminimal_game.py">Test minimal_game.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogminimal_game.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogminimal_game.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1023,7 +1023,7 @@ http://assignments.bridgesuncc.org/assignments/3013/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogdisplay_game.py-runtest">Run Test for test display_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7f8c73716480&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x79a6c9c8e120&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1081,10 +1081,10 @@ First 10 elevations:
     
 <div class="success">
 <h3 id="pythonlogeq_snippet.py-runtest">Run Test for test eq_snippet.py</h3>
-<pre><code>Magnitude: 1.3
-Date: 2025-08-21 04:57:00
-Location:13 km E of Fernley, Nevada
-Lat/Long:39.606,-119.0965
+<pre><code>Magnitude: 1.65
+Date: 2025-08-21 08:44:58
+Location:7 km WNW of Cobb, CA
+Lat/Long:38.8328323364258,-122.807830810547
 </code></pre>
 </div>
     
@@ -1094,14 +1094,14 @@ Lat/Long:39.606,-119.0965
     
 <div class="success">
 <h3 id="pythonlogeq_test.py-runtest">Run Test for test eq_test.py</h3>
-<pre><code>Magnitude: 1.3
-Date: 2025-08-21 04:57:00
-Location:13 km E of Fernley, Nevada
-Lat/Long:39.606,-119.0965
-Magnitude: 1.12
-Date: 2024-06-09 16:22:11
-Location:7 km SSW of Gilroy, CA
-Lat/Long:36.9469985961914,-121.591835021973
+<pre><code>Magnitude: 1.65
+Date: 2025-08-21 08:44:58
+Location:7 km WNW of Cobb, CA
+Lat/Long:38.8328323364258,-122.807830810547
+Magnitude: 1.68
+Date: 2024-06-09 21:00:15
+Location:15 km N of Warner Springs, CA
+Lat/Long:33.4140015,-116.6535034
 </code></pre>
 </div>
     
@@ -1142,7 +1142,7 @@ http://assignments.bridgesuncc.org/assignments/3019/bridges_testing
     
 <div class="success">
 <h3 id="pythonloggame_size_test.py-runtest">Run Test for test game_size_test.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x78c0056079e0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7d194961b9b0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1161,10 +1161,10 @@ client disconnect disconnected
     
 <div class="success">
 <h3 id="pythonloggame_snippet.py-runtest">Run Test for test game_snippet.py</h3>
-<pre><code>Ecks vs. Sever
-Game Boy Advance
-9
-['Shooter']
+<pre><code>Journey to the Center of the Earth
+Nintendo DS
+3.5
+['Action']
 </code></pre>
 </div>
     
@@ -1329,8 +1329,8 @@ C
     
 <div class="success">
 <h3 id="pythonlogimdb_snippet.py-runtest">Run Test for test imdb_snippet.py</h3>
-<pre><code>Catherine_Zeta-Jones
-Splitting_Heirs_(1993)
+<pre><code>Kevin_Bacon_(I)
+JFK_(1991)
 </code></pre>
 </div>
     
@@ -1340,7 +1340,7 @@ Splitting_Heirs_(1993)
     
 <div class="success">
 <h3 id="pythonloginput_game.py-runtest">Run Test for test input_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7781c9bfbfe0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x731132526e10&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1405,18 +1405,74 @@ http://assignments.bridgesuncc.org/assignments/3031/bridges_testing
     <div id="pythonlogminimal_game.py" class="logdetails">
       <h2>Test minimal_game.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogminimal_game.py-runtest">Run Test for test minimal_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x70be57f42d50&gt;
-limiting number of frame to 10
+<pre><code>Traceback (most recent call last):
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_socket.py&quot;, line 118, in recv
+    bytes_ = _recv()
+             ^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_socket.py&quot;, line 97, in _recv
+    return sock.recv(bufsize)
+           ^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
 
-Check Your Visualization at the following link:
+During handling of the above exception, another exception occurred:
 
-http://games.bridgesuncc.org/assignments/3032/bridges_testing
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_engineio-4.12.2-py3.12.egg/engineio/client.py&quot;, line 334, in _connect_websocket
+    ws = websocket.create_connection(
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_core.py&quot;, line 646, in create_connection
+    websock.connect(url, **options)
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_core.py&quot;, line 261, in connect
+    self.handshake_response = handshake(self.sock, url, *addrs, **options)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_handshake.py&quot;, line 65, in handshake
+    status, resp = _get_resp_headers(sock)
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_handshake.py&quot;, line 141, in _get_resp_headers
+    status, resp_headers, status_message = read_headers(sock)
+                                           ^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_http.py&quot;, line 351, in read_headers
+    line = recv_line(sock)
+           ^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_socket.py&quot;, line 140, in recv_line
+    c = recv(sock, 1)
+        ^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_socket.py&quot;, line 120, in recv
+    raise WebSocketTimeoutException(&quot;Connection timed out&quot;)
+websocket._exceptions.WebSocketTimeoutException: Connection timed out
 
+During handling of the above exception, another exception occurred:
 
-frame limit of 10 frames reached
-client disconnect disconnected
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_socketio-5.13.0-py3.12.egg/socketio/client.py&quot;, line 147, in connect
+    self.eio.connect(real_url, headers=real_headers,
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_engineio-4.12.2-py3.12.egg/engineio/client.py&quot;, line 94, in connect
+    return getattr(self, '_connect_' + self.transports[0])(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_engineio-4.12.2-py3.12.egg/engineio/client.py&quot;, line 342, in _connect_websocket
+    raise exceptions.ConnectionError('Connection error')
+engineio.exceptions.ConnectionError: Connection error
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/minimal_game.py&quot;, line 25, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/minimal_game.py&quot;, line 20, in main
+    game = MinimalGame(int(args[0]), args[1], args[2])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/minimal_game.py&quot;, line 8, in __init__
+    super().__init__(assid, user_id,  api_key, 10, 10)
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.0-py3.12.egg/bridges/non_blocking_game.py&quot;, line 149, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.0-py3.12.egg/bridges/gamebase.py&quot;, line 30, in __init__
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.0-py3.12.egg/bridges/gamebase.py&quot;, line 55, in game_base_init
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.0-py3.12.egg/bridges/socket_connection.py&quot;, line 28, in setup_connection
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_socketio-5.13.0-py3.12.egg/socketio/client.py&quot;, line 159, in connect
+    raise exceptions.ConnectionError(exc.args[0]) from exc
+socketio.exceptions.ConnectionError: Connection error
+could not run test minimal_game.py
 </code></pre>
 </div>
     
@@ -1481,7 +1537,7 @@ http://assignments.bridgesuncc.org/assignments/3034/bridges_testing
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_state.py-runtest">Run Test for test non_blocking_game_state.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x791ae6aaffe0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x74ca096e3080&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1551,13 +1607,12 @@ Cartesian Coordinate of first vertex: 834.4847597780021, -5147.953884206995
     
 <div class="success">
 <h3 id="pythonlogreddit.py-runtest">Run Test for test reddit.py</h3>
-<pre><code>Title: Delta plane wing clips empty aircraft during pushback from gate in Atlanta
-Author: riverdale-74
-Score: 594
-Comment Count: 27
+<pre><code>Title: Bobby Whitlock, Derek and the Dominos founder, dies at 77
+Author: AudibleNod
+Score: 589
+Comment Count: 38
 Subreddit: news
-Title: Trump executive order gives politicians control over all federal grants, alarming researchers
-Title: $7K worth of Labubu dolls stolen from Los Angeles store, authorities say
+Title: Epstein scandal broadens as trove of letters from famous figures published
 Title: CDC shooter believed COVID vaccine made him suicidal, his father tells police
 Title: Times Square shooting leaves 3 hurt, 17-year-old arrested, NYPD says
 Title: Southwest Airlines apologizes after two blind passengers left behind by plane
@@ -1566,6 +1621,7 @@ Title: Ukraine drone attack kills one, damages industrial facility in Saratov, R
 Title: Alberta rat control investigating possible rodent sighting in Calgary
 Title: A man asked ChatGPT how to remove salt from his diet. It landed him in the hospital
 Title: Louisiana to pay $9 million to a man who was shot in the back by state trooper during traffic stop
+Title: Delta plane wing clips empty aircraft during pushback from gate in Atlanta
 =====
 Available subreddits:
 gadgets
@@ -1615,41 +1671,44 @@ UpliftingNews
 InternetIsBeautiful
 science
 =====
-Title: Can it cause problems that you develop antibodies for a virus, but then that virus evolves? So later when you catch it again, your body tries to fight it with the same antibodies that are only partially effective?
-Author: None
-Score: 592
-Vote Ratio: 0.87
-Comment Count: 151
-Subreddit: askscience
-PostTime: 1728834697
-URL: https://www.reddit.com/r/askscience/comments/1g2spkd/can_it_cause_problems_that_you_develop_antibodies/
-Text: Can someone who knows something about this topic tell me if this is possible or not? That the body recognises the same virus, but the antibodies are only partially effective, so the body has a tough time dealing with the rest of it?
-
-
-
-Title: How come we don’t get an allergic reaction every time we’re re-exposed to a bacteria or virus? 
-Author: ChopinFantasie
-Score: 118
+Title: How can a DNA test tell if someone is related?
+Author: Wooden_Airport6331
+Score: 453
 Vote Ratio: 0.84
-Comment Count: 16
+Comment Count: 47
 Subreddit: askscience
-PostTime: 1728932601
-URL: https://www.reddit.com/r/askscience/comments/1g3nsos/how_come_we_dont_get_an_allergic_reaction_every/
-Text: So from what I understand an allergy is your body building up an intense immune response to something harmless, so from then on out every time you’re exposed to that thing your immune system will kick in and give you a bad reaction.
+PostTime: 1728948890
+URL: https://www.reddit.com/r/askscience/comments/1g3u1qf/how_can_a_dna_test_tell_if_someone_is_related/
+Text: I know the simple answer is that relatives share genes, but people have similar genes to unrelated people. 
 
-But when it comes to diseases, once our bodies build up that same(?) immune response, we’re immune now and won’t get sick from it again (at least until the immunity wears off)
+I have a friend who was a bone marrow transplant recipient, which requires two people to be very genetically similar. Her donor shares more genes with her than her mother, father, or siblings, who weren’t similar enough to her to donate. As I understand it, this is pretty common. 
 
-Why aren’t people getting hives and anaphylaxis after breathing in the same cold virus twice? What’s the difference?
+How is it that paternity testing, forensics, and services like 23andMe can tell when someone is actually related to another person rather than just coincidentally born with the same genes? 
 
-Title: How far can spiders &quot;shoot&quot; their web?
-Author: Snoo74600
-Score: 204
-Vote Ratio: 0.86
-Comment Count: 54
+
+
+
+Title: Do opposite forces attract each other because they are minimising energy by &quot;cancelling&quot; each other out?
+Author: Sercan1479
+Score: 305
+Vote Ratio: 0.82
+Comment Count: 62
 Subreddit: askscience
-PostTime: 1728943170
-URL: https://www.reddit.com/r/askscience/comments/1g3s0hi/how_far_can_spiders_shoot_their_web/
-Text: There's a spider web in my yard that spans a gap between 2 trees about 12 feet apart. How do they do that?  Let the wind carry one end?  Let it drift until it sticks to the other side?  Dive from a branch above the middle and spray in both directions like Spiderman? (JK)  And, of course, what's the greatest distance they could span based on silk strength, spray ability, vision,  etc
+PostTime: 1729011321
+URL: https://www.reddit.com/r/askscience/comments/1g4chgb/do_opposite_forces_attract_each_other_because/
+Text: I know opposite electric charges attract each other, and the same charges repel each other, but I can't understand why thats the case. I've learned that everything &quot;wants&quot; to be in a lower energy state, so does that mean the charges attract each other because they are minimising energy by cancelling each other out? 
+
+I mean I dont even know if negative and positive charges would actually cancel each other out in physics but thats what I assume it would do because thats the case in math.
+
+Title: Would the life forms that survive fueled solely by the geothermal vents at the bottom of the ocean exist without the sun?
+Author: the-realTfiz
+Score: 129
+Vote Ratio: 0.91
+Comment Count: 30
+Subreddit: askscience
+PostTime: 1729060121
+URL: https://www.reddit.com/r/askscience/comments/1g4sz1t/would_the_life_forms_that_survive_fueled_solely/
+Text: I mean, I know they would depend on the sun to pull Earth together as a planet but could life exist down there without life existing up here? Or did it evolve from life up here and find a new source of energy?
 
 </code></pre>
 </div>
@@ -1660,41 +1719,44 @@ Text: There's a spider web in my yard that spans a gap between 2 trees about 12 
     
 <div class="success">
 <h3 id="pythonlogreddit_snippet.py-runtest">Run Test for test reddit_snippet.py</h3>
-<pre><code>Title: Can it cause problems that you develop antibodies for a virus, but then that virus evolves? So later when you catch it again, your body tries to fight it with the same antibodies that are only partially effective?
-Author: None
-Score: 592
-Vote Ratio: 0.87
-Comment Count: 151
-Subreddit: askscience
-PostTime: 1728834697
-URL: https://www.reddit.com/r/askscience/comments/1g2spkd/can_it_cause_problems_that_you_develop_antibodies/
-Text: Can someone who knows something about this topic tell me if this is possible or not? That the body recognises the same virus, but the antibodies are only partially effective, so the body has a tough time dealing with the rest of it?
-
-
-
-Title: How come we don’t get an allergic reaction every time we’re re-exposed to a bacteria or virus? 
-Author: ChopinFantasie
-Score: 118
+<pre><code>Title: How can a DNA test tell if someone is related?
+Author: Wooden_Airport6331
+Score: 453
 Vote Ratio: 0.84
-Comment Count: 16
+Comment Count: 47
 Subreddit: askscience
-PostTime: 1728932601
-URL: https://www.reddit.com/r/askscience/comments/1g3nsos/how_come_we_dont_get_an_allergic_reaction_every/
-Text: So from what I understand an allergy is your body building up an intense immune response to something harmless, so from then on out every time you’re exposed to that thing your immune system will kick in and give you a bad reaction.
+PostTime: 1728948890
+URL: https://www.reddit.com/r/askscience/comments/1g3u1qf/how_can_a_dna_test_tell_if_someone_is_related/
+Text: I know the simple answer is that relatives share genes, but people have similar genes to unrelated people. 
 
-But when it comes to diseases, once our bodies build up that same(?) immune response, we’re immune now and won’t get sick from it again (at least until the immunity wears off)
+I have a friend who was a bone marrow transplant recipient, which requires two people to be very genetically similar. Her donor shares more genes with her than her mother, father, or siblings, who weren’t similar enough to her to donate. As I understand it, this is pretty common. 
 
-Why aren’t people getting hives and anaphylaxis after breathing in the same cold virus twice? What’s the difference?
+How is it that paternity testing, forensics, and services like 23andMe can tell when someone is actually related to another person rather than just coincidentally born with the same genes? 
 
-Title: How far can spiders &quot;shoot&quot; their web?
-Author: Snoo74600
-Score: 204
-Vote Ratio: 0.86
-Comment Count: 54
+
+
+
+Title: Do opposite forces attract each other because they are minimising energy by &quot;cancelling&quot; each other out?
+Author: Sercan1479
+Score: 305
+Vote Ratio: 0.82
+Comment Count: 62
 Subreddit: askscience
-PostTime: 1728943170
-URL: https://www.reddit.com/r/askscience/comments/1g3s0hi/how_far_can_spiders_shoot_their_web/
-Text: There's a spider web in my yard that spans a gap between 2 trees about 12 feet apart. How do they do that?  Let the wind carry one end?  Let it drift until it sticks to the other side?  Dive from a branch above the middle and spray in both directions like Spiderman? (JK)  And, of course, what's the greatest distance they could span based on silk strength, spray ability, vision,  etc
+PostTime: 1729011321
+URL: https://www.reddit.com/r/askscience/comments/1g4chgb/do_opposite_forces_attract_each_other_because/
+Text: I know opposite electric charges attract each other, and the same charges repel each other, but I can't understand why thats the case. I've learned that everything &quot;wants&quot; to be in a lower energy state, so does that mean the charges attract each other because they are minimising energy by cancelling each other out? 
+
+I mean I dont even know if negative and positive charges would actually cancel each other out in physics but thats what I assume it would do because thats the case in math.
+
+Title: Would the life forms that survive fueled solely by the geothermal vents at the bottom of the ocean exist without the sun?
+Author: the-realTfiz
+Score: 129
+Vote Ratio: 0.91
+Comment Count: 30
+Subreddit: askscience
+PostTime: 1729060121
+URL: https://www.reddit.com/r/askscience/comments/1g4sz1t/would_the_life_forms_that_survive_fueled_solely/
+Text: I mean, I know they would depend on the sun to pull Earth together as a planet but could life exist down there without life existing up here? Or did it evolve from life up here and find a new source of energy?
 
 </code></pre>
 </div>
@@ -1705,18 +1767,11 @@ Text: There's a spider web in my yard that spans a gap between 2 trees about 12 
     
 <div class="success">
 <h3 id="pythonlogshakespeare_snippet.py-runtest">Run Test for test shakespeare_snippet.py</h3>
-<pre><code>The Life Of King Henry The Fifth
-play
-1599
-
-THE LIFE OF KING HENRY THE FIFTH
-
-by William Shakespeare
-
-DRAMATIS PERSONAE
-
- CHORUS
- KING HEN
+<pre><code>Sonnet 126
+poem
+O thou my lovely boy who in thy power,
+ Dost hold Time's fickle glass his fickle hour:
+ Who hast by 
 </code></pre>
 </div>
     
@@ -2582,15 +2637,15 @@ First 3 records:
 
 0)Actor-Movie Data:
 	Movie: Q237116, Marty
-	Actor: Q1418567, Minerva Urecal
+	Actor: Q102551, Ernest Borgnine
 
 1)Actor-Movie Data:
 	Movie: Q237116, Marty
-	Actor: Q1699321, John Beradino
+	Actor: Q180251, Paddy Chayefsky
 
 2)Actor-Movie Data:
 	Movie: Q237116, Marty
-	Actor: Q2388158, Frank Sutton
+	Actor: Q266416, Betsy Blair
 
 </code></pre>
 </div>
@@ -2601,7 +2656,7 @@ First 3 records:
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_fire.py-runtest">Run Test for test non_blocking_game_fire.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7f0808d824e0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x79c74fb09040&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:

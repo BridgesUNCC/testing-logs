@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Aug 21 01:07:23 PM EDT 2025</p>
+	<p>Running at Thu Aug 21 05:07:08 PM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -462,12 +462,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarysong_lyrics_snippet.java" class="failure">
+  <div id="summarysong_lyrics_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogsong_lyrics_snippet.java">Test song_lyrics_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.5
-	Date:Aug 21 2025  12:15:50.771 EDT
-	Location: 15 km N of Four Mile Road, Alaska
-	Lat/Long:64.7393,-149.118
+	Magnitude:1.2
+	Date:Aug 21 2025  16:46:59.188 EDT
+	Location: 4 km ESE of Chase, Alaska
+	Lat/Long:62.4364,-150.0241
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.5
-	Date:Aug 21 2025  12:15:50.771 EDT
-	Location: 15 km N of Four Mile Road, Alaska
-	Lat/Long:64.7393,-149.118
+	Magnitude:1.2
+	Date:Aug 21 2025  16:46:59.188 EDT
+	Location: 4 km ESE of Chase, Alaska
+	Lat/Long:62.4364,-150.0241
 Earthquake 0:
-	Magnitude:1.04
-	Date:Jun 10 2024  03:45:10.170 EDT
-	Location: 7 km NNW of The Geysers, CA
-	Lat/Long:38.8211669921875,-122.811332702637
+	Magnitude:1.68
+	Date:Jun 10 2024  22:41:47.430 EDT
+	Location: 14 km SSE of Julian, CA
+	Lat/Long:32.9608345,-116.5463333
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>V-Rally 3
-Xbox
-8.0
-[Racing]
+<pre><code>Resident Evil: Deadly Silence
+Nintendo DS
+7.0
+[Action, Adventure]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Clark_Gable
-Mogambo_(1953)
+<pre><code>Cate_Blanchett
+Thank_God_He_Met_Lizzie_(1997)
 </code></pre>
 </div>
     
@@ -2374,11 +2374,11 @@ My question, then, is: when you are under general anesthesia are you actually st
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 78
+<pre><code>Sonnet 134
 poem
-So oft have I invoked thee for my muse,
- And found such fair assistance in my verse,
- As every alien...
+So now I have confessed that he is thine,
+ And I my self am mortgaged to thy will,
+ My self I'll for...
 </code></pre>
 </div>
     
@@ -2503,39 +2503,13 @@ http://assignments.bridgesuncc.org/assignments/2049/bridges_testing
 <pre><code>Compiling test song_lyrics_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogsong_lyrics_snippet.java-runtest">Run Test for test song_lyrics_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503. Message: &lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;Application Error&lt;/title&gt;
-    &lt;style media=&quot;screen&quot;&gt;
-      html,body,iframe {
-        margin: 0;
-        padding: 0;
-      }
+<pre><code>Harder, Better, Faster, Stronger
+Daft Punk
+Homework / Discovery / Alive 1997
+2001-02-26
 
-      html,body {
-        height: 100%;
-        overflow: hidden;
-      }
-
-      iframe {
-        width: 100%;
-        height: 100%;
-        border: 0;
-      }
-    &lt;/style&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;iframe src=&quot;https://www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-	at bridges.connect.DataSource.getSong(DataSource.java:983)
-	at song_lyrics_snippet.main(song_lyrics_snippet.java:24)
-could not run test song_lyrics_snippet.java
 </code></pre>
 </div>
     
@@ -3473,16 +3447,16 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Data Records in 1955: 5127
 
 Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q102551 &quot;Ernest Borgnine&quot;
 
 Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q180251 &quot;Paddy Chayefsky&quot;
 
 Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q102462 &quot;James Stewart&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q266416 &quot;Betsy Blair&quot;
 
 </code></pre>
 </div>

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Aug 26 09:06:45 AM EDT 2025</p>
+	<p>Running at Tue Aug 26 01:07:37 PM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -39,12 +39,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryaudio_clip.java" class="success">
+  <div id="summaryaudio_clip.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogaudio_clip.java">Test audio_clip.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogaudio_clip.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogaudio_clip.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogaudio_clip.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -917,7 +917,7 @@ http://assignments.bridgesuncc.org/assignments/2002/bridges_testing
 <pre><code>Compiling test audio_clip.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogaudio_clip.java-runtest">Run Test for test audio_clip.java</h3>
 <pre><code>
 Check Your Visualization at the following link:
@@ -937,24 +937,41 @@ Check Your Visualization at the following link:
 http://assignments.bridgesuncc.org/assignments/2003/bridges_testing
 
 
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/2003/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/2003/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/2003/bridges_testing
-
-
+There was a problem sending the visualization representation to the server. 
+Connection reset
+Exception in thread &quot;main&quot; java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.http.impl.conn.CPoolProxy.invoke(CPoolProxy.java:138)
+	at jdk.proxy2/jdk.proxy2.$Proxy2.receiveResponseHeader(Unknown Source)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:253)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:194)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:215)
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:487)
+	at bridges.connect.Connector.post(Connector.java:604)
+	at bridges.connect.Bridges.visualize(Bridges.java:599)
+	at audio_clip.main(audio_clip.java:57)
+could not run test audio_clip.java
 </code></pre>
 </div>
     
@@ -1325,10 +1342,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.03
-	Date:Aug 26 2025  09:04:09.210 EDT
-	Location: 9 km ENE of Calumet, Oklahoma
-	Lat/Long:35.63182831,-98.01895905
+	Magnitude:1.16
+	Date:Aug 26 2025  12:35:10.790 EDT
+	Location: 4 km SSE of Palm Desert, CA
+	Lat/Long:33.689,-116.357
 </code></pre>
 </div>
     
@@ -1344,15 +1361,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.03
-	Date:Aug 26 2025  09:04:09.210 EDT
-	Location: 9 km ENE of Calumet, Oklahoma
-	Lat/Long:35.63182831,-98.01895905
+	Magnitude:1.16
+	Date:Aug 26 2025  12:35:10.790 EDT
+	Location: 4 km SSE of Palm Desert, CA
+	Lat/Long:33.689,-116.357
 Earthquake 0:
-	Magnitude:1.9
-	Date:Jun 24 2024  14:35:28.778 EDT
-	Location: 15 km NNW of Tatitlek, Alaska
-	Lat/Long:60.9861,-146.8311
+	Magnitude:1.0
+	Date:Jun 24 2024  17:16:40.305 EDT
+	Location: 12 km ESE of Beaver, Alaska
+	Lat/Long:66.3251,-147.1419
 </code></pre>
 </div>
     
@@ -1409,10 +1426,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Vigilante 8: Second Offense
-Dreamcast
-8.6
-[Action]
+<pre><code>Shado Fighter
+Wireless
+8.5
+[Fighting]
 </code></pre>
 </div>
     
@@ -1685,8 +1702,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christopher_Lee_(I)
-Nothing_But_the_Night_(1972)
+<pre><code>Charles_Grodin_(I)
+It's_My_Turn_(1980)
 </code></pre>
 </div>
     
@@ -2089,8 +2106,8 @@ science
 ID: 1m9fiv8
 Title: How does water become oxygenated?
 Author: Saskatchemoose
-Score: 34
-VoteRatio: 0.73
+Score: 37
+VoteRatio: 0.74
 CommentCount: 14
 Subreddit: askscience
 PostTime: 1753489522
@@ -2100,8 +2117,8 @@ Text: Totally uninformed on this whole subject but it’s something I just thoug
 ID: 1jokqiv
 Title: How long will sunscreen continue to work if you don't spend a lot of time in the sun?
 Author: MachacaConHuevos
-Score: 36
-VoteRatio: 0.73
+Score: 33
+VoteRatio: 0.72
 CommentCount: 36
 Subreddit: askscience
 PostTime: 1743473415
@@ -2113,7 +2130,7 @@ I understand it's like a barrier that UV rays can eventually break through, but 
 ID: 1l1xl7v
 Title: During the Ice Ages, large areas of the Earth were buried by glaciers for thousands of years. What happened to all the life there? Was there a small mass extinction? Did it just move? How did it recover so fast?
 Author: ParagonRenegade
-Score: 504
+Score: 501
 VoteRatio: 0.93
 CommentCount: 53
 Subreddit: askscience
@@ -2130,8 +2147,8 @@ I'm pretty confused on how species handled this huge change in climate without t
 ID: 1lny217
 Title: Has there ever been a “counter-invasion” where displaced organisms wound up inhabiting the invasive species’ original niche?
 Author: al_fletcher
-Score: 79
-VoteRatio: 0.9
+Score: 75
+VoteRatio: 0.89
 CommentCount: 3
 Subreddit: askscience
 PostTime: 1751256128
@@ -2141,7 +2158,7 @@ Text:
 ID: 1kx12j3
 Title: Is there a time when Earth had no mountains?
 Author: 69noob69master69
-Score: 360
+Score: 356
 VoteRatio: 0.92
 CommentCount: 32
 Subreddit: askscience
@@ -2163,8 +2180,8 @@ Text:
 ID: 1kyvhn9
 Title: What tree has the densest most inter-connected canopy?
 Author: Gold-Print-767
-Score: 58
-VoteRatio: 0.86
+Score: 59
+VoteRatio: 0.87
 CommentCount: 7
 Subreddit: askscience
 PostTime: 1748579755
@@ -2174,7 +2191,7 @@ Text: Title says it all
 ID: 1iabjpu
 Title: How do they seal the rotating glove joint on a spacesuit?
 Author: stupid_spoon
-Score: 211
+Score: 208
 VoteRatio: 0.89
 CommentCount: 61
 Subreddit: askscience
@@ -2208,8 +2225,8 @@ My question, then, is: when you are under general anesthesia are you actually st
 ID: 1mqubrf
 Title: How do we accurately predict the amount of rain or snowfall in a day??
 Author: sniffingboy
-Score: 55
-VoteRatio: 0.85
+Score: 57
+VoteRatio: 0.86
 CommentCount: 12
 Subreddit: askscience
 PostTime: 1755255110
@@ -2233,8 +2250,8 @@ Text:
 <pre><code>ID: 1m9fiv8
 Title: How does water become oxygenated?
 Author: Saskatchemoose
-Score: 34
-VoteRatio: 0.73
+Score: 37
+VoteRatio: 0.74
 CommentCount: 14
 Subreddit: askscience
 PostTime: 1753489522
@@ -2244,8 +2261,8 @@ Text: Totally uninformed on this whole subject but it’s something I just thoug
 ID: 1jokqiv
 Title: How long will sunscreen continue to work if you don't spend a lot of time in the sun?
 Author: MachacaConHuevos
-Score: 36
-VoteRatio: 0.73
+Score: 33
+VoteRatio: 0.72
 CommentCount: 36
 Subreddit: askscience
 PostTime: 1743473415
@@ -2257,7 +2274,7 @@ I understand it's like a barrier that UV rays can eventually break through, but 
 ID: 1l1xl7v
 Title: During the Ice Ages, large areas of the Earth were buried by glaciers for thousands of years. What happened to all the life there? Was there a small mass extinction? Did it just move? How did it recover so fast?
 Author: ParagonRenegade
-Score: 504
+Score: 501
 VoteRatio: 0.93
 CommentCount: 53
 Subreddit: askscience
@@ -2274,8 +2291,8 @@ I'm pretty confused on how species handled this huge change in climate without t
 ID: 1lny217
 Title: Has there ever been a “counter-invasion” where displaced organisms wound up inhabiting the invasive species’ original niche?
 Author: al_fletcher
-Score: 79
-VoteRatio: 0.9
+Score: 75
+VoteRatio: 0.89
 CommentCount: 3
 Subreddit: askscience
 PostTime: 1751256128
@@ -2285,7 +2302,7 @@ Text:
 ID: 1kx12j3
 Title: Is there a time when Earth had no mountains?
 Author: 69noob69master69
-Score: 360
+Score: 356
 VoteRatio: 0.92
 CommentCount: 32
 Subreddit: askscience
@@ -2307,8 +2324,8 @@ Text:
 ID: 1kyvhn9
 Title: What tree has the densest most inter-connected canopy?
 Author: Gold-Print-767
-Score: 58
-VoteRatio: 0.86
+Score: 59
+VoteRatio: 0.87
 CommentCount: 7
 Subreddit: askscience
 PostTime: 1748579755
@@ -2318,7 +2335,7 @@ Text: Title says it all
 ID: 1iabjpu
 Title: How do they seal the rotating glove joint on a spacesuit?
 Author: stupid_spoon
-Score: 211
+Score: 208
 VoteRatio: 0.89
 CommentCount: 61
 Subreddit: askscience
@@ -2352,8 +2369,8 @@ My question, then, is: when you are under general anesthesia are you actually st
 ID: 1mqubrf
 Title: How do we accurately predict the amount of rain or snowfall in a day??
 Author: sniffingboy
-Score: 55
-VoteRatio: 0.85
+Score: 57
+VoteRatio: 0.86
 CommentCount: 12
 Subreddit: askscience
 PostTime: 1755255110
@@ -2374,11 +2391,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 104
+<pre><code>Sonnet 4
 poem
-To me fair friend you never can be old,
- For as you were when first your eye I eyed,
- Such seems you...
+Unthrifty loveliness why dost thou spend,
+ Upon thy self thy beauty's legacy?
+ Nature's bequest give...
 </code></pre>
 </div>
     

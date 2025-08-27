@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Wed Aug 27 01:38:24 PM EDT 2025</p>
+	<p>Running at Wed Aug 27 05:39:47 PM EDT 2025</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -662,13 +662,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary65" class="failure">
+  <div id="summary65" class="success">
     <h2><a href="java_logs.html#javalog65">Assignment 65</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog65-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog65-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog65-runanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog65-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -1985,7 +1985,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.75456093892311E12
+Data Access Took: 1.754575380307163E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2434,23 +2434,23 @@ total vertices:22618
 Set size: 22618
 Grid
 ===grid stats===
-0)Source Point:-12.061657228712036,-52.78423188708885
-0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:112.0207703715627
-0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:112.0207703715627
+0)Source Point:-70.33673160343612,-56.11204836421655
+0)[ALG]Closest Point: -73.9222475,40.6128304
+0)[ALG]Min Dist:96.79131209048104
+0)[BFA]Closest Point: -73.9222475,40.6128304
+0)[BFA]Min Dist:96.79131209048104
 0)Difference:0.0
-Source Point:-8.0214122280384,40.786688316262435
-Source Point:-25.81001261164714,40.613859706940914
-Source Point:-38.47146801753657,40.69757714241592
-Source Point:-33.69842651491783,40.810937423529
-Source Point:-42.092029617363465,40.76167821706842
-Source Point:-33.13878968884159,40.7514634112811
-Source Point:-37.87360746126651,40.73438699058101
-Source Point:-37.125309548257164,40.72080933730255
-Source Point:-60.88921002309053,40.787798505689786
-Source Point:-44.90064956732586,40.71852874045947
-num cells examined:5
+Source Point:-47.4252649883083,40.76050230425832
+Source Point:-16.389739925128005,40.7081279997289
+Source Point:-1.869263728247546,40.653139517227665
+Source Point:-9.551972478465643,40.68483601103007
+Source Point:-1.5274455888857261,40.761236281905575
+Source Point:-6.61614273586234,40.77102027860571
+Source Point:-6.150198979502136,40.685093666965706
+Source Point:-25.77881331617445,40.63857168565195
+Source Point:-57.73999781041466,40.81199704480144
+Source Point:-4.763240615601035,40.67783308453202
+num cells examined:19
 
 Check Your Visualization at the following link:
 
@@ -3012,7 +3012,7 @@ http://assignments.bridgesuncc.org/assignments/64/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/65-Reddit/java_answer
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalog65-runanswer">Run Answer for Assignment 65</h3>
 <pre><code>Guessing reddit.java is the right java file where main is
 
@@ -3048,32 +3048,27 @@ announcements..
 TwoXChromosomes..
 creepy..
 nosleep..
-Exception in thread &quot;main&quot; java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
-	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
-	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
-	at org.apache.http.impl.io.SessionInputBufferImpl.read(SessionInputBufferImpl.java:203)
-	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:174)
-	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:137)
-	at java.base/java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:242)
-	at java.base/java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
-	at java.base/java.util.zip.GZIPInputStream.read(GZIPInputStream.java:117)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:287)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:330)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:190)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:177)
-	at java.base/java.io.Reader.read(Reader.java:250)
-	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:244)
-	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:288)
-	at bridges.connect.DataSource.requestJSON(DataSource.java:1403)
-	at bridges.connect.DataSource.getRedditData(DataSource.java:1672)
-	at bridges.connect.DataSource.getRedditData(DataSource.java:1647)
-	at reddit.generateLinePlot(reddit.java:33)
-	at reddit.main(reddit.java:53)
-could not run java_answer for assignment in ../assignmentdb/65-Reddit/java_answer
+GetMotivated..
+WritingPrompts..
+LifeProTips..
+EarthPorn..
+explainlikeimfive..
+Showerthoughts..
+Futurology..
+photoshopbattles..
+mildlyinteresting..
+dataisbeautiful..
+tifu..
+OldSchoolCool..
+UpliftingNews..
+InternetIsBeautiful..
+science..
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/65/bridges_testing
+
+
 </code></pre>
 </div>
     
@@ -3236,7 +3231,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.13944
+Pi val: 3.1398
 
 Check Your Visualization at the following link:
 

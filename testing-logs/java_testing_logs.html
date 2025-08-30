@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sat Aug 30 01:07:27 PM EDT 2025</p>
+	<p>Running at Sat Aug 30 05:06:49 PM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.0
-	Date:Aug 30 2025  12:48:49.710 EDT
-	Location: 6 km SSE of Bodfish, CA
-	Lat/Long:35.5368333,-118.4721667
+	Magnitude:1.61
+	Date:Aug 30 2025  16:44:47.430 EDT
+	Location: 3 km ESE of The Geysers, CA
+	Lat/Long:38.7760009765625,-122.724998474121
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.0
-	Date:Aug 30 2025  12:48:49.710 EDT
-	Location: 6 km SSE of Bodfish, CA
-	Lat/Long:35.5368333,-118.4721667
+	Magnitude:1.61
+	Date:Aug 30 2025  16:44:47.430 EDT
+	Location: 3 km ESE of The Geysers, CA
+	Lat/Long:38.7760009765625,-122.724998474121
 Earthquake 0:
-	Magnitude:1.91
-	Date:Jul 02 2024  20:50:09.440 EDT
-	Location: 7 km SW of Volcano, Hawaii
-	Lat/Long:19.3966674804688,-155.284332275391
+	Magnitude:1.4
+	Date:Jul 03 2024  01:41:06.024 EDT
+	Location: 29 km SE of Dyer, Nevada
+	Lat/Long:37.4731,-117.8442
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Zapper: One Wicked Cricket
-Xbox
-4.1
-[Adventure]
+<pre><code>Yu-Gi-Oh! World Championship 2008
+Nintendo DS
+7.5
+[Card, Battle]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Arnold_Schwarzenegger
-T2_3-D:_Battle_Across_Time_(1996)
+<pre><code>Bill_Murray_(I)
+Michael_Jordan_to_the_Max_(2000)
 </code></pre>
 </div>
     
@@ -2374,11 +2374,18 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 103
-poem
-Alack what poverty my muse brings forth,
- That having such a scope to show her pride,
- The argument ...
+<pre><code>The Tragedy Of Macbeth
+play
+1606
+
+THE TRAGEDY OF MACBETH
+
+by William Shakespeare
+
+Dramatis Personae
+
+ DUNCAN, King of Scotland
+ ...
 </code></pre>
 </div>
     
@@ -3442,18 +3449,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 0
+<pre><code>Data Records in 1955: 5127
 
-Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-	at java.base/java.util.Objects.checkIndex(Objects.java:361)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:37)
-could not run test wikidata_actor_snippet.java
+Actor-Movie Data:
+	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
+	Actor: Q45553 &quot;Robert J. Wilke&quot;
+
+Actor-Movie Data:
+	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
+	Actor: Q78505 &quot;Peter Lorre&quot;
+
+Actor-Movie Data:
+	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
+	Actor: Q104027 &quot;Kirk Douglas&quot;
+
 </code></pre>
 </div>
     

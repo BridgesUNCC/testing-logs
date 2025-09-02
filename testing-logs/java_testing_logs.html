@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Sep  1 09:05:55 PM EDT 2025</p>
+	<p>Running at Tue Sep  2 01:10:40 AM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -345,12 +345,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryosm.java" class="success">
+  <div id="summaryosm.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogosm.java">Test osm.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogosm.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogosm.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogosm.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.34
-	Date:Sep 01 2025  20:48:02.260 EDT
-	Location: 2 km ENE of The Geysers, CA
-	Lat/Long:38.7876663208008,-122.731163024902
+	Magnitude:2.05
+	Date:Sep 02 2025  00:44:50.500 EDT
+	Location: 4 km W of Cobb, CA
+	Lat/Long:38.8156661987305,-122.765335083008
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.34
-	Date:Sep 01 2025  20:48:02.260 EDT
-	Location: 2 km ENE of The Geysers, CA
-	Lat/Long:38.7876663208008,-122.731163024902
+	Magnitude:2.05
+	Date:Sep 02 2025  00:44:50.500 EDT
+	Location: 4 km W of Cobb, CA
+	Lat/Long:38.8156661987305,-122.765335083008
 Earthquake 0:
-	Magnitude:2.8
-	Date:Jul 08 2024  06:46:14.910 EDT
-	Location: 57 km E of Juneau, Alaska
-	Lat/Long:58.344,-133.4357
+	Magnitude:1.3
+	Date:Jul 08 2024  11:00:35.850 EDT
+	Location: 14 km ESE of Fox, Alaska
+	Lat/Long:64.9307,-147.3228
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Plants vs. Zombies HD
-iPad
-9.0
-[Puzzle]
+<pre><code>The Walking Dead: A Telltale Game Series -- Season One
+iPhone
+9.3
+[Adventure]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christina_Ricci
-Cemetery_Club,_The_(1993)
+<pre><code>Cary_Grant
+My_Favorite_Wife_(1940)
 </code></pre>
 </div>
     
@@ -1909,14 +1909,15 @@ Shutting down ...
 <pre><code>Compiling test osm.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogosm.java-runtest">Run Test for test osm.java</h3>
-<pre><code>
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/2037/bridges_testing
-
-
+<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: Http Request Failed. Error Code:524. Message:null
+	at bridges.connect.DataSource.getDataSetJSON(DataSource.java:1276)
+	at bridges.connect.DataSource.parseOSMData(DataSource.java:1077)
+	at bridges.connect.DataSource.getOsmDataDS(DataSource.java:1060)
+	at bridges.connect.DataSource.getOsmData(DataSource.java:697)
+	at osm.main(osm.java:23)
+could not run test osm.java
 </code></pre>
 </div>
     
@@ -2374,17 +2375,17 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>The Two Gentlemen Of Verona
+<pre><code>The First Part Of King Henry The Fourth
 play
-1595
+1598
 
-THE TWO GENTLEMEN OF VERONA
+THE FIRST PART OF KING HENRY THE FOURTH
 
 by William Shakespeare
 
-DRAMATIS PERSONAE
+Dramatis Personae
 
- DUKE OF MILAN, father...
+ King Henr...
 </code></pre>
 </div>
     

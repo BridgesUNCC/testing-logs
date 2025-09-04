@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Sep  4 05:06:04 AM EDT 2025</p>
+	<p>Running at Thu Sep  4 09:06:00 AM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -183,12 +183,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryeq_test.java" class="success">
+  <div id="summaryeq_test.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogeq_test.java">Test eq_test.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogeq_test.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogeq_test.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogeq_test.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.14
-	Date:Sep 04 2025  04:38:18.360 EDT
-	Location: 92 km SSW of Alberto Oviedo Mota, B.C., MX
-	Lat/Long:31.486166,-115.605835
+	Magnitude:2.1
+	Date:Sep 04 2025  08:51:34.950 EDT
+	Location: 9 km SSW of South Lake Tahoe, CA
+	Lat/Long:38.8489990234375,-120.020332336426
 </code></pre>
 </div>
     
@@ -1341,18 +1341,40 @@ first 10 elevations:
 <pre><code>Compiling test eq_test.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.14
-	Date:Sep 04 2025  04:38:18.360 EDT
-	Location: 92 km SSW of Alberto Oviedo Mota, B.C., MX
-	Lat/Long:31.486166,-115.605835
-Earthquake 0:
-	Magnitude:1.2
-	Date:Jul 17 2024  20:03:36.078 EDT
-	Location: 37 km ENE of Furnace Creek, California
-	Lat/Long:36.6193,-116.4864
+	Magnitude:2.1
+	Date:Sep 04 2025  08:51:34.950 EDT
+	Location: 9 km SSW of South Lake Tahoe, CA
+	Lat/Long:38.8489990234375,-120.020332336426
+Exception in thread &quot;main&quot; java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:240)
+	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:206)
+	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:169)
+	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:137)
+	at java.base/java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:242)
+	at java.base/java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.base/java.util.zip.GZIPInputStream.read(GZIPInputStream.java:117)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:287)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:330)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:190)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:177)
+	at java.base/java.io.Reader.read(Reader.java:250)
+	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:244)
+	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:288)
+	at bridges.connect.DataSource.unwrapJSONArray(DataSource.java:727)
+	at bridges.connect.DataSource.getEarthquakeUSGSData(DataSource.java:448)
+	at bridges.connect.DataSource.getEarthquakeUSGSData(DataSource.java:493)
+	at eq_test.main(eq_test.java:32)
+could not run test eq_test.java
 </code></pre>
 </div>
     
@@ -1409,10 +1431,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Assimilation
-PC
-6.8
-[Puzzle]
+<pre><code>Colin McRae Rally
+PlayStation
+9.0
+[Racing]
 </code></pre>
 </div>
     
@@ -1685,8 +1707,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Carrie_Fisher
-Charlie's_Angels:_Full_Throttle_(2003)
+<pre><code>Christopher_Lee_(I)
+Star_Wars:_Episode_II_-_Attack_of_the_Clones_(2002)
 </code></pre>
 </div>
     
@@ -2374,17 +2396,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>The First Part Of King Henry The Sixth
-play
-1592
-
-THE FIRST PART OF HENRY THE SIXTH
-
-by William Shakespeare
-
-Dramatis Personae
-
- KING HENRY THE ...
+<pre><code>Sonnet 128
+poem
+How oft when thou, my music, music play'st,
+ Upon that blessed wood whose motion sounds
+ With thy sw...
 </code></pre>
 </div>
     

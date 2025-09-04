@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Sep  4 09:06:00 AM EDT 2025</p>
+	<p>Running at Thu Sep  4 01:06:59 PM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -183,12 +183,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryeq_test.java" class="failure">
+  <div id="summaryeq_test.java" class="success">
     <h2><a href="java_testing_logs.html#javalogeq_test.java">Test eq_test.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogeq_test.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogeq_test.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogeq_test.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.1
-	Date:Sep 04 2025  08:51:34.950 EDT
-	Location: 9 km SSW of South Lake Tahoe, CA
-	Lat/Long:38.8489990234375,-120.020332336426
+	Magnitude:1.02
+	Date:Sep 04 2025  13:00:48.510 EDT
+	Location: 10 km ENE of Adelanto, CA
+	Lat/Long:34.6286667,-117.312
 </code></pre>
 </div>
     
@@ -1341,40 +1341,18 @@ first 10 elevations:
 <pre><code>Compiling test eq_test.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.1
-	Date:Sep 04 2025  08:51:34.950 EDT
-	Location: 9 km SSW of South Lake Tahoe, CA
-	Lat/Long:38.8489990234375,-120.020332336426
-Exception in thread &quot;main&quot; java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
-	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
-	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
-	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
-	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:240)
-	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:206)
-	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:169)
-	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:137)
-	at java.base/java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:242)
-	at java.base/java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
-	at java.base/java.util.zip.GZIPInputStream.read(GZIPInputStream.java:117)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:287)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:330)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:190)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:177)
-	at java.base/java.io.Reader.read(Reader.java:250)
-	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:244)
-	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:288)
-	at bridges.connect.DataSource.unwrapJSONArray(DataSource.java:727)
-	at bridges.connect.DataSource.getEarthquakeUSGSData(DataSource.java:448)
-	at bridges.connect.DataSource.getEarthquakeUSGSData(DataSource.java:493)
-	at eq_test.main(eq_test.java:32)
-could not run test eq_test.java
+	Magnitude:1.02
+	Date:Sep 04 2025  13:00:48.510 EDT
+	Location: 10 km ENE of Adelanto, CA
+	Lat/Long:34.6286667,-117.312
+Earthquake 0:
+	Magnitude:1.95
+	Date:Jul 21 2024  20:12:11.480 EDT
+	Location: 7 km SSE of Volcano, Hawaii
+	Lat/Long:19.3798332214355,-155.220169067383
 </code></pre>
 </div>
     
@@ -1416,6 +1394,8 @@ http://games.bridgesuncc.org/assignments/2021/bridges_testing
 
 
 Setting framelimit to 10!
+[Ljava.lang.Object;@64c1511e
+The server closed the connection.
 Shutting down ...
 </code></pre>
 </div>
@@ -1431,10 +1411,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Colin McRae Rally
-PlayStation
-9.0
-[Racing]
+<pre><code>Crash of the Titans
+PlayStation 2
+6.5
+[Action]
 </code></pre>
 </div>
     
@@ -1707,8 +1687,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christopher_Lee_(I)
-Star_Wars:_Episode_II_-_Attack_of_the_Clones_(2002)
+<pre><code>Arnold_Schwarzenegger
+Villain,_The_(1979)
 </code></pre>
 </div>
     
@@ -2111,7 +2091,7 @@ science
 ID: 1m9fiv8
 Title: How does water become oxygenated?
 Author: Saskatchemoose
-Score: 36
+Score: 35
 VoteRatio: 0.74
 CommentCount: 14
 Subreddit: askscience
@@ -2122,8 +2102,8 @@ Text: Totally uninformed on this whole subject but it’s something I just thoug
 ID: 1jokqiv
 Title: How long will sunscreen continue to work if you don't spend a lot of time in the sun?
 Author: MachacaConHuevos
-Score: 38
-VoteRatio: 0.73
+Score: 37
+VoteRatio: 0.74
 CommentCount: 36
 Subreddit: askscience
 PostTime: 1743473415
@@ -2135,7 +2115,7 @@ I understand it's like a barrier that UV rays can eventually break through, but 
 ID: 1l1xl7v
 Title: During the Ice Ages, large areas of the Earth were buried by glaciers for thousands of years. What happened to all the life there? Was there a small mass extinction? Did it just move? How did it recover so fast?
 Author: ParagonRenegade
-Score: 502
+Score: 505
 VoteRatio: 0.93
 CommentCount: 53
 Subreddit: askscience
@@ -2152,8 +2132,8 @@ I'm pretty confused on how species handled this huge change in climate without t
 ID: 1lny217
 Title: Has there ever been a “counter-invasion” where displaced organisms wound up inhabiting the invasive species’ original niche?
 Author: al_fletcher
-Score: 75
-VoteRatio: 0.89
+Score: 82
+VoteRatio: 0.9
 CommentCount: 3
 Subreddit: askscience
 PostTime: 1751256128
@@ -2163,7 +2143,7 @@ Text:
 ID: 1kx12j3
 Title: Is there a time when Earth had no mountains?
 Author: 69noob69master69
-Score: 365
+Score: 357
 VoteRatio: 0.92
 CommentCount: 32
 Subreddit: askscience
@@ -2174,7 +2154,7 @@ Text: Basically the question above. Just curious if the tectonic plates were lev
 ID: 1jthf1l
 Title: How does your body prevent herpes simplex one?
 Author: Critical-Blitz
-Score: 142
+Score: 138
 VoteRatio: 0.84
 CommentCount: 37
 Subreddit: askscience
@@ -2185,7 +2165,7 @@ Text:
 ID: 1kyvhn9
 Title: What tree has the densest most inter-connected canopy?
 Author: Gold-Print-767
-Score: 59
+Score: 56
 VoteRatio: 0.86
 CommentCount: 7
 Subreddit: askscience
@@ -2196,7 +2176,7 @@ Text: Title says it all
 ID: 1iabjpu
 Title: How do they seal the rotating glove joint on a spacesuit?
 Author: stupid_spoon
-Score: 208
+Score: 210
 VoteRatio: 0.89
 CommentCount: 61
 Subreddit: askscience
@@ -2209,7 +2189,7 @@ Thanks!
 ID: 1m1c2mm
 Title: Are you actually conscious under anesthesia?
 Author: myaltaltaltacct
-Score: 646
+Score: 639
 VoteRatio: 0.91
 CommentCount: 291
 Subreddit: askscience
@@ -2230,8 +2210,8 @@ My question, then, is: when you are under general anesthesia are you actually st
 ID: 1mqubrf
 Title: How do we accurately predict the amount of rain or snowfall in a day??
 Author: sniffingboy
-Score: 58
-VoteRatio: 0.86
+Score: 61
+VoteRatio: 0.87
 CommentCount: 12
 Subreddit: askscience
 PostTime: 1755255110
@@ -2255,7 +2235,7 @@ Text:
 <pre><code>ID: 1m9fiv8
 Title: How does water become oxygenated?
 Author: Saskatchemoose
-Score: 36
+Score: 35
 VoteRatio: 0.74
 CommentCount: 14
 Subreddit: askscience
@@ -2266,8 +2246,8 @@ Text: Totally uninformed on this whole subject but it’s something I just thoug
 ID: 1jokqiv
 Title: How long will sunscreen continue to work if you don't spend a lot of time in the sun?
 Author: MachacaConHuevos
-Score: 38
-VoteRatio: 0.73
+Score: 37
+VoteRatio: 0.74
 CommentCount: 36
 Subreddit: askscience
 PostTime: 1743473415
@@ -2279,7 +2259,7 @@ I understand it's like a barrier that UV rays can eventually break through, but 
 ID: 1l1xl7v
 Title: During the Ice Ages, large areas of the Earth were buried by glaciers for thousands of years. What happened to all the life there? Was there a small mass extinction? Did it just move? How did it recover so fast?
 Author: ParagonRenegade
-Score: 502
+Score: 505
 VoteRatio: 0.93
 CommentCount: 53
 Subreddit: askscience
@@ -2296,8 +2276,8 @@ I'm pretty confused on how species handled this huge change in climate without t
 ID: 1lny217
 Title: Has there ever been a “counter-invasion” where displaced organisms wound up inhabiting the invasive species’ original niche?
 Author: al_fletcher
-Score: 75
-VoteRatio: 0.89
+Score: 82
+VoteRatio: 0.9
 CommentCount: 3
 Subreddit: askscience
 PostTime: 1751256128
@@ -2307,7 +2287,7 @@ Text:
 ID: 1kx12j3
 Title: Is there a time when Earth had no mountains?
 Author: 69noob69master69
-Score: 365
+Score: 357
 VoteRatio: 0.92
 CommentCount: 32
 Subreddit: askscience
@@ -2318,7 +2298,7 @@ Text: Basically the question above. Just curious if the tectonic plates were lev
 ID: 1jthf1l
 Title: How does your body prevent herpes simplex one?
 Author: Critical-Blitz
-Score: 142
+Score: 138
 VoteRatio: 0.84
 CommentCount: 37
 Subreddit: askscience
@@ -2329,7 +2309,7 @@ Text:
 ID: 1kyvhn9
 Title: What tree has the densest most inter-connected canopy?
 Author: Gold-Print-767
-Score: 59
+Score: 56
 VoteRatio: 0.86
 CommentCount: 7
 Subreddit: askscience
@@ -2340,7 +2320,7 @@ Text: Title says it all
 ID: 1iabjpu
 Title: How do they seal the rotating glove joint on a spacesuit?
 Author: stupid_spoon
-Score: 208
+Score: 210
 VoteRatio: 0.89
 CommentCount: 61
 Subreddit: askscience
@@ -2353,7 +2333,7 @@ Thanks!
 ID: 1m1c2mm
 Title: Are you actually conscious under anesthesia?
 Author: myaltaltaltacct
-Score: 646
+Score: 639
 VoteRatio: 0.91
 CommentCount: 291
 Subreddit: askscience
@@ -2374,8 +2354,8 @@ My question, then, is: when you are under general anesthesia are you actually st
 ID: 1mqubrf
 Title: How do we accurately predict the amount of rain or snowfall in a day??
 Author: sniffingboy
-Score: 58
-VoteRatio: 0.86
+Score: 61
+VoteRatio: 0.87
 CommentCount: 12
 Subreddit: askscience
 PostTime: 1755255110
@@ -2396,11 +2376,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 128
+<pre><code>Sonnet 36
 poem
-How oft when thou, my music, music play'st,
- Upon that blessed wood whose motion sounds
- With thy sw...
+Let me confess that we two must be twain,
+ Although our undivided loves are one:
+ So shall those blo...
 </code></pre>
 </div>
     
@@ -3469,16 +3449,16 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Data Records in 1955: 5127
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q266416 &quot;Betsy Blair&quot;
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q3172585 &quot;Jean Hébey&quot;
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q421707 &quot;Jerry Orbach&quot;
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q3173436 &quot;Jean Martinelli&quot;
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q1368948 &quot;Glenn Strange&quot;
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q3425870 &quot;René Blancard&quot;
 
 </code></pre>
 </div>

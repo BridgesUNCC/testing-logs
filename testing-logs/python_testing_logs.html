@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Wed Sep 17 05:16:44 PM EDT 2025</p>
+	<p>Running at Wed Sep 17 09:17:18 PM EDT 2025</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -124,11 +124,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarydisplay_game.py" class="failure">
+  <div id="summarydisplay_game.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogdisplay_game.py">Test display_game.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogdisplay_game.py-runtest">error</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogdisplay_game.py-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1021,74 +1021,18 @@ http://assignments.bridgesuncc.org/assignments/3013/bridges_testing
     <div id="pythonlogdisplay_game.py" class="logdetails">
       <h2>Test display_game.py full log</h2>
     
-<div class="failure">
+<div class="success">
 <h3 id="pythonlogdisplay_game.py-runtest">Run Test for test display_game.py</h3>
-<pre><code>Traceback (most recent call last):
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_socket.py&quot;, line 118, in recv
-    bytes_ = _recv()
-             ^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_socket.py&quot;, line 97, in _recv
-    return sock.recv(bufsize)
-           ^^^^^^^^^^^^^^^^^^
-TimeoutError: timed out
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x77a7b0b2e330&gt;
+limiting number of frame to 10
 
-During handling of the above exception, another exception occurred:
+Check Your Visualization at the following link:
 
-Traceback (most recent call last):
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_engineio-4.12.2-py3.12.egg/engineio/client.py&quot;, line 334, in _connect_websocket
-    ws = websocket.create_connection(
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_core.py&quot;, line 646, in create_connection
-    websock.connect(url, **options)
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_core.py&quot;, line 261, in connect
-    self.handshake_response = handshake(self.sock, url, *addrs, **options)
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_handshake.py&quot;, line 65, in handshake
-    status, resp = _get_resp_headers(sock)
-                   ^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_handshake.py&quot;, line 141, in _get_resp_headers
-    status, resp_headers, status_message = read_headers(sock)
-                                           ^^^^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_http.py&quot;, line 351, in read_headers
-    line = recv_line(sock)
-           ^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_socket.py&quot;, line 140, in recv_line
-    c = recv(sock, 1)
-        ^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/websocket_client-1.8.0-py3.12.egg/websocket/_socket.py&quot;, line 120, in recv
-    raise WebSocketTimeoutException(&quot;Connection timed out&quot;)
-websocket._exceptions.WebSocketTimeoutException: Connection timed out
+http://games.bridgesuncc.org/assignments/3014/bridges_testing
 
-During handling of the above exception, another exception occurred:
 
-Traceback (most recent call last):
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_socketio-5.13.0-py3.12.egg/socketio/client.py&quot;, line 147, in connect
-    self.eio.connect(real_url, headers=real_headers,
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_engineio-4.12.2-py3.12.egg/engineio/client.py&quot;, line 94, in connect
-    return getattr(self, '_connect_' + self.transports[0])(
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_engineio-4.12.2-py3.12.egg/engineio/client.py&quot;, line 342, in _connect_websocket
-    raise exceptions.ConnectionError('Connection error')
-engineio.exceptions.ConnectionError: Connection error
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/display_game.py&quot;, line 34, in &lt;module&gt;
-    main()
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/display_game.py&quot;, line 29, in main
-    game = DisplayGame(int(args[0]), args[1], args[2])
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/display_game.py&quot;, line 9, in __init__
-    super().__init__(assid, user_id,  api_key, 10, 10)
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1.dev1-py3.12.egg/bridges/non_blocking_game.py&quot;, line 149, in __init__
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1.dev1-py3.12.egg/bridges/gamebase.py&quot;, line 30, in __init__
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1.dev1-py3.12.egg/bridges/gamebase.py&quot;, line 55, in game_base_init
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1.dev1-py3.12.egg/bridges/socket_connection.py&quot;, line 28, in setup_connection
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/python_socketio-5.13.0-py3.12.egg/socketio/client.py&quot;, line 159, in connect
-    raise exceptions.ConnectionError(exc.args[0]) from exc
-socketio.exceptions.ConnectionError: Connection error
-could not run test display_game.py
+frame limit of 10 frames reached
+client disconnect disconnected
 </code></pre>
 </div>
     
@@ -1137,10 +1081,10 @@ First 10 elevations:
     
 <div class="success">
 <h3 id="pythonlogeq_snippet.py-runtest">Run Test for test eq_snippet.py</h3>
-<pre><code>Magnitude: 1.54
-Date: 2025-09-17 20:51:37
-Location:14 km W of Mojave, CA
-Lat/Long:35.0460014,-118.3270035
+<pre><code>Magnitude: 1.2
+Date: 2025-09-18 00:41:03
+Location:47 km ESE of Beatty, Nevada
+Lat/Long:36.7698,-116.2587
 </code></pre>
 </div>
     
@@ -1150,14 +1094,14 @@ Lat/Long:35.0460014,-118.3270035
     
 <div class="success">
 <h3 id="pythonlogeq_test.py-runtest">Run Test for test eq_test.py</h3>
-<pre><code>Magnitude: 1.54
-Date: 2025-09-17 20:51:37
-Location:14 km W of Mojave, CA
-Lat/Long:35.0460014,-118.3270035
-Magnitude: 4.6
-Date: 2024-08-24 00:49:02
-Location:Fiji region
-Lat/Long:-20.4721,-178.3885
+<pre><code>Magnitude: 1.2
+Date: 2025-09-18 00:41:03
+Location:47 km ESE of Beatty, Nevada
+Lat/Long:36.7698,-116.2587
+Magnitude: 1.1
+Date: 2024-08-25 09:43:20
+Location:16 km WNW of Four Mile Road, Alaska
+Lat/Long:64.6405,-149.4539
 </code></pre>
 </div>
     
@@ -1198,7 +1142,7 @@ http://assignments.bridgesuncc.org/assignments/3019/bridges_testing
     
 <div class="success">
 <h3 id="pythonloggame_size_test.py-runtest">Run Test for test game_size_test.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x73081b1933b0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7651c46cbe00&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1217,10 +1161,10 @@ client disconnect disconnected
     
 <div class="success">
 <h3 id="pythonloggame_snippet.py-runtest">Run Test for test game_snippet.py</h3>
-<pre><code>Def Jam Vendetta
-PlayStation 2
-8.9
-['Wrestling']
+<pre><code>1080&amp;deg; Snowboarding
+Nintendo 64
+8.6
+['Sports']
 </code></pre>
 </div>
     
@@ -1385,8 +1329,8 @@ C
     
 <div class="success">
 <h3 id="pythonlogimdb_snippet.py-runtest">Run Test for test imdb_snippet.py</h3>
-<pre><code>Billy_Bob_Thornton
-Monster's_Ball_(2001)
+<pre><code>John_Malkovich
+Messenger:_The_Story_of_Joan_of_Arc,_The_(1999)
 </code></pre>
 </div>
     
@@ -1396,7 +1340,7 @@ Monster's_Ball_(2001)
     
 <div class="success">
 <h3 id="pythonloginput_game.py-runtest">Run Test for test input_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x78055a1cad20&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x6ffe30e67d10&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1463,7 +1407,7 @@ http://assignments.bridgesuncc.org/assignments/3031/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogminimal_game.py-runtest">Run Test for test minimal_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x727c5d39aea0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x73f2e0c28f20&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1537,7 +1481,7 @@ http://assignments.bridgesuncc.org/assignments/3034/bridges_testing
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_state.py-runtest">Run Test for test non_blocking_game_state.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7b383626da60&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x73d8d46cb560&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1607,21 +1551,21 @@ Cartesian Coordinate of first vertex: 834.4847597780021, -5147.953884206995
     
 <div class="success">
 <h3 id="pythonlogreddit.py-runtest">Run Test for test reddit.py</h3>
-<pre><code>Title: US tech companies enabled the surveillance and detention of hundreds of thousands in China
-Author: Scooba06
-Score: 1467
-Comment Count: 58
+<pre><code>Title: New Mexico will be the first state to make child care free
+Author: everydave42
+Score: 47223
+Comment Count: 1183
 Subreddit: news
-Title: Missouri grandmother held by ICE over $25 bad check from 10 years ago: “This is wrong”
-Title: West Point cancels ceremony to honor Tom Hanks as ‘outstanding US citizen’
-Title: Man killed roommate for not bringing drugs to football watch party, officials say
-Title: Founder of a California-based porn empire sentenced to 27 years in federal prison
 Title: US high school students lose ground in math and reading, continuing yearslong decline
 Title: Supreme Court allows Trump to fire FTC commissioner
-Title: Poland closing border before zapad upcoming military exercise between Belarus and Russia
 Title: Explosion heard in Qatar's capital as Israel says it carries out strike on Hamas leadership
 Title: Nepal's parliament set on fire after PM resigns over anti-corruption protests
 Title: Israel carries out strike on senior Hamas leaders in Qatari capital - BBC News
+Title: US tech companies enabled the surveillance and detention of hundreds of thousands in China
+Title: Friend of Michael Brown who helped spark ‘hands up, don’t shoot’ chant dies after being shot in Ferguson
+Title: Ford recalling almost 1.5 million vehicles in US due to rear view camera issue
+Title: 13-year-old boy with 'school shooter ideations' found with collection of guns, 'mass shooting' writings: Sheriff
+Title: Suspect in Charlotte train stabbing facing federal charges, possible death penalty: DOJ
 =====
 Available subreddits:
 gadgets
@@ -1671,62 +1615,37 @@ UpliftingNews
 InternetIsBeautiful
 science
 =====
-Title: What caused the cut-off low in Valencia to be so intense, causing the immense flood?
-Author: Vikingwarzone
-Score: 233
-Vote Ratio: 0.85
-Comment Count: 19
+Title: How does a machine detect whether a diamond is Lab or Natural?
+Author: Diamondsandwood
+Score: 574
+Vote Ratio: 0.88
+Comment Count: 267
 Subreddit: askscience
-PostTime: 1730974245
-URL: https://www.reddit.com/r/askscience/comments/1gln6jc/what_caused_the_cutoff_low_in_valencia_to_be_so/
-Text: I have been a weather fanatic for about as long as I can remember. For around 20 years I've been reading weather models and analyses. However, when trying to understand what caused the weather phenomenon in Spain recently, I can't really get my head around it.
+PostTime: 1731010174
+URL: https://www.reddit.com/r/askscience/comments/1glzsm9/how_does_a_machine_detect_whether_a_diamond_is/
+Text: If they are Chemically the same how can a machine tell the difference?
 
-The general explanation that I'm reading is &quot;The rains came from **a high-altitude low-pressure weather system that became isolated from the jet stream**, according to AEMET. These storm systems are known locally by the Spanish acronym DANA or more generally as cut-off lows.&quot;.
-
-Ok, clear. But why does this had such a dramatic effect? What makes cut-off lows so intense? &quot; **A closed upper-level low which has become completely displaced (cut off) from basic westerly current, and moves independently of that current**. Cutoff lows may remain nearly stationary for days, or on occasion may move westward opposite to the prevailing flow aloft (i.e., retrogression).&quot;.
-
-As far as I am aware, this is not a uncommon occurrence in Europe. Can someone maybe dumb this down for me? Or maybe have a synopsis about the situation?
-
-**I have no official meteorological education or background.** However my theory is that this low was stationary, unreasonably cold and drew in tons of moisture because the balearic sea was still so warm(?). This caused all this moisture to condense in a short amount of time in the same place(?).
-
-Can someone dumb this down for me? 
-
-Title: AskScience AMA Series: We are Climate Scientists Unraveling Water Challenges in the Western US. Ask us anything about atmospheric rivers, extreme weather, and the future of water storage amidst record droughts and floods. Ask us anything!
-Author: AskScienceModerator
-Score: 96
-Vote Ratio: 0.8
-Comment Count: 50
+Title: Why do geographic and magnetic poles somewhat align? 
+Author: ianaad
+Score: 85
+Vote Ratio: 0.79
+Comment Count: 12
 Subreddit: askscience
-PostTime: 1730980812
-URL: https://www.reddit.com/r/askscience/comments/1glortx/askscience_ama_series_we_are_climate_scientists/
-Text: We are scientists with the Center for Western Weather and Water Extremes (CW3E) at UC San Diego's Scripps Institution of Oceanography. CW3E provides innovative water cycle science, technology and outreach to support effective policies and practices that address the impacts of extreme weather and water events on the environment, people and the economy of western North America.
+PostTime: 1731040404
+URL: https://www.reddit.com/r/askscience/comments/1gmaf6z/why_do_geographic_and_magnetic_poles_somewhat/
+Text: Is it because the rotation of the outer core is influenced by Earth's rotation? Is is physically dragged around by the rotation of the upper layers? 
 
-Our work studying atmospheric rivers is instrumental in supporting water management decisions and flood forecasting.  But what exactly is an [atmospheric river](https://www.youtube.com/watch?v=NULrvr8pTBg&amp;t)? Great question. They're massive ribbons of water vapor in the sky that can deliver large amounts of precipitation (rain and snowfall). Accurate forecasts of these phenomena are essential to both water managers and public safety officials.
-
-You can visit our website to dive deeper into our [forecast tools](https://cw3e.ucsd.edu/iwv-and-ivt-forecasts/), [read our latest AR outlooks and storm summaries](https://cw3e.ucsd.edu/news/) and learn more about [how our tools can be used](https://www.youtube.com/watch?v=VrHsG_0zlVE&amp;t). 
-
-One of the atmospheric river forecasting products CW3E created with partners is the [atmospheric river scale](https://cw3e.ucsd.edu/arscale/) (AR Scale). You can sign up to receive [AR scale alerts](https://cw3e.ucsd.edu/arscale_alerts/) when ARs are forecast along the US West Coast.  
-
-The team will be starting around 9 AM PT. Ask us anything!
-
-List of participants: 
-
-+ Sam Bartlett - Researcher &amp; Meteorologist
-+ Chris Castellano - Meteorology Research Analyst
-+ Julie Kalansky - Deputy Director of CW3E
-+ Shawn Roj - Forecast Verification Analyst
-
-Username: /u/CW3E_Scripps
-
-Title: How does oak change the color of liquor?
-Author: MindOfErick
-Score: 32
-Vote Ratio: 0.69
-Comment Count: 25
+Title: Do animals suffer from mental health disorders?
+Author: _JellyFox_
+Score: 112
+Vote Ratio: 0.92
+Comment Count: 85
 Subreddit: askscience
-PostTime: 1731008535
-URL: https://www.reddit.com/r/askscience/comments/1glz4tc/how_does_oak_change_the_color_of_liquor/
-Text: I've tried searching around and others asking similar questions of aging whiskey in barrels, but all the answers only talk about the flavors added by the aging process. What is happening at the molecular level that changes clear liquor brown? Wine does not impart color from oak and neither does beer, but a fortified wine can change color. Does it have to do with the percentage of alcohol or viscosity, or something else?
+PostTime: 1731053836
+URL: https://www.reddit.com/r/askscience/comments/1gmds4u/do_animals_suffer_from_mental_health_disorders/
+Text: Unsure what I should tag this as.
+
+We know that animals can suffer from depression for example due to abuse or other reasons. Are there autistic dogs or schizophrenic cats out there, or are some disorders human specific? 
 
 </code></pre>
 </div>
@@ -1737,62 +1656,37 @@ Text: I've tried searching around and others asking similar questions of aging w
     
 <div class="success">
 <h3 id="pythonlogreddit_snippet.py-runtest">Run Test for test reddit_snippet.py</h3>
-<pre><code>Title: What caused the cut-off low in Valencia to be so intense, causing the immense flood?
-Author: Vikingwarzone
-Score: 233
-Vote Ratio: 0.85
-Comment Count: 19
+<pre><code>Title: How does a machine detect whether a diamond is Lab or Natural?
+Author: Diamondsandwood
+Score: 574
+Vote Ratio: 0.88
+Comment Count: 267
 Subreddit: askscience
-PostTime: 1730974245
-URL: https://www.reddit.com/r/askscience/comments/1gln6jc/what_caused_the_cutoff_low_in_valencia_to_be_so/
-Text: I have been a weather fanatic for about as long as I can remember. For around 20 years I've been reading weather models and analyses. However, when trying to understand what caused the weather phenomenon in Spain recently, I can't really get my head around it.
+PostTime: 1731010174
+URL: https://www.reddit.com/r/askscience/comments/1glzsm9/how_does_a_machine_detect_whether_a_diamond_is/
+Text: If they are Chemically the same how can a machine tell the difference?
 
-The general explanation that I'm reading is &quot;The rains came from **a high-altitude low-pressure weather system that became isolated from the jet stream**, according to AEMET. These storm systems are known locally by the Spanish acronym DANA or more generally as cut-off lows.&quot;.
-
-Ok, clear. But why does this had such a dramatic effect? What makes cut-off lows so intense? &quot; **A closed upper-level low which has become completely displaced (cut off) from basic westerly current, and moves independently of that current**. Cutoff lows may remain nearly stationary for days, or on occasion may move westward opposite to the prevailing flow aloft (i.e., retrogression).&quot;.
-
-As far as I am aware, this is not a uncommon occurrence in Europe. Can someone maybe dumb this down for me? Or maybe have a synopsis about the situation?
-
-**I have no official meteorological education or background.** However my theory is that this low was stationary, unreasonably cold and drew in tons of moisture because the balearic sea was still so warm(?). This caused all this moisture to condense in a short amount of time in the same place(?).
-
-Can someone dumb this down for me? 
-
-Title: AskScience AMA Series: We are Climate Scientists Unraveling Water Challenges in the Western US. Ask us anything about atmospheric rivers, extreme weather, and the future of water storage amidst record droughts and floods. Ask us anything!
-Author: AskScienceModerator
-Score: 96
-Vote Ratio: 0.8
-Comment Count: 50
+Title: Why do geographic and magnetic poles somewhat align? 
+Author: ianaad
+Score: 85
+Vote Ratio: 0.79
+Comment Count: 12
 Subreddit: askscience
-PostTime: 1730980812
-URL: https://www.reddit.com/r/askscience/comments/1glortx/askscience_ama_series_we_are_climate_scientists/
-Text: We are scientists with the Center for Western Weather and Water Extremes (CW3E) at UC San Diego's Scripps Institution of Oceanography. CW3E provides innovative water cycle science, technology and outreach to support effective policies and practices that address the impacts of extreme weather and water events on the environment, people and the economy of western North America.
+PostTime: 1731040404
+URL: https://www.reddit.com/r/askscience/comments/1gmaf6z/why_do_geographic_and_magnetic_poles_somewhat/
+Text: Is it because the rotation of the outer core is influenced by Earth's rotation? Is is physically dragged around by the rotation of the upper layers? 
 
-Our work studying atmospheric rivers is instrumental in supporting water management decisions and flood forecasting.  But what exactly is an [atmospheric river](https://www.youtube.com/watch?v=NULrvr8pTBg&amp;t)? Great question. They're massive ribbons of water vapor in the sky that can deliver large amounts of precipitation (rain and snowfall). Accurate forecasts of these phenomena are essential to both water managers and public safety officials.
-
-You can visit our website to dive deeper into our [forecast tools](https://cw3e.ucsd.edu/iwv-and-ivt-forecasts/), [read our latest AR outlooks and storm summaries](https://cw3e.ucsd.edu/news/) and learn more about [how our tools can be used](https://www.youtube.com/watch?v=VrHsG_0zlVE&amp;t). 
-
-One of the atmospheric river forecasting products CW3E created with partners is the [atmospheric river scale](https://cw3e.ucsd.edu/arscale/) (AR Scale). You can sign up to receive [AR scale alerts](https://cw3e.ucsd.edu/arscale_alerts/) when ARs are forecast along the US West Coast.  
-
-The team will be starting around 9 AM PT. Ask us anything!
-
-List of participants: 
-
-+ Sam Bartlett - Researcher &amp; Meteorologist
-+ Chris Castellano - Meteorology Research Analyst
-+ Julie Kalansky - Deputy Director of CW3E
-+ Shawn Roj - Forecast Verification Analyst
-
-Username: /u/CW3E_Scripps
-
-Title: How does oak change the color of liquor?
-Author: MindOfErick
-Score: 32
-Vote Ratio: 0.69
-Comment Count: 25
+Title: Do animals suffer from mental health disorders?
+Author: _JellyFox_
+Score: 112
+Vote Ratio: 0.92
+Comment Count: 85
 Subreddit: askscience
-PostTime: 1731008535
-URL: https://www.reddit.com/r/askscience/comments/1glz4tc/how_does_oak_change_the_color_of_liquor/
-Text: I've tried searching around and others asking similar questions of aging whiskey in barrels, but all the answers only talk about the flavors added by the aging process. What is happening at the molecular level that changes clear liquor brown? Wine does not impart color from oak and neither does beer, but a fortified wine can change color. Does it have to do with the percentage of alcohol or viscosity, or something else?
+PostTime: 1731053836
+URL: https://www.reddit.com/r/askscience/comments/1gmds4u/do_animals_suffer_from_mental_health_disorders/
+Text: Unsure what I should tag this as.
+
+We know that animals can suffer from depression for example due to abuse or other reasons. Are there autistic dogs or schizophrenic cats out there, or are some disorders human specific? 
 
 </code></pre>
 </div>
@@ -1803,18 +1697,11 @@ Text: I've tried searching around and others asking similar questions of aging w
     
 <div class="success">
 <h3 id="pythonlogshakespeare_snippet.py-runtest">Run Test for test shakespeare_snippet.py</h3>
-<pre><code>The Winter's Tale
-play
-1611
-
-THE WINTER'S TALE
-
-by William Shakespeare
-
-Dramatis Personae
-
- LEONTES, King of Sicilia
- MAMIL
+<pre><code>Sonnet 40
+poem
+Take all my loves, my love, yea take them all,
+ What hast thou then more than thou hadst before?
+ No
 </code></pre>
 </div>
     
@@ -2679,16 +2566,16 @@ Data Records in 1955: 5127
 First 3 records:
 
 0)Actor-Movie Data:
-	Movie: Q64110, 20,000 Leagues Under the Sea
-	Actor: Q45553, Robert J. Wilke
+	Movie: Q237116, Marty
+	Actor: Q102551, Ernest Borgnine
 
 1)Actor-Movie Data:
-	Movie: Q64110, 20,000 Leagues Under the Sea
-	Actor: Q78505, Peter Lorre
+	Movie: Q237116, Marty
+	Actor: Q180251, Paddy Chayefsky
 
 2)Actor-Movie Data:
-	Movie: Q64110, 20,000 Leagues Under the Sea
-	Actor: Q104027, Kirk Douglas
+	Movie: Q237116, Marty
+	Actor: Q266416, Betsy Blair
 
 </code></pre>
 </div>
@@ -2699,7 +2586,7 @@ First 3 records:
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_fire.py-runtest">Run Test for test non_blocking_game_fire.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7bf6ea399070&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x728025006840&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Wed Sep 24 01:06:38 PM EDT 2025</p>
+	<p>Running at Wed Sep 24 05:06:00 PM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.5
-	Date:Sep 24 2025  13:03:21.329 EDT
-	Location: 31 km NW of Toyah, Texas
-	Lat/Long:31.522,-104.018
+	Magnitude:1.7
+	Date:Sep 24 2025  16:40:28.920 EDT
+	Location: 32 km NW of Toyah, Texas
+	Lat/Long:31.531,-104.02
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.5
-	Date:Sep 24 2025  13:03:21.329 EDT
-	Location: 31 km NW of Toyah, Texas
-	Lat/Long:31.522,-104.018
+	Magnitude:1.7
+	Date:Sep 24 2025  16:40:28.920 EDT
+	Location: 32 km NW of Toyah, Texas
+	Lat/Long:31.531,-104.02
 Earthquake 0:
-	Magnitude:2.06999993
-	Date:Sep 15 2024  09:52:30.170 EDT
-	Location: 7 km SSE of Volcano, Hawaii
-	Lat/Long:19.380500793457,-155.21533203125
+	Magnitude:2.0
+	Date:Sep 15 2024  11:13:09.880 EDT
+	Location: 10 km NE of Pāhala, Hawaii
+	Lat/Long:19.2654991149902,-155.404159545898
 </code></pre>
 </div>
     
@@ -1409,9 +1409,9 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Realms Of Ancient War
-Xbox 360
-5.5
+<pre><code>Futurama
+PlayStation 2
+6.7
 [Action]
 </code></pre>
 </div>
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Arnold_Schwarzenegger
-Making_of_'The_Terminator':_A_Retrospective,_The_(1992)
+<pre><code>Charles_Grodin_(I)
+Sunburn_(1979)
 </code></pre>
 </div>
     
@@ -2374,17 +2374,11 @@ Text: This is more about hypothetical biology, but it is the chemical processes 
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>The Tragedy Of Antony And Cleopatra
-play
-1607
-
-THE TRAGEDY OF ANTONY AND CLEOPATRA
-
-by William Shakespeare
-
-DRAMATIS PERSONAE
-
- MARK ANTONY, ...
+<pre><code>Sonnet 83
+poem
+I never saw that you did painting need,
+ And therefore to your fair no painting set,
+ I found (or th...
 </code></pre>
 </div>
     
@@ -3448,22 +3442,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5127
-
-Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q45553 &quot;Robert J. Wilke&quot;
-
-Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q78505 &quot;Peter Lorre&quot;
-
-Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q104027 &quot;Kirk Douglas&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

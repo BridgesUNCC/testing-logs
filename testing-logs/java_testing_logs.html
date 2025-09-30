@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Sep 29 09:06:27 PM EDT 2025</p>
+	<p>Running at Tue Sep 30 01:06:31 AM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -462,12 +462,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarysong_lyrics_snippet.java" class="success">
+  <div id="summarysong_lyrics_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogsong_lyrics_snippet.java">Test song_lyrics_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.4
-	Date:Sep 29 2025  20:48:56.124 EDT
-	Location: 48 km NNE of Whittier, Alaska
-	Lat/Long:61.1446,-148.2225
+	Magnitude:1.0
+	Date:Sep 30 2025  00:43:30.011 EDT
+	Location: 3 km NNE of Cold Springs, Nevada
+	Lat/Long:39.7066,-119.9603
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.4
-	Date:Sep 29 2025  20:48:56.124 EDT
-	Location: 48 km NNE of Whittier, Alaska
-	Lat/Long:61.1446,-148.2225
+	Magnitude:1.0
+	Date:Sep 30 2025  00:43:30.011 EDT
+	Location: 3 km NNE of Cold Springs, Nevada
+	Lat/Long:39.7066,-119.9603
 Earthquake 0:
-	Magnitude:1.6
-	Date:Sep 28 2024  02:59:43.570 EDT
-	Location: 56 km S of Whites City, New Mexico
-	Lat/Long:31.678,-104.48
+	Magnitude:1.68
+	Date:Sep 28 2024  07:12:01.950 EDT
+	Location: 4 km S of Brawley, CA
+	Lat/Long:32.9453316,-115.5351639
 </code></pre>
 </div>
     
@@ -1409,9 +1409,9 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Fighting Fantasy: The Warlock of Firetop Mountain
-Nintendo DS
-5.5
+<pre><code>Hitman: Blood Money
+PlayStation 2
+8.0
 [Action]
 </code></pre>
 </div>
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Catherine_Zeta-Jones
-Traffic_(2000)
+<pre><code>Clark_Gable
+Dancing_Lady_(1933)
 </code></pre>
 </div>
     
@@ -2374,11 +2374,11 @@ Text: This is more about hypothetical biology, but it is the chemical processes 
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 137
+<pre><code>Sonnet 136
 poem
-Thou blind fool Love, what dost thou to mine eyes,
- That they behold and see not what they see?
- The...
+If thy soul check thee that I come so near,
+ Swear to thy blind soul that I was thy 'Will',
+ And wil...
 </code></pre>
 </div>
     
@@ -2503,13 +2503,39 @@ http://assignments.bridgesuncc.org/assignments/2049/bridges_testing
 <pre><code>Compiling test song_lyrics_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogsong_lyrics_snippet.java-runtest">Run Test for test song_lyrics_snippet.java</h3>
-<pre><code>Harder, Better, Faster, Stronger
-Daft Punk
-Homework / Discovery / Alive 1997
-2001-02-26
+<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503. Message: &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Application Error&lt;/title&gt;
+    &lt;style media=&quot;screen&quot;&gt;
+      html,body,iframe {
+        margin: 0;
+        padding: 0;
+      }
 
+      html,body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;https://www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+	at bridges.connect.DataSource.getSong(DataSource.java:983)
+	at song_lyrics_snippet.main(song_lyrics_snippet.java:24)
+could not run test song_lyrics_snippet.java
 </code></pre>
 </div>
     

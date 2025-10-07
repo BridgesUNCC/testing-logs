@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Tue Oct  7 01:20:27 PM EDT 2025</p>
+	<p>Running at Tue Oct  7 05:16:23 PM EDT 2025</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -76,11 +76,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarybst_eq.py" class="success">
+  <div id="summarybst_eq.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogbst_eq.py">Test bst_eq.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogbst_eq.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogbst_eq.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -148,19 +148,19 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryeq_snippet.py" class="success">
+  <div id="summaryeq_snippet.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogeq_snippet.py">Test eq_snippet.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogeq_snippet.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogeq_snippet.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
-  <div id="summaryeq_test.py" class="success">
+  <div id="summaryeq_test.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogeq_test.py">Test eq_test.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogeq_test.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogeq_test.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -388,11 +388,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarysong_lyrics_snippet.py" class="failure">
+  <div id="summarysong_lyrics_snippet.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogsong_lyrics_snippet.py">Test song_lyrics_snippet.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogsong_lyrics_snippet.py-runtest">error</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogsong_lyrics_snippet.py-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -926,14 +926,35 @@ http://assignments.bridgesuncc.org/assignments/3007/bridges_testing
     <div id="pythonlogbst_eq.py" class="logdetails">
       <h2>Test bst_eq.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogbst_eq.py-runtest">Run Test for test bst_eq.py</h3>
-<pre><code>
-Check Your Visualization at the following link:
+<pre><code>Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
+    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 
-http://assignments.bridgesuncc.org/assignments/3008/bridges_testing
+During handling of the above exception, another exception occurred:
 
-
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/bst_eq.py&quot;, line 54, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/bst_eq.py&quot;, line 31, in main
+    ami = get_earthquake_usgs_data(25)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1.dev1-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 435, in get_earthquake_usgs_data
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+could not run test bst_eq.py
 </code></pre>
 </div>
     
@@ -1023,7 +1044,7 @@ http://assignments.bridgesuncc.org/assignments/3013/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogdisplay_game.py-runtest">Run Test for test display_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x782927d63080&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7e9af89e5cd0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1079,12 +1100,35 @@ First 10 elevations:
     <div id="pythonlogeq_snippet.py" class="logdetails">
       <h2>Test eq_snippet.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogeq_snippet.py-runtest">Run Test for test eq_snippet.py</h3>
-<pre><code>Magnitude: 1.23
-Date: 2025-10-07 17:00:34
-Location:11 km ENE of Adelanto, CA
-Lat/Long:34.6338333,-117.307
+<pre><code>Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
+    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/eq_snippet.py&quot;, line 30, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/eq_snippet.py&quot;, line 17, in main
+    my_list = get_earthquake_usgs_data(100)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1.dev1-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 435, in get_earthquake_usgs_data
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+could not run test eq_snippet.py
 </code></pre>
 </div>
     
@@ -1092,16 +1136,35 @@ Lat/Long:34.6338333,-117.307
     <div id="pythonlogeq_test.py" class="logdetails">
       <h2>Test eq_test.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogeq_test.py-runtest">Run Test for test eq_test.py</h3>
-<pre><code>Magnitude: 1.23
-Date: 2025-10-07 17:00:34
-Location:11 km ENE of Adelanto, CA
-Lat/Long:34.6338333,-117.307
-Magnitude: 2.1400001
-Date: 2024-10-07 17:33:48
-Location:0 km N of Pāhala, Hawaii
-Lat/Long:19.2094993591309,-155.479339599609
+<pre><code>Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
+    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/eq_test.py&quot;, line 43, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/eq_test.py&quot;, line 17, in main
+    my_list = get_earthquake_usgs_data(100)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1.dev1-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 435, in get_earthquake_usgs_data
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+could not run test eq_test.py
 </code></pre>
 </div>
     
@@ -1142,7 +1205,7 @@ http://assignments.bridgesuncc.org/assignments/3019/bridges_testing
     
 <div class="success">
 <h3 id="pythonloggame_size_test.py-runtest">Run Test for test game_size_test.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x701f853a3c20&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7a215c433560&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1161,10 +1224,10 @@ client disconnect disconnected
     
 <div class="success">
 <h3 id="pythonloggame_snippet.py-runtest">Run Test for test game_snippet.py</h3>
-<pre><code>Monkey Island 2: LeChucks Revenge -- Special Edition
-PlayStation 3
-8.9
-['Adventure']
+<pre><code>Margots Word Brain
+Nintendo DS
+6
+['Educational', 'Puzzle']
 </code></pre>
 </div>
     
@@ -1329,8 +1392,8 @@ C
     
 <div class="success">
 <h3 id="pythonlogimdb_snippet.py-runtest">Run Test for test imdb_snippet.py</h3>
-<pre><code>Danny_Glover
-Battu_(2000)
+<pre><code>Christopher_Lee_(I)
+Return_from_Witch_Mountain_(1978)
 </code></pre>
 </div>
     
@@ -1340,7 +1403,7 @@ Battu_(2000)
     
 <div class="success">
 <h3 id="pythonloginput_game.py-runtest">Run Test for test input_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7d3277d227e0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7bec192e7020&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1407,7 +1470,7 @@ http://assignments.bridgesuncc.org/assignments/3031/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogminimal_game.py-runtest">Run Test for test minimal_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7e46f70dbec0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x759ed597f920&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1481,7 +1544,7 @@ http://assignments.bridgesuncc.org/assignments/3034/bridges_testing
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_state.py-runtest">Run Test for test non_blocking_game_state.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x790742b0a7b0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x769ae04d39e0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1701,11 +1764,11 @@ Text: The borehole that was dug is 12km. If we dug say 50km. Could we still find
     
 <div class="success">
 <h3 id="pythonlogshakespeare_snippet.py-runtest">Run Test for test shakespeare_snippet.py</h3>
-<pre><code>Sonnet 61
+<pre><code>Sonnet 82
 poem
-Is it thy will, thy image should keep open
- My heavy eyelids to the weary night?
- Dost thou desire m
+I grant thou wert not married to my muse,
+ And therefore mayst without attaint o'erlook
+ The dedicat
 </code></pre>
 </div>
     
@@ -1814,17 +1877,13 @@ http://assignments.bridgesuncc.org/assignments/3046/bridges_testing
     <div id="pythonlogsong_lyrics_snippet.py" class="logdetails">
       <h2>Test song_lyrics_snippet.py full log</h2>
     
-<div class="failure">
+<div class="success">
 <h3 id="pythonlogsong_lyrics_snippet.py-runtest">Run Test for test song_lyrics_snippet.py</h3>
-<pre><code>Traceback (most recent call last):
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/song_lyrics_snippet.py&quot;, line 26, in &lt;module&gt;
-    main()
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/song_lyrics_snippet.py&quot;, line 15, in main
-    song = get_song(&quot;Harder Faster Better Stronger&quot;, &quot;Daft Punk&quot;)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1.dev1-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 632, in get_song
-ConnectionError: HTTP Request Failed. Error Code: 503 when accessing http://static-data.bridgesuncc.org/api/songs/find/Harder%20Faster%20Better%20Stronger?artistName=Daft%20Punk
-could not run test song_lyrics_snippet.py
+<pre><code>Harder, Better, Faster, Stronger
+Daft Punk
+Homework / Discovery / Alive 1997
+2001-02-26
+
 </code></pre>
 </div>
     
@@ -2574,16 +2633,16 @@ Data Records in 1955: 5193
 First 3 records:
 
 0)Actor-Movie Data:
-	Movie: Q64110, 20,000 Leagues Under the Sea
-	Actor: Q104027, Kirk Douglas
+	Movie: Q331017, To Catch a Thief
+	Actor: Q3925, Grace Kelly
 
 1)Actor-Movie Data:
-	Movie: Q64110, 20,000 Leagues Under the Sea
-	Actor: Q182057, Paul Lukas
+	Movie: Q331017, To Catch a Thief
+	Actor: Q7374, Alfred Hitchcock
 
 2)Actor-Movie Data:
-	Movie: Q64110, 20,000 Leagues Under the Sea
-	Actor: Q209186, James Mason
+	Movie: Q331017, To Catch a Thief
+	Actor: Q83410, Cary Grant
 
 </code></pre>
 </div>
@@ -2594,7 +2653,7 @@ First 3 records:
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_fire.py-runtest">Run Test for test non_blocking_game_fire.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7b205050dd60&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x722ab63b1100&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:

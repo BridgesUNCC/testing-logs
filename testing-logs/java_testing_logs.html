@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sat Oct 18 05:14:21 AM EDT 2025</p>
+	<p>Running at Sat Oct 18 09:06:26 AM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -669,12 +669,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarytut_sllist_p1.java" class="success">
+  <div id="summarytut_sllist_p1.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogtut_sllist_p1.java">Test tut_sllist_p1.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogtut_sllist_p1.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogtut_sllist_p1.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogtut_sllist_p1.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.0
-	Date:Oct 18 2025  04:32:52.609 EDT
-	Location: 17 km ESE of Livengood, Alaska
-	Lat/Long:65.4408,-148.2137
+	Magnitude:1.2
+	Date:Oct 18 2025  08:40:39.356 EDT
+	Location: 22 km ENE of Minto, Alaska
+	Lat/Long:65.2335,-148.9143
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.0
-	Date:Oct 18 2025  04:32:52.609 EDT
-	Location: 17 km ESE of Livengood, Alaska
-	Lat/Long:65.4408,-148.2137
+	Magnitude:1.2
+	Date:Oct 18 2025  08:40:39.356 EDT
+	Location: 22 km ENE of Minto, Alaska
+	Lat/Long:65.2335,-148.9143
 Earthquake 0:
-	Magnitude:1.09
-	Date:Oct 19 2024  12:01:52.940 EDT
-	Location: 38 km ESE of Barstow, CA
-	Lat/Long:34.7948333,-116.6208333
+	Magnitude:3.01
+	Date:Oct 19 2024  18:58:17.400 EDT
+	Location: 13 km NW of Petrolia, CA
+	Lat/Long:40.3753318786621,-124.421501159668
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>The Wolf Among Us: Episode 1 -- Faith 
-iPad
-9.0
-[Adventure]
+<pre><code>MechAssault
+Xbox
+9.2
+[Action]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christian_Slater
-Swatch_Dogs_and_Diet_Coke_Heads_(2001)
+<pre><code>James_Stewart_(I)
+Jackpot,_The_(1950)
 </code></pre>
 </div>
     
@@ -2376,18 +2376,11 @@ Text: &quot;We strive to be good water stewards in communities where we have dat
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>The Life Of King Henry The Fifth
-play
-1599
-
-THE LIFE OF KING HENRY THE FIFTH
-
-by William Shakespeare
-
-DRAMATIS PERSONAE
-
- CHORUS
- KING HEN...
+<pre><code>Sonnet 35
+poem
+No more be grieved at that which thou hast done,
+ Roses have thorns, and silver fountains mud,
+ Clou...
 </code></pre>
 </div>
     
@@ -3080,14 +3073,36 @@ http://assignments.bridgesuncc.org/assignments/2072/bridges_testing
 <pre><code>Compiling test tut_sllist_p1.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogtut_sllist_p1.java-runtest">Run Test for test tut_sllist_p1.java</h3>
-<pre><code>
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/2073/bridges_testing
-
-
+<pre><code>There was a problem sending the visualization representation to the server. 
+The target server failed to respond
+Exception in thread &quot;main&quot; org.apache.http.NoHttpResponseException: The target server failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:143)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.http.impl.conn.CPoolProxy.invoke(CPoolProxy.java:138)
+	at jdk.proxy2/jdk.proxy2.$Proxy2.receiveResponseHeader(Unknown Source)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:253)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:194)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:215)
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:487)
+	at bridges.connect.Connector.post(Connector.java:604)
+	at bridges.connect.Bridges.visualize(Bridges.java:599)
+	at tut_sllist_p1.main(tut_sllist_p1.java:51)
+could not run test tut_sllist_p1.java
 </code></pre>
 </div>
     
@@ -3456,16 +3471,16 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Data Records in 1955: 5193
 
 Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q45553 &quot;Robert J. Wilke&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q102551 &quot;Ernest Borgnine&quot;
 
 Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q78505 &quot;Peter Lorre&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q180251 &quot;Paddy Chayefsky&quot;
 
 Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q266416 &quot;Betsy Blair&quot;
 
 </code></pre>
 </div>

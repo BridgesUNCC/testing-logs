@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Wed Oct 22 05:06:45 AM EDT 2025</p>
+	<p>Running at Wed Oct 22 09:06:26 AM EDT 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.0
-	Date:Oct 22 2025  04:46:26.788 EDT
-	Location: 76 km W of Paxson, Alaska
-	Lat/Long:63.1548,-147.1313
+	Magnitude:1.05
+	Date:Oct 22 2025  08:46:48.660 EDT
+	Location: 4 km W of Cobb, CA
+	Lat/Long:38.8226661682129,-122.766166687012
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.0
-	Date:Oct 22 2025  04:46:26.788 EDT
-	Location: 76 km W of Paxson, Alaska
-	Lat/Long:63.1548,-147.1313
+	Magnitude:1.05
+	Date:Oct 22 2025  08:46:48.660 EDT
+	Location: 4 km W of Cobb, CA
+	Lat/Long:38.8226661682129,-122.766166687012
 Earthquake 0:
-	Magnitude:1.33
-	Date:Oct 23 2024  05:48:10.440 EDT
-	Location: 15 km NE of Borrego Springs, CA
-	Lat/Long:33.3364983,-116.251503
+	Magnitude:1.81
+	Date:Oct 23 2024  09:29:12.020 EDT
+	Location: 6 km WSW of Corona, CA
+	Lat/Long:33.8438333,-117.6258333
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Steel Reign
-PlayStation
-7.0
-[Action]
+<pre><code>Enemy Engaged: Comanche vs. Hokum
+PC
+9.0
+[Simulation]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Leonard_Nimoy
-Transformers:_The_Movie,_The_(1986)
+<pre><code>Christopher_Lee_(I)
+Schlangengrube_und_das_Pendel,_Die_(1967)
 </code></pre>
 </div>
     
@@ -1993,11 +1993,11 @@ Location of first vertex [Cartesian Coord]: -657.974041556194,-4700.217494637191
 </div>
 <div class="failure">
 <h3 id="javalogpurposefully_breaking.java-runtest">Run Test for test purposefully_breaking.java</h3>
-<pre><code>Server returned error response: HTTP 413 while processing the request POST http://assignments.bridgesuncc.org/assignments/2040.00?apikey=1321549621122&amp;username=bridges_testing HTTP/1.1
-There was a problem sending the visualization representation to the server. 
-Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
-Exception in thread &quot;main&quot; java.io.IOException: Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
-	at bridges.connect.Connector.executeHTTPRequest(Connector.java:526)
+<pre><code>There was a problem sending the visualization representation to the server. 
+Received an empty JSON response from the server. 
+Exception in thread &quot;main&quot; java.io.IOException: Received an empty JSON response from the server. 
+	at bridges.connect.Connector.asJSONObject(Connector.java:272)
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:506)
 	at bridges.connect.Connector.post(Connector.java:604)
 	at bridges.connect.Bridges.visualize(Bridges.java:599)
 	at purposefully_breaking.main(purposefully_breaking.java:45)
@@ -2376,10 +2376,17 @@ Text: &quot;We strive to be good water stewards in communities where we have dat
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 69
-poem
-Those parts of thee that the world's eye doth view,
- Want nothing that the thought of hearts can men...
+<pre><code>The Third Part Of King Henry The Sixth
+play
+1591
+
+THE THIRD PART OF KING HENRY THE SIXTH
+
+by William Shakespeare
+
+DRAMATIS PERSONAE
+
+ KING HENRY...
 </code></pre>
 </div>
     
@@ -3448,16 +3455,16 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Data Records in 1955: 5176
 
 Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q104027 &quot;Kirk Douglas&quot;
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q3925 &quot;Grace Kelly&quot;
 
 Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q182057 &quot;Paul Lukas&quot;
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q7374 &quot;Alfred Hitchcock&quot;
 
 Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q209186 &quot;James Mason&quot;
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q83410 &quot;Cary Grant&quot;
 
 </code></pre>
 </div>

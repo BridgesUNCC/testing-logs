@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Fri Dec  5 09:41:10 AM EST 2025</p>
+	<p>Running at Fri Dec  5 01:40:50 PM EST 2025</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -102,13 +102,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary9" class="success">
+  <div id="summary9" class="failure">
     <h2><a href="java_logs.html#javalog9">Assignment 9</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog9-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog9-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog9-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog9-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -1174,7 +1174,7 @@ http://assignments.bridgesuncc.org/assignments/8/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/9-ShortestPathOSM/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog9-runanswer">Run Answer for Assignment 9</h3>
 <pre><code>Guessing osm.java is the right java file where main is
 
@@ -1184,12 +1184,34 @@ Check Your Visualization at the following link:
 http://assignments.bridgesuncc.org/assignments/9/bridges_testing
 
 
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/9/bridges_testing
-
-
+There was a problem sending the visualization representation to the server. 
+The target server failed to respond
+Exception in thread &quot;main&quot; org.apache.http.NoHttpResponseException: The target server failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:143)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.http.impl.conn.CPoolProxy.invoke(CPoolProxy.java:138)
+	at jdk.proxy2/jdk.proxy2.$Proxy2.receiveResponseHeader(Unknown Source)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:253)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:194)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:215)
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:487)
+	at bridges.connect.Connector.post(Connector.java:604)
+	at bridges.connect.Bridges.visualize(Bridges.java:599)
+	at osm.main(osm.java:325)
+could not run java_answer for assignment in ../assignmentdb/9-ShortestPathOSM/java_answer
 </code></pre>
 </div>
     
@@ -1985,7 +2007,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.763181611713029E12
+Data Access Took: 1.763195972694004E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2009,40 +2031,40 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Took: 1.763181805461228E12
+Took: 1.763196140525276E12
 
 Check Your Visualization at the following link:
 
 http://assignments.bridgesuncc.org/assignments/31/bridges_testing
 
 
-Q63189
-Q85232
-Q160528
-Q177347
-Q213302
-Q215359
-Q230681
-Q230841
-Q232477
-Q259571
-Took: 1.763181817021937E12
+Q61552
+Q102813
+Q126606
+Q133925
+Q214245
+Q377450
+Q712968
+Q961187
+Q3072931
+Q3265830
+Took: 1.763196148523379E12
 
 Check Your Visualization at the following link:
 
 http://assignments.bridgesuncc.org/assignments/31/bridges_testing
 
 
-Q310217
-Q443823
-Q446064
-Q539828
-Q722337
-Q1096611
-Q1339933
-Q1395882
-Q1849086
-Q2741618
+Q61552
+Q102813
+Q126606
+Q133925
+Q214245
+Q377450
+Q712968
+Q961187
+Q3072931
+Q3265830
 </code></pre>
 </div>
     
@@ -2463,23 +2485,23 @@ total vertices:22725
 Set size: 22725
 Grid
 ===grid stats===
-0)Source Point:-17.955883844181024,-20.54767507961772
-0)[ALG]Closest Point: -73.9065972,40.618168
-0)[ALG]Min Dist:82.89597508121511
-0)[BFA]Closest Point: -73.9065972,40.618168
-0)[BFA]Min Dist:82.89597508121511
+0)Source Point:-4.0699434768383895,-51.12794730883839
+0)[ALG]Closest Point: -73.9104829,40.6147818
+0)[ALG]Min Dist:115.30147133170459
+0)[BFA]Closest Point: -73.9104829,40.6147818
+0)[BFA]Min Dist:115.30147133170459
 0)Difference:0.0
-Source Point:-9.945911731457542,40.724092420592214
-Source Point:-63.4773245527615,40.732556288664156
-Source Point:-39.55066959219248,40.71725447280387
-Source Point:-51.435099604883334,40.77226101678696
-Source Point:-32.47663904918559,40.74312849233099
-Source Point:-73.28532821267726,40.699284548573104
-Source Point:-6.986503977612912,40.706088606654866
-Source Point:-40.90450327517748,40.79479977527217
-Source Point:-68.21065846712165,40.639111400014606
-Source Point:-15.83243650138811,40.78557030093129
-num cells examined:12
+Source Point:-7.430364696161789,40.64821642484214
+Source Point:-4.457928219145018,40.64816578874281
+Source Point:-46.300850505408846,40.64328116965102
+Source Point:-70.29416582397297,40.73621352925584
+Source Point:-31.380023119186568,40.628334121701464
+Source Point:-63.2614989758133,40.62253883316201
+Source Point:-6.5222798634640355,40.76081600869701
+Source Point:-15.348791953444085,40.80459844597819
+Source Point:-49.55596593202438,40.66201263865719
+Source Point:-15.470667891685743,40.75861881357036
+num cells examined:11
 
 Check Your Visualization at the following link:
 
@@ -3260,7 +3282,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.14396
+Pi val: 3.1416
 
 Check Your Visualization at the following link:
 

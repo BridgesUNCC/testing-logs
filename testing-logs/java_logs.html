@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sun Dec  7 09:41:12 AM EST 2025</p>
+	<p>Running at Sun Dec  7 01:39:27 PM EST 2025</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -1985,8 +1985,10 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.763354247541272E12
-Alarm clock
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:69)
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
 </div>
@@ -2009,30 +2011,14 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Took: 1.763354385246579E12
+Took: 1.76336865469944E12
 
 Check Your Visualization at the following link:
 
 http://assignments.bridgesuncc.org/assignments/31/bridges_testing
 
 
-Q41142
-Q55468
-Q60306
-Q157191
-Q176139
-Q310217
-Q443823
-Q446064
-Q539828
-Q722337
-Took: 1.763354393054614E12
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/31/bridges_testing
-
-
+Q61552
 Q102813
 Q126606
 Q133925
@@ -2042,7 +2028,23 @@ Q712968
 Q961187
 Q3072931
 Q3265830
-Q6220867
+Took: 1.763368666754336E12
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/31/bridges_testing
+
+
+Q61552
+Q102813
+Q126606
+Q133925
+Q214245
+Q377450
+Q712968
+Q961187
+Q3072931
+Q3265830
 </code></pre>
 </div>
     
@@ -2463,23 +2465,23 @@ total vertices:22725
 Set size: 22725
 Grid
 ===grid stats===
-0)Source Point:-49.98742086405974,-20.95580445853954
-0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:66.05490132757527
-0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:66.05490132757527
+0)Source Point:-73.60944264385077,-0.06456505665150303
+0)[ALG]Closest Point: -73.9222475,40.6128304
+0)[ALG]Min Dist:40.678598156952795
+0)[BFA]Closest Point: -73.9222475,40.6128304
+0)[BFA]Min Dist:40.678598156952795
 0)Difference:0.0
-Source Point:-32.332868936324196,40.637400292582434
-Source Point:-44.2223674756039,40.69105315042128
-Source Point:-26.763076663564036,40.699656658924674
-Source Point:-31.57005883961338,40.65305282259927
-Source Point:-28.672187792853435,40.633223898058034
-Source Point:-14.143368924954913,40.695364869326305
-Source Point:-11.86431993865714,40.64923068464526
-Source Point:-67.67230009882245,40.73307408194255
-Source Point:-59.98246216185737,40.74283821692497
-Source Point:-41.94577464026854,40.67606160476978
-num cells examined:11
+Source Point:-56.98415441805051,40.6271391618613
+Source Point:-15.118809151417857,40.797018963855216
+Source Point:-17.871805311617933,40.71667931466108
+Source Point:-53.05518616703001,40.69199506363924
+Source Point:-62.41909036172125,40.61408253005061
+Source Point:-64.3507951010319,40.664876477938535
+Source Point:-13.236464609199913,40.67131825446858
+Source Point:-12.532565577380794,40.75326321888558
+Source Point:-46.24651010049675,40.78845004685211
+Source Point:-15.91757289546905,40.71301837865089
+num cells examined:5
 
 Check Your Visualization at the following link:
 
@@ -3260,7 +3262,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.13828
+Pi val: 3.13752
 
 Check Your Visualization at the following link:
 

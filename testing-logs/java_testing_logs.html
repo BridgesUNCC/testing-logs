@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Dec  8 01:07:40 AM EST 2025</p>
+	<p>Running at Mon Dec  8 05:07:36 AM EST 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.0428010124180442
-	Date:Dec 08 2025  00:44:00.618 EST
-	Location: 4 km SSW of Wasilla, Alaska
-	Lat/Long:61.5462760925293,-149.4856414794922
+	Magnitude:1.07
+	Date:Dec 08 2025  04:47:19.340 EST
+	Location: 7 km NW of The Geysers, CA
+	Lat/Long:38.8248329162598,-122.802001953125
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.0428010124180442
-	Date:Dec 08 2025  00:44:00.618 EST
-	Location: 4 km SSW of Wasilla, Alaska
-	Lat/Long:61.5462760925293,-149.4856414794922
+	Magnitude:1.07
+	Date:Dec 08 2025  04:47:19.340 EST
+	Location: 7 km NW of The Geysers, CA
+	Lat/Long:38.8248329162598,-122.802001953125
 Earthquake 0:
 	Magnitude:1.8
-	Date:Dec 08 2024  23:49:00.549 EST
-	Location: 19 km SW of Tyonek, Alaska
-	Lat/Long:60.9454,-151.4023
+	Date:Dec 09 2024  02:42:02.440 EST
+	Location: 15 km ESE of Little Lake, CA
+	Lat/Long:35.8993333,-117.7476667
 </code></pre>
 </div>
     
@@ -1409,9 +1409,9 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>The Punisher [2005]
-PC
-8.0
+<pre><code>Crysis 2
+Xbox 360
+9.0
 [Shooter]
 </code></pre>
 </div>
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christian_Slater
-Pursued_(2004)
+<pre><code>Adam_Sandler_(I)
+Day_with_the_Meatball,_A_(2002)
 </code></pre>
 </div>
     
@@ -2016,11 +2016,11 @@ could not run test purposefully_breaking.java
 </div>
 <div class="failure">
 <h3 id="javalogpurposefully_breaking2.java-runtest">Run Test for test purposefully_breaking2.java</h3>
-<pre><code>Server returned error response: HTTP 413 while processing the request POST http://assignments.bridgesuncc.org/assignments/2041.00?apikey=1321549621122&amp;username=bridges_testing HTTP/1.1
-There was a problem sending the visualization representation to the server. 
-Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
-Exception in thread &quot;main&quot; java.io.IOException: Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
-	at bridges.connect.Connector.executeHTTPRequest(Connector.java:526)
+<pre><code>There was a problem sending the visualization representation to the server. 
+Received an empty JSON response from the server. 
+Exception in thread &quot;main&quot; java.io.IOException: Received an empty JSON response from the server. 
+	at bridges.connect.Connector.asJSONObject(Connector.java:272)
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:506)
 	at bridges.connect.Connector.post(Connector.java:604)
 	at bridges.connect.Bridges.visualize(Bridges.java:599)
 	at purposefully_breaking2.main(purposefully_breaking2.java:45)
@@ -2089,7 +2089,7 @@ science
 ID: 1m9fiv8
 Title: How does water become oxygenated?
 Author: Saskatchemoose
-Score: 34
+Score: 32
 VoteRatio: 0.72
 CommentCount: 14
 Subreddit: askscience
@@ -2100,8 +2100,8 @@ Text: Totally uninformed on this whole subject but it’s something I just thoug
 ID: 1jokqiv
 Title: How long will sunscreen continue to work if you don't spend a lot of time in the sun?
 Author: MachacaConHuevos
-Score: 32
-VoteRatio: 0.71
+Score: 35
+VoteRatio: 0.73
 CommentCount: 39
 Subreddit: askscience
 PostTime: 1743473415
@@ -2113,7 +2113,7 @@ I understand it's like a barrier that UV rays can eventually break through, but 
 ID: 1l1xl7v
 Title: During the Ice Ages, large areas of the Earth were buried by glaciers for thousands of years. What happened to all the life there? Was there a small mass extinction? Did it just move? How did it recover so fast?
 Author: ParagonRenegade
-Score: 503
+Score: 502
 VoteRatio: 0.93
 CommentCount: 53
 Subreddit: askscience
@@ -2130,8 +2130,8 @@ I'm pretty confused on how species handled this huge change in climate without t
 ID: 1lny217
 Title: Has there ever been a “counter-invasion” where displaced organisms wound up inhabiting the invasive species’ original niche?
 Author: al_fletcher
-Score: 81
-VoteRatio: 0.9
+Score: 80
+VoteRatio: 0.89
 CommentCount: 3
 Subreddit: askscience
 PostTime: 1751256128
@@ -2141,7 +2141,7 @@ Text:
 ID: 1jthf1l
 Title: How does your body prevent herpes simplex one?
 Author: Critical-Blitz
-Score: 143
+Score: 137
 VoteRatio: 0.84
 CommentCount: 37
 Subreddit: askscience
@@ -2152,7 +2152,7 @@ Text:
 ID: 1kyvhn9
 Title: What tree has the densest most inter-connected canopy?
 Author: Gold-Print-767
-Score: 59
+Score: 61
 VoteRatio: 0.87
 CommentCount: 7
 Subreddit: askscience
@@ -2163,7 +2163,7 @@ Text: Title says it all
 ID: 1iabjpu
 Title: How do they seal the rotating glove joint on a spacesuit?
 Author: stupid_spoon
-Score: 209
+Score: 210
 VoteRatio: 0.89
 CommentCount: 61
 Subreddit: askscience
@@ -2176,7 +2176,7 @@ Thanks!
 ID: 1m1c2mm
 Title: Are you actually conscious under anesthesia?
 Author: myaltaltaltacct
-Score: 640
+Score: 646
 VoteRatio: 0.91
 CommentCount: 294
 Subreddit: askscience
@@ -2197,7 +2197,7 @@ My question, then, is: when you are under general anesthesia are you actually st
 ID: 1mqubrf
 Title: How do we accurately predict the amount of rain or snowfall in a day??
 Author: sniffingboy
-Score: 61
+Score: 63
 VoteRatio: 0.87
 CommentCount: 12
 Subreddit: askscience
@@ -2208,7 +2208,7 @@ Text:
 ID: 1p2phpx
 Title: Do animals like polar bears feel cold despite their fur, but just deal with it. Or does their fur actually keep them comfortably warm, even if they get wet?
 Author: bentbabe
-Score: 1773
+Score: 1778
 VoteRatio: 0.98
 CommentCount: 230
 Subreddit: askscience
@@ -2235,7 +2235,7 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 <pre><code>ID: 1m9fiv8
 Title: How does water become oxygenated?
 Author: Saskatchemoose
-Score: 34
+Score: 32
 VoteRatio: 0.72
 CommentCount: 14
 Subreddit: askscience
@@ -2246,8 +2246,8 @@ Text: Totally uninformed on this whole subject but it’s something I just thoug
 ID: 1jokqiv
 Title: How long will sunscreen continue to work if you don't spend a lot of time in the sun?
 Author: MachacaConHuevos
-Score: 32
-VoteRatio: 0.71
+Score: 35
+VoteRatio: 0.73
 CommentCount: 39
 Subreddit: askscience
 PostTime: 1743473415
@@ -2259,7 +2259,7 @@ I understand it's like a barrier that UV rays can eventually break through, but 
 ID: 1l1xl7v
 Title: During the Ice Ages, large areas of the Earth were buried by glaciers for thousands of years. What happened to all the life there? Was there a small mass extinction? Did it just move? How did it recover so fast?
 Author: ParagonRenegade
-Score: 503
+Score: 502
 VoteRatio: 0.93
 CommentCount: 53
 Subreddit: askscience
@@ -2276,8 +2276,8 @@ I'm pretty confused on how species handled this huge change in climate without t
 ID: 1lny217
 Title: Has there ever been a “counter-invasion” where displaced organisms wound up inhabiting the invasive species’ original niche?
 Author: al_fletcher
-Score: 81
-VoteRatio: 0.9
+Score: 80
+VoteRatio: 0.89
 CommentCount: 3
 Subreddit: askscience
 PostTime: 1751256128
@@ -2287,7 +2287,7 @@ Text:
 ID: 1jthf1l
 Title: How does your body prevent herpes simplex one?
 Author: Critical-Blitz
-Score: 143
+Score: 137
 VoteRatio: 0.84
 CommentCount: 37
 Subreddit: askscience
@@ -2298,7 +2298,7 @@ Text:
 ID: 1kyvhn9
 Title: What tree has the densest most inter-connected canopy?
 Author: Gold-Print-767
-Score: 59
+Score: 61
 VoteRatio: 0.87
 CommentCount: 7
 Subreddit: askscience
@@ -2309,7 +2309,7 @@ Text: Title says it all
 ID: 1iabjpu
 Title: How do they seal the rotating glove joint on a spacesuit?
 Author: stupid_spoon
-Score: 209
+Score: 210
 VoteRatio: 0.89
 CommentCount: 61
 Subreddit: askscience
@@ -2322,7 +2322,7 @@ Thanks!
 ID: 1m1c2mm
 Title: Are you actually conscious under anesthesia?
 Author: myaltaltaltacct
-Score: 640
+Score: 646
 VoteRatio: 0.91
 CommentCount: 294
 Subreddit: askscience
@@ -2343,7 +2343,7 @@ My question, then, is: when you are under general anesthesia are you actually st
 ID: 1mqubrf
 Title: How do we accurately predict the amount of rain or snowfall in a day??
 Author: sniffingboy
-Score: 61
+Score: 63
 VoteRatio: 0.87
 CommentCount: 12
 Subreddit: askscience
@@ -2354,7 +2354,7 @@ Text:
 ID: 1p2phpx
 Title: Do animals like polar bears feel cold despite their fur, but just deal with it. Or does their fur actually keep them comfortably warm, even if they get wet?
 Author: bentbabe
-Score: 1773
+Score: 1778
 VoteRatio: 0.98
 CommentCount: 230
 Subreddit: askscience
@@ -2378,11 +2378,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 17
+<pre><code>Sonnet 89
 poem
-Who will believe my verse in time to come
- If it were filled with your most high deserts?
- Though ye...
+Say that thou didst forsake me for some fault,
+ And I will comment upon that offence,
+ Speak of my l...
 </code></pre>
 </div>
     
@@ -3451,16 +3451,16 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Data Records in 1955: 5230
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q1374412 &quot;Joe Mantell&quot;
+	Movie: Q73944 &quot;Two Tickets to Broadway&quot;
+	Actor: Q166212 &quot;Eddie Bracken&quot;
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q1381411 &quot;Jerry Paris&quot;
+	Movie: Q73944 &quot;Two Tickets to Broadway&quot;
+	Actor: Q205314 &quot;Janet Leigh&quot;
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q1418567 &quot;Minerva Urecal&quot;
+	Movie: Q73944 &quot;Two Tickets to Broadway&quot;
+	Actor: Q237864 &quot;Vera Miles&quot;
 
 </code></pre>
 </div>

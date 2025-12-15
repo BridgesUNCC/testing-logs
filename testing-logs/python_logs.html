@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Mon Dec 15 02:16:36 AM EST 2025</p>
+	<p>Running at Mon Dec 15 06:16:03 AM EST 2025</p>
   <div id="summary0" class="success">
     <h2><a href="python_logs.html#pythonlog0">Assignment 0</a> </h2>
     <p>
@@ -30,12 +30,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary2" class="success">
+  <div id="summary2" class="failure">
     <h2><a href="python_logs.html#pythonlog2">Assignment 2</a> </h2>
     <p>
       <ul>
         <li> Check Scaffold : <a href="python_logs.html#pythonlog2-checkscaffold">success</a></li>
-        <li> Run Answer : <a href="python_logs.html#pythonlog2-runanswer">success</a></li>
+        <li> Run Answer : <a href="python_logs.html#pythonlog2-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -841,16 +841,37 @@ http://assignments.bridgesuncc.org/assignments/201/bridges_testing
 
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="pythonlog2-runanswer">Run Answer for Assignment 2</h3>
 <pre><code>Guessing  ListEQ.py is the python file where main is
 
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
+    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 
-Check Your Visualization at the following link:
+During handling of the above exception, another exception occurred:
 
-http://assignments.bridgesuncc.org/assignments/202/bridges_testing
-
-
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-assignments/assignmentdb/2-ListEQ/python_answer/ListEQ.py&quot;, line 66, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-assignments/assignmentdb/2-ListEQ/python_answer/ListEQ.py&quot;, line 46, in main
+    data = get_earthquake_usgs_data(100)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1.dev1-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 435, in get_earthquake_usgs_data
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+could not run python_answer for assignment in ../assignmentdb/2-ListEQ/python_answer
 </code></pre>
 </div>
     
@@ -1018,87 +1039,87 @@ Check Your Visualization at the following link:
 http://assignments.bridgesuncc.org/assignments/208/bridges_testing
 
 
-lovst 1
-which 1
-many 1
+who 2
+string 1
+ordering 1
 they 1
-husband 1
-pleasing 1
-gladly 1
-resembling 1
+bear 1
+one 4
 child 1
-note 1
+thou 5
+music 2
+thine 2
+unions 1
+offend 1
+sadly 1
+concord 1
+how 1
 why 2
+delights 1
+pleasing 1
+seeming 1
+if 1
+sire 1
+single 1
+annoy 1
+the 2
+singleness 1
+resembling 1
+and 2
+married 1
+none 1
+not 2
+of 1
+each 2
+mutual 1
+lovst 1
+sweetly 1
+mother 1
+speechless 1
+receivst 2
+husband 1
+hearst 1
+all 1
+which 1
+mark 1
+sweet 1
+sing 1
+prove 1
+gladly 1
 or 1
 well-tuned 1
-another 1
-none 1
-music 2
-thou 5
-chide 1
-singleness 1
-the 2
-who 2
-annoy 1
-mother 1
-not 2
-ear 1
-parts 1
-bear 1
-this 1
-string 1
-each 2
-song 1
-seeming 1
-single 1
-wilt 1
-thine 2
-but 1
-one 4
-all 1
-sing 1
+sounds 1
 by 2
 thee 2
-sweets 2
-sweetly 1
-and 2
-joy 2
-whose 1
-sings 1
-hearst 1
-mutual 1
-pleasure 1
-of 1
-strikes 1
-speechless 1
-prove 1
-sadly 1
-happy 1
-with 2
-do 3
-else 1
-receivst 2
-true 1
-hear 1
-mark 1
-ordering 1
-war 1
-unions 1
-sire 1
-sounds 1
-married 1
-to 3
-delights 1
-if 1
-offend 1
-shouldst 1
-concord 1
-sweet 1
 in 4
+true 1
+ear 1
+parts 1
+another 1
+many 1
+this 1
+with 2
+strikes 1
+note 1
+sings 1
+wilt 1
+sweets 2
+shouldst 1
+hear 1
+joy 2
+else 1
+song 1
+war 1
 that 2
+do 3
 confounds 1
-how 1
+pleasure 1
+but 1
+chide 1
+whose 1
+happy 1
 being 1
+to 3
 
 Check Your Visualization at the following link:
 
@@ -1179,7 +1200,7 @@ http://assignments.bridgesuncc.org/assignments/210/bridges_testing
 <h3 id="pythonlog11-runanswer">Run Answer for Assignment 11</h3>
 <pre><code>Guessing  2048Game.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7e8ca1a3d310&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7e533865fb30&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1206,7 +1227,7 @@ client disconnect disconnected
 <h3 id="pythonlog12-runanswer">Run Answer for Assignment 12</h3>
 <pre><code>Guessing  AStarMaze.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7f16146f3080&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7d9a3fc84b60&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1233,7 +1254,7 @@ client disconnect disconnected
 <h3 id="pythonlog13-runanswer">Run Answer for Assignment 13</h3>
 <pre><code>Guessing  InfiniteRunner.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7b1fe9554860&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x758429278890&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1260,7 +1281,7 @@ client disconnect disconnected
 <h3 id="pythonlog14-runanswer">Run Answer for Assignment 14</h3>
 <pre><code>Guessing  SpreadingFire.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7838eeb6f0e0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7ff34be56ed0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1287,7 +1308,7 @@ client disconnect disconnected
 <h3 id="pythonlog15-runanswer">Run Answer for Assignment 15</h3>
 <pre><code>Guessing  FallingSand.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x73186d25ae40&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x74e8d4441790&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1338,7 +1359,7 @@ http://assignments.bridgesuncc.org/assignments/216/bridges_testing
 <h3 id="pythonlog17-runanswer">Run Answer for Assignment 17</h3>
 <pre><code>Guessing  ControlsTutorial.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x76518ba9a7e0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7fbed6d5bc80&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1365,7 +1386,7 @@ client disconnect disconnected
 <h3 id="pythonlog18-runanswer">Run Answer for Assignment 18</h3>
 <pre><code>Guessing  ControlsTutorialTwo.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x75c3d7cbec90&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7cd052ebea50&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1392,7 +1413,7 @@ client disconnect disconnected
 <h3 id="pythonlog19-runanswer">Run Answer for Assignment 19</h3>
 <pre><code>Guessing  BUGSTOMP.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7d7b90761bb0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x72073bc5dd30&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1419,7 +1440,7 @@ client disconnect disconnected
 <h3 id="pythonlog20-runanswer">Run Answer for Assignment 20</h3>
 <pre><code>Guessing  minesweeper.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x76579c3adac0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7ba2db664cb0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1446,7 +1467,7 @@ client disconnect disconnected
 <h3 id="pythonlog21-runanswer">Run Answer for Assignment 21</h3>
 <pre><code>Guessing  RaceCar.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x74bd98055520&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x77989ddc8cb0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1473,7 +1494,7 @@ client disconnect disconnected
 <h3 id="pythonlog22-runanswer">Run Answer for Assignment 22</h3>
 <pre><code>Guessing  Snake.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x784b1f443080&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x76749aac8bf0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1788,7 +1809,7 @@ http://assignments.bridgesuncc.org/assignments/226/bridges_testing
 <h3 id="pythonlog27-runanswer">Run Answer for Assignment 27</h3>
 <pre><code>Guessing  GameGridAdvanced.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x72f93961be00&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x75c1a96480e0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1882,7 +1903,7 @@ Guessing   is the python file where main is
 
 wikidata-actormovie-1980-1980
 wikidata-actormovie-1981-1981
-27.540895223617554
+14.003761291503906
 year: 1980 vertices: 3992 edge: 18643
 
 Check Your Visualization at the following link:
@@ -1891,7 +1912,7 @@ http://assignments.bridgesuncc.org/assignments/230/bridges_testing
 
 
 Kevin Bacon is Q3454165
-bfs in  0.07020378112792969
+bfs in  0.055147647857666016
 wikidata-actormovie-2019-2019
 
 Check Your Visualization at the following link:
@@ -1902,7 +1923,7 @@ http://assignments.bridgesuncc.org/assignments/230/bridges_testing
 wikidata-actormovie-1979-1979
 wikidata-actormovie-1980-1980
 wikidata-actormovie-1981-1981
-20.869242668151855
+7.417137384414673
 year: 1979 vertices: 5410 edge: 33595
 
 Check Your Visualization at the following link:
@@ -1911,7 +1932,7 @@ http://assignments.bridgesuncc.org/assignments/230/bridges_testing
 
 
 Kevin Bacon is Q3454165
-bfs in  0.1024024486541748
+bfs in  0.10024046897888184
 wikidata-actormovie-2019-2019
 
 Check Your Visualization at the following link:
@@ -1939,7 +1960,7 @@ Guessing   is the python file where main is
 
 wikidata-actormovie-1974-1974
 wikidata-actormovie-1975-1975
-data get:  11.337083339691162
+data get:  12.221797704696655
 year: 1974 vertices: 3619 edge: 26467
 
 Check Your Visualization at the following link:
@@ -1950,7 +1971,7 @@ http://assignments.bridgesuncc.org/assignments/231/bridges_testing
 wikidata-actormovie-1973-1973
 wikidata-actormovie-1974-1974
 wikidata-actormovie-1975-1975
-data get:  7.1490867137908936
+data get:  7.6208655834198
 year: 1973 vertices: 4652 edge: 41066
 
 Check Your Visualization at the following link:
@@ -1977,12 +1998,12 @@ http://assignments.bridgesuncc.org/assignments/231/bridges_testing
 
 attempting to connect to socket.io at http://games.bridgesuncc.org
 passing student credentials to server..
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7d86c2913980&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7cbca550ac90&gt;
 limiting number of frame to 10
 {&quot;visual&quot;: &quot;GameGrid&quot;, &quot;title&quot;: &quot;TicTacToe&quot;, &quot;description&quot;: &quot;Play a fun game of TicTacToe.&quot;, &quot;coord_system_type&quot;: &quot;cartesian&quot;, &quot;map_overlay&quot;: false, &quot;element_label_flag&quot;: false, &quot;link_label_flag&quot;: false, &quot;map&quot;: {}, &quot;window&quot;: [0.0, 0.0, 0.0, 0.0], &quot;encoding&quot;: &quot;rle&quot;, &quot;dimensions&quot;: [3, 3], &quot;bg&quot;: &quot;7x9&quot;, &quot;fg&quot;: &quot;20x9&quot;, &quot;symbols&quot;: &quot;0x9&quot;}
 posting assignment
 assignment received
-it took 0.13675403594970703s to post the assignment
+it took 0.14641165733337402s to post the assignment
 
 Check Your Visualization at the following link:
 
@@ -2049,7 +2070,7 @@ http://assignments.bridgesuncc.org/assignments/233/bridges_testing
 <h3 id="pythonlog34-runanswer">Run Answer for Assignment 34</h3>
 <pre><code>Guessing  GameTutorial.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x761a48a44fe0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7ce0e6844fe0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2076,7 +2097,7 @@ client disconnect disconnected
 <h3 id="pythonlog35-runanswer">Run Answer for Assignment 35</h3>
 <pre><code>Guessing  connect_four.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x79c217f91be0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7ce9d2f41be0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2103,7 +2124,7 @@ client disconnect disconnected
 <h3 id="pythonlog36-runanswer">Run Answer for Assignment 36</h3>
 <pre><code>Guessing  pong.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7e9e6d2c23c0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x769f73806930&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2321,7 +2342,7 @@ http://assignments.bridgesuncc.org/assignments/240/bridges_testing
 <h3 id="pythonlog41-runanswer">Run Answer for Assignment 41</h3>
 <pre><code>Guessing  SpaceInvaders.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x72387c82cb60&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7008e005fc20&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2476,7 +2497,7 @@ http://assignments.bridgesuncc.org/assignments/243/bridges_testing
 970
 980
 990
-6.521983623504639
+6.29273533821106
 </code></pre>
 </div>
     
@@ -2518,7 +2539,7 @@ http://assignments.bridgesuncc.org/assignments/244/bridges_testing
 <h3 id="pythonlog45-runanswer">Run Answer for Assignment 45</h3>
 <pre><code>Guessing  ExplorerRobot.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x75cb2838dc70&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x777d86cf5fd0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -2843,106 +2864,106 @@ http://assignments.bridgesuncc.org/assignments/260/bridges_testing
 <h3 id="pythonlog61-runanswer">Run Answer for Assignment 61</h3>
 <pre><code>Guessing  flight.py is the python file where main is
 
-GHB - Governor's Harbour Airport in Governor's Harbor, Bahamas
-AKI - Akiak Airport in Akiak, United States
-VAF - Valence-Chabeuil Airport in Valence, France
-RBE - Ratanakiri Airport in Ratanakiri, Cambodia
-PNS - Pensacola Regional Airport in Pensacola, United States
-VGT - North Las Vegas Airport in Las Vegas, United States
-EDD - Erldunda Airport in Erldunda, Australia
-YUT - Repulse Bay Airport in Repulse Bay, Canada
-VXC - Lichinga Airport in Lichinga, Mozambique
-ILN - Wilmington Airpark in Wilmington, United States
-HGS - Hastings Airport in Freetown, Sierra Leone
-ZNA - Nanaimo Harbour Water Airport in Nanaimo, Canada
+NZL - Chengjisihan Airport in Zhalantun, China
 BDD - Badu Island Airport in Badu Island, Australia
-RHT - Alxa Right Banner Badanjilin Airport in Alxa Right Banner, China
-PAX - Port-de-Paix Airport in Port-de-Paix, Haiti
-ORV - Robert (Bob) Curtis Memorial Airport in Noorvik, United States
-YTL - Big Trout Lake Airport in Big Trout Lake, Canada
-NAO - Nanchong Airport in Nanchong, China
-LGA - La Guardia Airport in New York, United States
-YUD - Umiujaq Airport in Umiujaq, Canada
-MQJ - Moma Airport in Honuu, Russia
-APW - Faleolo International Airport in Faleolo, Samoa
-UGN - Waukegan National Airport in Chicago, United States
-TQL - Tarko-Sale Airport in Tarko-Sale, Russia
-AIS - Arorae Island Airport in Arorae, Kiribati
-CMG - Corumbá International Airport in Corumba, Brazil
-AKN - King Salmon Airport in King Salmon, United States
-RBE - Ratanakiri Airport in Ratanakiri, Cambodia
-CRQ - Caravelas Airport in Caravelas, Brazil
-NJF - Al Najaf International Airport in Najaf, Iraq
-MYR - Myrtle Beach International Airport in Myrtle Beach, United States
-AYQ - Ayers Rock Connellan Airport in Uluru, Australia
-QHR - Harar Meda Airport in Debre Zeyit, Ethiopia
-SMR - Simón Bolívar International Airport in Santa Marta, Colombia
-TIY - Tidjikja Airport in Tidjikja, Mauritania
-UUK - Ugnu-Kuparuk Airport in Kuparuk, United States
-NCA - North Caicos Airport in North Caicos, Turks and Caicos Islands
-LBU - Labuan Airport in Labuan, Malaysia
-QPA - Padova Airport in Padova, Italy
-CGF - Cuyahoga County Airport in Richmond Heights, United States
-AJN - Ouani Airport in Anjouan, Comoros
-RDS - Rincon De Los Sauces Airport in Rincon de los Sauces, Argentina
-BGL - Baglung Airport in Baglung, Nepal
-DWH - David Wayne Hooks Memorial Airport in Houston, United States
-GUM - Antonio B. Won Pat International Airport in Agana, Guam
-KHS - Khasab Air Base in Khasab, Oman
-GUM - Antonio B. Won Pat International Airport in Agana, Guam
-JZH - Jiuzhai Huanglong Airport in Jiuzhaigou, China
-AVL - Asheville Regional Airport in Asheville, United States
-EWB - New Bedford Regional Airport in New Bedford, United States
-PBR - Puerto Barrios Airport in Puerto Barrios, Guatemala
-LCK - Rickenbacker International Airport in Columbus, United States
-CAP - Cap Haitien International Airport in Cap Haitien, Haiti
-PJG - Panjgur Airport in Panjgur, Pakistan
-LFT - Lafayette Regional Airport in Lafayette, United States
-SKN - Stokmarknes Skagen Airport in Stokmarknes, Norway
-UMU - Umuarama Airport in Umuarama, Brazil
-XCZ - Charleville-Mézières Airport in Charleville, France
-SRG - Achmad Yani Airport in Semarang, Indonesia
-EIB - Eisenach-Kindel Airport in Eisenach, Germany
-MEU - Monte Dourado Airport in Almeirim, Brazil
-GIZ - Jizan Regional Airport in Gizan, Saudi Arabia
-PEN - Penang International Airport in Penang, Malaysia
-SJU - Luis Munoz Marin International Airport in San Juan, Puerto Rico
-MJI - Mitiga Airport in Tripoli, Libya
-MNF - Mana Island Airport in Mana Island, Fiji
-BNP - Bannu Airport in Bannu, Pakistan
-REG - Reggio Calabria Airport in Reggio Calabria, Italy
-AYT - Antalya International Airport in Antalya, Turkey
-YGV - Havre St Pierre Airport in Havre-Saint-Pierre, Canada
-MXZ - Meixian Airport in Meixian, China
-XSC - South Caicos Airport in South Caicos, Turks and Caicos Islands
-WRO - Copernicus Wrocław Airport in Wroclaw, Poland
-VIL - Dakhla Airport in Dakhla, Western Sahara
-RNO - Reno Tahoe International Airport in Reno, United States
-SJL - São Gabriel da Cachoeira Airport in Sao Gabriel, Brazil
-HHE - Hachinohe Airport in Hachinoe, Japan
-WAG - Wanganui Airport in Wanganui, New Zealand
-LGI - Deadman's Cay Airport in Dead Man's Cay, Bahamas
-LAL - Lakeland Linder International Airport in Lakeland, United States
-CDU - Camden Airport in Camden, Australia
-MEU - Monte Dourado Airport in Almeirim, Brazil
-MSQ - Minsk National Airport in Minsk 2, Belarus
-YHP - Poplar Hill Airport in Poplar Hill, Canada
+FMM - Memmingen Allgau Airport in Memmingen, Germany
+MOQ - Morondava Airport in Morondava, Madagascar
+GWT - Westerland Sylt Airport in Westerland, Germany
+PSP - Palm Springs International Airport in Palm Springs, United States
+WNA - Napakiak Airport in Napakiak, United States
+YLH - Lansdowne House Airport in Lansdowne House, Canada
 FNT - Bishop International Airport in Flint, United States
-BOJ - Burgas Airport in Bourgas, Bulgaria
-MSJ - Misawa Air Base in Misawa, Japan
-DKI - Dunk Island Airport in Dunk Island, Australia
-TBU - Fua'amotu International Airport in Tongatapu, Tonga
-CZL - Mohamed Boudiaf International Airport in Constantine, Algeria
-WJU - Wonju/Hoengseong Air Base (K-38/K-46) in Wonju, South Korea
-GXQ - Teniente Vidal Airport in Coyhaique, Chile
-TOG - Togiak Airport in Togiak Village, United States
-CPX - Benjamin Rivera Noriega Airport in Culebra Island, Puerto Rico
-ILA - Illaga Airport in Illaga, Indonesia
-LCJ - Łódź Władysław Reymont Airport in Lodz, Poland
-RCH - Almirante Padilla Airport in Rio Hacha, Colombia
-NOV - Nova Lisboa Airport in Huambo, Angola
-UIO - Mariscal Sucre International Airport in Quito, Ecuador
-TMN - Tamana Island Airport in Tamana, Kiribati
+JPA - Presidente Castro Pinto International Airport in Joao Pessoa, Brazil
+SZF - Samsun Çarşamba Airport in Samsun, Turkey
+YQC - Quaqtaq Airport in Quaqtaq, Canada
+RAB - Tokua Airport in Tokua, Papua New Guinea
+SVU - Savusavu Airport in Savusavu, Fiji
+PNV - Panevėžys Air Base in Panevezys, Lithuania
+TUL - Tulsa International Airport in Tulsa, United States
+JSU - Maniitsoq Airport in Maniitsoq, Greenland
+UAQ - Domingo Faustino Sarmiento Airport in San Juan, Argentina
+PAE - Snohomish County (Paine Field) Airport in Everett, United States
+XMW - Montauban Airport in Montauban, France
+NNX - Nunukan Airport in Nunukan-Nunukan Island, Indonesia
+GOT - Gothenburg-Landvetter Airport in Gothenborg, Sweden
+ISP - Long Island Mac Arthur Airport in Islip, United States
+MUB - Maun Airport in Maun, Botswana
+XTL - Tadoule Lake Airport in Tadoule Lake, Canada
+JFR - Paamiut Heliport in Paamiut, Greenland
+XMW - Montauban Airport in Montauban, France
+BCU - Sir Abubakar Tafawa Balewa International Airport in Bauchi, Nigeria
+BDM - Bandırma Airport in Bandirma, Turkey
+ZSW - Prince Rupert/Seal Cove Seaplane Base in Prince Rupert, Canada
+CEJ - Chernihiv Shestovitsa Airport in Chernigov, Ukraine
+GVN - Maygatka Airport. in Sovetskaya Gavan, Russia
+RZP - Cesar Lim Rodriguez Airport in Taytay, Philippines
+SAW - Sabiha Gökçen International Airport in Istanbul, Turkey
+LEX - Blue Grass Airport in Lexington KY, United States
+MSZ - Namibe Airport in Mocamedes, Angola
+OZP - Moron Air Base in Sevilla, Spain
+MLC - Mc Alester Regional Airport in Mcalester, United States
+IVA - Ampampamena Airport in Ampampamena, Madagascar
+BDB - Bundaberg Airport in Bundaberg, Australia
+PHY - Phetchabun Airport in Phetchabun, Thailand
+LEL - Lake Evella Airport in Lake Evella, Australia
+CYB - Gerrard Smith International Airport in Cayman Brac, Cayman Islands
+TAF - Tafaraoui Airport in Oran, Algeria
+PLL - Ponta Pelada Airport in Manaus, Brazil
+NAU - Napuka Island Airport in Napuka, French Polynesia
+NIM - Diori Hamani International Airport in Niamey, Niger
+CTH - Chester County G O Carlson Airport in Coatesville, United States
+LBB - Lubbock Preston Smith International Airport in Lubbock, United States
+KBQ - Kasungu Airport in Kasungu, Malawi
+DCM - Castres-Mazamet Airport in Castres, France
+KCT - Koggala Airport in Koggala, Sri Lanka
+UDD - Bermuda Dunes Airport in Palm Springs, United States
+SNV - Santa Elena de Uairen Airport in Santa Ana De Uairen, Venezuela
+JGA - Jamnagar Airport in Jamnagar, India
+INH - Inhambane Airport in Inhambane, Mozambique
+BNE - Brisbane International Airport in Brisbane, Australia
+EKN - Elkins-Randolph Co-Jennings Randolph Field in Elkins, United States
+DAU - Daru Airport in Daru, Papua New Guinea
+STD - Mayor Buenaventura Vivas International Airport in Santo Domingo, Venezuela
+YQB - Quebec Jean Lesage International Airport in Quebec, Canada
+BDD - Badu Island Airport in Badu Island, Australia
+GHT - Ghat Airport in Ghat, Libya
+GPB - Tancredo Thomas de Faria Airport in Guarapuava, Brazil
+ODB - Córdoba Airport in Cordoba, Spain
+SUX - Sioux Gateway Col. Bud Day Field in Sioux City, United States
+KLG - Kalskag Airport in Kalskag, United States
+SLE - Salem Municipal Airport/McNary Field in Salem, United States
+RYK - Shaikh Zaid Airport in Rahim Yar Khan, Pakistan
+MQH - Minaçu Airport in Minacu, Brazil
+GRM - Grand Marais Cook County Airport in Grand Marais, United States
+AGU - Jesús Terán Paredo International Airport in Aguascalientes, Mexico
+HIO - Portland Hillsboro Airport in Hillsboro, United States
+WTA - Tambohorano Airport in Tambohorano, Madagascar
+UPB - Playa Baracoa Airport in Baracoa Playa, Cuba
+TBT - Tabatinga Airport in Tabatinga, Brazil
+OLC - Senadora Eunice Micheles Airport in Sao Paulo de Olivenca, Brazil
+ELC - Elcho Island Airport in Elcho Island, Australia
+NQT - Nottingham Airport in Nottingham, United Kingdom
+DOB - Rar Gwamar Airport in Dobo, Indonesia
+DBN - W H 'Bud' Barron Airport in Dublin, United States
+ZSA - San Salvador Airport in Cockburn Town, Bahamas
+DED - Dehradun Airport in Dehra Dun, India
+TGG - Sultan Mahmud Airport in Kuala Terengganu, Malaysia
+SJK - Professor Urbano Ernesto Stumpf Airport in Sao Jose Dos Campos, Brazil
+GIG - Rio Galeão – Tom Jobim International Airport in Rio De Janeiro, Brazil
+LQM - Caucaya Airport in Puerto Leguízamo, Colombia
+HSM - Horsham Airport in Horsham, Australia
+LUF - Luke Air Force Base in Phoenix, United States
+TSA - Taipei Songshan Airport in Taipei, Taiwan
+VNE - Vannes-Meucon Airport in Vannes, France
+BYU - Bayreuth Airport in Bayreuth, Germany
+XJD - Al Udeid Air Base in Doha, Qatar
+HMA - Khanty Mansiysk Airport in Khanty-Mansiysk, Russia
+CYW - Captain Rogelio Castillo National Airport in Celaya, Mexico
+RNE - Roanne-Renaison Airport in Roanne, France
+LJG - Lijiang Airport in Lijiang, China
+BRD - Brainerd Lakes Regional Airport in Brainerd, United States
+VAI - Vanimo Airport in Vanimo, Papua New Guinea
+YYZ - Lester B. Pearson International Airport in Toronto, Canada
 
 Check Your Visualization at the following link:
 
@@ -3133,7 +3154,7 @@ http://assignments.bridgesuncc.org/assignments/266/bridges_testing
 <h3 id="pythonlog67-runanswer">Run Answer for Assignment 67</h3>
 <pre><code>Guessing  ControlsTutorialThree.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7c25e4d0dbb0&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x72cbcc1c3ec0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -3183,7 +3204,7 @@ http://assignments.bridgesuncc.org/assignments/268/bridges_testing
 <h3 id="pythonlog69-runanswer">Run Answer for Assignment 69</h3>
 <pre><code>Guessing  Snake.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7360d5055520&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7a84a3cb5d60&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -3210,7 +3231,7 @@ client disconnect disconnected
 <h3 id="pythonlog70-runanswer">Run Answer for Assignment 70</h3>
 <pre><code>Guessing  Wordle.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7cf820716f60&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x750f2920b260&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -3237,7 +3258,7 @@ client disconnect disconnected
 <h3 id="pythonlog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing  Pi_Estimation.py is the python file where main is
 
-Pi val: 3.14452
+Pi val: 3.14316
 RLE ran
 
 Check Your Visualization at the following link:
@@ -3262,7 +3283,7 @@ http://assignments.bridgesuncc.org/assignments/271/bridges_testing
 <h3 id="pythonlog72-runanswer">Run Answer for Assignment 72</h3>
 <pre><code>Guessing  pixel.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x764bea99e930&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7e55b99ecaa0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -3404,7 +3425,7 @@ Guessing   is the python file where main is
 <h3 id="pythonlog77-runanswer">Run Answer for Assignment 77</h3>
 <pre><code>Guessing  Upgradegame.py is the python file where main is
 
-Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7414685c9d30&gt;
+Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7e0a89f024e0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:

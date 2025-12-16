@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Dec 16 09:38:56 AM EST 2025</p>
+	<p>Running at Tue Dec 16 01:38:34 PM EST 2025</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -242,13 +242,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary23" class="success">
+  <div id="summary23" class="failure">
     <h2><a href="java_logs.html#javalog23">Assignment 23</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog23-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog23-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog23-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog23-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -1584,16 +1584,37 @@ Shutting down ...
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/23-MountainPaths/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog23-runanswer">Run Answer for Assignment 23</h3>
 <pre><code>Guessing mount_path.java is the right java file where main is
 
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/23/bridges_testing
-
-
+There was a problem sending the visualization representation to the server. 
+assignments.bridgesuncc.org: Temporary failure in name resolution
+Exception in thread &quot;main&quot; java.net.UnknownHostException: assignments.bridgesuncc.org: Temporary failure in name resolution
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:934)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1543)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1533)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1385)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1306)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:314)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:357)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:218)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:194)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:215)
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:487)
+	at bridges.connect.Connector.post(Connector.java:604)
+	at bridges.connect.Bridges.visualize(Bridges.java:599)
+	at mount_path.main(mount_path.java:42)
+could not run java_answer for assignment in ../assignmentdb/23-MountainPaths/java_answer
 </code></pre>
 </div>
     
@@ -1985,7 +2006,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.76413092635112E12
+Data Access Took: 1.764145302498437E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2009,15 +2030,13 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Took: 1.764131099058292E12
+Took: 1.764145443940316E12
 
 Check Your Visualization at the following link:
 
 http://assignments.bridgesuncc.org/assignments/31/bridges_testing
 
 
-Q61552
-Q102813
 Q126606
 Q133925
 Q214245
@@ -2026,14 +2045,15 @@ Q712968
 Q961187
 Q3072931
 Q3265830
-Took: 1.764131108806826E12
+Q6220867
+Q6387896
+Took: 1.76414545324232E12
 
 Check Your Visualization at the following link:
 
 http://assignments.bridgesuncc.org/assignments/31/bridges_testing
 
 
-Q41142
 Q55468
 Q60306
 Q157191
@@ -2043,6 +2063,7 @@ Q443823
 Q446064
 Q539828
 Q722337
+Q1096611
 </code></pre>
 </div>
     
@@ -2463,23 +2484,23 @@ total vertices:22725
 Set size: 22725
 Grid
 ===grid stats===
-0)Source Point:-19.011143723019224,-67.71791895704136
-0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:121.44921364662616
-0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:121.44921364662616
+0)Source Point:-51.67250125683684,-48.7941399823472
+0)[ALG]Closest Point: -73.9157579,40.6132625
+0)[ALG]Min Dist:92.1327633620855
+0)[BFA]Closest Point: -73.9157579,40.6132625
+0)[BFA]Min Dist:92.1327633620855
 0)Difference:0.0
-Source Point:-66.16582387580475,40.73179961495643
-Source Point:-6.221340449990294,40.62509172385165
-Source Point:-61.57835044555932,40.617656502570014
-Source Point:-12.44460197695419,40.80363237742352
-Source Point:-16.312362114591487,40.73788693694378
-Source Point:-49.88191156951693,40.811423662879776
-Source Point:-24.01712641069703,40.773138084046984
-Source Point:-14.398592960939766,40.67601832168386
-Source Point:-50.39703703713058,40.75284349205236
-Source Point:-24.923807810722387,40.74396859650937
-num cells examined:11
+Source Point:-12.40148571872659,40.707608935680554
+Source Point:-34.108515525112445,40.618187090914944
+Source Point:-31.250849025741395,40.79491662822719
+Source Point:-67.37184397756681,40.67984555043481
+Source Point:-36.91809235093997,40.68087199990518
+Source Point:-73.74720010416708,40.78941413851703
+Source Point:-37.38697983481109,40.65666568676182
+Source Point:-26.672975896919596,40.71252221218887
+Source Point:-44.21482956081243,40.7403312296184
+Source Point:-11.484103940336361,40.80708368028217
+num cells examined:3
 
 Check Your Visualization at the following link:
 
@@ -3260,7 +3281,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.14228
+Pi val: 3.139
 
 Check Your Visualization at the following link:
 

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Wed Dec 17 05:06:36 AM EST 2025</p>
+	<p>Running at Wed Dec 17 09:06:35 AM EST 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.8
-	Date:Dec 17 2025  04:37:38.483 EST
-	Location: 37 km NNE of Paxson, Alaska
-	Lat/Long:63.413,-145.392
+	Magnitude:2.51
+	Date:Dec 17 2025  09:00:10.884 EST
+	Location: 4 km S of Dibble, Oklahoma
+	Lat/Long:34.9951973,-97.63464355
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.8
-	Date:Dec 17 2025  04:37:38.483 EST
-	Location: 37 km NNE of Paxson, Alaska
-	Lat/Long:63.413,-145.392
+	Magnitude:2.51
+	Date:Dec 17 2025  09:00:10.884 EST
+	Location: 4 km S of Dibble, Oklahoma
+	Lat/Long:34.9951973,-97.63464355
 Earthquake 0:
-	Magnitude:1.13
-	Date:Dec 30 2024  06:33:04.270 EST
-	Location: 9 km NW of The Geysers, CA
-	Lat/Long:38.824333190918,-122.843170166016
+	Magnitude:2.37
+	Date:Dec 30 2024  10:55:59.600 EST
+	Location: 1 km NW of Pāhala, Hawaii
+	Lat/Long:19.2121658325195,-155.485504150391
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Dreamkiller
-PC
-4.2
-[Shooter]
+<pre><code>Fable III
+Xbox 360
+8.5
+[RPG]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Cary_Grant
-Penny_Serenade_(1941)
+<pre><code>Paul_Reubens
+Dream_On_(1981)
 </code></pre>
 </div>
     
@@ -2376,11 +2376,11 @@ Text: &quot;We strive to be good water stewards in communities where we have dat
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 54
+<pre><code>Sonnet 130
 poem
-O how much more doth beauty beauteous seem,
- By that sweet ornament which truth doth give!
- The rose...
+My mistress' eyes are nothing like the sun,
+ Coral is far more red, than her lips red,
+ If snow be w...
 </code></pre>
 </div>
     
@@ -3444,18 +3444,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 0
+<pre><code>Data Records in 1955: 5230
 
-Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-	at java.base/java.util.Objects.checkIndex(Objects.java:361)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:37)
-could not run test wikidata_actor_snippet.java
+Actor-Movie Data:
+	Movie: Q34414 &quot;Rear Window&quot;
+	Actor: Q3925 &quot;Grace Kelly&quot;
+
+Actor-Movie Data:
+	Movie: Q34414 &quot;Rear Window&quot;
+	Actor: Q7374 &quot;Alfred Hitchcock&quot;
+
+Actor-Movie Data:
+	Movie: Q34414 &quot;Rear Window&quot;
+	Actor: Q102462 &quot;James Stewart&quot;
+
 </code></pre>
 </div>
     

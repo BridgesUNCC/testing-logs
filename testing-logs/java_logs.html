@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sun Dec 21 09:38:39 PM EST 2025</p>
+	<p>Running at Mon Dec 22 01:39:09 AM EST 2025</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -328,7 +328,7 @@ background-color: springgreen;
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog31-buildscaffold">error</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog31-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog31-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog31-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -1985,7 +1985,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.764605639701981E12
+Data Access Took: 1.764620047313961E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2005,44 +2005,15 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Took: 1.764605768458184E12
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/31/bridges_testing
-
-
-Q712968
-Q961187
-Q3072931
-Q3265830
-Q6220867
-Q6387896
-Q6491198
-Q15441011
-Q61552
-Q102813
-Took: 1.764605777047731E12
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/31/bridges_testing
-
-
-Q61552
-Q102813
-Q126606
-Q133925
-Q214245
-Q377450
-Q712968
-Q961187
-Q3072931
-Q3265830
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:68)
+could not run java_answer for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
     
@@ -2463,23 +2434,23 @@ total vertices:22725
 Set size: 22725
 Grid
 ===grid stats===
-0)Source Point:-40.79600882323857,-60.421923682815354
+0)Source Point:-21.165329090704,-73.93468813139145
 0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:106.32489947421384
+0)[ALG]Min Dist:126.10960436036999
 0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:106.32489947421384
+0)[BFA]Min Dist:126.10960436036999
 0)Difference:0.0
-Source Point:-20.437010543969485,40.642907893070564
-Source Point:-49.5128880738203,40.70182126892871
-Source Point:-11.013542053580721,40.69458747833803
-Source Point:-61.555789392818916,40.71304816791057
-Source Point:-62.22049290912794,40.77653843311897
-Source Point:-62.38086877520327,40.710320314004825
-Source Point:-54.938609305424905,40.77639307249954
-Source Point:-67.62693666839706,40.6919384261412
-Source Point:-20.91027813282998,40.799229676759055
-Source Point:-54.71044239059279,40.76203127131766
-num cells examined:11
+Source Point:-16.38848803247965,40.672571046231766
+Source Point:-71.44699915477487,40.625122664387
+Source Point:-46.00447740885578,40.691683376146024
+Source Point:-10.77330581916705,40.755103275915154
+Source Point:-48.788148700540006,40.76969888520958
+Source Point:-45.70588665610312,40.79100227161591
+Source Point:-33.194543509826275,40.756461292072444
+Source Point:-7.952554414362666,40.641349708783814
+Source Point:-47.866508312916494,40.666799330931745
+Source Point:-38.48039889825293,40.80099626570288
+num cells examined:3
 
 Check Your Visualization at the following link:
 
@@ -3260,7 +3231,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.14804
+Pi val: 3.138
 
 Check Your Visualization at the following link:
 

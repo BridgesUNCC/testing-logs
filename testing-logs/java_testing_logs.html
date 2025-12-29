@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Dec 29 01:06:56 PM EST 2025</p>
+	<p>Running at Mon Dec 29 05:06:31 PM EST 2025</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.3
-	Date:Dec 29 2025  12:59:00.673 EST
-	Location: 18 km ESE of Nenana, Alaska
-	Lat/Long:64.505,-148.726
+	Magnitude:1.62
+	Date:Dec 29 2025  16:42:22.840 EST
+	Location: 5 km ESE of San Ramon, CA
+	Lat/Long:37.7568321228027,-121.931999206543
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.3
-	Date:Dec 29 2025  12:59:00.673 EST
-	Location: 18 km ESE of Nenana, Alaska
-	Lat/Long:64.505,-148.726
+	Magnitude:1.62
+	Date:Dec 29 2025  16:42:22.840 EST
+	Location: 5 km ESE of San Ramon, CA
+	Lat/Long:37.7568321228027,-121.931999206543
 Earthquake 0:
-	Magnitude:4.4
-	Date:Jan 12 2025  13:06:51.166 EST
-	Location: 73 km ESE of Monte Patria, Chile
-	Lat/Long:-31.0103,-70.2787
+	Magnitude:0.95
+	Date:Jan 12 2025  17:31:18.750 EST
+	Location: 1 km NNW of The Geysers, CA
+	Lat/Long:38.7864990234375,-122.766998291016
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Tropico 2: Pirate Cove 
-PC
-8.4
-[Simulation]
+<pre><code>Medabots AX: Metabee Version
+Game Boy Advance
+6.0
+[Action]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Charisma_Carpenter
-Buffy_the_Vampire_Slayer_(2002)
+<pre><code>Cate_Blanchett
+Charlotte_Gray_(2001)
 </code></pre>
 </div>
     
@@ -2374,11 +2374,18 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 44
-poem
-If the dull substance of my flesh were thought,
- Injurious distance should not stop my way,
- For the...
+<pre><code>The Taming Of The Shrew
+play
+1594
+
+THE TAMING OF THE SHREW
+
+by William Shakespeare
+
+Dramatis Personae
+
+ Persons in the Induction
+...
 </code></pre>
 </div>
     
@@ -3442,22 +3449,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5230
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q102462 &quot;James Stewart&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Fri Jan  2 01:06:39 PM EST 2026</p>
+	<p>Running at Fri Jan  2 05:06:28 PM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.84
-	Date:Jan 02 2026  12:33:35.260 EST
-	Location: 4 km ESE of San Ramon, CA
-	Lat/Long:37.7641677856445,-121.932662963867
+	Magnitude:5.5
+	Date:Jan 02 2026  16:48:26.553 EST
+	Location: 58 km NE of Sainte-Marie, Martinique
+	Lat/Long:15.0838,-60.5466
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.84
-	Date:Jan 02 2026  12:33:35.260 EST
-	Location: 4 km ESE of San Ramon, CA
-	Lat/Long:37.7641677856445,-121.932662963867
+	Magnitude:5.5
+	Date:Jan 02 2026  16:48:26.553 EST
+	Location: 58 km NE of Sainte-Marie, Martinique
+	Lat/Long:15.0838,-60.5466
 Earthquake 0:
-	Magnitude:1.9
-	Date:Jan 16 2025  08:17:13.585 EST
-	Location: 7 km SE of Funny River, Alaska
-	Lat/Long:60.4585,-150.6623
+	Magnitude:2.6
+	Date:Jan 16 2025  12:06:05.640 EST
+	Location: 20 km NW of Alder Springs, CA
+	Lat/Long:39.7561683654785,-122.921501159668
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Final Fantasy IV: The After Years
-Wii
-8.0
-[RPG]
+<pre><code>RTX Red Rock
+PlayStation 2
+5.6
+[Action, Adventure]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christopher_Lee_(I)
-Actor's_Notebook:_Christopher_Lee_(2002)
+<pre><code>Morgan_Freeman_(I)
+Death_of_a_Prophet_(1981)
 </code></pre>
 </div>
     
@@ -2374,11 +2374,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 94
+<pre><code>Sonnet 79
 poem
-They that have power to hurt, and will do none,
- That do not do the thing, they most do show,
- Who m...
+Whilst I alone did call upon thy aid,
+ My verse alone had all thy gentle grace,
+ But now my gracious...
 </code></pre>
 </div>
     
@@ -3442,13 +3442,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5230
+
+Actor-Movie Data:
+	Movie: Q427534 &quot;The Court-Martial of Billy Mitchell&quot;
+	Actor: Q93957 &quot;Gary Cooper&quot;
+
+Actor-Movie Data:
+	Movie: Q427534 &quot;The Court-Martial of Billy Mitchell&quot;
+	Actor: Q156532 &quot;Peter Graves&quot;
+
+Actor-Movie Data:
+	Movie: Q427534 &quot;The Court-Martial of Billy Mitchell&quot;
+	Actor: Q93957 &quot;Gary Cooper&quot;
+
 </code></pre>
 </div>
     

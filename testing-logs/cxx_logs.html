@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for C++</h1>
-	<p>Running at Sun Jan  4 05:18:30 AM EST 2026</p>
+	<p>Running at Sun Jan  4 09:18:46 AM EST 2026</p>
   <div id="summary0" class="success">
     <h2><a href="cxx_logs.html#cxxlog0">Assignment 0</a> </h2>
     <p>
@@ -82,23 +82,23 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary7" class="success">
+  <div id="summary7" class="failure">
     <h2><a href="cxx_logs.html#cxxlog7">Assignment 7</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="cxx_logs.html#cxxlog7-buildscaffold">success</a></li>
         <li> Build Answer : <a href="cxx_logs.html#cxxlog7-buildanswer">success</a></li>
-        <li> Run Answer : <a href="cxx_logs.html#cxxlog7-runanswer">success</a></li>
+        <li> Run Answer : <a href="cxx_logs.html#cxxlog7-runanswer">error</a></li>
       </ul>
     </p>
   </div>
-  <div id="summary8" class="success">
+  <div id="summary8" class="failure">
     <h2><a href="cxx_logs.html#cxxlog8">Assignment 8</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="cxx_logs.html#cxxlog8-buildscaffold">success</a></li>
         <li> Build Answer : <a href="cxx_logs.html#cxxlog8-buildanswer">success</a></li>
-        <li> Run Answer : <a href="cxx_logs.html#cxxlog8-runanswer">success</a></li>
+        <li> Run Answer : <a href="cxx_logs.html#cxxlog8-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -318,7 +318,7 @@ background-color: springgreen;
       <ul>
         <li> Build Scaffold : <a href="cxx_logs.html#cxxlog30-buildscaffold">error</a></li>
         <li> Build Answer : <a href="cxx_logs.html#cxxlog30-buildanswer">success</a></li>
-        <li> Run Answer : <a href="cxx_logs.html#cxxlog30-runanswer">error</a></li>
+        <li> Run Answer : <a href="cxx_logs.html#cxxlog30-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -328,7 +328,7 @@ background-color: springgreen;
       <ul>
         <li> Build Scaffold : <a href="cxx_logs.html#cxxlog31-buildscaffold">error</a></li>
         <li> Build Answer : <a href="cxx_logs.html#cxxlog31-buildanswer">success</a></li>
-        <li> Run Answer : <a href="cxx_logs.html#cxxlog31-runanswer">success</a></li>
+        <li> Run Answer : <a href="cxx_logs.html#cxxlog31-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -1183,15 +1183,59 @@ g++ -g  -std=c++14 -I /home/bridges-testing/bridges-cxx-install/include/ -c Grid
 g++ -o GridLyrics GridLyrics.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="cxxlog7-runanswer">Run Answer for Assignment 7</h3>
 <pre><code>Guessing ./GridLyrics is the right binary file where main is
 
-Success: Assignment posted to the server. 
-Check out your visualization at:
+terminate called after throwing an instance of 'bridges::HTTPException'
+  what():  HTTPException raised when hitting http://static-data.bridgesuncc.org/api/songs/find/Harder%20Faster%20Better%20Stronger?artistName=Daft%20Punk
+HTTP code: 503
+HTTP/1.1 503 Service Unavailable
+Date: Sun, 04 Jan 2026 14:20:21 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: no-cache, no-store
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=4GcAfw1pY4gPhz0vP4N6oHt3ZMlED5AdpeukmCAnK1s%3D\u0026sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6\u0026ts=1767536417&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=4GcAfw1pY4gPhz0vP4N6oHt3ZMlED5AdpeukmCAnK1s%3D&amp;sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6&amp;ts=1767536417&quot;
+Server: cloudflare
+Via: 1.1 heroku-router
+cf-cache-status: DYNAMIC
+CF-RAY: 9b8b60320bfec974-IAD
+alt-svc: h3=&quot;:443&quot;; ma=86400
 
-http://assignments.bridgesuncc.org/assignments/107/bridges_testing
 
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Application Error&lt;/title&gt;
+    &lt;style media=&quot;screen&quot;&gt;
+      html,body,iframe {
+        margin: 0;
+        padding: 0;
+      }
+
+      html,body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;https://www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+Aborted
+could not run c++_answer for assignment in ../assignmentdb/7-GridLyrics/c++_answer
 </code></pre>
 </div>
     
@@ -1221,235 +1265,59 @@ g++ -g  -std=c++14 -I /home/bridges-testing/bridges-cxx-install/include/ -c PQBo
 g++ -o PQBook PQBook.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="cxxlog8-runanswer">Run Answer for Assignment 8</h3>
 <pre><code>Guessing ./PQBook is the right binary file where main is
 
-parts 1
-receiv'st 2
-receiv'st 2
-sadly 1
-thou 4
-confounds 1
-pleasure 1
-with 2
-thou 4
-thou 3
-with 2
-thou 2
-single 1
-mother 1
-joy 2
-joy 2
-this 1
-of 1
-else 1
-not 2
-not 2
-many 1
-singleness 1
-married 1
-true 1
-annoy 1
-why 1
-Sings 1
-war 1
-music 1
-to 3
-to 3
-to 2
-but 1
-ear 1
-thine 2
-well-tuned 1
-thine 2
-sweet 1
-sweetly 1
-Music 1
-Resembling 1
-one 4
-speechless 1
-one 4
-one 3
-string 1
-one 2
-'Thou 1
-do 3
-child 1
-ordering 1
-do 3
-do 2
-If 1
-gladly 1
-which 1
-none 1
-and 2
-and 2
-husband 1
-sweets 1
-Whose 1
-in 3
-in 3
-Or 1
-Why 1
-in 2
-sing 1
-sounds 1
-being 1
-each 2
-each 2
-bear 1
-They 1
-pleasing 1
-mutual 1
-another 1
-song 1
-note 1
-lov'st 1
-wilt 1
-sire 1
-happy 1
-by 1
-Mark 1
-In 1
-who 1
-concord 1
-shouldst 1
-that 2
-chide 1
-that 2
-all 1
-By 1
-hear 1
-the 2
-the 2
-unions 1
-hear'st 1
-thee 2
-seeming 1
-Who 1
-Strikes 1
-thee 2
-delights 1
-Sweets 1
-prove 1
-how 1
-offend 1
-Success: Assignment posted to the server. 
-Check out your visualization at:
+terminate called after throwing an instance of 'bridges::HTTPException'
+  what():  HTTPException raised when hitting http://static-data.bridgesuncc.org/api/shakespeare//poems
+HTTP code: 503
+HTTP/1.1 503 Service Unavailable
+Date: Sun, 04 Jan 2026 14:20:35 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Cache-Control: no-cache, no-store
+Nel: {&quot;report_to&quot;:&quot;heroku-nel&quot;,&quot;response_headers&quot;:[&quot;Via&quot;],&quot;max_age&quot;:3600,&quot;success_fraction&quot;:0.01,&quot;failure_fraction&quot;:0.1}
+Report-To: {&quot;group&quot;:&quot;heroku-nel&quot;,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://nel.heroku.com/reports?s=hUh%2Bd3ra9fYZDzPIaPsgaWR9drs4RMF%2FBw7qhq7npLY%3D\u0026sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6\u0026ts=1767536431&quot;}],&quot;max_age&quot;:3600}
+Reporting-Endpoints: heroku-nel=&quot;https://nel.heroku.com/reports?s=hUh%2Bd3ra9fYZDzPIaPsgaWR9drs4RMF%2FBw7qhq7npLY%3D&amp;sid=929419e7-33ea-4e2f-85f0-7d8b7cd5cbd6&amp;ts=1767536431&quot;
+Server: cloudflare
+Via: 1.1 heroku-router
+cf-cache-status: DYNAMIC
+CF-RAY: 9b8b60864b2ce5bc-IAD
+alt-svc: h3=&quot;:443&quot;; ma=86400
 
-http://assignments.bridgesuncc.org/assignments/108/bridges_testing
 
-Success: Assignment posted to the server. 
-Check out your visualization at:
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Application Error&lt;/title&gt;
+    &lt;style media=&quot;screen&quot;&gt;
+      html,body,iframe {
+        margin: 0;
+        padding: 0;
+      }
 
-http://assignments.bridgesuncc.org/assignments/108/bridges_testing
+      html,body {
+        height: 100%;
+        overflow: hidden;
+      }
 
-1 parts
-1 sadly
-1 married
-1 sweetly
-1 note
-1 hear
-1 gladly
-1 Strikes
-1 who
-1 Sings
-1 ordering
-1 hear'st
-1 happy
-1 speechless
-1 pleasing
-1 prove
-1 chide
-1 confounds
-1 of
-1 but
-1 Or
-1 wilt
-1 annoy
-1 Resembling
-1 bear
-1 delights
-1 none
-1 shouldst
-1 mother
-1 many
-1 sounds
-1 seeming
-1 Mark
-1 music
-1 another
-1 offend
-1 sweets
-1 all
-1 pleasure
-1 single
-1 this
-1 'Thou
-1 lov'st
-1 true
-1 Music
-1 which
-1 concord
-1 war
-1 well-tuned
-1 sing
-1 by
-1 husband
-1 mutual
-1 how
-1 else
-1 why
-1 ear
-1 Why
-1 unions
-1 child
-1 sire
-1 They
-1 Sweets
-1 singleness
-1 sweet
-1 being
-1 Who
-1 If
-1 In
-1 string
-1 song
-1 Whose
-1 By
-2 one
-2 joy
-2 each
-2 with
-2 receiv'st
-2 in
-2 thine
-2 not
-2 thou
-2 and
-2 the
-2 thine
-2 do
-2 the
-2 to
-2 each
-2 thee
-2 thee
-2 not
-2 that
-2 receiv'st
-2 with
-2 and
-2 that
-2 joy
-3 in
-3 to
-Success: Assignment posted to the server. 
-Check out your visualization at:
-
-http://assignments.bridgesuncc.org/assignments/108/bridges_testing
-
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;https://www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+Aborted
+could not run c++_answer for assignment in ../assignmentdb/8-PQBook/c++_answer
 </code></pre>
 </div>
     
@@ -1579,15 +1447,15 @@ g++ -o 2048 2048.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread
 <h3 id="cxxlog11-runanswer">Run Answer for Assignment 11</h3>
 <pre><code>Guessing ./2048 is the right binary file where main is
 
-[2026-01-04 05:20:36] [connect] Successful connection
-[2026-01-04 05:20:36] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522036 101
+[2026-01-04 09:21:08] [connect] Successful connection
+[2026-01-04 09:21:08] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536468 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/111/bridges_testing
 
-[2026-01-04 05:20:36] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:21:08] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1621,15 +1489,15 @@ g++ -o AStarMaze pathfinder.o -g -L /home/bridges-testing/bridges-cxx-install/li
 <h3 id="cxxlog12-runanswer">Run Answer for Assignment 12</h3>
 <pre><code>Guessing ./AStarMaze is the right binary file where main is
 
-[2026-01-04 05:20:46] [connect] Successful connection
-[2026-01-04 05:20:46] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522046 101
+[2026-01-04 09:21:20] [connect] Successful connection
+[2026-01-04 09:21:20] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536480 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/112/bridges_testing
 
-[2026-01-04 05:20:47] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:21:20] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1663,15 +1531,15 @@ g++ -o InfiniteRunner runner.o -g -L /home/bridges-testing/bridges-cxx-install/l
 <h3 id="cxxlog13-runanswer">Run Answer for Assignment 13</h3>
 <pre><code>Guessing ./InfiniteRunner is the right binary file where main is
 
-[2026-01-04 05:20:56] [connect] Successful connection
-[2026-01-04 05:20:56] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522056 101
+[2026-01-04 09:21:31] [connect] Successful connection
+[2026-01-04 09:21:32] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536491 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/113/bridges_testing
 
-[2026-01-04 05:20:57] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:21:32] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1705,15 +1573,15 @@ g++ -o SpreadingFire SpreadingFire.o -g -L /home/bridges-testing/bridges-cxx-ins
 <h3 id="cxxlog14-runanswer">Run Answer for Assignment 14</h3>
 <pre><code>Guessing ./SpreadingFire is the right binary file where main is
 
-[2026-01-04 05:21:07] [connect] Successful connection
-[2026-01-04 05:21:07] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522067 101
+[2026-01-04 09:21:43] [connect] Successful connection
+[2026-01-04 09:21:43] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536503 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/0/bridges_testing
 
-[2026-01-04 05:21:08] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:21:43] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1747,15 +1615,15 @@ g++ -o FallingSand FallingSand.o -g -L /home/bridges-testing/bridges-cxx-install
 <h3 id="cxxlog15-runanswer">Run Answer for Assignment 15</h3>
 <pre><code>Guessing ./FallingSand is the right binary file where main is
 
-[2026-01-04 05:21:19] [connect] Successful connection
-[2026-01-04 05:21:19] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522079 101
+[2026-01-04 09:21:53] [connect] Successful connection
+[2026-01-04 09:21:53] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536513 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/115/bridges_testing
 
-[2026-01-04 05:21:19] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:21:54] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1829,15 +1697,15 @@ g++ -o ControlsTutorial Controls_Tutorial.o -g -L /home/bridges-testing/bridges-
 <h3 id="cxxlog17-runanswer">Run Answer for Assignment 17</h3>
 <pre><code>Guessing ./ControlsTutorial is the right binary file where main is
 
-[2026-01-04 05:21:40] [connect] Successful connection
-[2026-01-04 05:21:40] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522100 101
+[2026-01-04 09:22:13] [connect] Successful connection
+[2026-01-04 09:22:13] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536533 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/117/bridges_testing
 
-[2026-01-04 05:21:41] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:22:14] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1871,15 +1739,15 @@ g++ -o ControlsTutorial2 Controls_Tutorial2.o -g -L /home/bridges-testing/bridge
 <h3 id="cxxlog18-runanswer">Run Answer for Assignment 18</h3>
 <pre><code>Guessing ./ControlsTutorial2 is the right binary file where main is
 
-[2026-01-04 05:21:52] [connect] Successful connection
-[2026-01-04 05:21:52] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522112 101
+[2026-01-04 09:22:23] [connect] Successful connection
+[2026-01-04 09:22:23] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536543 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/0/bridges_testing
 
-[2026-01-04 05:21:53] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:22:24] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1917,15 +1785,15 @@ g++ -o BugStomp BugStomp.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ 
 <h3 id="cxxlog19-runanswer">Run Answer for Assignment 19</h3>
 <pre><code>Guessing ./BugStomp is the right binary file where main is
 
-[2026-01-04 05:22:02] [connect] Successful connection
-[2026-01-04 05:22:02] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522122 101
+[2026-01-04 09:22:33] [connect] Successful connection
+[2026-01-04 09:22:33] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536553 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/119/bridges_testing
 
-[2026-01-04 05:22:03] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:22:33] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -1959,15 +1827,15 @@ g++ -o Minesweeper minesweeper.o -g -L /home/bridges-testing/bridges-cxx-install
 <h3 id="cxxlog20-runanswer">Run Answer for Assignment 20</h3>
 <pre><code>Guessing ./Minesweeper is the right binary file where main is
 
-[2026-01-04 05:22:14] [connect] Successful connection
-[2026-01-04 05:22:14] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522134 101
+[2026-01-04 09:22:45] [connect] Successful connection
+[2026-01-04 09:22:45] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536565 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/120/bridges_testing
 
-[2026-01-04 05:22:15] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:22:45] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2001,15 +1869,15 @@ g++ -o RaceCar RaceCar.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -p
 <h3 id="cxxlog21-runanswer">Run Answer for Assignment 21</h3>
 <pre><code>Guessing ./RaceCar is the right binary file where main is
 
-[2026-01-04 05:22:26] [connect] Successful connection
-[2026-01-04 05:22:26] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522146 101
+[2026-01-04 09:22:56] [connect] Successful connection
+[2026-01-04 09:22:56] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536576 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/121/bridges_testing
 
-[2026-01-04 05:22:26] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:22:57] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2043,15 +1911,15 @@ g++ -o Snake Snake.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthre
 <h3 id="cxxlog22-runanswer">Run Answer for Assignment 22</h3>
 <pre><code>Guessing ./Snake is the right binary file where main is
 
-[2026-01-04 05:22:50] [connect] Successful connection
-[2026-01-04 05:22:50] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522170 101
+[2026-01-04 09:23:06] [connect] Successful connection
+[2026-01-04 09:23:06] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536586 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/0/bridges_testing
 
-[2026-01-04 05:22:50] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:23:07] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2399,15 +2267,15 @@ g++ -o SmileyFace SmileyFace.o -g -L /home/bridges-testing/bridges-cxx-install/l
 <h3 id="cxxlog27-runanswer">Run Answer for Assignment 27</h3>
 <pre><code>Guessing ./SmileyFace is the right binary file where main is
 
-[2026-01-04 05:23:37] [connect] Successful connection
-[2026-01-04 05:23:37] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522217 101
+[2026-01-04 09:23:49] [connect] Successful connection
+[2026-01-04 09:23:49] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536629 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/127/bridges_testing
 
-[2026-01-04 05:23:37] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:23:50] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -2517,12 +2385,11 @@ g++ -g  -std=c++14 -I /home/bridges-testing/bridges-cxx-install/include/ -c wiki
 g++ -o TemporalBaconNumber wikidata_actor.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="cxxlog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing ./TemporalBaconNumber is the right binary file where main is
 
-*****Alarm clock
-could not run c++_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/c++_answer
+***Malformed JSON
 </code></pre>
 </div>
     
@@ -2546,419 +2413,12 @@ g++ -g  -std=c++14 -I /home/bridges-testing/bridges-cxx-install/include/ -c wiki
 g++ -o TemporalPageRank wikidata_actor.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread -lcurl -l bridges 
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="cxxlog31-runanswer">Run Answer for Assignment 31</h3>
-<pre><code>      &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q930117&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Joe Flaherty&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1319495&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Julian Richings&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1334725&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Kevin Corrigan&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1355409&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Giuseppe Andrews&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q2147962&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Pamela Bowen&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q2981717&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Cody Jones&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q3017940&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;David Gardner&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q15522332&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Nick Scotti&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q19664222&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Robert Smith&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q30122029&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Michael Barry&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q111628699&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;David Quane&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q5603&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Andy Warhol&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q12003&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Cher&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q23685&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Jimmy Carter&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q124179&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Kiss&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q137881&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Peter Criss&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q207197&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Gene Simmons&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q234207&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Natasha Lyonne&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q235905&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Melanie Lynskey&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q236409&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Shannon Tweed&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q260490&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Lindy Booth&quot;
-      }
-    }, {
-      &quot;movie&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q1304457&quot;
-      },
-      &quot;actor&quot; : {
-        &quot;type&quot; : &quot;uri&quot;,
-        &quot;value&quot; : &quot;http://www.wikidata.org/entity/Q295542&quot;
-      },
-      &quot;movieLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot; : &quot;literal&quot;,
-        &quot;value&quot; : &quot;Detroit Rock City&quot;
-      },
-      &quot;actorLabel&quot; : {
-        &quot;xml:lang&quot; : &quot;en&quot;,
-        &quot;type&quot;
+<pre><code>Guessing ./TemporalPageRank is the right binary file where main is
 
+Alarm clock
+could not run c++_answer for assignment in ../assignmentdb/31-TemporalPageRank/c++_answer
 </code></pre>
 </div>
     
@@ -3000,15 +2460,15 @@ g++ -o TicTacToe tic_tac_toe.o -g -L /home/bridges-testing/bridges-cxx-install/l
 <h3 id="cxxlog32-runanswer">Run Answer for Assignment 32</h3>
 <pre><code>Guessing ./TicTacToe is the right binary file where main is
 
-[2026-01-04 05:28:02] [connect] Successful connection
-[2026-01-04 05:28:02] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522482 101
+[2026-01-04 09:28:40] [connect] Successful connection
+[2026-01-04 09:28:40] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536920 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/132/bridges_testing
 
-[2026-01-04 05:28:02] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:28:41] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -3095,8 +2555,8 @@ g++ -o GameTutorial GameTutorial.o -g -L /home/bridges-testing/bridges-cxx-insta
 <h3 id="cxxlog34-runanswer">Run Answer for Assignment 34</h3>
 <pre><code>Guessing ./GameTutorial is the right binary file where main is
 
-[2026-01-04 05:28:22] [connect] Successful connection
-[2026-01-04 05:28:22] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522502 101
+[2026-01-04 09:28:59] [connect] Successful connection
+[2026-01-04 09:28:59] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536939 101
 Size:10,10
 Setting framelimit to 10
 Success: Assignment posted to the server. 
@@ -3104,7 +2564,7 @@ Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/134/bridges_testing
 
-[2026-01-04 05:28:22] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:29:00] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -3138,15 +2598,15 @@ g++ -o connect4 connect4.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ 
 <h3 id="cxxlog35-runanswer">Run Answer for Assignment 35</h3>
 <pre><code>Guessing ./connect4 is the right binary file where main is
 
-[2026-01-04 05:28:32] [connect] Successful connection
-[2026-01-04 05:28:32] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522512 101
+[2026-01-04 09:29:11] [connect] Successful connection
+[2026-01-04 09:29:11] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536951 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/135/bridges_testing
 
-[2026-01-04 05:28:33] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:29:12] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -3180,15 +2640,15 @@ g++ -o pong pong.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthread
 <h3 id="cxxlog36-runanswer">Run Answer for Assignment 36</h3>
 <pre><code>Guessing ./pong is the right binary file where main is
 
-[2026-01-04 05:28:42] [connect] Successful connection
-[2026-01-04 05:28:42] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522522 101
+[2026-01-04 09:29:23] [connect] Successful connection
+[2026-01-04 09:29:23] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767536963 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/136/bridges_testing
 
-[2026-01-04 05:28:43] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:29:23] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -3416,15 +2876,15 @@ g++ -o SpaceInvaders SpaceInvaders.o -g -L /home/bridges-testing/bridges-cxx-ins
 <h3 id="cxxlog41-runanswer">Run Answer for Assignment 41</h3>
 <pre><code>Guessing ./SpaceInvaders is the right binary file where main is
 
-[2026-01-04 05:31:50] [connect] Successful connection
-[2026-01-04 05:31:50] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522710 101
+[2026-01-04 09:32:16] [connect] Successful connection
+[2026-01-04 09:32:16] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767537136 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/141/bridges_testing
 
-[2026-01-04 05:31:50] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:32:17] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -3499,7 +2959,7 @@ Check out your visualization at:
 
 http://assignments.bridgesuncc.org/assignments/143/bridges_testing
 
-elapsed time: 0.119886s
+elapsed time: 0.129592s
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
@@ -3578,15 +3038,15 @@ g++ -o ExplorerRobot ExplorerRobot.o -g -L /home/bridges-testing/bridges-cxx-ins
 <h3 id="cxxlog45-runanswer">Run Answer for Assignment 45</h3>
 <pre><code>Guessing ./ExplorerRobot is the right binary file where main is
 
-[2026-01-04 05:32:30] [connect] Successful connection
-[2026-01-04 05:32:30] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522750 101
+[2026-01-04 09:32:55] [connect] Successful connection
+[2026-01-04 09:32:55] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767537175 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/145/bridges_testing
 
-[2026-01-04 05:32:35] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:33:01] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -4431,15 +3891,15 @@ g++ -o ControlsTutorialThree Controls_Tutorial_Three.o -g -L /home/bridges-testi
 <h3 id="cxxlog67-runanswer">Run Answer for Assignment 67</h3>
 <pre><code>Guessing ./ControlsTutorialThree is the right binary file where main is
 
-[2026-01-04 05:36:25] [connect] Successful connection
-[2026-01-04 05:36:25] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767522985 101
+[2026-01-04 09:36:47] [connect] Successful connection
+[2026-01-04 09:36:47] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767537407 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/167/bridges_testing
 
-[2026-01-04 05:36:25] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:36:48] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -4520,15 +3980,15 @@ g++ -o snake Snake.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthre
 <h3 id="cxxlog69-runanswer">Run Answer for Assignment 69</h3>
 <pre><code>Guessing ./snake is the right binary file where main is
 
-[2026-01-04 05:36:41] [connect] Successful connection
-[2026-01-04 05:36:41] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767523001 101
+[2026-01-04 09:37:06] [connect] Successful connection
+[2026-01-04 09:37:06] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767537426 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/169/bridges_testing
 
-[2026-01-04 05:36:41] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:37:06] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -4562,15 +4022,15 @@ g++ -o wordle wordle.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pth
 <h3 id="cxxlog70-runanswer">Run Answer for Assignment 70</h3>
 <pre><code>Guessing ./wordle is the right binary file where main is
 
-[2026-01-04 05:36:51] [connect] Successful connection
-[2026-01-04 05:36:51] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767523011 101
+[2026-01-04 09:37:18] [connect] Successful connection
+[2026-01-04 09:37:18] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767537438 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/170/bridges_testing
 
-[2026-01-04 05:36:51] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:37:18] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     
@@ -4643,15 +4103,15 @@ g++ -o Pixel Pixels.o -g -L /home/bridges-testing/bridges-cxx-install/lib/ -pthr
 <h3 id="cxxlog72-runanswer">Run Answer for Assignment 72</h3>
 <pre><code>Guessing ./Pixel is the right binary file where main is
 
-[2026-01-04 05:37:07] [connect] Successful connection
-[2026-01-04 05:37:08] [connect] WebSocket Connection 104.21.28.139:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767523027 101
+[2026-01-04 09:37:36] [connect] Successful connection
+[2026-01-04 09:37:36] [connect] WebSocket Connection 172.67.170.217:80 v-2 &quot;WebSocket++/0.8.2&quot; /socket.io/?EIO=4&amp;transport=websocket&amp;t=1767537456 101
 Setting framelimit to 10
 Success: Assignment posted to the server. 
 Check out your visualization at:
 
 http://games.bridgesuncc.org/assignments/172/bridges_testing
 
-[2026-01-04 05:37:08] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
+[2026-01-04 09:37:36] [disconnect] Disconnect close local:[1000,End by user] remote:[1000,End by user]
 </code></pre>
 </div>
     

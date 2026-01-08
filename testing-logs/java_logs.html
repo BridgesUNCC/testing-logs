@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Jan  8 01:39:49 AM EST 2026</p>
+	<p>Running at Thu Jan  8 05:39:34 AM EST 2026</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -792,13 +792,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary78" class="success">
+  <div id="summary78" class="failure">
     <h2><a href="java_logs.html#javalog78">Assignment 78</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog78-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog78-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog78-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog78-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -1985,7 +1985,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.766087403578643E12
+Data Access Took: 1.766101791793466E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2431,23 +2431,23 @@ total vertices:22770
 Set size: 22770
 Grid
 ===grid stats===
-0)Source Point:-73.94720009707093,-14.163778405518727
-0)[ALG]Closest Point: -73.9494334,40.6128028
-0)[ALG]Min Dist:54.77658125104586
-0)[BFA]Closest Point: -73.9494334,40.6128028
-0)[BFA]Min Dist:54.77658125104586
+0)Source Point:-6.540191473628795,-37.60262521519168
+0)[ALG]Closest Point: -73.9104829,40.6147818
+0)[ALG]Min Dist:103.23138537796702
+0)[BFA]Closest Point: -73.9104829,40.6147818
+0)[BFA]Min Dist:103.23138537796702
 0)Difference:0.0
-Source Point:-42.5994979838233,40.78685663010283
-Source Point:-32.87037852191464,40.74579900888484
-Source Point:-48.254441006445475,40.78912312638584
-Source Point:-8.71498067302862,40.64751197072995
-Source Point:-12.873073000346757,40.70403116231497
-Source Point:-20.8804860758163,40.72678580786771
-Source Point:-59.34380154155443,40.68895502823593
-Source Point:-49.570882330012125,40.80279509380128
-Source Point:-33.02073028125505,40.79762051431806
-Source Point:-24.417379372381816,40.78454149192696
-num cells examined:12
+Source Point:-18.39536726819412,40.678377830587415
+Source Point:-55.957695737869884,40.70602448897212
+Source Point:-22.84916635793124,40.734243788261416
+Source Point:-11.237204970543978,40.81085084270539
+Source Point:-70.9932289254967,40.66611117351768
+Source Point:-16.24587917238751,40.723325220126405
+Source Point:-24.49128808975827,40.80805933165691
+Source Point:-44.86375612516076,40.657634730540614
+Source Point:-48.51487216709206,40.735122562422596
+Source Point:-68.29062750211516,40.69249484830497
+num cells examined:11
 
 Check Your Visualization at the following link:
 
@@ -3228,7 +3228,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.13896
+Pi val: 3.14684
 
 Check Your Visualization at the following link:
 
@@ -3436,23 +3436,19 @@ Shutting down ...
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/78-Thresholding/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog78-runanswer">Run Answer for Assignment 78</h3>
 <pre><code>Guessing Thresholding.java is the right java file where main is
 
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/33/bridges_testing
-
-
-Range: -14710.0,14715.0
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/33/bridges_testing
-
-
+There was a problem sending the visualization representation to the server. 
+Received an empty JSON response from the server. 
+Exception in thread &quot;main&quot; java.io.IOException: Received an empty JSON response from the server. 
+	at bridges.connect.Connector.asJSONObject(Connector.java:272)
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:506)
+	at bridges.connect.Connector.post(Connector.java:604)
+	at bridges.connect.Bridges.visualize(Bridges.java:599)
+	at Thresholding.main(Thresholding.java:24)
+could not run java_answer for assignment in ../assignmentdb/78-Thresholding/java_answer
 </code></pre>
 </div>
     

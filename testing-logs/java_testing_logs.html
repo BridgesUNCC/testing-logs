@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Jan  8 09:07:40 PM EST 2026</p>
+	<p>Running at Fri Jan  9 01:07:25 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.8
-	Date:Jan 08 2026  20:50:30.305 EST
-	Location: 8 km N of Sterling, Alaska
-	Lat/Long:60.609,-150.754
+	Magnitude:2.34
+	Date:Jan 09 2026  00:31:39.430 EST
+	Location: 17 km NE of San Clemente Is. (NW tip), CA
+	Lat/Long:33.1441666666667,-118.488
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.8
-	Date:Jan 08 2026  20:50:30.305 EST
-	Location: 8 km N of Sterling, Alaska
-	Lat/Long:60.609,-150.754
+	Magnitude:2.34
+	Date:Jan 09 2026  00:31:39.430 EST
+	Location: 17 km NE of San Clemente Is. (NW tip), CA
+	Lat/Long:33.1441666666667,-118.488
 Earthquake 0:
-	Magnitude:1.7
-	Date:Jan 23 2025  04:57:48.021 EST
-	Location: 14 km WNW of Susitna, Alaska
-	Lat/Long:61.5853,-150.7779
+	Magnitude:2.74
+	Date:Jan 23 2025  09:05:21.890 EST
+	Location: 11 km E of Red Bluff, CA
+	Lat/Long:40.1916656494141,-122.109664916992
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Sea Monsters: A Prehistoric Adventure
+<pre><code>My Pet Shop
 Nintendo DS
-4.0
-[Adventure]
+7.0
+[Virtual Pet]
 </code></pre>
 </div>
     
@@ -1686,7 +1686,7 @@ Printing the first 300 characters of the book
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
 <pre><code>Christopher_Lee_(I)
-End_of_the_World_(1977)
+Final_Column_(1955)
 </code></pre>
 </div>
     
@@ -2374,11 +2374,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 37
+<pre><code>Sonnet 4
 poem
-As a decrepit father takes delight,
- To see his active child do deeds of youth,
- So I, made lame by ...
+Unthrifty loveliness why dost thou spend,
+ Upon thy self thy beauty's legacy?
+ Nature's bequest give...
 </code></pre>
 </div>
     
@@ -3442,22 +3442,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5230
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q102462 &quot;James Stewart&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

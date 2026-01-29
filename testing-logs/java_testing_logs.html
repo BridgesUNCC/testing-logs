@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Jan 29 05:06:42 AM EST 2026</p>
+	<p>Running at Thu Jan 29 09:07:26 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -462,12 +462,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarysong_lyrics_snippet.java" class="success">
+  <div id="summarysong_lyrics_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogsong_lyrics_snippet.java">Test song_lyrics_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.9
-	Date:Jan 29 2026  04:36:02.986 EST
-	Location: 67 km WNW of Aleneva, Alaska
-	Lat/Long:58.246,-153.993
+	Magnitude:1.8
+	Date:Jan 29 2026  09:00:26.717 EST
+	Location: 22 km SSE of Eureka Roadhouse, Alaska
+	Lat/Long:61.768,-146.926
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.9
-	Date:Jan 29 2026  04:36:02.986 EST
-	Location: 67 km WNW of Aleneva, Alaska
-	Lat/Long:58.246,-153.993
+	Magnitude:1.8
+	Date:Jan 29 2026  09:00:26.717 EST
+	Location: 22 km SSE of Eureka Roadhouse, Alaska
+	Lat/Long:61.768,-146.926
 Earthquake 0:
-	Magnitude:1.0
-	Date:Feb 18 2025  18:18:41.453 EST
-	Location: 2 km N of Topaz Lake, Nevada
-	Lat/Long:38.7193,-119.5438
+	Magnitude:1.56
+	Date:Feb 18 2025  22:02:30.560 EST
+	Location: 6 km SE of Chester, CA
+	Lat/Long:40.2721672058105,-121.178833007812
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Mega Man Anniversary Collection
-PlayStation 2
-8.5
-[Action, Compilation]
+<pre><code>The Banner Saga
+PC
+8.6
+[Strategy, RPG]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Cate_Blanchett
-Bangers_(1999)
+<pre><code>Arnold_Schwarzenegger
+Stay_Hungry_(1976)
 </code></pre>
 </div>
     
@@ -2374,11 +2374,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 25
+<pre><code>Sonnet 126
 poem
-Let those who are in favour with their stars,
- Of public honour and proud titles boast,
- Whilst I wh...
+O thou my lovely boy who in thy power,
+ Dost hold Time's fickle glass his fickle hour:
+ Who hast by ...
 </code></pre>
 </div>
     
@@ -2503,13 +2503,40 @@ http://assignments.bridgesuncc.org/assignments/2049/bridges_testing
 <pre><code>Compiling test song_lyrics_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogsong_lyrics_snippet.java-runtest">Run Test for test song_lyrics_snippet.java</h3>
-<pre><code>Harder, Better, Faster, Stronger
-Daft Punk
-Homework / Discovery / Alive 1997
-2001-02-26
+<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503. Message: &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Application Error&lt;/title&gt;
+    &lt;style media=&quot;screen&quot;&gt;
+      html,body,iframe {
+        margin: 0;
+        padding: 0;
+      }
 
+      html,body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;https://www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
+  &lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015&quot; integrity=&quot;sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==&quot; data-cf-beacon='{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;b46cb27d3b9d47cb919820c918d9ab42&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}' crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+	at bridges.connect.DataSource.getSong(DataSource.java:983)
+	at song_lyrics_snippet.main(song_lyrics_snippet.java:24)
+could not run test song_lyrics_snippet.java
 </code></pre>
 </div>
     
@@ -3447,16 +3474,16 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Data Records in 1955: 5230
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q421707 &quot;Jerry Orbach&quot;
+	Movie: Q50937 &quot;It Came from Beneath the Sea&quot;
+	Actor: Q440298 &quot;Faith Domergue&quot;
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q1368948 &quot;Glenn Strange&quot;
+	Movie: Q50937 &quot;It Came from Beneath the Sea&quot;
+	Actor: Q541016 &quot;Ian Keith&quot;
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q1374412 &quot;Joe Mantell&quot;
+	Movie: Q50937 &quot;It Came from Beneath the Sea&quot;
+	Actor: Q925911 &quot;Kenneth Tobey&quot;
 
 </code></pre>
 </div>

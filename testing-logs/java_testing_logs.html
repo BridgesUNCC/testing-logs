@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sat Jan 31 09:06:52 PM EST 2026</p>
+	<p>Running at Sun Feb  1 01:07:33 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.0
-	Date:Jan 31 2026  20:55:57.683 EST
-	Location: 25 km N of Sutton-Alpine, Alaska
-	Lat/Long:62.002,-148.728
+	Magnitude:1.75
+	Date:Feb 01 2026  00:42:43.890 EST
+	Location: 6 km SSE of Pāhala, Hawaii
+	Lat/Long:19.1526660919189,-155.449340820312
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.0
-	Date:Jan 31 2026  20:55:57.683 EST
-	Location: 25 km N of Sutton-Alpine, Alaska
-	Lat/Long:62.002,-148.728
+	Magnitude:1.75
+	Date:Feb 01 2026  00:42:43.890 EST
+	Location: 6 km SSE of Pāhala, Hawaii
+	Lat/Long:19.1526660919189,-155.449340820312
 Earthquake 0:
-	Magnitude:2.1
-	Date:Feb 21 2025  14:24:48.497 EST
-	Location: 14 km SSW of Denali Park, Alaska
-	Lat/Long:63.6226,-149.0639
+	Magnitude:1.24
+	Date:Feb 21 2025  18:20:19.800 EST
+	Location: 16 km WSW of Toms Place, CA
+	Lat/Long:37.4876670837402,-118.838500976562
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Space Giraffe
-Xbox 360
-4.7
-[Shooter]
+<pre><code>Horsez
+PlayStation 2
+2.1
+[Virtual Pet]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Roger_Maris
-Greatest_Summer_of_My_Life:_Billy_Crystal_and_the_Making_of_'61*',_The_(2001)
+<pre><code>Christopher_Lee_(I)
+Conde_Dracula,_El_(1970)
 </code></pre>
 </div>
     
@@ -2374,11 +2374,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 16
+<pre><code>Sonnet 29
 poem
-But wherefore do not you a mightier way
- Make war upon this bloody tyrant Time?
- And fortify your se...
+When in disgrace with Fortune and men's eyes,
+ I all alone beweep my outcast state,
+ And trouble dea...
 </code></pre>
 </div>
     
@@ -3442,22 +3442,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5230
-
-Actor-Movie Data:
-	Movie: Q50937 &quot;It Came from Beneath the Sea&quot;
-	Actor: Q3127855 &quot;Harry Lauter&quot;
-
-Actor-Movie Data:
-	Movie: Q200482 &quot;The Glass Slipper&quot;
-	Actor: Q230023 &quot;Leslie Caron&quot;
-
-Actor-Movie Data:
-	Movie: Q200482 &quot;The Glass Slipper&quot;
-	Actor: Q233009 &quot;Elsa Lanchester&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

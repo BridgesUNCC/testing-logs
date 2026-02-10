@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Feb 10 01:14:50 PM EST 2026</p>
+	<p>Running at Tue Feb 10 05:19:10 PM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.71
-	Date:Feb 10 2026  12:46:24.620 EST
-	Location: 16 km SE of Pāhala, Hawaii
-	Lat/Long:19.0970001220703,-155.372161865234
+	Magnitude:1.2
+	Date:Feb 10 2026  16:45:08.989 EST
+	Location: 13 km WSW of Stanton, Texas
+	Lat/Long:32.103,-101.924
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.71
-	Date:Feb 10 2026  12:46:24.620 EST
-	Location: 16 km SE of Pāhala, Hawaii
-	Lat/Long:19.0970001220703,-155.372161865234
+	Magnitude:1.2
+	Date:Feb 10 2026  16:45:08.989 EST
+	Location: 13 km WSW of Stanton, Texas
+	Lat/Long:32.103,-101.924
 Earthquake 0:
-	Magnitude:1.31
-	Date:Mar 04 2025  10:25:56.290 EST
-	Location: 18 km NNE of Coso Junction, CA
-	Lat/Long:36.1796667,-117.8431667
+	Magnitude:1.46
+	Date:Mar 04 2025  16:02:34.260 EST
+	Location: 22 km SW of New Idria, CA
+	Lat/Long:36.2496681213379,-120.814498901367
 </code></pre>
 </div>
     
@@ -1409,9 +1409,9 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Disney Sports Soccer
-GameCube
-8.1
+<pre><code>3D Ultra Minigolf Adventures
+Xbox 360
+7.5
 [Sports]
 </code></pre>
 </div>
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Alan_Rickman
-Mesmer_(1994)
+<pre><code>Morgan_Freeman_(I)
+Delta_Blues_Museum_(2003)
 </code></pre>
 </div>
     
@@ -2374,19 +2374,17 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>The Life Of Timon Of Athens
+<pre><code>The Tragedy Of Julius Caesar
 play
-1608
+1599
 
-THE LIFE OF TIMON OF ATHENS
+THE TRAGEDY OF JULIUS CAESAR
 
 by William Shakespeare
 
-DRAMATIS PERSONAE
+Dramatis Personae
 
- TIMON of Athens
-
- LUC...
+ JULIUS CAESAR, Roman...
 </code></pre>
 </div>
     
@@ -3450,13 +3448,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5370
+
+Actor-Movie Data:
+	Movie: Q34414 &quot;Rear Window&quot;
+	Actor: Q3925 &quot;Grace Kelly&quot;
+
+Actor-Movie Data:
+	Movie: Q34414 &quot;Rear Window&quot;
+	Actor: Q7374 &quot;Alfred Hitchcock&quot;
+
+Actor-Movie Data:
+	Movie: Q34414 &quot;Rear Window&quot;
+	Actor: Q102462 &quot;James Stewart&quot;
+
 </code></pre>
 </div>
     

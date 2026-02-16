@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Feb 16 01:06:34 PM EST 2026</p>
+	<p>Running at Mon Feb 16 05:06:14 PM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:5.2
-	Date:Feb 16 2026  12:32:54.955 EST
-	Location: southern Mid-Atlantic Ridge
-	Lat/Long:-17.7549,-13.2458
+	Magnitude:1.7
+	Date:Feb 16 2026  17:04:11.970 EST
+	Location: 14 km S of Tres Pinos, CA
+	Lat/Long:36.6624984741211,-121.327331542969
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:5.2
-	Date:Feb 16 2026  12:32:54.955 EST
-	Location: southern Mid-Atlantic Ridge
-	Lat/Long:-17.7549,-13.2458
-Earthquake 0:
 	Magnitude:1.7
-	Date:Mar 11 2025  07:17:46.344 EDT
-	Location: 55 km S of Whites City, New Mexico
-	Lat/Long:31.676,-104.395
+	Date:Feb 16 2026  17:04:11.970 EST
+	Location: 14 km S of Tres Pinos, CA
+	Lat/Long:36.6624984741211,-121.327331542969
+Earthquake 0:
+	Magnitude:1.3
+	Date:Mar 11 2025  13:06:47.630 EDT
+	Location: 9 km NW of The Geysers, CA
+	Lat/Long:38.8224983215332,-122.842163085938
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Garfields Fun Fest 
-Nintendo DS
-4.0
-[Platformer]
+<pre><code>YooStar 2
+PlayStation 3
+5.0
+[Music]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Billy_Bob_Thornton
-Badge,_The_(2002)
+<pre><code>James_Stewart_(I)
+Flight_of_the_Phoenix,_The_(1965)
 </code></pre>
 </div>
     
@@ -2374,11 +2374,17 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 55
-poem
-Not marble, nor the gilded monuments
- Of princes shall outlive this powerful rhyme,
- But you shall s...
+<pre><code>The Second Part Of King Henry The Sixth
+play
+1591
+
+THE SECOND PART OF KING HENRY THE SIXTH
+
+by William Shakespeare
+
+Dramatis Personae
+
+ KING HENR...
 </code></pre>
 </div>
     
@@ -3442,22 +3448,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5374
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q83410 &quot;Cary Grant&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

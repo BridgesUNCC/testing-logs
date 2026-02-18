@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Wed Feb 18 05:37:33 AM EST 2026</p>
+	<p>Running at Wed Feb 18 09:38:49 AM EST 2026</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -582,13 +582,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary57" class="success">
+  <div id="summary57" class="failure">
     <h2><a href="java_logs.html#javalog57">Assignment 57</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog57-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog57-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog57-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog57-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -1985,8 +1985,10 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.769640521751365E12
-Alarm clock
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:69)
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
 </div>
@@ -2434,23 +2436,23 @@ total vertices:22815
 Set size: 22815
 Grid
 ===grid stats===
-0)Source Point:-44.005180522331486,-0.6618493135742511
-0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:50.97143696606828
-0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:50.97143696606828
+0)Source Point:-10.404868067339258,-9.628536393810137
+0)[ALG]Closest Point: -73.9065972,40.618168
+0)[ALG]Min Dist:80.97654540221355
+0)[BFA]Closest Point: -73.9065972,40.618168
+0)[BFA]Min Dist:80.97654540221355
 0)Difference:0.0
-Source Point:-11.375559489348717,40.74038307083417
-Source Point:-13.315669277082357,40.65176053256139
-Source Point:-0.7846337477238023,40.62603836580917
-Source Point:-46.87447593052853,40.613336649163024
-Source Point:-11.681239722095569,40.634026294777556
-Source Point:-22.619101775774382,40.74838570129529
-Source Point:-23.940846726879954,40.744193659444825
-Source Point:-28.85083421210674,40.66005766421723
-Source Point:-1.7380825121320953,40.70507784059798
-Source Point:-29.104025130025562,40.73696556116917
-num cells examined:11
+Source Point:-54.10725649170672,40.702604733054805
+Source Point:-34.81362908480258,40.713286879484286
+Source Point:-59.24746861718021,40.68512004880632
+Source Point:-59.06488880811804,40.632602884816485
+Source Point:-18.718813081058727,40.75366022466073
+Source Point:-53.51661288916397,40.67855206080246
+Source Point:-36.07683663436086,40.66147379994945
+Source Point:-49.16239302679797,40.67762419842961
+Source Point:-3.568178662516843,40.63479947059858
+Source Point:-46.94281784866844,40.80631417045376
+num cells examined:3
 
 Check Your Visualization at the following link:
 
@@ -2775,35 +2777,13 @@ http://assignments.bridgesuncc.org/assignments/56/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/57-BookAnalysis/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog57-runanswer">Run Answer for Assignment 57</h3>
 <pre><code>Guessing book_analysis.java is the right java file where main is
 
 80
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/157/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/157/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/157/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/157/bridges_testing
-
-
+Alarm clock
+could not run java_answer for assignment in ../assignmentdb/57-BookAnalysis/java_answer
 </code></pre>
 </div>
     
@@ -3231,7 +3211,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.13952
+Pi val: 3.14572
 
 Check Your Visualization at the following link:
 

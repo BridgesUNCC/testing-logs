@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Fri Feb 20 05:06:36 AM EST 2026</p>
+	<p>Running at Fri Feb 20 09:08:51 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.64
-	Date:Feb 20 2026  04:40:55.930 EST
-	Location: 5 km S of Tres Pinos, CA
-	Lat/Long:36.7459983825684,-121.310333251953
+	Magnitude:1.42229130598517
+	Date:Feb 20 2026  08:58:49.810 EST
+	Location: 4 km W of Lake Henshaw, CA
+	Lat/Long:33.2456665039062,-116.804664611816
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.64
-	Date:Feb 20 2026  04:40:55.930 EST
-	Location: 5 km S of Tres Pinos, CA
-	Lat/Long:36.7459983825684,-121.310333251953
+	Magnitude:1.42229130598517
+	Date:Feb 20 2026  08:58:49.810 EST
+	Location: 4 km W of Lake Henshaw, CA
+	Lat/Long:33.2456665039062,-116.804664611816
 Earthquake 0:
-	Magnitude:1.1
-	Date:Mar 15 2025  04:47:57.228 EDT
-	Location: 111 km S of McCarthy, Alaska
-	Lat/Long:60.4353,-143.0211
+	Magnitude:1.5
+	Date:Mar 15 2025  08:34:44.220 EDT
+	Location: 69 km E of Cantwell, Alaska
+	Lat/Long:63.4409,-147.5663
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Steve Young Football
-iPhone
-5.5
-[Sports]
+<pre><code>Speed Racer: The Videogame
+Wii
+7.0
+[Racing]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christopher_Lee_(I)
-100_Years_of_Horror:_Giants_and_Dinosaurs_(1996)
+<pre><code>John_Malkovich
+Convento,_O_(1995)
 </code></pre>
 </div>
     
@@ -2374,11 +2374,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 80
+<pre><code>Sonnet 109
 poem
-O how I faint when I of you do write,
- Knowing a better spirit doth use your name,
- And in the prais...
+O never say that I was false of heart,
+ Though absence seemed my flame to qualify,
+ As easy might I ...
 </code></pre>
 </div>
     
@@ -3442,22 +3442,18 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5374
+<pre><code>Data Records in 1955: 0
 
-Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q180251 &quot;Paddy Chayefsky&quot;
-
-Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q266416 &quot;Betsy Blair&quot;
-
-Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q421707 &quot;Jerry Orbach&quot;
-
+Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:37)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

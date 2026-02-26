@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Wed Feb 25 09:08:51 PM EST 2026</p>
+	<p>Running at Thu Feb 26 01:05:49 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:3.04578009727762
-	Date:Feb 25 2026  20:43:31.320 EST
-	Location: 18 km ESE of Johannesburg, CA
-	Lat/Long:35.3036651611328,-117.451667785645
+	Magnitude:2.1
+	Date:Feb 26 2026  00:49:47.637 EST
+	Location: 10 km N of Houston, Alaska
+	Lat/Long:61.722,-149.797
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:3.04578009727762
-	Date:Feb 25 2026  20:43:31.320 EST
-	Location: 18 km ESE of Johannesburg, CA
-	Lat/Long:35.3036651611328,-117.451667785645
+	Magnitude:2.1
+	Date:Feb 26 2026  00:49:47.637 EST
+	Location: 10 km N of Houston, Alaska
+	Lat/Long:61.722,-149.797
 Earthquake 0:
-	Magnitude:1.09
-	Date:Mar 20 2025  22:06:40.740 EDT
-	Location: 7 km WNW of Cobb, CA
-	Lat/Long:38.8293342590332,-122.804336547852
+	Magnitude:3.83
+	Date:Mar 21 2025  01:39:58.170 EDT
+	Location: 121 km NNE of Vieques, Puerto Rico
+	Lat/Long:19.4623,-65.462
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>NBA 2K7
-Xbox
-8.8
-[Sports]
+<pre><code>Angry Birds Trilogy
+PlayStation 3
+7.0
+[Puzzle, Action]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Denzel_Washington
-Soldier's_Story,_A_(1984)
+<pre><code>Cate_Blanchett
+Oscar_and_Lucinda_(1997)
 </code></pre>
 </div>
     
@@ -2374,11 +2374,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 146
+<pre><code>Sonnet 142
 poem
-Poor soul the centre of my sinful earth,
- My sinful earth these rebel powers array,
- Why dost thou p...
+Love is my sin, and thy dear virtue hate,
+ Hate of my sin, grounded on sinful loving,
+ O but with mi...
 </code></pre>
 </div>
     
@@ -3442,22 +3442,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5374
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q102462 &quot;James Stewart&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

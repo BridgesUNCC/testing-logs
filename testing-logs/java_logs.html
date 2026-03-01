@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sun Mar  1 09:37:33 AM EST 2026</p>
+	<p>Running at Sun Mar  1 01:38:47 PM EST 2026</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -1985,7 +1985,10 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.770604366514481E12
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:69)
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2009,10 +2012,7 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at WikiDataActor.main(WikiDataActor.java:68)
+Alarm clock
 could not run java_answer for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
@@ -2434,22 +2434,22 @@ total vertices:22815
 Set size: 22815
 Grid
 ===grid stats===
-0)Source Point:-13.740955712852113,-49.169166358363725
-0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:108.08112392471071
-0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:108.08112392471071
+0)Source Point:-71.63163900432161,-1.4347108055741842
+0)[ALG]Closest Point: -73.9222475,40.6128304
+0)[ALG]Min Dist:42.10988730351737
+0)[BFA]Closest Point: -73.9222475,40.6128304
+0)[BFA]Min Dist:42.10988730351737
 0)Difference:0.0
-Source Point:-10.412518841790153,40.805803356587695
-Source Point:-5.133846662454928,40.777967377676845
-Source Point:-30.06227107854275,40.73504715708355
-Source Point:-56.0979830361909,40.78608255705411
-Source Point:-7.8347824288184995,40.704853650323045
-Source Point:-40.93772628081449,40.66110148334901
-Source Point:-38.5409593286574,40.69743305045979
-Source Point:-15.357444605558783,40.688884000750754
-Source Point:-11.407166452862178,40.79444421594953
-Source Point:-31.728203117019454,40.699675001140996
+Source Point:-9.15809696018141,40.649620047134334
+Source Point:-49.402985739549365,40.68402359875854
+Source Point:-5.765026905247794,40.71340613392941
+Source Point:-2.9041715278231948,40.67551450290848
+Source Point:-47.17537638379876,40.69497129699051
+Source Point:-70.89359908204895,40.78897426827842
+Source Point:-67.44803650309927,40.691849048523245
+Source Point:-61.84842915119742,40.76328213250748
+Source Point:-59.235461862159276,40.731648259368654
+Source Point:-28.641902257891672,40.743263548304604
 num cells examined:11
 
 Check Your Visualization at the following link:
@@ -3231,7 +3231,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.1358
+Pi val: 3.14548
 
 Check Your Visualization at the following link:
 

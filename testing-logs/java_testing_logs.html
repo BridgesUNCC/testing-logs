@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sun Mar  1 09:06:15 PM EST 2026</p>
+	<p>Running at Mon Mar  2 01:05:59 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.5
-	Date:Mar 01 2026  20:54:17.437 EST
-	Location: 14 km SE of Tyonek, Alaska
-	Lat/Long:60.973,-150.957
+	Magnitude:1.05
+	Date:Mar 02 2026  00:33:12.590 EST
+	Location: 6 km NW of The Geysers, CA
+	Lat/Long:38.8151664733887,-122.799667358398
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.5
-	Date:Mar 01 2026  20:54:17.437 EST
-	Location: 14 km SE of Tyonek, Alaska
-	Lat/Long:60.973,-150.957
+	Magnitude:1.05
+	Date:Mar 02 2026  00:33:12.590 EST
+	Location: 6 km NW of The Geysers, CA
+	Lat/Long:38.8151664733887,-122.799667358398
 Earthquake 0:
-	Magnitude:2.17
-	Date:Mar 25 2025  04:53:19.820 EDT
-	Location: 4 km SSW of Guánica, Puerto Rico
-	Lat/Long:17.9365,-66.9301666666667
+	Magnitude:1.96
+	Date:Mar 25 2025  11:20:57.940 EDT
+	Location: 15 km ENE of Indio, CA
+	Lat/Long:33.7865,-116.077
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Call of Duty: Finest Hour
-GameCube
-7.0
-[Shooter]
+<pre><code>Formula 1
+PlayStation
+8.0
+[Racing]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Ata_Emamian
-Cheshmane_John_Malkovich_(2004)
+<pre><code>Alan_Rickman
+Robin_Hood:_Prince_of_Thieves_(1991)
 </code></pre>
 </div>
     
@@ -2370,18 +2370,18 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>The Comedy Of Errors
+<pre><code>The Life Of King Henry The Fifth
 play
-1593
+1599
 
-THE COMEDY OF ERRORS
+THE LIFE OF KING HENRY THE FIFTH
 
 by William Shakespeare
 
 DRAMATIS PERSONAE
 
-SOLINUS, Duke of Ephesus
-AEGE...
+ CHORUS
+ KING HEN...
 </code></pre>
 </div>
     
@@ -3445,22 +3445,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5374
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q102462 &quot;James Stewart&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Fri Mar 13 05:06:25 AM EDT 2026</p>
+	<p>Running at Fri Mar 13 09:08:04 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -183,12 +183,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryeq_test.java" class="success">
+  <div id="summaryeq_test.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogeq_test.java">Test eq_test.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogeq_test.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogeq_test.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogeq_test.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.84
-	Date:Mar 13 2026  04:43:01.430 EDT
-	Location: 8 km NW of The Geysers, CA
-	Lat/Long:38.8305015563965,-122.818664550781
+	Magnitude:2.82
+	Date:Mar 13 2026  08:25:39.910 EDT
+	Location: 5 km SE of San Ramon, CA
+	Lat/Long:37.7508316040039,-121.939002990723
 </code></pre>
 </div>
     
@@ -1341,18 +1341,29 @@ first 10 elevations:
 <pre><code>Compiling test eq_test.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.84
-	Date:Mar 13 2026  04:43:01.430 EDT
-	Location: 8 km NW of The Geysers, CA
-	Lat/Long:38.8305015563965,-122.818664550781
-Earthquake 0:
-	Magnitude:1.47
-	Date:Apr 08 2025  04:11:23.790 EDT
-	Location: 16 km W of Johannesburg, CA
-	Lat/Long:35.3485,-117.8041667
+	Magnitude:2.82
+	Date:Mar 13 2026  08:25:39.910 EDT
+	Location: 5 km SE of San Ramon, CA
+	Lat/Long:37.7508316040039,-121.939002990723
+Exception in thread &quot;main&quot; java.io.EOFException: Unexpected end of ZLIB input stream
+	at java.base/java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:244)
+	at java.base/java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.base/java.util.zip.GZIPInputStream.read(GZIPInputStream.java:117)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:287)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:330)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:190)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:177)
+	at java.base/java.io.Reader.read(Reader.java:250)
+	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:244)
+	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:288)
+	at bridges.connect.DataSource.unwrapJSONArray(DataSource.java:727)
+	at bridges.connect.DataSource.getEarthquakeUSGSData(DataSource.java:448)
+	at bridges.connect.DataSource.getEarthquakeUSGSData(DataSource.java:493)
+	at eq_test.main(eq_test.java:32)
+could not run test eq_test.java
 </code></pre>
 </div>
     
@@ -1409,10 +1420,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>de Blob 
+<pre><code>Bird Zapper!
 iPhone
 8.0
-[Platformer]
+[Puzzle, Action]
 </code></pre>
 </div>
     
@@ -1685,8 +1696,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>James_Stewart_(I)
-Winchester_'73_(1950)
+<pre><code>Clark_Gable
+Combat_America_(1943)
 </code></pre>
 </div>
     
@@ -2370,18 +2381,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>The Life and Death of Richard the Second
-play
-1596
-
-KING RICHARD THE SECOND
-
-by William Shakespeare
-
-DRAMATIS PERSONAE
-
- KING RICHARD THE SECOND
- ...
+<pre><code>Sonnet 47
+poem
+Betwixt mine eye and heart a league is took,
+ And each doth good turns now unto the other,
+ When tha...
 </code></pre>
 </div>
     

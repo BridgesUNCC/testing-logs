@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Wed Apr  8 09:06:13 PM EDT 2026</p>
+	<p>Running at Thu Apr  9 01:06:06 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -462,12 +462,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarysong_lyrics_snippet.java" class="success">
+  <div id="summarysong_lyrics_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogsong_lyrics_snippet.java">Test song_lyrics_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.0
-	Date:Apr 08 2026  20:38:08.121 EDT
-	Location: 33 km WSW of Denali Park, Alaska
-	Lat/Long:63.662,-149.576
+	Magnitude:2.3
+	Date:Apr 09 2026  00:47:48.236 EDT
+	Location: 102 km SE of Port Graham, Alaska
+	Lat/Long:58.632,-150.715
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.0
-	Date:Apr 08 2026  20:38:08.121 EDT
-	Location: 33 km WSW of Denali Park, Alaska
-	Lat/Long:63.662,-149.576
+	Magnitude:2.3
+	Date:Apr 09 2026  00:47:48.236 EDT
+	Location: 102 km SE of Port Graham, Alaska
+	Lat/Long:58.632,-150.715
 Earthquake 0:
-	Magnitude:1.4
-	Date:May 24 2025  15:26:09.691 EDT
-	Location: 18 km S of Knik River, Alaska
-	Lat/Long:61.2914,-148.8878
+	Magnitude:1.02
+	Date:May 24 2025  20:51:30.960 EDT
+	Location: 10 km WNW of Corona, CA
+	Lat/Long:33.9016667,-117.6641667
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>NFL Fever 2000
-PC
-8.0
-[Sports]
+<pre><code>Mojo!
+PlayStation 2
+6.9
+[Puzzle, Action]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Bill_Murray_(I)
-Ghostbusters_1999_(1999)
+<pre><code>Billy_Crystal
+As_You_Wish:_The_Story_of_'The_Princess_Bride'_(2001)
 </code></pre>
 </div>
     
@@ -2372,19 +2372,11 @@ Text: &quot;We strive to be good water stewards in communities where we have dat
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>The Life Of Timon Of Athens
-play
-1608
-
-THE LIFE OF TIMON OF ATHENS
-
-by William Shakespeare
-
-DRAMATIS PERSONAE
-
- TIMON of Athens
-
- LUC...
+<pre><code>Sonnet 11
+poem
+As fast as thou shalt wane so fast thou grow'st,
+ In one of thine, from that which thou departest,
+ ...
 </code></pre>
 </div>
     
@@ -2509,13 +2501,40 @@ http://assignments.bridgesuncc.org/assignments/2049/bridges_testing
 <pre><code>Compiling test song_lyrics_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogsong_lyrics_snippet.java-runtest">Run Test for test song_lyrics_snippet.java</h3>
-<pre><code>Harder Better Faster Stronger
-Daft Punk
-Homework / Discovery / Alive 1997
-2001-02-26
+<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503. Message: &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Application Error&lt;/title&gt;
+    &lt;style media=&quot;screen&quot;&gt;
+      html,body,iframe {
+        margin: 0;
+        padding: 0;
+      }
 
+      html,body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;https://www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
+  &lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516&quot; integrity=&quot;sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==&quot; data-cf-beacon='{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;b46cb27d3b9d47cb919820c918d9ab42&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}' crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+	at bridges.connect.DataSource.getSong(DataSource.java:983)
+	at song_lyrics_snippet.main(song_lyrics_snippet.java:24)
+could not run test song_lyrics_snippet.java
 </code></pre>
 </div>
     
@@ -3448,13 +3467,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5412
+
+Actor-Movie Data:
+	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
+	Actor: Q45553 &quot;Robert J. Wilke&quot;
+
+Actor-Movie Data:
+	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
+	Actor: Q78505 &quot;Peter Lorre&quot;
+
+Actor-Movie Data:
+	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
+	Actor: Q104027 &quot;Kirk Douglas&quot;
+
 </code></pre>
 </div>
     

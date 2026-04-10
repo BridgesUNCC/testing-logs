@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Fri Apr 10 09:35:43 AM EDT 2026</p>
+	<p>Running at Fri Apr 10 01:38:20 PM EDT 2026</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -822,13 +822,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary81" class="failure">
+  <div id="summary81" class="success">
     <h2><a href="java_logs.html#javalog81">Assignment 81</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog81-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog81-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog81-runanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog81-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -1985,8 +1985,10 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.774053255875539E12
-Alarm clock
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:69)
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
 </div>
@@ -2431,23 +2433,23 @@ total vertices:22833
 Set size: 22833
 Grid
 ===grid stats===
-0)Source Point:-24.6995638592293,-71.07006057978354
-0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:122.04596908638312
-0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:122.04596908638312
+0)Source Point:-68.47815134688494,-51.48400558321609
+0)[ALG]Closest Point: -73.9222475,40.6128304
+0)[ALG]Min Dist:92.25760337795346
+0)[BFA]Closest Point: -73.9222475,40.6128304
+0)[BFA]Min Dist:92.25760337795346
 0)Difference:0.0
-Source Point:-15.696472558787079,40.6199657686826
-Source Point:-46.21935984818758,40.686269709044424
-Source Point:-51.42588257588261,40.779998534281
-Source Point:-38.06251056498174,40.808774760736526
-Source Point:-73.05947262787586,40.78686926332956
-Source Point:-49.872842912882874,40.69677243999722
-Source Point:-68.40860734634353,40.686340115985736
-Source Point:-20.739815463677772,40.69642149517594
-Source Point:-20.544324352004544,40.77286709090199
-Source Point:-44.075352903198954,40.72649859677132
-num cells examined:5
+Source Point:-34.29918065500159,40.777196626676286
+Source Point:-69.80757777171574,40.69884242656515
+Source Point:-54.3813288913305,40.6211408110713
+Source Point:-34.400975463580714,40.73178727151029
+Source Point:-8.185514599549009,40.78216163087726
+Source Point:-28.664428288169617,40.726185729187904
+Source Point:-23.791695868146043,40.7430582958813
+Source Point:-54.68035968237359,40.763241073027196
+Source Point:-33.94082654386301,40.69912940881995
+Source Point:-21.886843264461774,40.783305490323826
+num cells examined:12
 
 Check Your Visualization at the following link:
 
@@ -3228,7 +3230,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.13716
+Pi val: 3.1442
 
 Check Your Visualization at the following link:
 
@@ -3517,20 +3519,17 @@ http://assignments.bridgesuncc.org/assignments/79/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/81-VisualizeAudio/java_answer
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalog81-runanswer">Run Answer for Assignment 81</h3>
 <pre><code>Guessing VisualAudio.java is the right java file where main is
 
 16
-There was a problem sending the visualization representation to the server. 
-Received an empty JSON response from the server. 
-Exception in thread &quot;main&quot; java.io.IOException: Received an empty JSON response from the server. 
-	at bridges.connect.Connector.asJSONObject(Connector.java:272)
-	at bridges.connect.Connector.executeHTTPRequest(Connector.java:506)
-	at bridges.connect.Connector.post(Connector.java:604)
-	at bridges.connect.Bridges.visualize(Bridges.java:599)
-	at VisualAudio.main(VisualAudio.java:122)
-could not run java_answer for assignment in ../assignmentdb/81-VisualizeAudio/java_answer
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/81/bridges_testing
+
+
 </code></pre>
 </div>
     

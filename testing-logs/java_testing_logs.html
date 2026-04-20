@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sun Apr 19 09:05:46 PM EDT 2026</p>
+	<p>Running at Mon Apr 20 01:06:13 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.63
-	Date:Apr 19 2026  20:54:27.345 EDT
-	Location: 15 km ESE of Bridgeport, California
-	Lat/Long:38.2179,-119.0598
+	Magnitude:2.09
+	Date:Apr 20 2026  00:54:24.440 EDT
+	Location: 26 km S of Tecopa, CA
+	Lat/Long:35.6185,-116.2235
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.63
-	Date:Apr 19 2026  20:54:27.345 EDT
-	Location: 15 km ESE of Bridgeport, California
-	Lat/Long:38.2179,-119.0598
+	Magnitude:2.09
+	Date:Apr 20 2026  00:54:24.440 EDT
+	Location: 26 km S of Tecopa, CA
+	Lat/Long:35.6185,-116.2235
 Earthquake 0:
-	Magnitude:1.74
-	Date:Jun 07 2025  08:07:35.100 EDT
-	Location: 9 km SE of Running Springs, CA
-	Lat/Long:34.1613333,-117.0311667
+	Magnitude:1.4
+	Date:Jun 07 2025  13:41:36.423 EDT
+	Location: 39 km SSW of Dry Creek, Alaska
+	Lat/Long:63.3258,-144.993
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Trash Panic
-PlayStation 3
-7.0
-[Puzzle]
+<pre><code>Pimp My Ride
+PlayStation 2
+2.2
+[Racing, Action]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Danny_Glover
-Color_Purple,_The_(1985)
+<pre><code>James_Stewart_(I)
+Grace_Kelly:_The_American_Princess_(1991)
 </code></pre>
 </div>
     
@@ -2402,11 +2402,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 57
+<pre><code>Sonnet 120
 poem
-Being your slave what should I do but tend,
- Upon the hours, and times of your desire?
- I have no pr...
+That you were once unkind befriends me now,
+ And for that sorrow, which I then did feel,
+ Needs must...
 </code></pre>
 </div>
     
@@ -3470,22 +3470,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5424
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q274169 &quot;Kathryn Crosby&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q336877 &quot;Raymond Burr&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q344758 &quot;Gig Young&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

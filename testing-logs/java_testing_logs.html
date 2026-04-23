@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Apr 23 01:06:29 PM EDT 2026</p>
+	<p>Running at Thu Apr 23 05:06:26 PM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.3
-	Date:Apr 23 2026  12:30:46.064 EDT
-	Location: 9 km NNE of Seldovia Village, Alaska
-	Lat/Long:59.557,-151.611
+	Magnitude:1.61
+	Date:Apr 23 2026  16:58:25.290 EDT
+	Location: 5 km W of San Francisco Zoo, CA
+	Lat/Long:37.7403335571289,-122.559669494629
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.3
-	Date:Apr 23 2026  12:30:46.064 EDT
-	Location: 9 km NNE of Seldovia Village, Alaska
-	Lat/Long:59.557,-151.611
+	Magnitude:1.61
+	Date:Apr 23 2026  16:58:25.290 EDT
+	Location: 5 km W of San Francisco Zoo, CA
+	Lat/Long:37.7403335571289,-122.559669494629
 Earthquake 0:
-	Magnitude:1.0
-	Date:Jun 11 2025  11:33:20.547 EDT
-	Location: 17 km SSW of Anchor Point, Alaska
-	Lat/Long:59.6248,-151.8991
+	Magnitude:4.7
+	Date:Jun 11 2025  16:36:16.744 EDT
+	Location: 66 km SSE of Adak, Alaska
+	Lat/Long:51.3129,-176.2917
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>The Spiderwick Chronicles
-Wii
+<pre><code>Soulcalibur V
+PlayStation 3
 7.5
-[Adventure]
+[Fighting]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Al_Pacino
-Scarface:_The_Rebirth_(2003)
+<pre><code>Arnold_Schwarzenegger
+Eraser_(1996)
 </code></pre>
 </div>
     
@@ -2402,11 +2402,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 97
+<pre><code>Sonnet 113
 poem
-How like a winter hath my absence been
- From thee, the pleasure of the fleeting year!
- What freezing...
+Since I left you, mine eye is in my mind,
+ And that which governs me to go about,
+ Doth part his fun...
 </code></pre>
 </div>
     
@@ -3470,22 +3470,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5424
-
-Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q45553 &quot;Robert J. Wilke&quot;
-
-Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q78505 &quot;Peter Lorre&quot;
-
-Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q104027 &quot;Kirk Douglas&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

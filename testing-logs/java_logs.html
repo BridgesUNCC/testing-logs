@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon May  4 09:35:54 AM EDT 2026</p>
+	<p>Running at Mon May  4 01:37:15 PM EDT 2026</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -328,7 +328,7 @@ background-color: springgreen;
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog31-buildscaffold">error</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog31-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog31-runanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog31-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -582,13 +582,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary57" class="success">
+  <div id="summary57" class="failure">
     <h2><a href="java_logs.html#javalog57">Assignment 57</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog57-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog57-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog57-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog57-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -662,13 +662,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary65" class="success">
+  <div id="summary65" class="failure">
     <h2><a href="java_logs.html#javalog65">Assignment 65</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog65-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog65-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog65-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog65-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -1985,8 +1985,10 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.776124761377333E12
-Alarm clock
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:69)
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
 </div>
@@ -2005,12 +2007,44 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Alarm clock
-could not run java_answer for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
+Took: 1.776139282307425E12
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/31/bridges_testing
+
+
+Q61552
+Q102813
+Q126606
+Q133925
+Q214245
+Q377450
+Q712968
+Q961187
+Q3072931
+Q3265830
+Took: 1.776139291090273E12
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/31/bridges_testing
+
+
+Q61552
+Q102813
+Q126606
+Q133925
+Q214245
+Q377450
+Q712968
+Q961187
+Q3072931
+Q3265830
 </code></pre>
 </div>
     
@@ -2431,23 +2465,23 @@ total vertices:22833
 Set size: 22833
 Grid
 ===grid stats===
-0)Source Point:-10.49532167945948,-56.34195349797662
-0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:115.85374915068158
-0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:115.85374915068158
+0)Source Point:-64.0918179808172,-6.2378024024877305
+0)[ALG]Closest Point: -73.9157579,40.6132625
+0)[ALG]Min Dist:47.869949634742994
+0)[BFA]Closest Point: -73.9157579,40.6132625
+0)[BFA]Min Dist:47.869949634742994
 0)Difference:0.0
-Source Point:-5.132794473124179,40.77685891999919
-Source Point:-13.636320009114662,40.79304579960911
-Source Point:-68.94875030642447,40.64999812144028
-Source Point:-70.22256992385141,40.71282105430105
-Source Point:-34.29542499520166,40.64923196811762
-Source Point:-3.951261738767329,40.64017631576661
-Source Point:-47.04721902794704,40.74045558170454
-Source Point:-60.273339954312995,40.793914984202786
-Source Point:-63.83308483371617,40.7387814116065
-Source Point:-45.97306871209476,40.77556340393841
-num cells examined:8
+Source Point:-54.008194957766634,40.79400345637543
+Source Point:-42.18246157247432,40.719142067394415
+Source Point:-18.383099567773726,40.71901902401161
+Source Point:-71.2523891245863,40.65059216379652
+Source Point:-57.88809401815695,40.743014475262065
+Source Point:-13.701183244176931,40.73568883470758
+Source Point:-20.148154723649732,40.748084533048974
+Source Point:-23.79677918722529,40.623250419925064
+Source Point:-57.85812911476316,40.71274199354594
+Source Point:-41.76439523196988,40.77275053329044
+num cells examined:11
 
 Check Your Visualization at the following link:
 
@@ -2772,35 +2806,13 @@ http://assignments.bridgesuncc.org/assignments/56/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/57-BookAnalysis/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog57-runanswer">Run Answer for Assignment 57</h3>
 <pre><code>Guessing book_analysis.java is the right java file where main is
 
 80
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/157/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/157/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/157/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/157/bridges_testing
-
-
+Alarm clock
+could not run java_answer for assignment in ../assignmentdb/57-BookAnalysis/java_answer
 </code></pre>
 </div>
     
@@ -3009,7 +3021,7 @@ http://assignments.bridgesuncc.org/assignments/64/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/65-Reddit/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog65-runanswer">Run Answer for Assignment 65</h3>
 <pre><code>Guessing reddit.java is the right java file where main is
 
@@ -3021,51 +3033,8 @@ pics..
 worldnews..
 videos..
 AskReddit..
-aww..
-Music..
-funny..
-news..
-movies..
-blog..
-books..
-history..
-food..
-philosophy..
-Jokes..
-DIY..
-space..
-Documentaries..
-askscience..
-nottheonion..
-todayilearned..
-gifs..
-listentothis..
-IAmA..
-announcements..
-TwoXChromosomes..
-creepy..
-nosleep..
-GetMotivated..
-WritingPrompts..
-LifeProTips..
-EarthPorn..
-explainlikeimfive..
-Showerthoughts..
-Futurology..
-photoshopbattles..
-mildlyinteresting..
-dataisbeautiful..
-tifu..
-OldSchoolCool..
-UpliftingNews..
-InternetIsBeautiful..
-science..
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/65/bridges_testing
-
-
+Alarm clock
+could not run java_answer for assignment in ../assignmentdb/65-Reddit/java_answer
 </code></pre>
 </div>
     
@@ -3228,7 +3197,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.14596
+Pi val: 3.14436
 
 Check Your Visualization at the following link:
 

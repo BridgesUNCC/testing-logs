@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon May  4 09:06:09 PM EDT 2026</p>
+	<p>Running at Tue May  5 01:11:36 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -165,12 +165,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryelevation_snippet.java" class="success">
+  <div id="summaryelevation_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogelevation_snippet.java">Test elevation_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogelevation_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogelevation_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogelevation_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -345,12 +345,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryosm.java" class="success">
+  <div id="summaryosm.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogosm.java">Test osm.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogosm.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogosm.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogosm.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1293,23 +1293,13 @@ http://assignments.bridgesuncc.org/assignments/2016/bridges_testing
 <pre><code>Compiling test elevation_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogelevation_snippet.java-runtest">Run Test for test elevation_snippet.java</h3>
-<pre><code>Width: 54
-Height: 59
-Resolution: 0.020011111111
-Lower Left Corner: 98.0259, 41.329622222222
-first 10 elevations:
-504
-504
-500
-501
-497
-491
-488
-497
-524
-522
+<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: Http Request Failed. Error Code:504. Message:null
+	at bridges.connect.DataSource.getDataSetJSON(DataSource.java:1276)
+	at bridges.connect.DataSource.getElevationData(DataSource.java:1345)
+	at elevation_snippet.main(elevation_snippet.java:17)
+could not run test elevation_snippet.java
 </code></pre>
 </div>
     
@@ -1325,10 +1315,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.05
-	Date:May 04 2026  20:36:57.270 EDT
-	Location: 22 km SSE of Pāhala, Hawaii
-	Lat/Long:19.0271663665771,-155.364837646484
+	Magnitude:1.73
+	Date:May 05 2026  00:53:44.241 EDT
+	Location: 84 km NE of Tonopah, Nevada
+	Lat/Long:38.5434,-116.4815
 </code></pre>
 </div>
     
@@ -1344,15 +1334,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.05
-	Date:May 04 2026  20:36:57.270 EDT
-	Location: 22 km SSE of Pāhala, Hawaii
-	Lat/Long:19.0271663665771,-155.364837646484
+	Magnitude:1.73
+	Date:May 05 2026  00:53:44.241 EDT
+	Location: 84 km NE of Tonopah, Nevada
+	Lat/Long:38.5434,-116.4815
 Earthquake 0:
-	Magnitude:1.01
-	Date:Jun 24 2025  23:18:44.180 EDT
-	Location: 5 km NNW of The Geysers, CA
-	Lat/Long:38.8126678466797,-122.789665222168
+	Magnitude:2.5
+	Date:Jun 25 2025  04:47:10.365 EDT
+	Location: 7 km SW of Gypsum, Kansas
+	Lat/Long:38.6644,-97.491
 </code></pre>
 </div>
     
@@ -1409,10 +1399,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Turbo Jet Ski 3D 
-Wireless
+<pre><code>Vector TD
+PlayStation Portable
 8.0
-[Sports]
+[Strategy]
 </code></pre>
 </div>
     
@@ -1685,8 +1675,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Cate_Blanchett
-Man_Who_Cried,_The_(2000)
+<pre><code>Adam_Sandler_(I)
+My_Buddy_Jack_(2003)
 </code></pre>
 </div>
     
@@ -1909,14 +1899,10 @@ Shutting down ...
 <pre><code>Compiling test osm.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogosm.java-runtest">Run Test for test osm.java</h3>
-<pre><code>
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/2037/bridges_testing
-
-
+<pre><code>Alarm clock
+could not run test osm.java
 </code></pre>
 </div>
     
@@ -1938,6 +1924,12 @@ http://assignments.bridgesuncc.org/assignments/2037/bridges_testing
 	Lon: -77.0317015
 
 
+	ID: 367141031
+	Name: Buff and Brew Café
+	Lat: 38.9175501
+	Lon: -77.0897162
+
+
 	ID: 388247153
 	Name: Millie’s
 	Lat: 38.9450497
@@ -1954,12 +1946,6 @@ http://assignments.bridgesuncc.org/assignments/2037/bridges_testing
 	Name: Santucci's Deli
 	Lat: 39.0204121
 	Lon: -77.0118669
-
-
-	ID: 452446229
-	Name: Starbucks
-	Lat: 39.0217043
-	Lon: -76.9765798
 
 
 </code></pre>
@@ -2402,17 +2388,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>The First Part Of King Henry The Sixth
-play
-1592
-
-THE FIRST PART OF HENRY THE SIXTH
-
-by William Shakespeare
-
-Dramatis Personae
-
- KING HENRY THE ...
+<pre><code>Sonnet 102
+poem
+My love is strengthened though more weak in seeming,
+ I love not less, though less the show appear,
+...
 </code></pre>
 </div>
     
@@ -3481,16 +3461,16 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Data Records in 1955: 5437
 
 Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q2464819 &quot;Philip Van Zandt&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q102551 &quot;Ernest Borgnine&quot;
 
 Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q2831802 &quot;Alberto Morin&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q180251 &quot;Paddy Chayefsky&quot;
 
 Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q3086867 &quot;Fred Kelsey&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q266416 &quot;Betsy Blair&quot;
 
 </code></pre>
 </div>

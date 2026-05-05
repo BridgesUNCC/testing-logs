@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue May  5 01:11:36 AM EDT 2026</p>
+	<p>Running at Tue May  5 05:05:55 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -165,12 +165,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryelevation_snippet.java" class="failure">
+  <div id="summaryelevation_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogelevation_snippet.java">Test elevation_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogelevation_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogelevation_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogelevation_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -345,12 +345,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryosm.java" class="failure">
+  <div id="summaryosm.java" class="success">
     <h2><a href="java_testing_logs.html#javalogosm.java">Test osm.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogosm.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogosm.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogosm.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1293,13 +1293,23 @@ http://assignments.bridgesuncc.org/assignments/2016/bridges_testing
 <pre><code>Compiling test elevation_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogelevation_snippet.java-runtest">Run Test for test elevation_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: Http Request Failed. Error Code:504. Message:null
-	at bridges.connect.DataSource.getDataSetJSON(DataSource.java:1276)
-	at bridges.connect.DataSource.getElevationData(DataSource.java:1345)
-	at elevation_snippet.main(elevation_snippet.java:17)
-could not run test elevation_snippet.java
+<pre><code>Width: 54
+Height: 59
+Resolution: 0.020011111111
+Lower Left Corner: 98.0259, 41.329622222222
+first 10 elevations:
+504
+504
+500
+501
+497
+491
+488
+497
+524
+522
 </code></pre>
 </div>
     
@@ -1315,10 +1325,10 @@ could not run test elevation_snippet.java
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.73
-	Date:May 05 2026  00:53:44.241 EDT
-	Location: 84 km NE of Tonopah, Nevada
-	Lat/Long:38.5434,-116.4815
+	Magnitude:1.86
+	Date:May 05 2026  04:46:17.188 EDT
+	Location: 81 km ENE of Tonopah, Nevada
+	Lat/Long:38.4783,-116.4544
 </code></pre>
 </div>
     
@@ -1334,15 +1344,15 @@ could not run test elevation_snippet.java
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.73
-	Date:May 05 2026  00:53:44.241 EDT
-	Location: 84 km NE of Tonopah, Nevada
-	Lat/Long:38.5434,-116.4815
+	Magnitude:1.86
+	Date:May 05 2026  04:46:17.188 EDT
+	Location: 81 km ENE of Tonopah, Nevada
+	Lat/Long:38.4783,-116.4544
 Earthquake 0:
-	Magnitude:2.5
-	Date:Jun 25 2025  04:47:10.365 EDT
-	Location: 7 km SW of Gypsum, Kansas
-	Lat/Long:38.6644,-97.491
+	Magnitude:2.8
+	Date:Jun 25 2025  12:41:37.006 EDT
+	Location: 20 km S of Susitna North, Alaska
+	Lat/Long:61.9818,-149.9204
 </code></pre>
 </div>
     
@@ -1399,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Vector TD
-PlayStation Portable
+<pre><code>Jeopardy! [1998]
+PlayStation
 8.0
-[Strategy]
+[Puzzle]
 </code></pre>
 </div>
     
@@ -1675,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Adam_Sandler_(I)
-My_Buddy_Jack_(2003)
+<pre><code>Al_Pacino
+Dick_Tracy_(1990)
 </code></pre>
 </div>
     
@@ -1899,10 +1909,14 @@ Shutting down ...
 <pre><code>Compiling test osm.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogosm.java-runtest">Run Test for test osm.java</h3>
-<pre><code>Alarm clock
-could not run test osm.java
+<pre><code>
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/2037/bridges_testing
+
+
 </code></pre>
 </div>
     
@@ -2075,8 +2089,8 @@ science
 ID: 1m9fiv8
 Title: How does water become oxygenated?
 Author: Saskatchemoose
-Score: 37
-VoteRatio: 0.74
+Score: 32
+VoteRatio: 0.72
 CommentCount: 14
 Subreddit: askscience
 PostTime: 1753489522
@@ -2086,7 +2100,7 @@ Text: Totally uninformed on this whole subject but it’s something I just thoug
 ID: 1sghgig
 Title: AskScience AMA Series: How can we engineer better crops? We are scientists developing new growing strategies for fruits and vegetables. Ask us anything!
 Author: AskScienceModerator
-Score: 49
+Score: 50
 VoteRatio: 0.85
 CommentCount: 21
 Subreddit: askscience
@@ -2113,7 +2127,7 @@ Links:
 ID: 1l1xl7v
 Title: During the Ice Ages, large areas of the Earth were buried by glaciers for thousands of years. What happened to all the life there? Was there a small mass extinction? Did it just move? How did it recover so fast?
 Author: ParagonRenegade
-Score: 502
+Score: 504
 VoteRatio: 0.93
 CommentCount: 52
 Subreddit: askscience
@@ -2130,7 +2144,7 @@ I'm pretty confused on how species handled this huge change in climate without t
 ID: 1lny217
 Title: Has there ever been a “counter-invasion” where displaced organisms wound up inhabiting the invasive species’ original niche?
 Author: al_fletcher
-Score: 78
+Score: 79
 VoteRatio: 0.89
 CommentCount: 3
 Subreddit: askscience
@@ -2152,7 +2166,7 @@ Text:
 ID: 1kyvhn9
 Title: What tree has the densest most inter-connected canopy?
 Author: Gold-Print-767
-Score: 63
+Score: 59
 VoteRatio: 0.87
 CommentCount: 7
 Subreddit: askscience
@@ -2163,7 +2177,7 @@ Text: Title says it all
 ID: 1m1c2mm
 Title: Are you actually conscious under anesthesia?
 Author: myaltaltaltacct
-Score: 645
+Score: 647
 VoteRatio: 0.91
 CommentCount: 295
 Subreddit: askscience
@@ -2195,8 +2209,8 @@ Text: I get that a lot of them get eaten. There are ocean worms that live off th
 ID: 1mqubrf
 Title: How do we accurately predict the amount of rain or snowfall in a day??
 Author: sniffingboy
-Score: 57
-VoteRatio: 0.85
+Score: 62
+VoteRatio: 0.87
 CommentCount: 12
 Subreddit: askscience
 PostTime: 1755255110
@@ -2206,7 +2220,7 @@ Text:
 ID: 1p2phpx
 Title: Do animals like polar bears feel cold despite their fur, but just deal with it. Or does their fur actually keep them comfortably warm, even if they get wet?
 Author: bentbabe
-Score: 1824
+Score: 1829
 VoteRatio: 0.98
 CommentCount: 235
 Subreddit: askscience
@@ -2233,8 +2247,8 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 <pre><code>ID: 1m9fiv8
 Title: How does water become oxygenated?
 Author: Saskatchemoose
-Score: 37
-VoteRatio: 0.74
+Score: 32
+VoteRatio: 0.72
 CommentCount: 14
 Subreddit: askscience
 PostTime: 1753489522
@@ -2244,7 +2258,7 @@ Text: Totally uninformed on this whole subject but it’s something I just thoug
 ID: 1sghgig
 Title: AskScience AMA Series: How can we engineer better crops? We are scientists developing new growing strategies for fruits and vegetables. Ask us anything!
 Author: AskScienceModerator
-Score: 49
+Score: 50
 VoteRatio: 0.85
 CommentCount: 21
 Subreddit: askscience
@@ -2271,7 +2285,7 @@ Links:
 ID: 1l1xl7v
 Title: During the Ice Ages, large areas of the Earth were buried by glaciers for thousands of years. What happened to all the life there? Was there a small mass extinction? Did it just move? How did it recover so fast?
 Author: ParagonRenegade
-Score: 502
+Score: 504
 VoteRatio: 0.93
 CommentCount: 52
 Subreddit: askscience
@@ -2288,7 +2302,7 @@ I'm pretty confused on how species handled this huge change in climate without t
 ID: 1lny217
 Title: Has there ever been a “counter-invasion” where displaced organisms wound up inhabiting the invasive species’ original niche?
 Author: al_fletcher
-Score: 78
+Score: 79
 VoteRatio: 0.89
 CommentCount: 3
 Subreddit: askscience
@@ -2310,7 +2324,7 @@ Text:
 ID: 1kyvhn9
 Title: What tree has the densest most inter-connected canopy?
 Author: Gold-Print-767
-Score: 63
+Score: 59
 VoteRatio: 0.87
 CommentCount: 7
 Subreddit: askscience
@@ -2321,7 +2335,7 @@ Text: Title says it all
 ID: 1m1c2mm
 Title: Are you actually conscious under anesthesia?
 Author: myaltaltaltacct
-Score: 645
+Score: 647
 VoteRatio: 0.91
 CommentCount: 295
 Subreddit: askscience
@@ -2353,8 +2367,8 @@ Text: I get that a lot of them get eaten. There are ocean worms that live off th
 ID: 1mqubrf
 Title: How do we accurately predict the amount of rain or snowfall in a day??
 Author: sniffingboy
-Score: 57
-VoteRatio: 0.85
+Score: 62
+VoteRatio: 0.87
 CommentCount: 12
 Subreddit: askscience
 PostTime: 1755255110
@@ -2364,7 +2378,7 @@ Text:
 ID: 1p2phpx
 Title: Do animals like polar bears feel cold despite their fur, but just deal with it. Or does their fur actually keep them comfortably warm, even if they get wet?
 Author: bentbabe
-Score: 1824
+Score: 1829
 VoteRatio: 0.98
 CommentCount: 235
 Subreddit: askscience
@@ -2388,11 +2402,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 102
+<pre><code>Sonnet 56
 poem
-My love is strengthened though more weak in seeming,
- I love not less, though less the show appear,
-...
+Sweet love renew thy force, be it not said
+ Thy edge should blunter be than appetite,
+ Which but to-...
 </code></pre>
 </div>
     
@@ -3461,16 +3475,16 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Data Records in 1955: 5437
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q102551 &quot;Ernest Borgnine&quot;
+	Movie: Q34414 &quot;Rear Window&quot;
+	Actor: Q3925 &quot;Grace Kelly&quot;
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q180251 &quot;Paddy Chayefsky&quot;
+	Movie: Q34414 &quot;Rear Window&quot;
+	Actor: Q7374 &quot;Alfred Hitchcock&quot;
 
 Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q266416 &quot;Betsy Blair&quot;
+	Movie: Q34414 &quot;Rear Window&quot;
+	Actor: Q102462 &quot;James Stewart&quot;
 
 </code></pre>
 </div>

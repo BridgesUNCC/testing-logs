@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue May 12 09:06:30 PM EDT 2026</p>
+	<p>Running at Wed May 13 01:06:01 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.75
-	Date:May 12 2026  20:58:15.350 EDT
-	Location: 6 km SSW of Redlands, CA
-	Lat/Long:34.0053333333333,-117.204666666667
+	Magnitude:1.92
+	Date:May 13 2026  00:17:56.451 EDT
+	Location: 18 km SE of Silver Springs, Nevada
+	Lat/Long:39.2806,-119.1075
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.75
-	Date:May 12 2026  20:58:15.350 EDT
-	Location: 6 km SSW of Redlands, CA
-	Lat/Long:34.0053333333333,-117.204666666667
+	Magnitude:1.92
+	Date:May 13 2026  00:17:56.451 EDT
+	Location: 18 km SE of Silver Springs, Nevada
+	Lat/Long:39.2806,-119.1075
 Earthquake 0:
-	Magnitude:1.7
-	Date:Jul 08 2025  04:01:17.128 EDT
-	Location: 57 km S of Whites City, New Mexico
-	Lat/Long:31.659,-104.417
+	Magnitude:1.0
+	Date:Jul 08 2025  06:49:10.422 EDT
+	Location: 21 km NNE of Yerington, Nevada
+	Lat/Long:39.1496,-119.0299
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Battle for the White House 
-Wireless
-7.8
-[Action]
+<pre><code>Little Inferno
+iPad
+5.0
+[Puzzle]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christian_Bale
-Captain_Corelli's_Mandolin_(2001)
+<pre><code>Arnold_Schwarzenegger
+Dave_(1993)
 </code></pre>
 </div>
     
@@ -2402,17 +2402,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>The Second Part Of King Henry The Fourth
-play
-1598
-
-SECOND PART OF KING HENRY IV
-
-by William Shakespeare
-
-Dramatis Personae
-
- RUMOUR, the Presente...
+<pre><code>Sonnet 88
+poem
+When thou shalt be disposed to set me light,
+ And place my merit in the eye of scorn,
+ Upon thy side...
 </code></pre>
 </div>
     
@@ -3476,22 +3470,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5437
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q3425870 &quot;René Blancard&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q4864570 &quot;Barry Norton&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q16017313 &quot;John Alderson&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Fri May 15 01:06:10 PM EDT 2026</p>
+	<p>Running at Fri May 15 05:06:06 PM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.5
-	Date:May 15 2026  12:44:18.302 EDT
-	Location: 19 km SSE of Silver Springs, Nevada
-	Lat/Long:39.2702,-119.1034
+	Magnitude:1.03
+	Date:May 15 2026  16:49:38.530 EDT
+	Location: 8 km NW of The Geysers, CA
+	Lat/Long:38.828498840332,-122.816833496094
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.5
-	Date:May 15 2026  12:44:18.302 EDT
-	Location: 19 km SSE of Silver Springs, Nevada
-	Lat/Long:39.2702,-119.1034
+	Magnitude:1.03
+	Date:May 15 2026  16:49:38.530 EDT
+	Location: 8 km NW of The Geysers, CA
+	Lat/Long:38.828498840332,-122.816833496094
 Earthquake 0:
-	Magnitude:2.4
-	Date:Jul 10 2025  13:09:24.997 EDT
-	Location: 57 km S of Whites City, New Mexico
-	Lat/Long:31.654,-104.351
+	Magnitude:1.5
+	Date:Jul 10 2025  16:26:53.109 EDT
+	Location: 35 km S of Whites City, New Mexico
+	Lat/Long:31.854,-104.389
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Street Fighter Alpha Anthology
-PlayStation 2
-8.0
-[Fighting, Compilation]
+<pre><code>Smashing Drive
+GameCube
+3.4
+[Racing, Action]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Denzel_Washington
-Behind_the_Scenes_of_'John_Q'_(2002)
+<pre><code>Cary_Grant
+Howards_of_Virginia,_The_(1940)
 </code></pre>
 </div>
     
@@ -2406,18 +2406,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>The Tragedy Of Macbeth
-play
-1606
-
-THE TRAGEDY OF MACBETH
-
-by William Shakespeare
-
-Dramatis Personae
-
- DUNCAN, King of Scotland
- ...
+<pre><code>Sonnet 12
+poem
+When I do count the clock that tells the time,
+ And see the brave day sunk in hideous night,
+ When I...
 </code></pre>
 </div>
     
@@ -3481,13 +3474,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5442
+
+Actor-Movie Data:
+	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
+	Actor: Q45553 &quot;Robert J. Wilke&quot;
+
+Actor-Movie Data:
+	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
+	Actor: Q78505 &quot;Peter Lorre&quot;
+
+Actor-Movie Data:
+	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
+	Actor: Q104027 &quot;Kirk Douglas&quot;
+
 </code></pre>
 </div>
     

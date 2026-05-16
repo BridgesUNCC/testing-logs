@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sat May 16 01:06:09 PM EDT 2026</p>
+	<p>Running at Sat May 16 05:06:13 PM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.7
-	Date:May 16 2026  12:17:28.970 EDT
-	Location: 7 km NE of Ridgeway, Alaska
-	Lat/Long:60.582,-150.986
+	Magnitude:1.66
+	Date:May 16 2026  16:18:16.850 EDT
+	Location: 19 km NW of Ocotillo, CA
+	Lat/Long:32.8538333333333,-116.145833333333
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.7
-	Date:May 16 2026  12:17:28.970 EDT
-	Location: 7 km NE of Ridgeway, Alaska
-	Lat/Long:60.582,-150.986
+	Magnitude:2.14
+	Date:May 16 2026  16:46:01.480 EDT
+	Location: 7 km SE of Loma Linda, CA
+	Lat/Long:33.9986666666667,-117.216666666667
 Earthquake 0:
-	Magnitude:1.9
-	Date:Jul 11 2025  05:11:46.537 EDT
-	Location: 4 km NNW of Balmorhea, Texas
-	Lat/Long:31.024,-103.754
+	Magnitude:1.73
+	Date:Jul 11 2025  07:56:34.450 EDT
+	Location: 12 km WNW of Calipatria, CA
+	Lat/Long:33.1618347,-115.6320038
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>MotoGP 2
-Xbox
-8.8
-[Racing]
+<pre><code>Turok
+PC
+7.0
+[Shooter]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Clark_Gable
-Homecoming_(1948)
+<pre><code>John_Malkovich
+Je_rentre_a_la_maison_(2001)
 </code></pre>
 </div>
     
@@ -2406,11 +2406,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 25
+<pre><code>Sonnet 134
 poem
-Let those who are in favour with their stars,
- Of public honour and proud titles boast,
- Whilst I wh...
+So now I have confessed that he is thine,
+ And I my self am mortgaged to thy will,
+ My self I'll for...
 </code></pre>
 </div>
     
@@ -3474,13 +3474,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5442
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q3193130 &quot;Karen Steele&quot;
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q102551 &quot;Ernest Borgnine&quot;
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q180251 &quot;Paddy Chayefsky&quot;
+
 </code></pre>
 </div>
     

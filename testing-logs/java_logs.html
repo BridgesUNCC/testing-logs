@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon May 18 05:37:39 PM EDT 2026</p>
+	<p>Running at Mon May 18 09:37:03 PM EDT 2026</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -328,7 +328,7 @@ background-color: springgreen;
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog31-buildscaffold">error</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog31-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog31-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog31-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -602,23 +602,23 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary59" class="success">
+  <div id="summary59" class="failure">
     <h2><a href="java_logs.html#javalog59">Assignment 59</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog59-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog59-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog59-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog59-runanswer">error</a></li>
       </ul>
     </p>
   </div>
-  <div id="summary60" class="success">
+  <div id="summary60" class="failure">
     <h2><a href="java_logs.html#javalog60">Assignment 60</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog60-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog60-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog60-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog60-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -1985,7 +1985,7 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.777362008751782E12
+Data Access Took: 1.777376361428333E12
 Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
@@ -2005,44 +2005,15 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Took: 1.777362170876018E12
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/31/bridges_testing
-
-
-Q36105
-Q62257
-Q175571
-Q191064
-Q209186
-Q555379
-Q735221
-Q890204
-Q2110802
-Q3370684
-Took: 1.777362180244693E12
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/31/bridges_testing
-
-
-Q41142
-Q55468
-Q60306
-Q157191
-Q176139
-Q310217
-Q443823
-Q446064
-Q539828
-Q722337
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:68)
+could not run java_answer for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
     
@@ -2463,23 +2434,23 @@ total vertices:22894
 Set size: 22894
 Grid
 ===grid stats===
-0)Source Point:-4.928350409314476,-54.22942150141908
-0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:117.27726763036138
-0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:117.27726763036138
+0)Source Point:-14.583625252370076,-26.40614820533198
+0)[ALG]Closest Point: -73.9065972,40.618168
+0)[ALG]Min Dist:89.5068375236865
+0)[BFA]Closest Point: -73.9065972,40.618168
+0)[BFA]Min Dist:89.5068375236865
 0)Difference:0.0
-Source Point:-17.17226938459868,40.6942372022287
-Source Point:-37.468706138400066,40.76947345865718
-Source Point:-14.471474585421156,40.72317466164233
-Source Point:-57.31853092834423,40.71390110338917
-Source Point:-70.17106512098947,40.703301771550116
-Source Point:-29.879273710348784,40.69462928871884
-Source Point:-8.562991361739009,40.7419896097938
-Source Point:-33.304942771499476,40.70604244020141
-Source Point:-12.020970085607381,40.7316141259549
-Source Point:-37.64525982441935,40.72246793921241
-num cells examined:5
+Source Point:-14.681356853238306,40.801472166989406
+Source Point:-57.31054016780156,40.66206761148615
+Source Point:-68.26916383782562,40.741061982384515
+Source Point:-18.271995556668465,40.761968338195764
+Source Point:-15.011056576916971,40.64990610286036
+Source Point:-61.77613698888255,40.68290478342062
+Source Point:-55.38007768684618,40.78408372037384
+Source Point:-59.20015230032815,40.684762499330645
+Source Point:-40.68665689454021,40.777725204750105
+Source Point:-66.23456905057081,40.64650252314834
+num cells examined:8
 
 Check Your Visualization at the following link:
 
@@ -2870,17 +2841,15 @@ http://assignments.bridgesuncc.org/assignments/157/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/59-ConvexHull_CityData/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog59-runanswer">Run Answer for Assignment 59</h3>
 <pre><code>Guessing ConvexHull.java is the right java file where main is
 
-Got 946  cities..
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/59/bridges_testing
-
-
+Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503
+	at bridges.connect.DataSource.getUSCitiesData(DataSource.java:269)
+	at ConvexHull.getInputPoints(ConvexHull.java:52)
+	at ConvexHull.main(ConvexHull.java:27)
+could not run java_answer for assignment in ../assignmentdb/59-ConvexHull_CityData/java_answer
 </code></pre>
 </div>
     
@@ -2898,22 +2867,15 @@ http://assignments.bridgesuncc.org/assignments/59/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/60-Quadtree-CityData/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog60-runanswer">Run Answer for Assignment 60</h3>
 <pre><code>Guessing QT.java is the right java file where main is
 
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/60/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/60/bridges_testing
-
-
+Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503
+	at bridges.connect.DataSource.getUSCitiesData(DataSource.java:269)
+	at QT.getInputData(QT.java:75)
+	at QT.main(QT.java:27)
+could not run java_answer for assignment in ../assignmentdb/60-Quadtree-CityData/java_answer
 </code></pre>
 </div>
     
@@ -3260,7 +3222,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.14168
+Pi val: 3.1422
 
 Check Your Visualization at the following link:
 

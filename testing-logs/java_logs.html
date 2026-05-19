@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue May 19 05:36:22 AM EDT 2026</p>
+	<p>Running at Tue May 19 09:35:53 AM EDT 2026</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -1985,8 +1985,10 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.777405077097277E12
-Alarm clock
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:69)
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
 </div>
@@ -2009,24 +2011,10 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Took: 1.777405279109563E12
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/31/bridges_testing
-
-
-Q41142
-Q55468
-Q60306
-Q157191
-Q176139
-Q310217
-Q443823
-Q446064
-Q539828
-Q722337
-Alarm clock
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:68)
 could not run java_answer for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
@@ -2283,6 +2271,7 @@ http://assignments.bridgesuncc.org/assignments/38/bridges_testing
 <pre><code>Guessing BookDistance.java is the right java file where main is
 
 80
+ERROR: Failed to get book with id = 1106
 
 Check Your Visualization at the following link:
 
@@ -2448,23 +2437,23 @@ total vertices:22894
 Set size: 22894
 Grid
 ===grid stats===
-0)Source Point:-21.361152017003526,-35.997698149875106
+0)Source Point:-23.993224972657593,-28.56808427989254
 0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:92.90266013586836
+0)[ALG]Min Dist:85.31120441075237
 0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:92.90266013586836
+0)[BFA]Min Dist:85.31120441075237
 0)Difference:0.0
-Source Point:-1.9513015716894841,40.619022765033314
-Source Point:-4.264430117283879,40.71686730317964
-Source Point:-55.685648718301834,40.70938108741499
-Source Point:-14.390731896470783,40.70116154578477
-Source Point:-1.2821634972863762,40.77570366810215
-Source Point:-48.247790639638566,40.767622533024955
-Source Point:-56.63731667350041,40.78975923002666
-Source Point:-6.490329154946281,40.72127912706058
-Source Point:-14.614783718736057,40.79393366492473
-Source Point:-28.400551149749283,40.78982435062417
-num cells examined:8
+Source Point:-25.511708424857233,40.66543473209829
+Source Point:-60.12385248249122,40.7065245297426
+Source Point:-72.64133599709925,40.77781120033694
+Source Point:-38.53182357298746,40.732894927829896
+Source Point:-4.7263531970148875,40.61567218191087
+Source Point:-46.50416196343434,40.765039198845095
+Source Point:-72.02613052721453,40.63700415047655
+Source Point:-27.22781774370676,40.720218598737034
+Source Point:-55.89622430384237,40.73222592548623
+Source Point:-64.5533546643965,40.73305651221363
+num cells examined:11
 
 Check Your Visualization at the following link:
 
@@ -3245,7 +3234,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.13516
+Pi val: 3.14248
 
 Check Your Visualization at the following link:
 

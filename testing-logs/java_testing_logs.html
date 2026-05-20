@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue May 19 09:06:23 PM EDT 2026</p>
+	<p>Running at Wed May 20 01:06:08 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.1
-	Date:May 19 2026  20:44:48.970 EDT
-	Location: 10 km WNW of Cobb, CA
-	Lat/Long:38.8530006408691,-122.831169128418
+	Magnitude:1.13
+	Date:May 20 2026  00:08:20.400 EDT
+	Location: 10 km NW of The Geysers, CA
+	Lat/Long:38.8385009765625,-122.838996887207
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.1
-	Date:May 19 2026  20:44:48.970 EDT
-	Location: 10 km WNW of Cobb, CA
-	Lat/Long:38.8530006408691,-122.831169128418
+	Magnitude:1.13
+	Date:May 20 2026  00:08:20.400 EDT
+	Location: 10 km NW of The Geysers, CA
+	Lat/Long:38.8385009765625,-122.838996887207
 Earthquake 0:
-	Magnitude:2.26
-	Date:Jul 14 2025  07:27:54.950 EDT
-	Location: 27 km WNW of Ludlow, CA
-	Lat/Long:34.8078333,-116.4338333
+	Magnitude:3.2
+	Date:Jul 14 2025  10:13:00.688 EDT
+	Location: 36 km ESE of Malaga, New Mexico
+	Lat/Long:32.069,-103.728
 </code></pre>
 </div>
     
@@ -1409,9 +1409,9 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Star Wars: The Force Unleashed
-Xbox 360
-7.3
+<pre><code>Dishonored: The Knife of Dunwall
+PlayStation 3
+7.5
 [Action]
 </code></pre>
 </div>
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christopher_Lee_(I)
-100_Years_of_Horror:_Freaks_(1996)
+<pre><code>Paul_Reubens
+Matilda_(1996)
 </code></pre>
 </div>
     
@@ -2406,11 +2406,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 52
+<pre><code>Sonnet 75
 poem
-So am I as the rich whose blessed key,
- Can bring him to his sweet up-locked treasure,
- The which he...
+So are you to my thoughts as food to life,
+ Or as sweet-seasoned showers are to the ground;
+ And for...
 </code></pre>
 </div>
     
@@ -3474,22 +3474,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5442
-
-Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q102551 &quot;Ernest Borgnine&quot;
-
-Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q180251 &quot;Paddy Chayefsky&quot;
-
-Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q266416 &quot;Betsy Blair&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

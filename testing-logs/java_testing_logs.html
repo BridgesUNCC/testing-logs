@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu May 21 09:06:00 PM EDT 2026</p>
+	<p>Running at Fri May 22 01:06:40 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.7
-	Date:May 21 2026  20:43:28.868 EDT
-	Location: 58 km S of Whites City, New Mexico
-	Lat/Long:31.653,-104.408
+	Magnitude:1.49
+	Date:May 22 2026  00:53:59.080 EDT
+	Location: 18 km N of Pine Mountain Club, CA
+	Lat/Long:35.0085,-119.132166666667
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.7
-	Date:May 21 2026  20:43:28.868 EDT
-	Location: 58 km S of Whites City, New Mexico
-	Lat/Long:31.653,-104.408
+	Magnitude:1.49
+	Date:May 22 2026  00:53:59.080 EDT
+	Location: 18 km N of Pine Mountain Club, CA
+	Lat/Long:35.0085,-119.132166666667
 Earthquake 0:
-	Magnitude:1.42
-	Date:Jul 16 2025  00:53:51.420 EDT
-	Location: 4 km SSW of Poway, CA
-	Lat/Long:32.9313333,-117.0521667
+	Magnitude:1.0
+	Date:Jul 16 2025  08:16:11.830 EDT
+	Location: 10 km S of Searles Valley, CA
+	Lat/Long:35.6824989,-117.4199982
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Tom Clancys HAWX
-PC
-6.7
-[Flight, Action]
+<pre><code>LifeLine
+PlayStation 2
+6.8
+[Action, Adventure]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Billy_Bob_Thornton
-Living_and_Working_in_Space:_The_Countdown_Has_Begun_(1993)
+<pre><code>John_Malkovich
+Knockaround_Guys_(2001)
 </code></pre>
 </div>
     
@@ -2406,11 +2406,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 80
+<pre><code>Sonnet 137
 poem
-O how I faint when I of you do write,
- Knowing a better spirit doth use your name,
- And in the prais...
+Thou blind fool Love, what dost thou to mine eyes,
+ That they behold and see not what they see?
+ The...
 </code></pre>
 </div>
     
@@ -3474,22 +3474,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5442
-
-Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q45553 &quot;Robert J. Wilke&quot;
-
-Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q78505 &quot;Peter Lorre&quot;
-
-Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q104027 &quot;Kirk Douglas&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Jun 15 09:39:28 AM EDT 2026</p>
+	<p>Running at Mon Jun 15 01:39:28 PM EDT 2026</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -1985,8 +1985,10 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.779750182890351E12
-Alarm clock
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:69)
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
 </div>
@@ -2009,20 +2011,10 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Took: 1.779750241864602E12
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/31/bridges_testing
-
-
-Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-	at java.base/java.util.Objects.checkIndex(Objects.java:361)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at WikiDataActor.main(WikiDataActor.java:130)
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:68)
 could not run java_answer for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
@@ -2468,22 +2460,22 @@ total vertices:22966
 Set size: 22966
 Grid
 ===grid stats===
-0)Source Point:-54.43008533317503,-60.35849890342674
+0)Source Point:-54.03165093780137,-34.92802255862446
 0)[ALG]Closest Point: -73.9157579,40.6132625
-0)[ALG]Min Dist:102.83476083646062
+0)[ALG]Min Dist:78.11442541549233
 0)[BFA]Closest Point: -73.9157579,40.6132625
-0)[BFA]Min Dist:102.83476083646062
+0)[BFA]Min Dist:78.11442541549233
 0)Difference:0.0
-Source Point:-63.387507353677705,40.79494548757463
-Source Point:-42.18802388691778,40.673504256747975
-Source Point:-43.097740906057325,40.75470215801525
-Source Point:-43.056282742308404,40.63851873842212
-Source Point:-27.875967397054445,40.79791839976939
-Source Point:-42.21670195177582,40.7697994722095
-Source Point:-35.50701438049329,40.77866032304475
-Source Point:-29.72713625614128,40.69027922299863
-Source Point:-73.2107628602854,40.80048224270472
-Source Point:-61.65725363799369,40.79467877745901
+Source Point:-23.793155844499537,40.745481913157654
+Source Point:-55.22259992576667,40.64375403940808
+Source Point:-34.21482808703979,40.780453231346314
+Source Point:-67.20235110270389,40.72756807064302
+Source Point:-23.82342090621723,40.6707914779511
+Source Point:-35.920111860397135,40.64478001212594
+Source Point:-19.331603723910234,40.669649783462226
+Source Point:-69.81339343591726,40.759152107129815
+Source Point:-1.9067652721272594,40.62575501148869
+Source Point:-62.258184679157125,40.80408420936186
 num cells examined:3
 
 Check Your Visualization at the following link:
@@ -3265,7 +3257,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.13776
+Pi val: 3.13416
 
 Check Your Visualization at the following link:
 

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Jun 16 05:07:54 AM EDT 2026</p>
+	<p>Running at Tue Jun 16 09:08:02 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.11
-	Date:Jun 16 2026  04:42:03.400 EDT
-	Location: 7 km SSE of Volcano, Hawaii
-	Lat/Long:19.3756675720215,-155.208160400391
+	Magnitude:1.35578758356773
+	Date:Jun 16 2026  08:54:00.890 EDT
+	Location: 9 km SW of Idyllwild, CA
+	Lat/Long:33.6758346557617,-116.780166625977
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.11
-	Date:Jun 16 2026  04:42:03.400 EDT
-	Location: 7 km SSE of Volcano, Hawaii
-	Lat/Long:19.3756675720215,-155.208160400391
+	Magnitude:1.35578758356773
+	Date:Jun 16 2026  08:54:00.890 EDT
+	Location: 9 km SW of Idyllwild, CA
+	Lat/Long:33.6758346557617,-116.780166625977
 Earthquake 0:
-	Magnitude:2.6
-	Date:Aug 07 2025  22:29:41.167 EDT
-	Location: 61 km E of Cantwell, Alaska
-	Lat/Long:63.3724,-147.7315
+	Magnitude:1.7
+	Date:Aug 08 2025  02:42:29.793 EDT
+	Location: 33 km WSW of Ackerly, Texas
+	Lat/Long:32.406,-102.041
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Bomberman Land Touch!
-Nintendo DS
-8.5
-[Action, Adventure]
+<pre><code>Donald Duck: Goin Quackers
+Dreamcast
+7.2
+[Platformer]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Billy_Bob_Thornton
-Killing_Box,_The_(1993)
+<pre><code>James_Stewart_(I)
+You_Gotta_Stay_Happy_(1948)
 </code></pre>
 </div>
     
@@ -2406,11 +2406,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 151
+<pre><code>Sonnet 4
 poem
-Love is too young to know what conscience is,
- Yet who knows not conscience is born of love?
- Then g...
+Unthrifty loveliness why dost thou spend,
+ Upon thy self thy beauty's legacy?
+ Nature's bequest give...
 </code></pre>
 </div>
     
@@ -3474,22 +3474,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5442
-
-Actor-Movie Data:
-	Movie: Q50937 &quot;It Came from Beneath the Sea&quot;
-	Actor: Q440298 &quot;Faith Domergue&quot;
-
-Actor-Movie Data:
-	Movie: Q50937 &quot;It Came from Beneath the Sea&quot;
-	Actor: Q541016 &quot;Ian Keith&quot;
-
-Actor-Movie Data:
-	Movie: Q50937 &quot;It Came from Beneath the Sea&quot;
-	Actor: Q925911 &quot;Kenneth Tobey&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

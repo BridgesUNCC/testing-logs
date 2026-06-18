@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Thu Jun 18 05:17:08 AM EDT 2026</p>
+	<p>Running at Thu Jun 18 09:18:30 AM EDT 2026</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -156,11 +156,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryeq_test.py" class="success">
+  <div id="summaryeq_test.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogeq_test.py">Test eq_test.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogeq_test.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogeq_test.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1023,7 +1023,7 @@ http://assignments.bridgesuncc.org/assignments/3013/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogdisplay_game.py-runtest">Run Test for test display_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x79eb9cf25520&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7ff42d3efa70&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1081,10 +1081,10 @@ First 10 elevations:
     
 <div class="success">
 <h3 id="pythonlogeq_snippet.py-runtest">Run Test for test eq_snippet.py</h3>
-<pre><code>Magnitude: 1.12
-Date: 2026-06-18 09:02:07
-Location:9 km ESE of Cloverdale, CA
-Lat/Long:38.7779998779297,-122.916168212891
+<pre><code>Magnitude: 2.17
+Date: 2026-06-18 12:49:07
+Location:12 km SSE of Fern Forest, Hawaii
+Lat/Long:19.3646659851074,-155.074493408203
 </code></pre>
 </div>
     
@@ -1092,16 +1092,35 @@ Lat/Long:38.7779998779297,-122.916168212891
     <div id="pythonlogeq_test.py" class="logdetails">
       <h2>Test eq_test.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogeq_test.py-runtest">Run Test for test eq_test.py</h3>
-<pre><code>Magnitude: 1.12
-Date: 2026-06-18 09:02:07
-Location:9 km ESE of Cloverdale, CA
-Lat/Long:38.7779998779297,-122.916168212891
-Magnitude: 1.1
-Date: 2025-08-10 06:42:46
-Location:14 km SE of Alamo, Nevada
-Lat/Long:37.2908,-115.0319
+<pre><code>Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
+    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/eq_test.py&quot;, line 43, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/eq_test.py&quot;, line 17, in main
+    my_list = get_earthquake_usgs_data(100)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1.dev1-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 435, in get_earthquake_usgs_data
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+could not run test eq_test.py
 </code></pre>
 </div>
     
@@ -1142,7 +1161,7 @@ http://assignments.bridgesuncc.org/assignments/3019/bridges_testing
     
 <div class="success">
 <h3 id="pythonloggame_size_test.py-runtest">Run Test for test game_size_test.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7fd907453920&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x72f5c3e99b20&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1161,10 +1180,10 @@ client disconnect disconnected
     
 <div class="success">
 <h3 id="pythonloggame_snippet.py-runtest">Run Test for test game_snippet.py</h3>
-<pre><code>Crysis 3 
-Xbox 360
-8.5
-['Shooter']
+<pre><code>Street Fighter II: Special Champion Edition
+Wii
+7
+['Fighting']
 </code></pre>
 </div>
     
@@ -1329,8 +1348,8 @@ C
     
 <div class="success">
 <h3 id="pythonlogimdb_snippet.py-runtest">Run Test for test imdb_snippet.py</h3>
-<pre><code>Denzel_Washington
-Fallen_(1998)
+<pre><code>Christopher_Lee_(I)
+Boucher,_la_star_et_l'orpheline,_Le_(1975)
 </code></pre>
 </div>
     
@@ -1340,7 +1359,7 @@ Fallen_(1998)
     
 <div class="success">
 <h3 id="pythonloginput_game.py-runtest">Run Test for test input_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x762798c22de0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7c358afbb5c0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1407,7 +1426,7 @@ http://assignments.bridgesuncc.org/assignments/3031/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogminimal_game.py-runtest">Run Test for test minimal_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x749e29bce930&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7d561ecdf5c0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1481,7 +1500,7 @@ http://assignments.bridgesuncc.org/assignments/3034/bridges_testing
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_state.py-runtest">Run Test for test non_blocking_game_state.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7c2f2778af00&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7e7515850890&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1695,11 +1714,11 @@ Text: I've seen reports suggesting that the traditional &quot;Tornado Alley&quot
     
 <div class="success">
 <h3 id="pythonlogshakespeare_snippet.py-runtest">Run Test for test shakespeare_snippet.py</h3>
-<pre><code>Sonnet 74
+<pre><code>Sonnet 53
 poem
-But be contented when that fell arrest,
- Without all bail shall carry me away,
- My life hath in this
+What is your substance, whereof are you made,
+ That millions of strange shadows on you tend?
+ Since 
 </code></pre>
 </div>
     
@@ -2603,7 +2622,7 @@ could not run test wikidata_actor_snippet.py
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_fire.py-runtest">Run Test for test non_blocking_game_fire.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x77753e382720&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7578a33df590&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:

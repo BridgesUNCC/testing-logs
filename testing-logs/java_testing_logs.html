@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Jun 25 05:08:01 AM EDT 2026</p>
+	<p>Running at Thu Jun 25 09:08:12 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -462,12 +462,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarysong_lyrics_snippet.java" class="success">
+  <div id="summarysong_lyrics_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogsong_lyrics_snippet.java">Test song_lyrics_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.9
-	Date:Jun 25 2026  05:00:18.090 EDT
-	Location: 11 km ESE of Willits, CA
-	Lat/Long:39.3733329772949,-123.232330322266
+	Magnitude:2.34
+	Date:Jun 25 2026  08:37:55.630 EDT
+	Location: 6 km NNW of Redwood Valley, CA
+	Lat/Long:39.3190002441406,-123.219833374023
 </code></pre>
 </div>
     
@@ -1344,10 +1344,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.9
-	Date:Jun 25 2026  05:00:18.090 EDT
-	Location: 11 km ESE of Willits, CA
-	Lat/Long:39.3733329772949,-123.232330322266
+	Magnitude:2.34
+	Date:Jun 25 2026  08:37:55.630 EDT
+	Location: 6 km NNW of Redwood Valley, CA
+	Lat/Long:39.3190002441406,-123.219833374023
 Earthquake 0:
 	Magnitude:4.8
 	Date:Aug 18 2025  07:43:52.464 EDT
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Walt Disney World Magical Racing Tour
+<pre><code>Giga Wing 2
 Dreamcast
-6.3
-[Racing]
+5.0
+[Shooter]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christina_Ricci
-Casper_(1995)
+<pre><code>Charles_Grodin_(I)
+Rosemary's_Baby_(1968)
 </code></pre>
 </div>
     
@@ -2406,11 +2406,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 12
+<pre><code>Sonnet 109
 poem
-When I do count the clock that tells the time,
- And see the brave day sunk in hideous night,
- When I...
+O never say that I was false of heart,
+ Though absence seemed my flame to qualify,
+ As easy might I ...
 </code></pre>
 </div>
     
@@ -2535,13 +2535,40 @@ http://assignments.bridgesuncc.org/assignments/2049/bridges_testing
 <pre><code>Compiling test song_lyrics_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogsong_lyrics_snippet.java-runtest">Run Test for test song_lyrics_snippet.java</h3>
-<pre><code>Harder Better Faster Stronger
-Daft Punk
-Homework / Discovery / Alive 1997
-2001-02-26
+<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503. Message: &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Application Error&lt;/title&gt;
+    &lt;style media=&quot;screen&quot;&gt;
+      html,body,iframe {
+        margin: 0;
+        padding: 0;
+      }
 
+      html,body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;https://www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
+  &lt;script defer src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447&quot; integrity=&quot;sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==&quot; data-cf-beacon='{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;b46cb27d3b9d47cb919820c918d9ab42&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}' crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+	at bridges.connect.DataSource.getSong(DataSource.java:983)
+	at song_lyrics_snippet.main(song_lyrics_snippet.java:24)
+could not run test song_lyrics_snippet.java
 </code></pre>
 </div>
     
@@ -3479,16 +3506,16 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Data Records in 1955: 5442
 
 Actor-Movie Data:
-	Movie: Q73944 &quot;Two Tickets to Broadway&quot;
-	Actor: Q166212 &quot;Eddie Bracken&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q102551 &quot;Ernest Borgnine&quot;
 
 Actor-Movie Data:
-	Movie: Q73944 &quot;Two Tickets to Broadway&quot;
-	Actor: Q205314 &quot;Janet Leigh&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q180251 &quot;Paddy Chayefsky&quot;
 
 Actor-Movie Data:
-	Movie: Q73944 &quot;Two Tickets to Broadway&quot;
-	Actor: Q237864 &quot;Vera Miles&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q266416 &quot;Betsy Blair&quot;
 
 </code></pre>
 </div>

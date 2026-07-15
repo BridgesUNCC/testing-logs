@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Wed Jul 15 01:16:51 PM EDT 2026</p>
+	<p>Running at Wed Jul 15 05:18:48 PM EDT 2026</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -156,11 +156,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryeq_test.py" class="success">
+  <div id="summaryeq_test.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogeq_test.py">Test eq_test.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogeq_test.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogeq_test.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -944,12 +944,12 @@ http://assignments.bridgesuncc.org/assignments/3008/bridges_testing
 <div class="success">
 <h3 id="pythonlogcancer_snippet.py-runtest">Run Test for test cancer_snippet.py</h3>
 <pre><code>Record 1:
-	Type: Incidence
-	Year: 2007
-	Population: 2407275
+	Type: Mortality
+	Year: 2003
+	Population: 2324069
 	Race: All Races
 	Gender: 
-	CrudeRate: 455.2(more rate information available) 
+	CrudeRate: 192.4(more rate information available) 
 	Location: 32.799, -86.8073
 	Count: 0
 </code></pre>
@@ -1023,7 +1023,7 @@ http://assignments.bridgesuncc.org/assignments/3013/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogdisplay_game.py-runtest">Run Test for test display_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7c4295e06fc0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x749c878fa900&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1081,10 +1081,10 @@ First 10 elevations:
     
 <div class="success">
 <h3 id="pythonlogeq_snippet.py-runtest">Run Test for test eq_snippet.py</h3>
-<pre><code>Magnitude: 1.53
-Date: 2026-07-15 16:43:12
-Location:8 km W of Pine Mountain Club, CA
-Lat/Long:34.8508333333333,-119.233
+<pre><code>Magnitude: 1.03
+Date: 2026-07-15 21:04:50
+Location:6 km WNW of Cobb, CA
+Lat/Long:38.8359985351562,-122.791831970215
 </code></pre>
 </div>
     
@@ -1092,16 +1092,39 @@ Lat/Long:34.8508333333333,-119.233
     <div id="pythonlogeq_test.py" class="logdetails">
       <h2>Test eq_test.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogeq_test.py-runtest">Run Test for test eq_test.py</h3>
-<pre><code>Magnitude: 1.53
-Date: 2026-07-15 16:43:12
-Location:8 km W of Pine Mountain Club, CA
-Lat/Long:34.8508333333333,-119.233
-Magnitude: 1.3
-Date: 2025-09-09 05:41:34
-Location:30 km WNW of Valdez, Alaska
-Lat/Long:61.2707,-146.8453
+<pre><code>Magnitude: 1.03
+Date: 2026-07-15 21:04:50
+Location:6 km WNW of Cobb, CA
+Lat/Long:38.8359985351562,-122.791831970215
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
+    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/eq_test.py&quot;, line 43, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/eq_test.py&quot;, line 29, in main
+    my_list = get_earthquake_usgs_data() # this is a different code path
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1.dev1-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 435, in get_earthquake_usgs_data
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+could not run test eq_test.py
 </code></pre>
 </div>
     
@@ -1142,7 +1165,7 @@ http://assignments.bridgesuncc.org/assignments/3019/bridges_testing
     
 <div class="success">
 <h3 id="pythonloggame_size_test.py-runtest">Run Test for test game_size_test.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x775db5a77e30&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x768f8dfdfa40&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1161,10 +1184,10 @@ client disconnect disconnected
     
 <div class="success">
 <h3 id="pythonloggame_snippet.py-runtest">Run Test for test game_snippet.py</h3>
-<pre><code>Brawl Brothers
-Wii
+<pre><code>Fallout 3 -- Mothership Zeta
+Xbox 360
 7
-['Action']
+['Action', 'RPG']
 </code></pre>
 </div>
     
@@ -1329,8 +1352,8 @@ C
     
 <div class="success">
 <h3 id="pythonlogimdb_snippet.py-runtest">Run Test for test imdb_snippet.py</h3>
-<pre><code>Christopher_Lee_(I)
-Amere_victoire_(1957)
+<pre><code>Carrie_Fisher
+This_Is_My_Life_(1992)
 </code></pre>
 </div>
     
@@ -1340,7 +1363,7 @@ Amere_victoire_(1957)
     
 <div class="success">
 <h3 id="pythonloginput_game.py-runtest">Run Test for test input_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7c1153117830&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7db056a5d6a0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1407,7 +1430,7 @@ http://assignments.bridgesuncc.org/assignments/3031/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogminimal_game.py-runtest">Run Test for test minimal_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7bd9570d2e70&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x74b150eb0050&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1481,7 +1504,7 @@ http://assignments.bridgesuncc.org/assignments/3034/bridges_testing
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_state.py-runtest">Run Test for test non_blocking_game_state.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x71825d12ba40&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7d2279722e40&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1693,11 +1716,11 @@ Text:
     
 <div class="success">
 <h3 id="pythonlogshakespeare_snippet.py-runtest">Run Test for test shakespeare_snippet.py</h3>
-<pre><code>Sonnet 33
+<pre><code>Sonnet 145
 poem
-Full many a glorious morning have I seen,
- Flatter the mountain tops with sovereign eye,
- Kissing wi
+Those lips that Love's own hand did make,
+ Breathed forth the sound that said 'I hate',
+ To me that 
 </code></pre>
 </div>
     
@@ -2411,11 +2434,11 @@ http://assignments.bridgesuncc.org/assignments/3078/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogtut_us_cities_snippet.py-runtest">Run Test for test tut_us_cities_snippet.py</h3>
-<pre><code>Fayetteville, NC: population: 201963, elevation: 29, lat/long: 35.05266,-78.87836
-Raleigh, NC: population: 451066, elevation: 96, lat/long: 35.7721,-78.63861
-Charlotte, NC: population: 874579, elevation: 229, lat/long: 35.22709,-80.84313
+<pre><code>Charlotte, NC: population: 874579, elevation: 229, lat/long: 35.22709,-80.84313
 Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
+Fayetteville, NC: population: 201963, elevation: 29, lat/long: 35.05266,-78.87836
 Greensboro, NC: population: 285342, elevation: 266, lat/long: 36.07264,-79.79198
+Raleigh, NC: population: 451066, elevation: 96, lat/long: 35.7721,-78.63861
 West Raleigh, NC: population: 338759, elevation: 122, lat/long: 35.78682,-78.66389
 Winston-Salem, NC: population: 241218, elevation: 293, lat/long: 36.09986,-80.24422
 </code></pre>
@@ -2502,36 +2525,36 @@ http://assignments.bridgesuncc.org/assignments/3084/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogus_cities_snippet.py-runtest">Run Test for test us_cities_snippet.py</h3>
-<pre><code>Fayetteville, NC: population: 201963, elevation: 29, lat/long: 35.05266,-78.87836
-Raleigh, NC: population: 451066, elevation: 96, lat/long: 35.7721,-78.63861
-Charlotte, NC: population: 874579, elevation: 229, lat/long: 35.22709,-80.84313
+<pre><code>Charlotte, NC: population: 874579, elevation: 229, lat/long: 35.22709,-80.84313
 Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
+Fayetteville, NC: population: 201963, elevation: 29, lat/long: 35.05266,-78.87836
 Greensboro, NC: population: 285342, elevation: 266, lat/long: 36.07264,-79.79198
+Raleigh, NC: population: 451066, elevation: 96, lat/long: 35.7721,-78.63861
 West Raleigh, NC: population: 338759, elevation: 122, lat/long: 35.78682,-78.66389
 Winston-Salem, NC: population: 241218, elevation: 293, lat/long: 36.09986,-80.24422
 
 Cities with negative elevation..
 
 Bradenton Beach, FL: population: 1171, elevation: -3, lat/long: 27.46698,-82.70399
-Timberlane, LA: population: 10243, elevation: -1, lat/long: 29.87743,-90.03202
 Terrytown, LA: population: 23319, elevation: -1, lat/long: 29.91021,-90.03257
+Timberlane, LA: population: 10243, elevation: -1, lat/long: 29.87743,-90.03202
 Coachella, CA: population: 44635, elevation: -21, lat/long: 33.6803,-116.17389
 Calipatria, CA: population: 7424, elevation: -55, lat/long: 33.1256,-115.51415
 Desert Shores, CA: population: 1104, elevation: -60, lat/long: 33.4042,-116.03972
-Mecca, CA: population: 8577, elevation: -57, lat/long: 33.57219,-116.0782
-Seeley, CA: population: 1739, elevation: -11, lat/long: 32.79311,-115.69111
 Brawley, CA: population: 25897, elevation: -34, lat/long: 32.97866,-115.53027
+Mecca, CA: population: 8577, elevation: -57, lat/long: 33.57219,-116.0782
 Heber, CA: population: 4275, elevation: -3, lat/long: 32.73089,-115.52972
-Oasis, CA: population: 6890, elevation: -44, lat/long: 33.46586,-116.09889
 Indio, CA: population: 87533, elevation: -4, lat/long: 33.7207,-116.21677
 Holtville, CA: population: 6404, elevation: -3, lat/long: 32.81116,-115.38026
+Seeley, CA: population: 1739, elevation: -11, lat/long: 32.79311,-115.69111
+Oasis, CA: population: 6890, elevation: -44, lat/long: 33.46586,-116.09889
 Westmorland, CA: population: 2267, elevation: -50, lat/long: 33.03727,-115.62138
 Salton City, CA: population: 3763, elevation: -38, lat/long: 33.29865,-115.95611
 Niland, CA: population: 1006, elevation: -43, lat/long: 33.24004,-115.51888
 Vista Santa Rosa, CA: population: 2926, elevation: -21, lat/long: 33.6278,-116.21806
-Thermal, CA: population: 2865, elevation: -36, lat/long: 33.6403,-116.13945
 El Centro, CA: population: 43956, elevation: -12, lat/long: 32.792,-115.56305
 Imperial, CA: population: 17095, elevation: -18, lat/long: 32.84755,-115.56944
+Thermal, CA: population: 2865, elevation: -36, lat/long: 33.6403,-116.13945
 </code></pre>
 </div>
     
@@ -2590,7 +2613,7 @@ Traceback (most recent call last):
              ^^^^^^^^^^^
   File &quot;/usr/lib/python3.12/urllib/request.py&quot;, line 639, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+urllib.error.HTTPError: HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)
 could not run test wikidata_actor_snippet.py
 </code></pre>
 </div>
@@ -2601,7 +2624,7 @@ could not run test wikidata_actor_snippet.py
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_fire.py-runtest">Run Test for test non_blocking_game_fire.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x704c98ff9460&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x6ffc129e7020&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:

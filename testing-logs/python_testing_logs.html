@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Wed Jul 15 05:18:48 PM EDT 2026</p>
+	<p>Running at Wed Jul 15 09:17:17 PM EDT 2026</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -156,11 +156,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryeq_test.py" class="failure">
+  <div id="summaryeq_test.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogeq_test.py">Test eq_test.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogeq_test.py-runtest">error</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogeq_test.py-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -708,11 +708,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.py" class="failure">
+  <div id="summarywikidata_actor_snippet.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogwikidata_actor_snippet.py">Test wikidata_actor_snippet.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogwikidata_actor_snippet.py-runtest">error</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogwikidata_actor_snippet.py-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1023,7 +1023,7 @@ http://assignments.bridgesuncc.org/assignments/3013/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogdisplay_game.py-runtest">Run Test for test display_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x749c878fa900&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7713fbddd220&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1081,10 +1081,10 @@ First 10 elevations:
     
 <div class="success">
 <h3 id="pythonlogeq_snippet.py-runtest">Run Test for test eq_snippet.py</h3>
-<pre><code>Magnitude: 1.03
-Date: 2026-07-15 21:04:50
-Location:6 km WNW of Cobb, CA
-Lat/Long:38.8359985351562,-122.791831970215
+<pre><code>Magnitude: 2.1
+Date: 2026-07-16 00:47:49
+Location:52 km S of Denali National Park, Alaska
+Lat/Long:63.083,-151.52
 </code></pre>
 </div>
     
@@ -1092,39 +1092,16 @@ Lat/Long:38.8359985351562,-122.791831970215
     <div id="pythonlogeq_test.py" class="logdetails">
       <h2>Test eq_test.py full log</h2>
     
-<div class="failure">
+<div class="success">
 <h3 id="pythonlogeq_test.py-runtest">Run Test for test eq_test.py</h3>
-<pre><code>Magnitude: 1.03
-Date: 2026-07-15 21:04:50
-Location:6 km WNW of Cobb, CA
-Lat/Long:38.8359985351562,-122.791831970215
-Traceback (most recent call last):
-  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 971, in json
-    return complexjson.loads(self.text, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/__init__.py&quot;, line 346, in loads
-    return _default_decoder.decode(s)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 337, in decode
-    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/json/decoder.py&quot;, line 355, in raw_decode
-    raise JSONDecodeError(&quot;Expecting value&quot;, s, err.value) from None
-json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/eq_test.py&quot;, line 43, in &lt;module&gt;
-    main()
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/eq_test.py&quot;, line 29, in main
-    my_list = get_earthquake_usgs_data() # this is a different code path
-              ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1.dev1-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 435, in get_earthquake_usgs_data
-  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 975, in json
-    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
-requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-could not run test eq_test.py
+<pre><code>Magnitude: 2.1
+Date: 2026-07-16 00:47:49
+Location:52 km S of Denali National Park, Alaska
+Lat/Long:63.083,-151.52
+Magnitude: 2
+Date: 2025-09-09 15:23:36
+Location:14 km S of Fern Forest, Hawaii
+Lat/Long:19.3353328704834,-155.141494750977
 </code></pre>
 </div>
     
@@ -1165,7 +1142,7 @@ http://assignments.bridgesuncc.org/assignments/3019/bridges_testing
     
 <div class="success">
 <h3 id="pythonloggame_size_test.py-runtest">Run Test for test game_size_test.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x768f8dfdfa40&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7ca9f34d39b0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1184,10 +1161,10 @@ client disconnect disconnected
     
 <div class="success">
 <h3 id="pythonloggame_snippet.py-runtest">Run Test for test game_snippet.py</h3>
-<pre><code>Fallout 3 -- Mothership Zeta
-Xbox 360
-7
-['Action', 'RPG']
+<pre><code>RoboSockets 
+iPhone
+8.5
+['Puzzle']
 </code></pre>
 </div>
     
@@ -1352,8 +1329,8 @@ C
     
 <div class="success">
 <h3 id="pythonlogimdb_snippet.py-runtest">Run Test for test imdb_snippet.py</h3>
-<pre><code>Carrie_Fisher
-This_Is_My_Life_(1992)
+<pre><code>Eric_Weinstein_(I)
+Being_John_Malkovich_(1999)
 </code></pre>
 </div>
     
@@ -1363,7 +1340,7 @@ This_Is_My_Life_(1992)
     
 <div class="success">
 <h3 id="pythonloginput_game.py-runtest">Run Test for test input_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7db056a5d6a0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x78837e5fb4a0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1430,7 +1407,7 @@ http://assignments.bridgesuncc.org/assignments/3031/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogminimal_game.py-runtest">Run Test for test minimal_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x74b150eb0050&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x732b13f0eea0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1504,7 +1481,7 @@ http://assignments.bridgesuncc.org/assignments/3034/bridges_testing
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_state.py-runtest">Run Test for test non_blocking_game_state.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7d2279722e40&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7d154edc7a10&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1574,21 +1551,21 @@ Cartesian Coordinate of first vertex: 834.4847597780021, -5147.953884206995
     
 <div class="success">
 <h3 id="pythonlogreddit.py-runtest">Run Test for test reddit.py</h3>
-<pre><code>Title: UK police seek witnesses in an inquiry into possible offenses by ex-Prince Andrew
-Author: AudibleNod
-Score: 442
-Comment Count: 10
+<pre><code>Title: Army cuts dozens of medical training courses amid funding woes
+Author: Kinmuan
+Score: 5508
+Comment Count: 315
 Subreddit: news
-Title: Family of Alex Pretti retains lawyers who helped prosecute the George Floyd case
+Title: Justice Department withheld and removed some Epstein files related to Trump
+Title: Iran reels as more than 100 children reportedly killed in school bombing
+Title: House committee votes to subpoena Pam Bondi over Epstein files
+Title: German men aged 17-45 may need military approval for long stays abroad
 Title: Trump will ease refrigerant rule in effort to address surging grocery costs
-Title: Woman at center of sprawling Minnesota fraud case gets nearly 42-year prison sentence
 Title: Residents burn an Ebola center in Congo as fear and anger grow over the outbreak
 Title: US homeland security put out alert on comedian who created parody ICE tip website | US immigration
 Title: NASCAR icon Kyle Busch dies at the age of 41
 Title: Florida biologist fired over Charlie Kirk post after his death wins $485,000 settlement
 Title: An 81-Year-Old Grandma Streaming Minecraft To Pay For Grandson’s Cancer Treatment Has Been Swatted
-Title: Army cuts dozens of medical training courses amid funding woes
-Title: Chinese authorities destroy villager’s ramshackle 10-storey Studio Ghibli-esque home | China
 =====
 Available subreddits:
 gadgets
@@ -1640,7 +1617,7 @@ science
 =====
 Title: Joint Subreddit Statement: The Attack on U.S. Research Infrastructure
 Author: AskScienceModerator
-Score: 1836
+Score: 1833
 Vote Ratio: 0.91
 Comment Count: 0
 Subreddit: askscience
@@ -1650,7 +1627,7 @@ Text:
 
 Title: What are muscle knots, really ?
 Author: HephMelter
-Score: 669
+Score: 670
 Vote Ratio: 0.96
 Comment Count: 82
 Subreddit: askscience
@@ -1660,7 +1637,7 @@ Text:
 
 Title: How different is the microbiome of the left ear to the right ear?
 Author: CandleCustard
-Score: 93
+Score: 91
 Vote Ratio: 0.88
 Comment Count: 28
 Subreddit: askscience
@@ -1679,7 +1656,7 @@ Text:
 <h3 id="pythonlogreddit_snippet.py-runtest">Run Test for test reddit_snippet.py</h3>
 <pre><code>Title: Joint Subreddit Statement: The Attack on U.S. Research Infrastructure
 Author: AskScienceModerator
-Score: 1836
+Score: 1833
 Vote Ratio: 0.91
 Comment Count: 0
 Subreddit: askscience
@@ -1689,7 +1666,7 @@ Text:
 
 Title: What are muscle knots, really ?
 Author: HephMelter
-Score: 669
+Score: 670
 Vote Ratio: 0.96
 Comment Count: 82
 Subreddit: askscience
@@ -1699,7 +1676,7 @@ Text:
 
 Title: How different is the microbiome of the left ear to the right ear?
 Author: CandleCustard
-Score: 93
+Score: 91
 Vote Ratio: 0.88
 Comment Count: 28
 Subreddit: askscience
@@ -1716,11 +1693,11 @@ Text:
     
 <div class="success">
 <h3 id="pythonlogshakespeare_snippet.py-runtest">Run Test for test shakespeare_snippet.py</h3>
-<pre><code>Sonnet 145
+<pre><code>Sonnet 138
 poem
-Those lips that Love's own hand did make,
- Breathed forth the sound that said 'I hate',
- To me that 
+When my love swears that she is made of truth,
+ I do believe her though I know she lies,
+ That she m
 </code></pre>
 </div>
     
@@ -2577,44 +2554,25 @@ http://assignments.bridgesuncc.org/assignments/3086/bridges_testing
     <div id="pythonlogwikidata_actor_snippet.py" class="logdetails">
       <h2>Test wikidata_actor_snippet.py full log</h2>
     
-<div class="failure">
+<div class="success">
 <h3 id="pythonlogwikidata_actor_snippet.py-runtest">Run Test for test wikidata_actor_snippet.py</h3>
 <pre><code>wikidata-actormovie-1955-1955
-Traceback (most recent call last):
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/wikidata_actor_snippet.py&quot;, line 30, in &lt;module&gt;
-    main()
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/wikidata_actor_snippet.py&quot;, line 20, in main
-    list  = data_source.get_wiki_data_actor_movie(1955, 1955)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1.dev1-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 1145, in get_wiki_data_actor_movie
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1.dev1-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 1114, in _get_wiki_actor_movie_direct
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/SPARQLWrapper-2.0.0-py3.12.egg/SPARQLWrapper/Wrapper.py&quot;, line 960, in query
-    return QueryResult(self._query())
-                       ^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/SPARQLWrapper-2.0.0-py3.12.egg/SPARQLWrapper/Wrapper.py&quot;, line 940, in _query
-    raise e
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/SPARQLWrapper-2.0.0-py3.12.egg/SPARQLWrapper/Wrapper.py&quot;, line 926, in _query
-    response = urlopener(request)
-               ^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/urllib/request.py&quot;, line 215, in urlopen
-    return opener.open(url, data, timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/urllib/request.py&quot;, line 521, in open
-    response = meth(req, response)
-               ^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/urllib/request.py&quot;, line 630, in http_response
-    response = self.parent.error(
-               ^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/urllib/request.py&quot;, line 559, in error
-    return self._call_chain(*args)
-           ^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/urllib/request.py&quot;, line 492, in _call_chain
-    result = func(*args)
-             ^^^^^^^^^^^
-  File &quot;/usr/lib/python3.12/urllib/request.py&quot;, line 639, in http_error_default
-    raise HTTPError(req.full_url, code, msg, hdrs, fp)
-urllib.error.HTTPError: HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)
-could not run test wikidata_actor_snippet.py
+Data Records in 1955: 5442
+
+First 3 records:
+
+0)Actor-Movie Data:
+	Movie: Q237116, Marty
+	Actor: Q102551, Ernest Borgnine
+
+1)Actor-Movie Data:
+	Movie: Q237116, Marty
+	Actor: Q180251, Paddy Chayefsky
+
+2)Actor-Movie Data:
+	Movie: Q237116, Marty
+	Actor: Q266416, Betsy Blair
+
 </code></pre>
 </div>
     
@@ -2624,7 +2582,7 @@ could not run test wikidata_actor_snippet.py
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_fire.py-runtest">Run Test for test non_blocking_game_fire.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x6ffc129e7020&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7b464190f020&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:

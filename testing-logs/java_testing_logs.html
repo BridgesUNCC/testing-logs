@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Fri Jul 17 01:07:43 PM EDT 2026</p>
+	<p>Running at Fri Jul 17 05:08:19 PM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.31048251523068
-	Date:Jul 17 2026  12:49:11.250 EDT
-	Location: 20 km E of Little Lake, CA
-	Lat/Long:35.910831451416,-117.690330505371
+	Magnitude:1.4
+	Date:Jul 17 2026  16:44:43.346 EDT
+	Location: 100 km E of McCarthy, Alaska
+	Lat/Long:61.333,-141.055
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.31048251523068
-	Date:Jul 17 2026  12:49:11.250 EDT
-	Location: 20 km E of Little Lake, CA
-	Lat/Long:35.910831451416,-117.690330505371
+	Magnitude:1.4
+	Date:Jul 17 2026  16:44:43.346 EDT
+	Location: 100 km E of McCarthy, Alaska
+	Lat/Long:61.333,-141.055
 Earthquake 0:
-	Magnitude:1.03
-	Date:Sep 11 2025  12:37:14.150 EDT
-	Location: 8 km NNW of The Geysers, CA
-	Lat/Long:38.8315010070801,-122.815170288086
+	Magnitude:1.6
+	Date:Sep 11 2025  15:16:15.164 EDT
+	Location: 13 km W of Mount Charleston, Nevada
+	Lat/Long:36.2376,-115.7869
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Resident Evil: The Umbrella Chronicles
-Wii
-7.9
-[Shooter]
+<pre><code>Medieval II: Total War Kingdoms
+PC
+8.4
+[Strategy]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>James_Earl_Jones
-Scorchers_(1991)
+<pre><code>Arnold_Schwarzenegger
+Running_with_Arnold_(2004)
 </code></pre>
 </div>
     
@@ -2410,17 +2410,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>The First Part Of King Henry The Sixth
-play
-1592
-
-THE FIRST PART OF HENRY THE SIXTH
-
-by William Shakespeare
-
-Dramatis Personae
-
- KING HENRY THE ...
+<pre><code>Sonnet 114
+poem
+Or whether doth my mind being crowned with you
+ Drink up the monarch's plague this flattery?
+ Or whe...
 </code></pre>
 </div>
     
@@ -3484,22 +3478,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5442
-
-Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q45553 &quot;Robert J. Wilke&quot;
-
-Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q78505 &quot;Peter Lorre&quot;
-
-Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q104027 &quot;Kirk Douglas&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

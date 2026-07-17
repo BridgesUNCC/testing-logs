@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Fri Jul 17 05:08:09 AM EDT 2026</p>
+	<p>Running at Fri Jul 17 09:08:20 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.65
-	Date:Jul 17 2026  04:49:10.830 EDT
-	Location: 31 km SE of Mina, Nevada
-	Lat/Long:38.1584,-117.9099
+	Magnitude:1.2
+	Date:Jul 17 2026  09:05:31.175 EDT
+	Location: 74 km SSE of Kokhanok, Alaska
+	Lat/Long:58.794,-154.444
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.65
-	Date:Jul 17 2026  04:49:10.830 EDT
-	Location: 31 km SE of Mina, Nevada
-	Lat/Long:38.1584,-117.9099
+	Magnitude:1.2
+	Date:Jul 17 2026  09:05:31.175 EDT
+	Location: 74 km SSE of Kokhanok, Alaska
+	Lat/Long:58.794,-154.444
 Earthquake 0:
-	Magnitude:1.87
-	Date:Sep 11 2025  02:21:07.840 EDT
-	Location: 11 km NNE of Upper Lake, CA
-	Lat/Long:39.2653350830078,-122.902000427246
+	Magnitude:2.2
+	Date:Sep 11 2025  07:36:05.445 EDT
+	Location: 57 km S of Whites City, New Mexico
+	Lat/Long:31.662,-104.412
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Mary-Kate and Ashley: Sweet 16 -- Licensed to Drive
-Game Boy Advance
-4.0
-[Racing]
+<pre><code>Winter Sports 2: The Next Challenge
+Xbox 360
+4.5
+[Sports]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christopher_Lee_(I)
-Return_of_Captain_Invincible,_The_(1983)
+<pre><code>Alec_Guinness
+Lavender_Hill_Mob,_The_(1951)
 </code></pre>
 </div>
     
@@ -2410,11 +2410,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 66
+<pre><code>Sonnet 130
 poem
-Tired with all these for restful death I cry,
- As to behold desert a beggar born,
- And needy nothing...
+My mistress' eyes are nothing like the sun,
+ Coral is far more red, than her lips red,
+ If snow be w...
 </code></pre>
 </div>
     
@@ -3478,22 +3478,18 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5442
+<pre><code>Data Records in 1955: 0
 
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q83410 &quot;Cary Grant&quot;
-
+Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:37)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

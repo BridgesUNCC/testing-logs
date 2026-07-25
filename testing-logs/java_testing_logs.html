@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sat Jul 25 01:07:18 PM EDT 2026</p>
+	<p>Running at Sat Jul 25 05:06:42 PM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.5
-	Date:Jul 25 2026  12:37:31.006 EDT
-	Location: 88 km W of Karluk, Alaska
-	Lat/Long:57.714,-155.908
+	Magnitude:1.14
+	Date:Jul 25 2026  16:58:18.540 EDT
+	Location: 5 km NNW of The Geysers, CA
+	Lat/Long:38.8123321533203,-122.785499572754
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.5
-	Date:Jul 25 2026  12:37:31.006 EDT
-	Location: 88 km W of Karluk, Alaska
-	Lat/Long:57.714,-155.908
+	Magnitude:1.14
+	Date:Jul 25 2026  16:58:18.540 EDT
+	Location: 5 km NNW of The Geysers, CA
+	Lat/Long:38.8123321533203,-122.785499572754
 Earthquake 0:
-	Magnitude:1.8
-	Date:Sep 20 2025  05:58:35.442 EDT
-	Location: 62 km WNW of Nanwalek, Alaska
-	Lat/Long:59.5536,-152.9447
+	Magnitude:1.0
+	Date:Sep 20 2025  11:59:20.245 EDT
+	Location: 4 km SSW of Dayton, Nevada
+	Lat/Long:39.1997,-119.6085
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>WWF Warzone
-PlayStation
-8.0
-[Wrestling]
+<pre><code>House M.D. -- Episode 2: Blue Meanie
+Nintendo DSi
+4.0
+[Simulation]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Bill_Murray_(I)
-Kingpin_(1996)
+<pre><code>Cary_Grant
+Thirty_Day_Princess_(1934)
 </code></pre>
 </div>
     
@@ -2400,11 +2400,11 @@ If you were to travel to another planet, say Venus, would you experience weightl
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 115
+<pre><code>Sonnet 81
 poem
-Those lines that I before have writ do lie,
- Even those that said I could not love you dearer,
- Yet ...
+Or I shall live your epitaph to make,
+ Or you survive when I in earth am rotten,
+ From hence your me...
 </code></pre>
 </div>
     
@@ -3468,22 +3468,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5442
-
-Actor-Movie Data:
-	Movie: Q427534 &quot;The Court-Martial of Billy Mitchell&quot;
-	Actor: Q93957 &quot;Gary Cooper&quot;
-
-Actor-Movie Data:
-	Movie: Q427534 &quot;The Court-Martial of Billy Mitchell&quot;
-	Actor: Q156532 &quot;Peter Graves&quot;
-
-Actor-Movie Data:
-	Movie: Q427534 &quot;The Court-Martial of Billy Mitchell&quot;
-	Actor: Q233843 &quot;Elizabeth Montgomery&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

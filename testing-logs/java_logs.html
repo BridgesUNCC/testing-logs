@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Wed Jul 29 09:43:16 PM EDT 2026</p>
+	<p>Running at Thu Jul 30 01:42:46 AM EDT 2026</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -62,13 +62,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary5" class="success">
+  <div id="summary5" class="failure">
     <h2><a href="java_logs.html#javalog5">Assignment 5</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog5-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog5-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog5-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog5-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -402,13 +402,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary39" class="success">
+  <div id="summary39" class="failure">
     <h2><a href="java_logs.html#javalog39">Assignment 39</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog39-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog39-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog39-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog39-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -582,13 +582,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary57" class="success">
+  <div id="summary57" class="failure">
     <h2><a href="java_logs.html#javalog57">Assignment 57</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog57-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog57-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog57-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog57-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -662,13 +662,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary65" class="success">
+  <div id="summary65" class="failure">
     <h2><a href="java_logs.html#javalog65">Assignment 65</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog65-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog65-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog65-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog65-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -1048,16 +1048,25 @@ http://assignments.bridgesuncc.org/assignments/4/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/5-BST_Earthquakes/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog5-runanswer">Run Answer for Assignment 5</h3>
 <pre><code>Guessing bst_eq.java is the right java file where main is
 
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/37/bridges_testing
-
-
+Exception in thread &quot;main&quot; java.io.EOFException: Unexpected end of ZLIB input stream
+	at java.base/java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:244)
+	at java.base/java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.base/java.util.zip.GZIPInputStream.read(GZIPInputStream.java:117)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:287)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:330)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:190)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:177)
+	at java.base/java.io.Reader.read(Reader.java:250)
+	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:244)
+	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:288)
+	at bridges.connect.DataSource.unwrapJSONArray(DataSource.java:727)
+	at bridges.connect.DataSource.getEarthquakeUSGSData(DataSource.java:448)
+	at bst_eq.main(bst_eq.java:24)
+could not run java_answer for assignment in ../assignmentdb/5-BST_Earthquakes/java_answer
 </code></pre>
 </div>
     
@@ -2005,10 +2014,8 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at WikiDataActor.main(WikiDataActor.java:69)
+Data Access Took: 1.783605808681468E12
+Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
 </div>
@@ -2031,7 +2038,10 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Alarm clock
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:68)
 could not run java_answer for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
@@ -2283,35 +2293,15 @@ http://assignments.bridgesuncc.org/assignments/38/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/39-BookDistance/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog39-runanswer">Run Answer for Assignment 39</h3>
 <pre><code>Guessing BookDistance.java is the right java file where main is
 
 80
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/139/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/139/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/139/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/139/bridges_testing
-
-
+ERROR: Failed to get book with id = 11622
+ERROR: Failed to get book with id = 119
+Alarm clock
+could not run java_answer for assignment in ../assignmentdb/39-BookDistance/java_answer
 </code></pre>
 </div>
     
@@ -2483,23 +2473,23 @@ total vertices:22990
 Set size: 22990
 Grid
 ===grid stats===
-0)Source Point:-66.97522555430916,-14.940129946643687
+0)Source Point:-61.6798565165863,-36.97925020140353
 0)[ALG]Closest Point: -73.9157579,40.6132625
-0)[ALG]Min Dist:55.985269505222426
+0)[ALG]Min Dist:78.55135460310086
 0)[BFA]Closest Point: -73.9157579,40.6132625
-0)[BFA]Min Dist:55.985269505222426
+0)[BFA]Min Dist:78.55135460310086
 0)Difference:0.0
-Source Point:-35.58915562325246,40.69503319061969
-Source Point:-42.14808339664192,40.763127058985916
-Source Point:-42.66396218165106,40.69319455670321
-Source Point:-71.87194644980802,40.67599933111318
-Source Point:-13.68197322888107,40.65600512136326
-Source Point:-63.3722396600932,40.78820773182484
-Source Point:-71.04153145412681,40.70869152330855
-Source Point:-60.80134244948777,40.67136727298803
-Source Point:-46.38311294125392,40.72430965856161
-Source Point:-17.37141187225412,40.743233381608974
-num cells examined:11
+Source Point:-72.15012129546768,40.69105742895732
+Source Point:-11.875836560636856,40.715314406587645
+Source Point:-13.494453044301729,40.77954586201003
+Source Point:-62.6237912514632,40.764423600246445
+Source Point:-45.808517375291046,40.62714183335896
+Source Point:-51.1183344023125,40.759900476344164
+Source Point:-35.836962584541475,40.73477770969453
+Source Point:-2.2320343637890545,40.66602145658013
+Source Point:-1.0264565280484845,40.657907732069184
+Source Point:-16.33127363242386,40.77362410672056
+num cells examined:12
 
 Check Your Visualization at the following link:
 
@@ -2824,35 +2814,16 @@ http://assignments.bridgesuncc.org/assignments/56/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/57-BookAnalysis/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog57-runanswer">Run Answer for Assignment 57</h3>
 <pre><code>Guessing book_analysis.java is the right java file where main is
 
-80
+Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: Http Request Failed. Error Code:520. Message:error code: 520
 
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/157/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/157/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/157/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/157/bridges_testing
-
-
+	at bridges.connect.DataSource.requestJSON(DataSource.java:1412)
+	at bridges.connect.DataSource.getGutenbergBookMetaData(DataSource.java:1435)
+	at book_analysis.main(book_analysis.java:114)
+could not run java_answer for assignment in ../assignmentdb/57-BookAnalysis/java_answer
 </code></pre>
 </div>
     
@@ -3061,63 +3032,29 @@ http://assignments.bridgesuncc.org/assignments/64/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/65-Reddit/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog65-runanswer">Run Answer for Assignment 65</h3>
 <pre><code>Guessing reddit.java is the right java file where main is
 
 getting reddit data..
 gadgets..
-sports..
-gaming..
-pics..
-worldnews..
-videos..
-AskReddit..
-aww..
-Music..
-funny..
-news..
-movies..
-blog..
-books..
-history..
-food..
-philosophy..
-Jokes..
-DIY..
-space..
-Documentaries..
-askscience..
-nottheonion..
-todayilearned..
-gifs..
-listentothis..
-IAmA..
-announcements..
-TwoXChromosomes..
-creepy..
-nosleep..
-GetMotivated..
-WritingPrompts..
-LifeProTips..
-EarthPorn..
-explainlikeimfive..
-Showerthoughts..
-Futurology..
-photoshopbattles..
-mildlyinteresting..
-dataisbeautiful..
-tifu..
-OldSchoolCool..
-UpliftingNews..
-InternetIsBeautiful..
-science..
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/65/bridges_testing
-
-
+Exception in thread &quot;main&quot; java.io.EOFException: Unexpected end of ZLIB input stream
+	at java.base/java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:244)
+	at java.base/java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
+	at java.base/java.util.zip.GZIPInputStream.read(GZIPInputStream.java:117)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:287)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:330)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:190)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:177)
+	at java.base/java.io.Reader.read(Reader.java:250)
+	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:244)
+	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:288)
+	at bridges.connect.DataSource.requestJSON(DataSource.java:1403)
+	at bridges.connect.DataSource.getRedditData(DataSource.java:1672)
+	at bridges.connect.DataSource.getRedditData(DataSource.java:1647)
+	at reddit.generateLinePlot(reddit.java:33)
+	at reddit.main(reddit.java:53)
+could not run java_answer for assignment in ../assignmentdb/65-Reddit/java_answer
 </code></pre>
 </div>
     
@@ -3280,7 +3217,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.14496
+Pi val: 3.13848
 
 Check Your Visualization at the following link:
 

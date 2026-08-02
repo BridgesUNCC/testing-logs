@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sun Aug  2 05:06:45 AM EDT 2026</p>
+	<p>Running at Sun Aug  2 09:07:11 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:3.4
-	Date:Aug 02 2026  05:05:56.832 EDT
-	Location: 9 km NNW of Chignik Lagoon, Alaska
-	Lat/Long:56.381,-158.609
+	Magnitude:1.2
+	Date:Aug 02 2026  08:43:30.085 EDT
+	Location: 66 km WSW of Karluk, Alaska
+	Lat/Long:57.407,-155.528
 </code></pre>
 </div>
     
@@ -1344,10 +1344,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:3.4
-	Date:Aug 02 2026  05:05:56.832 EDT
-	Location: 9 km NNW of Chignik Lagoon, Alaska
-	Lat/Long:56.381,-158.609
+	Magnitude:1.2
+	Date:Aug 02 2026  08:43:30.085 EDT
+	Location: 66 km WSW of Karluk, Alaska
+	Lat/Long:57.407,-155.528
 Earthquake 0:
 	Magnitude:2.32
 	Date:Sep 29 2025  15:58:36.940 EDT
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Mike Tyson Boxing
-PlayStation
-4.3
-[Sports]
+<pre><code>The Hobbit
+PlayStation 2
+7.5
+[Action, Adventure]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Cate_Blanchett
-Little_Fish_(2005)
+<pre><code>Danny_Glover
+Royal_Tenenbaums,_The_(2001)
 </code></pre>
 </div>
     
@@ -2400,17 +2400,11 @@ If you were to travel to another planet, say Venus, would you experience weightl
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Much Ado About Nothing
-play
-1599
-
-MUCH ADO ABOUT NOTHING
-
-by William Shakespeare
-
-Dramatis Personae
-
- Don Pedro, Prince of Arrag...
+<pre><code>Sonnet 153
+poem
+Cupid laid by his brand and fell asleep,
+ A maid of Dian's this advantage found,
+ And his love-kindl...
 </code></pre>
 </div>
     
@@ -3474,22 +3468,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5442
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q83410 &quot;Cary Grant&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

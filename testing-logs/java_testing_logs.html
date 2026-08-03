@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Aug  3 01:07:36 PM EDT 2026</p>
+	<p>Running at Mon Aug  3 05:06:52 PM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.60867592972797
-	Date:Aug 03 2026  12:45:01.450 EDT
-	Location: 22 km WSW of Westmorland, CA
-	Lat/Long:32.9571647644043,-115.839996337891
+	Magnitude:1.7
+	Date:Aug 03 2026  16:35:51.543 EDT
+	Location: 13 km NNE of Karnes City, Texas
+	Lat/Long:29.007,-97.871
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.60867592972797
-	Date:Aug 03 2026  12:45:01.450 EDT
-	Location: 22 km WSW of Westmorland, CA
-	Lat/Long:32.9571647644043,-115.839996337891
+	Magnitude:1.7
+	Date:Aug 03 2026  16:35:51.543 EDT
+	Location: 13 km NNE of Karnes City, Texas
+	Lat/Long:29.007,-97.871
 Earthquake 0:
-	Magnitude:1.8
-	Date:Sep 30 2025  13:56:08.977 EDT
-	Location: 18 km NNW of Toyah, Texas
-	Lat/Long:31.477,-103.833
+	Magnitude:1.13
+	Date:Sep 30 2025  16:21:06.860 EDT
+	Location: 4 km SSE of Yucca Valley, CA
+	Lat/Long:34.0805,-116.4143333
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Monsters, Inc.
-GameCube
-2.5
-[Sports]
+<pre><code>Dragon Dance
+Game Boy Color
+7.0
+[Puzzle]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Yvonne_Montelius
-Being_John_Malkovich_(1999)
+<pre><code>Al_Pacino
+Author!_Author!_(1982)
 </code></pre>
 </div>
     
@@ -2402,11 +2402,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 148
+<pre><code>Sonnet 42
 poem
-O me! what eyes hath love put in my head,
- Which have no correspondence with true sight,
- Or if they...
+That thou hast her it is not all my grief,
+ And yet it may be said I loved her dearly,
+ That she hat...
 </code></pre>
 </div>
     
@@ -3472,15 +3472,10 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 </div>
 <div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 0
-
-Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-	at java.base/java.util.Objects.checkIndex(Objects.java:361)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:37)
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
 could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>

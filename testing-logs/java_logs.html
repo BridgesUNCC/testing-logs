@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sat Aug  8 05:40:03 AM EDT 2026</p>
+	<p>Running at Sat Aug  8 09:42:02 AM EDT 2026</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -62,13 +62,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary5" class="success">
+  <div id="summary5" class="failure">
     <h2><a href="java_logs.html#javalog5">Assignment 5</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog5-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog5-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog5-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog5-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -1048,16 +1048,19 @@ http://assignments.bridgesuncc.org/assignments/4/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/5-BST_Earthquakes/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog5-runanswer">Run Answer for Assignment 5</h3>
 <pre><code>Guessing bst_eq.java is the right java file where main is
 
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/37/bridges_testing
-
-
+There was a problem sending the visualization representation to the server. 
+Received an empty JSON response from the server. 
+Exception in thread &quot;main&quot; java.io.IOException: Received an empty JSON response from the server. 
+	at bridges.connect.Connector.asJSONObject(Connector.java:272)
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:506)
+	at bridges.connect.Connector.post(Connector.java:604)
+	at bridges.connect.Bridges.visualize(Bridges.java:599)
+	at bst_eq.main(bst_eq.java:50)
+could not run java_answer for assignment in ../assignmentdb/5-BST_Earthquakes/java_answer
 </code></pre>
 </div>
     
@@ -2005,10 +2008,8 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at WikiDataActor.main(WikiDataActor.java:69)
+Data Access Took: 1.78441126988718E12
+Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
 </div>
@@ -2486,23 +2487,23 @@ total vertices:22983
 Set size: 22983
 Grid
 ===grid stats===
-0)Source Point:-60.83652614838507,-8.435752427007031
-0)[ALG]Closest Point: -73.9157579,40.6132625
-0)[ALG]Min Dist:50.762901498261606
-0)[BFA]Closest Point: -73.9157579,40.6132625
-0)[BFA]Min Dist:50.762901498261606
+0)Source Point:-38.539986062673655,-11.133039667792474
+0)[ALG]Closest Point: -73.9104829,40.6147818
+0)[ALG]Min Dist:62.68101046714098
+0)[BFA]Closest Point: -73.9104829,40.6147818
+0)[BFA]Min Dist:62.68101046714098
 0)Difference:0.0
-Source Point:-61.932605415800026,40.791565389853744
-Source Point:-51.97468725316262,40.80318917566583
-Source Point:-6.013987471183825,40.7684715826886
-Source Point:-13.643671733368606,40.659804907471
-Source Point:-48.334686347643476,40.74991173999208
-Source Point:-40.24448945568299,40.725625368909334
-Source Point:-64.28578895605422,40.648092546766215
-Source Point:-3.877566229457571,40.76480225401093
-Source Point:-50.516378919237674,40.80319629998567
-Source Point:-25.199786486503662,40.73054830889471
-num cells examined:5
+Source Point:-16.086091383402007,40.72456406776063
+Source Point:-25.647348904715088,40.65233623374247
+Source Point:-65.40538227845134,40.642177812000206
+Source Point:-53.62723614452287,40.7885914676165
+Source Point:-34.310929073370666,40.7139237969106
+Source Point:-71.13871385223666,40.74013969589917
+Source Point:-73.12878213018244,40.65725903142325
+Source Point:-42.35892918616277,40.620939612125305
+Source Point:-65.73837520281211,40.704395924303185
+Source Point:-2.429020684726069,40.70807014011209
+num cells examined:11
 
 Check Your Visualization at the following link:
 
@@ -3283,7 +3284,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.14176
+Pi val: 3.1416
 
 Check Your Visualization at the following link:
 

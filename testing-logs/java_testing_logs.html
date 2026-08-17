@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Aug 17 01:06:51 PM EDT 2026</p>
+	<p>Running at Mon Aug 17 05:07:02 PM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.0
-	Date:Aug 17 2026  12:46:33.456 EDT
-	Location: 13 km W of Forsan, Texas
-	Lat/Long:32.105,-101.513
+	Magnitude:4.5
+	Date:Aug 17 2026  16:35:10.038 EDT
+	Location: 41 km SW of Karluk, Alaska
+	Lat/Long:57.279,-154.894
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.0
-	Date:Aug 17 2026  12:46:33.456 EDT
-	Location: 13 km W of Forsan, Texas
-	Lat/Long:32.105,-101.513
+	Magnitude:4.5
+	Date:Aug 17 2026  16:35:10.038 EDT
+	Location: 41 km SW of Karluk, Alaska
+	Lat/Long:57.279,-154.894
 Earthquake 0:
-	Magnitude:1.9338369369506836
-	Date:Oct 13 2025  08:55:59.130 EDT
-	Location: 0 km WSW of Beaux Arts Village, Washington
-	Lat/Long:47.583831787109375,-122.2056655883789
+	Magnitude:1.83
+	Date:Oct 13 2025  11:35:19.160 EDT
+	Location: 4 km SW of Volcano, Hawaii
+	Lat/Long:19.4165000915527,-155.269165039062
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Supersonic Acrobatic Rocket-Powered Battle-Cars
-PlayStation 3
-6.5
-[Sports]
+<pre><code>Play &amp;amp; Learn Chinese 
+Nintendo DSi
+6.0
+[Productivity]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Charles_Grodin_(I)
-Ishtar_(1987)
+<pre><code>Billy_Crystal
+How_Harry_Met_Sally..._(2000)
 </code></pre>
 </div>
     
@@ -2411,11 +2411,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 82
+<pre><code>Sonnet 111
 poem
-I grant thou wert not married to my muse,
- And therefore mayst without attaint o'erlook
- The dedicat...
+O for my sake do you with Fortune chide,
+ The guilty goddess of my harmful deeds,
+ That did not bett...
 </code></pre>
 </div>
     
@@ -3479,22 +3479,18 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5453
+<pre><code>Data Records in 1955: 0
 
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q83410 &quot;Cary Grant&quot;
-
+Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:37)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

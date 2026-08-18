@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Aug 17 09:07:07 PM EDT 2026</p>
+	<p>Running at Tue Aug 18 01:07:15 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.77
-	Date:Aug 17 2026  20:39:31.360 EDT
-	Location: 9 km S of Volcano, Hawaii
-	Lat/Long:19.3600006103516,-155.243835449219
+	Magnitude:1.31
+	Date:Aug 18 2026  01:01:32.990 EDT
+	Location: 9 km ENE of North Tustin, CA
+	Lat/Long:33.8028333333333,-117.712166666667
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.77
-	Date:Aug 17 2026  20:39:31.360 EDT
-	Location: 9 km S of Volcano, Hawaii
-	Lat/Long:19.3600006103516,-155.243835449219
+	Magnitude:1.31
+	Date:Aug 18 2026  01:01:32.990 EDT
+	Location: 9 km ENE of North Tustin, CA
+	Lat/Long:33.8028333333333,-117.712166666667
 Earthquake 0:
-	Magnitude:1.3
-	Date:Oct 13 2025  17:19:47.120 EDT
-	Location: 12 km N of Glendora, CA
-	Lat/Long:34.2415009,-117.8730011
+	Magnitude:1.1
+	Date:Oct 13 2025  22:25:42.480 EDT
+	Location: 5 km NNW of The Geysers, CA
+	Lat/Long:38.8126678466797,-122.783668518066
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Antz
-Game Boy Color
-5.0
-[Platformer]
+<pre><code>Juiced 2: Hot Import Nights
+PlayStation 3
+6.8
+[Racing]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Al_Pacino
-Kid_Stays_In_the_Picture,_The_(2002)
+<pre><code>Carrie_Fisher
+Amazon_Women_on_the_Moon_(1987)
 </code></pre>
 </div>
     
@@ -2411,11 +2411,18 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 31
-poem
-Thy bosom is endeared with all hearts,
- Which I by lacking have supposed dead,
- And there reigns lov...
+<pre><code>The Winter's Tale
+play
+1611
+
+THE WINTER'S TALE
+
+by William Shakespeare
+
+Dramatis Personae
+
+ LEONTES, King of Sicilia
+ MAMIL...
 </code></pre>
 </div>
     
@@ -3479,22 +3486,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5453
-
-Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q45553 &quot;Robert J. Wilke&quot;
-
-Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q78505 &quot;Peter Lorre&quot;
-
-Actor-Movie Data:
-	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
-	Actor: Q104027 &quot;Kirk Douglas&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Wed Aug 19 09:07:01 PM EDT 2026</p>
+	<p>Running at Thu Aug 20 01:15:36 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:5.0
-	Date:Aug 19 2026  20:20:24.938 EDT
-	Location: 87 km S of Isangel, Vanuatu
-	Lat/Long:-20.324,169.1514
+	Magnitude:1.01
+	Date:Aug 20 2026  00:52:52.400 EDT
+	Location: 21 km ENE of Arvin, CA
+	Lat/Long:35.2808333333333,-118.614833333333
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:5.0
-	Date:Aug 19 2026  20:20:24.938 EDT
-	Location: 87 km S of Isangel, Vanuatu
-	Lat/Long:-20.324,169.1514
+	Magnitude:1.01
+	Date:Aug 20 2026  00:52:52.400 EDT
+	Location: 21 km ENE of Arvin, CA
+	Lat/Long:35.2808333333333,-118.614833333333
 Earthquake 0:
-	Magnitude:2.4
-	Date:Oct 16 2025  06:12:10.527 EDT
-	Location: 26 km WNW of Anchor Point, Alaska
-	Lat/Long:59.9011,-152.2322
+	Magnitude:2.0
+	Date:Oct 16 2025  10:02:55.540 EDT
+	Location: 22 km S of Susitna North, Alaska
+	Lat/Long:61.959,-149.8732
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Return to Castle Wolfenstein: Operation Resurrection
-PlayStation 2
-7.6
-[Shooter]
+<pre><code>WCW Backstage Assault
+PlayStation
+2.0
+[Wrestling]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Clark_Gable
-Lone_Star_(1952)
+<pre><code>Arnold_Schwarzenegger
+Last_Party,_The_(1993)
 </code></pre>
 </div>
     
@@ -2407,11 +2407,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 109
+<pre><code>Sonnet 79
 poem
-O never say that I was false of heart,
- Though absence seemed my flame to qualify,
- As easy might I ...
+Whilst I alone did call upon thy aid,
+ My verse alone had all thy gentle grace,
+ But now my gracious...
 </code></pre>
 </div>
     
@@ -3472,18 +3472,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 0
+<pre><code>Data Records in 1955: 5453
 
-Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-	at java.base/java.util.Objects.checkIndex(Objects.java:361)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:37)
-could not run test wikidata_actor_snippet.java
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q102551 &quot;Ernest Borgnine&quot;
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q180251 &quot;Paddy Chayefsky&quot;
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q266416 &quot;Betsy Blair&quot;
+
 </code></pre>
 </div>
     

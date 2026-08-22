@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sat Aug 22 01:05:40 PM EDT 2026</p>
+	<p>Running at Sat Aug 22 05:06:31 PM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.06315812422503
-	Date:Aug 22 2026  12:59:31.240 EDT
-	Location: 16 km ESE of Anza, CA
-	Lat/Long:33.5128326416016,-116.505332946777
+	Magnitude:1.7
+	Date:Aug 22 2026  16:41:53.613 EDT
+	Location: 55 km S of Whites City, New Mexico
+	Lat/Long:31.682,-104.307
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.06315812422503
-	Date:Aug 22 2026  12:59:31.240 EDT
-	Location: 16 km ESE of Anza, CA
-	Lat/Long:33.5128326416016,-116.505332946777
+	Magnitude:1.7
+	Date:Aug 22 2026  16:41:53.613 EDT
+	Location: 55 km S of Whites City, New Mexico
+	Lat/Long:31.682,-104.307
 Earthquake 0:
-	Magnitude:1.6
-	Date:Oct 18 2025  21:52:17.243 EDT
-	Location: 23 km N of Mentone, Texas
-	Lat/Long:31.913,-103.564
+	Magnitude:1.5
+	Date:Oct 19 2025  01:49:25.990 EDT
+	Location: 13 km WNW of Malibu, CA
+	Lat/Long:34.0545006,-118.9358368
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Sonic Riders
-Xbox
-6.2
-[Racing]
+<pre><code>Family Feud
+PlayStation
+2.5
+[Other]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Alec_Guinness
-Man_in_the_White_Suit,_The_(1951)
+<pre><code>Christopher_Lee_(I)
+Dr._Terror's_House_of_Horrors_(1965)
 </code></pre>
 </div>
     
@@ -2411,17 +2411,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>The History Of Troilus And Cressida
-play
-1602
-
-THE HISTORY OF TROILUS AND CRESSIDA
-
-by William Shakespeare
-
-DRAMATIS PERSONAE
-
- PRIAM, King o...
+<pre><code>Sonnet 11
+poem
+As fast as thou shalt wane so fast thou grow'st,
+ In one of thine, from that which thou departest,
+ ...
 </code></pre>
 </div>
     
@@ -3482,22 +3476,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5453
-
-Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q102551 &quot;Ernest Borgnine&quot;
-
-Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q180251 &quot;Paddy Chayefsky&quot;
-
-Actor-Movie Data:
-	Movie: Q237116 &quot;Marty&quot;
-	Actor: Q266416 &quot;Betsy Blair&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

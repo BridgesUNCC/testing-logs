@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Aug 25 09:06:54 PM EDT 2026</p>
+	<p>Running at Wed Aug 26 01:06:50 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.9
-	Date:Aug 25 2026  20:57:02.113 EDT
-	Location: 57 km S of Whites City, New Mexico
-	Lat/Long:31.654,-104.34
+	Magnitude:2.5
+	Date:Aug 26 2026  00:37:36.949 EDT
+	Location: 19 km ENE of Sterling, Alaska
+	Lat/Long:60.633,-150.468
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.9
-	Date:Aug 25 2026  20:57:02.113 EDT
-	Location: 57 km S of Whites City, New Mexico
-	Lat/Long:31.654,-104.34
+	Magnitude:2.5
+	Date:Aug 26 2026  00:37:36.949 EDT
+	Location: 19 km ENE of Sterling, Alaska
+	Lat/Long:60.633,-150.468
 Earthquake 0:
-	Magnitude:4.3
-	Date:Oct 22 2025  23:43:02.734 EDT
-	Location: 33 km SSW of Daniel Flores, Costa Rica
-	Lat/Long:9.0779,-83.8228
+	Magnitude:1.19
+	Date:Oct 23 2025  02:42:12.360 EDT
+	Location: 5 km ENE of Calimesa, CA
+	Lat/Long:33.998,-116.9965
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>NCAA Football 13
-Xbox 360
-8.0
-[Sports]
+<pre><code>Auto Modellista
+GameCube
+5.5
+[Racing]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christopher_Lee_(I)
-Corridor_of_Mirrors_(1948)
+<pre><code>Carrie_Fisher
+Loverboy_(1989)
 </code></pre>
 </div>
     
@@ -2407,11 +2407,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 117
+<pre><code>Sonnet 145
 poem
-Accuse me thus, that I have scanted all,
- Wherein I should your great deserts repay,
- Forgot upon yo...
+Those lips that Love's own hand did make,
+ Breathed forth the sound that said 'I hate',
+ To me that ...
 </code></pre>
 </div>
     
@@ -3472,22 +3472,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5453
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q102462 &quot;James Stewart&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Aug 27 09:06:08 PM EDT 2026</p>
+	<p>Running at Fri Aug 28 01:06:34 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.8
-	Date:Aug 27 2026  20:12:15.378 EDT
-	Location: 22 km SW of Susitna North, Alaska
-	Lat/Long:62.012,-150.144
+	Magnitude:2.6
+	Date:Aug 28 2026  01:03:52.313 EDT
+	Location: 28 km E of Chignik, Alaska
+	Lat/Long:56.27,-157.94
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.8
-	Date:Aug 27 2026  20:12:15.378 EDT
-	Location: 22 km SW of Susitna North, Alaska
-	Lat/Long:62.012,-150.144
+	Magnitude:2.6
+	Date:Aug 28 2026  01:03:52.313 EDT
+	Location: 28 km E of Chignik, Alaska
+	Lat/Long:56.27,-157.94
 Earthquake 0:
-	Magnitude:1.51
-	Date:Oct 25 2025  05:14:17.130 EDT
-	Location: 6 km NW of The Geysers, CA
-	Lat/Long:38.8168334960938,-122.795166015625
+	Magnitude:1.7
+	Date:Oct 25 2025  09:23:31.128 EDT
+	Location: 10 km NNE of Houston, Alaska
+	Lat/Long:61.7252,-149.7651
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Streets of Rage 2
-Xbox 360
-7.3
-[Action]
+<pre><code>Uno 52
+Game Boy Advance
+7.0
+[Card]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Arnold_Schwarzenegger
-Hercules_in_New_York_(1970)
+<pre><code>Ned_Bellamy
+Being_John_Malkovich_(1999)
 </code></pre>
 </div>
     
@@ -2407,11 +2407,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 49
+<pre><code>Sonnet 57
 poem
-Against that time (if ever that time come)
- When I shall see thee frown on my defects,
- When as thy ...
+Being your slave what should I do but tend,
+ Upon the hours, and times of your desire?
+ I have no pr...
 </code></pre>
 </div>
     
@@ -3472,22 +3472,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5453
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
-
-Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q102462 &quot;James Stewart&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

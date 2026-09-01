@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Aug 31 05:39:48 PM EDT 2026</p>
+	<p>Running at Mon Aug 31 09:40:48 PM EDT 2026</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -442,13 +442,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary43" class="success">
+  <div id="summary43" class="failure">
     <h2><a href="java_logs.html#javalog43">Assignment 43</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog43-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog43-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog43-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog43-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -2005,8 +2005,10 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.786425097267252E12
-Alarm clock
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:69)
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
 </div>
@@ -2476,43 +2478,12 @@ http://assignments.bridgesuncc.org/assignments/42/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/43-SpatialIndexing/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog43-runanswer">Run Answer for Assignment 43</h3>
 <pre><code>Guessing closestPoint.java is the right java file where main is
 
-total vertices:22983
-Set size: 22983
-Grid
-===grid stats===
-0)Source Point:-65.164682660323,-46.17253792274613
-0)[ALG]Closest Point: -73.9157579,40.6132625
-0)[ALG]Min Dist:87.225893362391
-0)[BFA]Closest Point: -73.9157579,40.6132625
-0)[BFA]Min Dist:87.225893362391
-0)Difference:0.0
-Source Point:-35.55753620403203,40.751249945929885
-Source Point:-23.125282753877762,40.635722795209944
-Source Point:-24.660408397930958,40.678065805212825
-Source Point:-28.95395961467606,40.71942281991905
-Source Point:-33.513169084503055,40.65269432265322
-Source Point:-36.203423958364674,40.617838002169435
-Source Point:-43.60334729992806,40.783272226623815
-Source Point:-48.14991558611267,40.695918168662715
-Source Point:-64.16139657140057,40.75159715414073
-Source Point:-11.244555859534564,40.63401319756711
-num cells examined:8
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/43/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/43/bridges_testing
-
-
+Alarm clock
+could not run java_answer for assignment in ../assignmentdb/43-SpatialIndexing/java_answer
 </code></pre>
 </div>
     
@@ -3281,7 +3252,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.13888
+Pi val: 3.13676
 
 Check Your Visualization at the following link:
 

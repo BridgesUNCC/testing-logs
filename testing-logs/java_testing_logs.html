@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Sep  8 09:06:43 PM EDT 2026</p>
+	<p>Running at Wed Sep  9 01:06:26 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.7
-	Date:Sep 08 2026  20:58:15.121 EDT
-	Location: 59 km S of Whites City, New Mexico
-	Lat/Long:31.642,-104.456
+	Magnitude:1.89
+	Date:Sep 09 2026  00:42:56.650 EDT
+	Location: 16 km ESE of Anza, CA
+	Lat/Long:33.4765,-116.5295
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.7
-	Date:Sep 08 2026  20:58:15.121 EDT
-	Location: 59 km S of Whites City, New Mexico
-	Lat/Long:31.642,-104.456
+	Magnitude:1.89
+	Date:Sep 09 2026  00:42:56.650 EDT
+	Location: 16 km ESE of Anza, CA
+	Lat/Long:33.4765,-116.5295
 Earthquake 0:
-	Magnitude:1.22
-	Date:Nov 06 2025  16:06:35.800 EST
-	Location: 9 km SW of Niland, CA
-	Lat/Long:33.1938333,-115.6
+	Magnitude:1.97
+	Date:Nov 06 2025  20:18:07.340 EST
+	Location: 9 km NNW of Anza, CA
+	Lat/Long:33.6288333,-116.705
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>The Next Tetris
-PlayStation
-8.8
-[Puzzle]
+<pre><code>Guitar Hero World Tour (Complete Band Game)
+PlayStation 2
+7.9
+[Music]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Alan_Rickman
-Lumiere_et_compagnie_(1995)
+<pre><code>Alec_Guinness
+Doctor_Zhivago_(1965)
 </code></pre>
 </div>
     
@@ -2408,11 +2408,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 44
+<pre><code>Sonnet 73
 poem
-If the dull substance of my flesh were thought,
- Injurious distance should not stop my way,
- For the...
+That time of year thou mayst in me behold,
+ When yellow leaves, or none, or few do hang
+ Upon those ...
 </code></pre>
 </div>
     
@@ -3476,22 +3476,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5461
-
-Actor-Movie Data:
-	Movie: Q50937 &quot;It Came from Beneath the Sea&quot;
-	Actor: Q440298 &quot;Faith Domergue&quot;
-
-Actor-Movie Data:
-	Movie: Q50937 &quot;It Came from Beneath the Sea&quot;
-	Actor: Q541016 &quot;Ian Keith&quot;
-
-Actor-Movie Data:
-	Movie: Q50937 &quot;It Came from Beneath the Sea&quot;
-	Actor: Q925911 &quot;Kenneth Tobey&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Wed Sep 16 01:07:11 PM EDT 2026</p>
+	<p>Running at Wed Sep 16 05:07:18 PM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.8
-	Date:Sep 16 2026  12:09:01.636 EDT
-	Location: 10 km WNW of Beluga, Alaska
-	Lat/Long:61.176,-151.271
+	Magnitude:1.33
+	Date:Sep 16 2026  16:45:00.890 EDT
+	Location: 5 km S of Brawley, CA
+	Lat/Long:32.931,-115.523833333333
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.8
-	Date:Sep 16 2026  12:09:01.636 EDT
-	Location: 10 km WNW of Beluga, Alaska
-	Lat/Long:61.176,-151.271
+	Magnitude:1.33
+	Date:Sep 16 2026  16:45:00.890 EDT
+	Location: 5 km S of Brawley, CA
+	Lat/Long:32.931,-115.523833333333
 Earthquake 0:
-	Magnitude:2.28
-	Date:Nov 15 2025  12:39:51.435 EST
-	Location: 41 km SSW of Caliente, Nevada
-	Lat/Long:37.2699,-114.6813
+	Magnitude:1.72
+	Date:Nov 15 2025  16:54:12.370 EST
+	Location: 9 km ENE of Pāhala, Hawaii
+	Lat/Long:19.2514991760254,-155.399673461914
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Super Puzzle Fighter II Turbo
-PlayStation
-9.0
-[Puzzle, Action]
+<pre><code>TimeShift
+PC
+7.6
+[Shooter]
 </code></pre>
 </div>
     
@@ -1686,7 +1686,7 @@ Printing the first 300 characters of the book
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
 <pre><code>Morgan_Freeman_(I)
-Brubaker_(1980)
+Bonfire_of_the_Vanities,_The_(1990)
 </code></pre>
 </div>
     
@@ -2392,11 +2392,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 2
+<pre><code>Sonnet 106
 poem
-When forty winters shall besiege thy brow,
- And dig deep trenches in thy beauty's field,
- Thy youth'...
+When in the chronicle of wasted time,
+ I see descriptions of the fairest wights,
+ And beauty making ...
 </code></pre>
 </div>
     
@@ -3460,13 +3460,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5446
+
+Actor-Movie Data:
+	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
+	Actor: Q45553 &quot;Robert J. Wilke&quot;
+
+Actor-Movie Data:
+	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
+	Actor: Q78505 &quot;Peter Lorre&quot;
+
+Actor-Movie Data:
+	Movie: Q64110 &quot;20,000 Leagues Under the Sea&quot;
+	Actor: Q104027 &quot;Kirk Douglas&quot;
+
 </code></pre>
 </div>
     

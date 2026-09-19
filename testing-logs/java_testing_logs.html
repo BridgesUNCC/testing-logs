@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sat Sep 19 01:07:43 PM EDT 2026</p>
+	<p>Running at Sat Sep 19 05:07:31 PM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.84
-	Date:Sep 19 2026  12:31:19.480 EDT
-	Location: 2 km SW of Fuig, Puerto Rico
-	Lat/Long:17.973,-66.9285
+	Magnitude:2.34
+	Date:Sep 19 2026  16:38:18.200 EDT
+	Location: 2 km NNW of Pāhala, Hawaii
+	Lat/Long:19.2243328094482,-155.48649597168
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.84
-	Date:Sep 19 2026  12:31:19.480 EDT
-	Location: 2 km SW of Fuig, Puerto Rico
-	Lat/Long:17.973,-66.9285
+	Magnitude:2.34
+	Date:Sep 19 2026  16:38:18.200 EDT
+	Location: 2 km NNW of Pāhala, Hawaii
+	Lat/Long:19.2243328094482,-155.48649597168
 Earthquake 0:
-	Magnitude:1.5
-	Date:Nov 18 2025  04:32:19.556 EST
-	Location: 37 km NNW of Toyah, Texas
-	Lat/Long:31.608,-103.988
+	Magnitude:2.1
+	Date:Nov 18 2025  10:13:54.895 EST
+	Location: 24 km S of Westbrook, Texas
+	Lat/Long:32.137,-101.064
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Cities XL 2011
-PC
+<pre><code>Academy of Champions Soccer
+Wii
 7.0
-[Simulation]
+[Sports]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>James_Earl_Jones
-Recess_Christmas:_Miracle_on_Third_Street_(2001)
+<pre><code>John_Malkovich
+Hotel_(2001)
 </code></pre>
 </div>
     
@@ -2388,11 +2388,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 110
+<pre><code>Sonnet 16
 poem
-Alas 'tis true, I have gone here and there,
- And made my self a motley to the view,
- Gored mine own ...
+But wherefore do not you a mightier way
+ Make war upon this bloody tyrant Time?
+ And fortify your se...
 </code></pre>
 </div>
     
@@ -3456,22 +3456,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5446
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q3086867 &quot;Fred Kelsey&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q3103730 &quot;Georgette Anys&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q3123799 &quot;Gérard Buhr&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

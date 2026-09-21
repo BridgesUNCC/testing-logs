@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sun Sep 20 09:07:15 PM EDT 2026</p>
+	<p>Running at Mon Sep 21 01:07:11 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.6
-	Date:Sep 20 2026  20:57:40.813 EDT
-	Location: 17 km ESE of Livengood, Alaska
-	Lat/Long:65.445,-148.216
+	Magnitude:4.7
+	Date:Sep 21 2026  00:28:40.661 EDT
+	Location: 156 km NNW of Hicks Bay, New Zealand
+	Lat/Long:-36.2456,177.7978
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.6
-	Date:Sep 20 2026  20:57:40.813 EDT
-	Location: 17 km ESE of Livengood, Alaska
-	Lat/Long:65.445,-148.216
+	Magnitude:4.7
+	Date:Sep 21 2026  00:28:40.661 EDT
+	Location: 156 km NNW of Hicks Bay, New Zealand
+	Lat/Long:-36.2456,177.7978
 Earthquake 0:
-	Magnitude:1.1
-	Date:Nov 19 2025  13:03:45.093 EST
-	Location: 16 km WSW of Stanton, Texas
-	Lat/Long:32.098,-101.954
+	Magnitude:1.59
+	Date:Nov 19 2025  15:48:42.880 EST
+	Location: 19 km NW of Laytonville, CA
+	Lat/Long:39.8255004882812,-123.615997314453
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Battlefield: Bad Company 2 (Limited Edition)
-PC
-8.9
-[Shooter]
+<pre><code>California Games
+Lynx
+6.0
+[Sports]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Brigitte_Bardot
-Et_Dieu..._crea_la_femme_(1956)
+<pre><code>Al_Pacino
+Devil's_Advocate,_The_(1997)
 </code></pre>
 </div>
     
@@ -2388,18 +2388,18 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Cymbeline
+<pre><code>Love's Labour's Lost
 play
-1609
+1595
 
-CYMBELINE
+LOVE'S LABOUR'S LOST
 
 by William Shakespeare
 
-Dramatis Personae
+Dramatis Personae.
 
- CYMBELINE, King of Britain
- CLOTEN, son...
+ FERDINAND, King of Navarre
+...
 </code></pre>
 </div>
     
@@ -3463,22 +3463,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5444
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q513849 &quot;Bess Flowers&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q541270 &quot;Jessie Royce Landis&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q921945 &quot;John Williams&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

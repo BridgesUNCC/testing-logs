@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Sep 22 05:06:50 AM EDT 2026</p>
+	<p>Running at Tue Sep 22 09:07:08 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -462,12 +462,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarysong_lyrics_snippet.java" class="success">
+  <div id="summarysong_lyrics_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogsong_lyrics_snippet.java">Test song_lyrics_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.87
-	Date:Sep 22 2026  04:50:44.110 EDT
-	Location: 10 km SSW of Tres Pinos, CA
-	Lat/Long:36.7169990539551,-121.380500793457
+	Magnitude:1.08
+	Date:Sep 22 2026  08:34:25.370 EDT
+	Location: 8 km NW of The Geysers, CA
+	Lat/Long:38.8278350830078,-122.815002441406
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.87
-	Date:Sep 22 2026  04:50:44.110 EDT
-	Location: 10 km SSW of Tres Pinos, CA
-	Lat/Long:36.7169990539551,-121.380500793457
+	Magnitude:1.08
+	Date:Sep 22 2026  08:34:25.370 EDT
+	Location: 8 km NW of The Geysers, CA
+	Lat/Long:38.8278350830078,-122.815002441406
 Earthquake 0:
-	Magnitude:1.93
-	Date:Nov 20 2025  20:42:32.590 EST
-	Location: 5 km SSW of Pāhala, Hawaii
-	Lat/Long:19.158166885376,-155.496673583984
+	Magnitude:2.62
+	Date:Nov 21 2025  00:03:01.230 EST
+	Location: 27 km ENE of Willow Creek, CA
+	Lat/Long:41.0363349914551,-123.339668273926
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>FutureU: The Prep Game for SAT
-Nintendo DS
-6.8
-[Educational, Productivity]
+<pre><code>SWAT 2
+PC
+7.0
+[Action, Simulation]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Robert_Smigel
-Adam_Sandler_Goes_to_Hell_(2001)
+<pre><code>Cate_Blanchett
+Elizabeth_(1998)
 </code></pre>
 </div>
     
@@ -2388,18 +2388,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>The Life of King Henry the Eighth
-play
-1611
-
-KING HENRY THE EIGHTH
-
-by William Shakespeare
-
-DRAMATIS PERSONAE
-
- KING HENRY THE EIGHTH
- CARD...
+<pre><code>Sonnet 47
+poem
+Betwixt mine eye and heart a league is took,
+ And each doth good turns now unto the other,
+ When tha...
 </code></pre>
 </div>
     
@@ -2524,13 +2517,40 @@ http://assignments.bridgesuncc.org/assignments/2049/bridges_testing
 <pre><code>Compiling test song_lyrics_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogsong_lyrics_snippet.java-runtest">Run Test for test song_lyrics_snippet.java</h3>
-<pre><code>Harder Better Faster Stronger
-Daft Punk
-Homework / Discovery / Alive 1997
-2001-02-26
+<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 503. Message: &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Application Error&lt;/title&gt;
+    &lt;style media=&quot;screen&quot;&gt;
+      html,body,iframe {
+        margin: 0;
+        padding: 0;
+      }
 
+      html,body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;https://www.herokucdn.com/error-pages/application-error.html&quot;&gt;&lt;/iframe&gt;
+  &lt;script type=&quot;module&quot; src=&quot;https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495&quot; integrity=&quot;sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==&quot; data-cf-beacon='{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;b46cb27d3b9d47cb919820c918d9ab42&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}' crossorigin=&quot;anonymous&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+	at bridges.connect.DataSource.getSong(DataSource.java:983)
+	at song_lyrics_snippet.main(song_lyrics_snippet.java:24)
+could not run test song_lyrics_snippet.java
 </code></pre>
 </div>
     
@@ -3468,16 +3488,16 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Data Records in 1955: 5444
 
 Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q1374412 &quot;Joe Mantell&quot;
 
 Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q1381411 &quot;Jerry Paris&quot;
 
 Actor-Movie Data:
-	Movie: Q34414 &quot;Rear Window&quot;
-	Actor: Q102462 &quot;James Stewart&quot;
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q1418567 &quot;Minerva Urecal&quot;
 
 </code></pre>
 </div>

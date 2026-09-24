@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Wed Sep 23 09:07:34 PM EDT 2026</p>
+	<p>Running at Thu Sep 24 01:15:33 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.7
-	Date:Sep 23 2026  20:47:33.988 EDT
-	Location: 16 km WNW of Ivanof Bay, Alaska
-	Lat/Long:55.942,-159.735
+	Magnitude:2.9
+	Date:Sep 24 2026  00:53:54.476 EDT
+	Location: 16 km SE of Karluk, Alaska
+	Lat/Long:57.471,-154.244
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.7
-	Date:Sep 23 2026  20:47:33.988 EDT
-	Location: 16 km WNW of Ivanof Bay, Alaska
-	Lat/Long:55.942,-159.735
+	Magnitude:2.9
+	Date:Sep 24 2026  00:53:54.476 EDT
+	Location: 16 km SE of Karluk, Alaska
+	Lat/Long:57.471,-154.244
 Earthquake 0:
-	Magnitude:2.71
-	Date:Nov 22 2025  08:33:40.770 EST
-	Location: 55 km W of Petrolia, CA
-	Lat/Long:40.3409996032715,-124.929496765137
+	Magnitude:1.809902101792617
+	Date:Nov 22 2025  13:24:16.968 EST
+	Location: 24 km NE of Susitna North, Alaska
+	Lat/Long:62.34333801269531,-149.5810089111328
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Gladius
-Xbox
-8.3
-[Strategy, RPG]
+<pre><code>SingStar: Queen
+PlayStation 3
+5.5
+[Music]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Arnold_Schwarzenegger
-Kindergarten_Cop_(1990)
+<pre><code>Denzel_Washington
+Mo'_Better_Blues_(1990)
 </code></pre>
 </div>
     
@@ -2388,11 +2388,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 61
+<pre><code>Sonnet 38
 poem
-Is it thy will, thy image should keep open
- My heavy eyelids to the weary night?
- Dost thou desire m...
+How can my muse want subject to invent
+ While thou dost breathe that pour'st into my verse,
+ Thine o...
 </code></pre>
 </div>
     
@@ -3458,15 +3458,10 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 </div>
 <div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 0
-
-Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-	at java.base/java.util.Objects.checkIndex(Objects.java:361)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:37)
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
 could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>

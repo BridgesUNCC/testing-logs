@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Sep 24 05:07:07 AM EDT 2026</p>
+	<p>Running at Thu Sep 24 09:08:15 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.3
-	Date:Sep 24 2026  04:56:24.419 EDT
-	Location: 31 km N of Petersville, Alaska
-	Lat/Long:62.775,-150.671
+	Magnitude:1.8
+	Date:Sep 24 2026  08:38:19.933 EDT
+	Location: 18 km ESE of Kasilof, Alaska
+	Lat/Long:60.282,-150.951
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.3
-	Date:Sep 24 2026  04:56:24.419 EDT
-	Location: 31 km N of Petersville, Alaska
-	Lat/Long:62.775,-150.671
+	Magnitude:1.8
+	Date:Sep 24 2026  08:38:19.933 EDT
+	Location: 18 km ESE of Kasilof, Alaska
+	Lat/Long:60.282,-150.951
 Earthquake 0:
-	Magnitude:1.01
-	Date:Nov 22 2025  19:24:53.430 EST
-	Location: 7 km W of Cobb, CA
-	Lat/Long:38.8321647644043,-122.808502197266
+	Magnitude:0.97
+	Date:Nov 23 2025  01:54:00.040 EST
+	Location: 7 km NW of The Geysers, CA
+	Lat/Long:38.8251647949219,-122.806503295898
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Evolva
-PC
-7.2
-[Action]
+<pre><code>Overlord
+Xbox 360
+6.6
+[Adventure]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Danny_Glover
-Silverado_(1985)
+<pre><code>Billy_Crystal
+My_Giant_(1998)
 </code></pre>
 </div>
     
@@ -2388,11 +2388,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 90
+<pre><code>Sonnet 105
 poem
-Then hate me when thou wilt, if ever, now,
- Now while the world is bent my deeds to cross,
- join wit...
+Let not my love be called idolatry,
+ Nor my beloved as an idol show,
+ Since all alike my songs and p...
 </code></pre>
 </div>
     
@@ -3458,15 +3458,10 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 </div>
 <div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 0
-
-Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
-	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
-	at java.base/java.util.Objects.checkIndex(Objects.java:361)
-	at java.base/java.util.ArrayList.get(ArrayList.java:427)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:37)
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
 could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Fri Sep 25 01:41:58 PM EDT 2026</p>
+	<p>Running at Fri Sep 25 05:42:00 PM EDT 2026</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -342,13 +342,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary33" class="success">
+  <div id="summary33" class="failure">
     <h2><a href="java_logs.html#javalog33">Assignment 33</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog33-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog33-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog33-runanswer">success</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog33-runanswer">error</a></li>
       </ul>
     </p>
   </div>
@@ -2005,10 +2005,8 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at WikiDataActor.main(WikiDataActor.java:69)
+Data Access Took: 1.788583070203973E12
+Alarm clock
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
 </div>
@@ -2031,10 +2029,7 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at WikiDataActor.main(WikiDataActor.java:68)
+Alarm clock
 could not run java_answer for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
@@ -2082,34 +2077,19 @@ Shutting down ...
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/33-AudioMixing/java_answer
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalog33-runanswer">Run Answer for Assignment 33</h3>
 <pre><code>Guessing AudioMixing.java is the right java file where main is
 
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/33/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/33/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/33/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/33/bridges_testing
-
-
+There was a problem sending the visualization representation to the server. 
+Received an empty JSON response from the server. 
+Exception in thread &quot;main&quot; java.io.IOException: Received an empty JSON response from the server. 
+	at bridges.connect.Connector.asJSONObject(Connector.java:272)
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:506)
+	at bridges.connect.Connector.post(Connector.java:604)
+	at bridges.connect.Bridges.visualize(Bridges.java:599)
+	at AudioMixing.main(AudioMixing.java:108)
+could not run java_answer for assignment in ../assignmentdb/33-AudioMixing/java_answer
 </code></pre>
 </div>
     
@@ -2486,23 +2466,23 @@ total vertices:23059
 Set size: 23059
 Grid
 ===grid stats===
-0)Source Point:-29.373540173373044,-43.25383409247327
+0)Source Point:-26.855944140297154,-35.875444063509875
 0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:94.96043386144605
+0)[ALG]Min Dist:89.80470071515819
 0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:94.96043386144605
+0)[BFA]Min Dist:89.80470071515819
 0)Difference:0.0
-Source Point:-23.809666310480857,40.79546088680355
-Source Point:-12.884151811314247,40.80923313209179
-Source Point:-33.135683414491275,40.80351035692539
-Source Point:-50.60410816512669,40.65221346778629
-Source Point:-21.74963632878287,40.78235136280587
-Source Point:-13.279573737959495,40.75098777309499
-Source Point:-43.968497427839345,40.77801806657691
-Source Point:-11.081178110240636,40.70010908173922
-Source Point:-16.822658752196922,40.78406750968313
-Source Point:-8.374390757526285,40.629479959894084
-num cells examined:10
+Source Point:-52.97608571281182,40.78385486552689
+Source Point:-73.01086284480837,40.77171229386554
+Source Point:-27.70221440589912,40.783512200231016
+Source Point:-7.179816471371026,40.70513450155453
+Source Point:-5.788626990389872,40.651922237410844
+Source Point:-16.268500750967796,40.62582836588844
+Source Point:-26.424628726928248,40.76732022068785
+Source Point:-59.536025640802926,40.7939595657045
+Source Point:-6.262760451261798,40.73437158033829
+Source Point:-10.731531193301393,40.753018332661505
+num cells examined:11
 
 Check Your Visualization at the following link:
 
@@ -3284,7 +3264,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.14948
+Pi val: 3.15076
 
 Check Your Visualization at the following link:
 

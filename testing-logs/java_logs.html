@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Oct  6 01:52:42 AM EDT 2026</p>
+	<p>Running at Tue Oct  6 05:42:05 AM EDT 2026</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -242,13 +242,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary23" class="failure">
+  <div id="summary23" class="success">
     <h2><a href="java_logs.html#javalog23">Assignment 23</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog23-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog23-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog23-runanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog23-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -1604,36 +1604,16 @@ Shutting down ...
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/23-MountainPaths/java_answer
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalog23-runanswer">Run Answer for Assignment 23</h3>
 <pre><code>Guessing mount_path.java is the right java file where main is
 
-Exception in thread &quot;main&quot; java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
-	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
-	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
-	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
-	at org.apache.http.impl.io.ChunkedInputStream.getChunkSize(ChunkedInputStream.java:240)
-	at org.apache.http.impl.io.ChunkedInputStream.nextChunk(ChunkedInputStream.java:206)
-	at org.apache.http.impl.io.ChunkedInputStream.read(ChunkedInputStream.java:169)
-	at org.apache.http.conn.EofSensorInputStream.read(EofSensorInputStream.java:137)
-	at java.base/java.util.zip.InflaterInputStream.fill(InflaterInputStream.java:242)
-	at java.base/java.util.zip.InflaterInputStream.read(InflaterInputStream.java:158)
-	at java.base/java.util.zip.GZIPInputStream.read(GZIPInputStream.java:117)
-	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:287)
-	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:330)
-	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:190)
-	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:177)
-	at java.base/java.io.Reader.read(Reader.java:250)
-	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:244)
-	at org.apache.http.util.EntityUtils.toString(EntityUtils.java:288)
-	at bridges.connect.DataSource.getDataSetJSON(DataSource.java:1280)
-	at bridges.connect.DataSource.getElevationData(DataSource.java:1345)
-	at mount_path.main(mount_path.java:24)
-could not run java_answer for assignment in ../assignmentdb/23-MountainPaths/java_answer
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/23/bridges_testing
+
+
 </code></pre>
 </div>
     
@@ -2025,8 +2005,10 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.78947569906715E12
-Alarm clock
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:69)
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
 </div>
@@ -2501,23 +2483,23 @@ total vertices:23183
 Set size: 23183
 Grid
 ===grid stats===
-0)Source Point:-4.523892573811011,-31.211226029628655
-0)[ALG]Closest Point: -73.9065972,40.618168
-0)[ALG]Min Dist:99.86701932023723
-0)[BFA]Closest Point: -73.9065972,40.618168
-0)[BFA]Min Dist:99.86701932023723
+0)Source Point:-55.96603874989,-8.718690483159264
+0)[ALG]Closest Point: -73.9104829,40.6147818
+0)[ALG]Min Dist:52.495662329088304
+0)[BFA]Closest Point: -73.9104829,40.6147818
+0)[BFA]Min Dist:52.495662329088304
 0)Difference:0.0
-Source Point:-10.81977459779933,40.66023140683381
-Source Point:-47.31718934573266,40.71005778553898
-Source Point:-36.33419511009593,40.74998009678838
-Source Point:-42.68227486368251,40.71723499414602
-Source Point:-4.117247705748483,40.78549653849809
-Source Point:-38.30546963752946,40.72066738153105
-Source Point:-34.93454910658185,40.78886843561117
-Source Point:-38.24043373477396,40.78482650435475
-Source Point:-28.73288860864603,40.69036714535236
-Source Point:-41.090096120326415,40.78550807215959
-num cells examined:8
+Source Point:-57.0758286892437,40.74661448455991
+Source Point:-15.868757474613822,40.66255054772944
+Source Point:-5.916911172928167,40.80736188056014
+Source Point:-5.402401340859129,40.782973509444254
+Source Point:-51.196827863028005,40.64176989195789
+Source Point:-63.29478754158987,40.79796113647302
+Source Point:-16.945202905545116,40.69757963787482
+Source Point:-50.747854448465674,40.6965334672004
+Source Point:-37.9944091255228,40.64823721344658
+Source Point:-73.43743777121563,40.80146249753728
+num cells examined:3
 
 Check Your Visualization at the following link:
 
@@ -3299,7 +3281,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.13304
+Pi val: 3.141
 
 Check Your Visualization at the following link:
 

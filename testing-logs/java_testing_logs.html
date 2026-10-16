@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Fri Oct 16 05:07:16 AM EDT 2026</p>
+	<p>Running at Fri Oct 16 09:10:01 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.27
-	Date:Oct 16 2026  04:41:59.780 EDT
-	Location: 10 km E of Gilroy, CA
-	Lat/Long:36.9908332824707,-121.459663391113
+	Magnitude:2.4
+	Date:Oct 16 2026  08:37:21.514 EDT
+	Location: 54 km SSE of Pedro Bay, Alaska
+	Lat/Long:59.377,-153.579
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.27
-	Date:Oct 16 2026  04:41:59.780 EDT
-	Location: 10 km E of Gilroy, CA
-	Lat/Long:36.9908332824707,-121.459663391113
+	Magnitude:2.4
+	Date:Oct 16 2026  08:37:21.514 EDT
+	Location: 54 km SSE of Pedro Bay, Alaska
+	Lat/Long:59.377,-153.579
 Earthquake 0:
-	Magnitude:1.05
-	Date:Dec 11 2025  18:16:01.920 EST
-	Location: 7 km NW of The Geysers, CA
-	Lat/Long:38.8221664428711,-122.805335998535
+	Magnitude:2.32
+	Date:Dec 11 2025  22:33:35.400 EST
+	Location: 10 km SSE of San Juan Bautista, CA
+	Lat/Long:36.7653350830078,-121.500335693359
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Fatal Frame II: Crimson Butterfly (Directors Cut)
-Xbox
-8.4
-[Adventure]
+<pre><code>Tron Evolution
+Xbox 360
+6.0
+[Action]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Cary_Grant
-Hollywood_Sex_Symbols_(1988)
+<pre><code>Christian_Slater
+Churchill:_The_Hollywood_Years_(2004)
 </code></pre>
 </div>
     
@@ -2400,11 +2400,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 135
+<pre><code>Sonnet 41
 poem
-Whoever hath her wish, thou hast thy will,
- And 'Will' to boot, and 'Will' in over-plus,
- More than ...
+Those pretty wrongs that liberty commits,
+ When I am sometime absent from thy heart,
+ Thy beauty, an...
 </code></pre>
 </div>
     
@@ -3468,22 +3468,18 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5442
+<pre><code>Data Records in 1955: 0
 
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q3925 &quot;Grace Kelly&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q7374 &quot;Alfred Hitchcock&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q83410 &quot;Cary Grant&quot;
-
+Exception in thread &quot;main&quot; java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:361)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:37)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Fri Oct 16 01:08:26 PM EDT 2026</p>
+	<p>Running at Fri Oct 16 05:08:02 PM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.09
-	Date:Oct 16 2026  12:36:14.540 EDT
-	Location: 26 km WSW of Westley, CA
-	Lat/Long:37.4210014343262,-121.450668334961
+	Magnitude:2.3
+	Date:Oct 16 2026  16:50:44.986 EDT
+	Location: 40 km E of Chase, Alaska
+	Lat/Long:62.479,-149.318
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.09
-	Date:Oct 16 2026  12:36:14.540 EDT
-	Location: 26 km WSW of Westley, CA
-	Lat/Long:37.4210014343262,-121.450668334961
+	Magnitude:2.3
+	Date:Oct 16 2026  16:50:44.986 EDT
+	Location: 40 km E of Chase, Alaska
+	Lat/Long:62.479,-149.318
 Earthquake 0:
-	Magnitude:2.0
-	Date:Dec 12 2025  01:56:25.718 EST
-	Location: 4 km N of Moose Pass, Alaska
-	Lat/Long:60.528,-149.369
+	Magnitude:1.15
+	Date:Dec 12 2025  05:34:35.830 EST
+	Location: 4 km SSW of South Pasadena, CA
+	Lat/Long:34.0841666666667,-118.173166666667
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Metropolis Street Racer
-Dreamcast
-9.1
-[Racing]
+<pre><code>Ice Age 2: The Meltdown
+Nintendo DS
+5.5
+[Action]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christopher_Lee_(I)
-I,_Monster_(1971)
+<pre><code>Cary_Grant
+Walk_Don't_Run_(1966)
 </code></pre>
 </div>
     
@@ -2400,11 +2400,10 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 99
+<pre><code>Sonnet 69
 poem
-The forward violet thus did I chide,
- Sweet thief, whence didst thou steal thy sweet that smells,
- I...
+Those parts of thee that the world's eye doth view,
+ Want nothing that the thought of hearts can men...
 </code></pre>
 </div>
     
@@ -3468,13 +3467,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5442
+
+Actor-Movie Data:
+	Movie: Q34414 &quot;Rear Window&quot;
+	Actor: Q3925 &quot;Grace Kelly&quot;
+
+Actor-Movie Data:
+	Movie: Q34414 &quot;Rear Window&quot;
+	Actor: Q7374 &quot;Alfred Hitchcock&quot;
+
+Actor-Movie Data:
+	Movie: Q34414 &quot;Rear Window&quot;
+	Actor: Q102462 &quot;James Stewart&quot;
+
 </code></pre>
 </div>
     

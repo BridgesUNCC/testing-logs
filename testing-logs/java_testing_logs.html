@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sat Oct 17 01:07:22 PM EDT 2026</p>
+	<p>Running at Sat Oct 17 05:07:00 PM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.0
-	Date:Oct 17 2026  12:48:30.759 EDT
-	Location: 56 km SW of Nabesna, Alaska
-	Lat/Long:61.98,-143.714
+	Magnitude:1.5
+	Date:Oct 17 2026  16:31:29.300 EDT
+	Location: 26 km ENE of Susitna North, Alaska
+	Lat/Long:62.214,-149.364
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.0
-	Date:Oct 17 2026  12:48:30.759 EDT
-	Location: 56 km SW of Nabesna, Alaska
-	Lat/Long:61.98,-143.714
+	Magnitude:1.5
+	Date:Oct 17 2026  16:31:29.300 EDT
+	Location: 26 km ENE of Susitna North, Alaska
+	Lat/Long:62.214,-149.364
 Earthquake 0:
-	Magnitude:1.47
-	Date:Dec 13 2025  05:10:05.000 EST
-	Location: 7 km W of Templeton, CA
-	Lat/Long:35.5541648864746,-120.78483581543
+	Magnitude:1.88
+	Date:Dec 13 2025  08:46:54.850 EST
+	Location: 14 km SSE of Volcano, Hawaii
+	Lat/Long:19.3303337097168,-155.16716003418
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Fruit Ninja
-iPhone
+<pre><code>Rift
+PC
 8.5
-[Action]
+[RPG]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Al_Pacino
-Pitch_(1997)
+<pre><code>Alec_Guinness
+Handful_of_Dust,_A_(1988)
 </code></pre>
 </div>
     
@@ -2406,11 +2406,11 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 64
+<pre><code>Sonnet 111
 poem
-When I have seen by Time's fell hand defaced
- The rich-proud cost of outworn buried age,
- When somet...
+O for my sake do you with Fortune chide,
+ The guilty goddess of my harmful deeds,
+ That did not bett...
 </code></pre>
 </div>
     
@@ -3474,13 +3474,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5442
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q3182090 &quot;John Milford&quot;
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q3193130 &quot;Karen Steele&quot;
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q102551 &quot;Ernest Borgnine&quot;
+
 </code></pre>
 </div>
     

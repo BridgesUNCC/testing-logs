@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Oct 20 09:06:44 PM EDT 2026</p>
+	<p>Running at Wed Oct 21 01:07:18 AM EDT 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -931,6 +931,10 @@ Check Your Visualization at the following link:
 http://assignments.bridgesuncc.org/assignments/2003/bridges_testing
 
 
+Oct 21, 2026 1:07:23 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer
+Oct 21, 2026 1:07:23 AM org.apache.http.impl.execchain.RetryExec execute
+INFO: Retrying request
 
 Check Your Visualization at the following link:
 
@@ -1325,10 +1329,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.09
-	Date:Oct 20 2026  20:55:04.920 EDT
-	Location: 6 km WNW of Cobb, CA
-	Lat/Long:38.8346672058105,-122.790664672852
+	Magnitude:1.18
+	Date:Oct 21 2026  00:28:57.850 EDT
+	Location: 3 km SW of Anderson Springs, CA
+	Lat/Long:38.7560005187988,-122.71900177002
 </code></pre>
 </div>
     
@@ -1344,15 +1348,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.09
-	Date:Oct 20 2026  20:55:04.920 EDT
-	Location: 6 km WNW of Cobb, CA
-	Lat/Long:38.8346672058105,-122.790664672852
+	Magnitude:1.18
+	Date:Oct 21 2026  00:28:57.850 EDT
+	Location: 3 km SW of Anderson Springs, CA
+	Lat/Long:38.7560005187988,-122.71900177002
 Earthquake 0:
-	Magnitude:2.18
-	Date:Dec 15 2025  21:54:24.880 EST
-	Location: 14 km NE of Pāhala, Hawaii
-	Lat/Long:19.2851657867432,-155.372833251953
+	Magnitude:1.98
+	Date:Dec 16 2025  00:50:20.790 EST
+	Location: 4 km NNE of Lancaster, CA
+	Lat/Long:34.7253333333333,-118.139
 </code></pre>
 </div>
     
@@ -1409,10 +1413,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Glyder
-iPhone
-7.8
-[Flight]
+<pre><code>Cleopatra
+Wireless
+8.0
+[Platformer]
 </code></pre>
 </div>
     
@@ -1685,8 +1689,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Billy_Bob_Thornton
-Some_Folks_Call_It_a_Sling_Blade_(1994)
+<pre><code>Clark_Gable
+Test_Pilot_(1938)
 </code></pre>
 </div>
     
@@ -2406,11 +2410,18 @@ Text:
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 132
-poem
-Thine eyes I love, and they as pitying me,
- Knowing thy heart torment me with disdain,
- Have put on ...
+<pre><code>The Life and Death of Richard the Second
+play
+1596
+
+KING RICHARD THE SECOND
+
+by William Shakespeare
+
+DRAMATIS PERSONAE
+
+ KING RICHARD THE SECOND
+ ...
 </code></pre>
 </div>
     
@@ -3474,13 +3485,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5442
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q1381411 &quot;Jerry Paris&quot;
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q102551 &quot;Ernest Borgnine&quot;
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q180251 &quot;Paddy Chayefsky&quot;
+
 </code></pre>
 </div>
     

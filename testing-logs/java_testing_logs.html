@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Nov  2 05:06:58 AM EST 2026</p>
+	<p>Running at Mon Nov  2 09:07:27 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.22
-	Date:Nov 02 2026  04:41:33.840 EST
-	Location: 15 km NW of Aguanga, CA
-	Lat/Long:33.5451666666667,-116.964833333333
+	Magnitude:3.1
+	Date:Nov 02 2026  08:40:53.803 EST
+	Location: 63 km SE of Pedro Bay, Alaska
+	Lat/Long:59.322,-153.447
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.22
-	Date:Nov 02 2026  04:41:33.840 EST
-	Location: 15 km NW of Aguanga, CA
-	Lat/Long:33.5451666666667,-116.964833333333
+	Magnitude:3.1
+	Date:Nov 02 2026  08:40:53.803 EST
+	Location: 63 km SE of Pedro Bay, Alaska
+	Lat/Long:59.322,-153.447
 Earthquake 0:
-	Magnitude:2.37
-	Date:Dec 26 2025  10:12:33.430 EST
-	Location: 6 km SSW of Indios, Puerto Rico
-	Lat/Long:17.9376666666667,-66.8413333333333
+	Magnitude:1.88
+	Date:Dec 26 2025  17:01:37.970 EST
+	Location: 13 km S of Fern Forest, Hawaii
+	Lat/Long:19.344165802002,-155.126327514648
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Aquarium Pets
+<pre><code>Batter Up! by FOX Sports
 Wireless
-7.8
-[Virtual Pet]
+7.0
+[Sports]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Alyson_Hannigan
-American_Pie_2_(2001)
+<pre><code>Adam_Sandler_(I)
+Day_with_the_Meatball,_A_(2002)
 </code></pre>
 </div>
     
@@ -2410,11 +2410,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 124
+<pre><code>Sonnet 76
 poem
-If my dear love were but the child of state,
- It might for Fortune's bastard be unfathered,
- As subj...
+Why is my verse so barren of new pride?
+ So far from variation or quick change?
+ Why with the time d...
 </code></pre>
 </div>
     
@@ -3478,22 +3478,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5442
-
-Actor-Movie Data:
-	Movie: Q710850 &quot;The Dam Busters&quot;
-	Actor: Q3369214 &quot;Patrick Barr&quot;
-
-Actor-Movie Data:
-	Movie: Q710850 &quot;The Dam Busters&quot;
-	Actor: Q3835745 &quot;Lloyd Lamble&quot;
-
-Actor-Movie Data:
-	Movie: Q710850 &quot;The Dam Busters&quot;
-	Actor: Q4799132 &quot;Arthur Howard&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

@@ -11,13 +11,13 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Nov  2 01:07:46 PM EST 2026</p>
-  <div id="summaryarray1d.java" class="success">
+	<p>Running at Mon Nov  2 05:13:49 PM EST 2026</p>
+  <div id="summaryarray1d.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogarray1d.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogarray1d.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogarray1d.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -39,12 +39,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryaudio_clip.java" class="success">
+  <div id="summaryaudio_clip.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogaudio_clip.java">Test audio_clip.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogaudio_clip.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogaudio_clip.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogaudio_clip.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -857,14 +857,17 @@ background-color: springgreen;
 <pre><code>Compiling test array1d.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogarray1d.java-runtest">Run Test for test array1d.java</h3>
-<pre><code>
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/2000/bridges_testing
-
-
+<pre><code>There was a problem sending the visualization representation to the server. 
+Received an empty JSON response from the server. 
+Exception in thread &quot;main&quot; java.io.IOException: Received an empty JSON response from the server. 
+	at bridges.connect.Connector.asJSONObject(Connector.java:272)
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:506)
+	at bridges.connect.Connector.post(Connector.java:604)
+	at bridges.connect.Bridges.visualize(Bridges.java:599)
+	at array1d.main(array1d.java:46)
+could not run test array1d.java
 </code></pre>
 </div>
     
@@ -917,7 +920,7 @@ http://assignments.bridgesuncc.org/assignments/2002/bridges_testing
 <pre><code>Compiling test audio_clip.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogaudio_clip.java-runtest">Run Test for test audio_clip.java</h3>
 <pre><code>
 Check Your Visualization at the following link:
@@ -925,36 +928,15 @@ Check Your Visualization at the following link:
 http://assignments.bridgesuncc.org/assignments/2003/bridges_testing
 
 
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/2003/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/2003/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/2003/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/2003/bridges_testing
-
-
-
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/2003/bridges_testing
-
-
+There was a problem sending the visualization representation to the server. 
+Received an empty JSON response from the server. 
+Exception in thread &quot;main&quot; java.io.IOException: Received an empty JSON response from the server. 
+	at bridges.connect.Connector.asJSONObject(Connector.java:272)
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:506)
+	at bridges.connect.Connector.post(Connector.java:604)
+	at bridges.connect.Bridges.visualize(Bridges.java:599)
+	at audio_clip.main(audio_clip.java:44)
+could not run test audio_clip.java
 </code></pre>
 </div>
     
@@ -1325,10 +1307,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.13
-	Date:Nov 02 2026  12:41:43.647 EST
-	Location: 3 km N of Johnson Lane, Nevada
-	Lat/Long:39.0822,-119.7134
+	Magnitude:1.05
+	Date:Nov 02 2026  16:48:59.620 EST
+	Location: 5 km E of Calimesa, CA
+	Lat/Long:33.9933333333333,-116.998666666667
 </code></pre>
 </div>
     
@@ -1344,15 +1326,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.13
-	Date:Nov 02 2026  12:41:43.647 EST
-	Location: 3 km N of Johnson Lane, Nevada
-	Lat/Long:39.0822,-119.7134
+	Magnitude:1.05
+	Date:Nov 02 2026  16:48:59.620 EST
+	Location: 5 km E of Calimesa, CA
+	Lat/Long:33.9933333333333,-116.998666666667
 Earthquake 0:
-	Magnitude:3.0
-	Date:Dec 26 2025  20:00:26.985 EST
-	Location: 13 km NNW of Kermit, Texas
-	Lat/Long:31.9731,-103.1409
+	Magnitude:1.02
+	Date:Dec 27 2025  00:55:15.880 EST
+	Location: 8 km NW of The Geysers, CA
+	Lat/Long:38.8305015563965,-122.816329956055
 </code></pre>
 </div>
     
@@ -1409,10 +1391,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Bomberman: Party Edition
-PlayStation
+<pre><code>A Vampyre Story
+PC
 7.6
-[Action]
+[Adventure]
 </code></pre>
 </div>
     
@@ -1685,8 +1667,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Kevin_Bacon_(I)
-New_York_Skyride_(1994)
+<pre><code>Arnold_Schwarzenegger
+Running_Man,_The_(1987)
 </code></pre>
 </div>
     
@@ -2410,11 +2392,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 83
+<pre><code>Sonnet 17
 poem
-I never saw that you did painting need,
- And therefore to your fair no painting set,
- I found (or th...
+Who will believe my verse in time to come
+ If it were filled with your most high deserts?
+ Though ye...
 </code></pre>
 </div>
     
@@ -3478,13 +3460,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5442
+
+Actor-Movie Data:
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q2831802 &quot;Alberto Morin&quot;
+
+Actor-Movie Data:
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q3086867 &quot;Fred Kelsey&quot;
+
+Actor-Movie Data:
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q3103730 &quot;Georgette Anys&quot;
+
 </code></pre>
 </div>
     

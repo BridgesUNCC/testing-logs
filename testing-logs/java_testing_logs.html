@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sun Nov  8 05:07:46 AM EST 2026</p>
+	<p>Running at Sun Nov  8 09:06:46 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.85
-	Date:Nov 08 2026  04:45:55.400 EST
-	Location: 26 km SE of Livermore, CA
-	Lat/Long:37.5231666564941,-121.557662963867
+	Magnitude:3.7
+	Date:Nov 08 2026  08:55:16.096 EST
+	Location: 22 km W of Preston, Nevada
+	Lat/Long:38.9246,-115.3163
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.85
-	Date:Nov 08 2026  04:45:55.400 EST
-	Location: 26 km SE of Livermore, CA
-	Lat/Long:37.5231666564941,-121.557662963867
+	Magnitude:3.7
+	Date:Nov 08 2026  08:55:16.096 EST
+	Location: 22 km W of Preston, Nevada
+	Lat/Long:38.9246,-115.3163
 Earthquake 0:
-	Magnitude:1.7
-	Date:Dec 31 2025  18:20:07.206 EST
-	Location: 51 km SSE of Cantwell, Alaska
-	Lat/Long:62.953,-148.621
+	Magnitude:1.29
+	Date:Dec 31 2025  21:58:31.460 EST
+	Location: 15 km N of Warner Springs, CA
+	Lat/Long:33.4195,-116.637
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Contre Jour
-iPhone
-8.0
-[Action]
+<pre><code>Trigger Man
+Xbox
+2.0
+[Shooter]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Morgan_Freeman_(I)
-Street_Smart_(1987)
+<pre><code>James_Stewart_(I)
+Winning_Your_Wings_(1942)
 </code></pre>
 </div>
     
@@ -1994,11 +1994,7 @@ Location of first vertex [Cartesian Coord]: -657.974041556194,-4700.217494637191
 </div>
 <div class="failure">
 <h3 id="javalogpurposefully_breaking.java-runtest">Run Test for test purposefully_breaking.java</h3>
-<pre><code>Nov 08, 2026 5:15:17 AM org.apache.http.impl.execchain.RetryExec execute
-INFO: I/O exception (java.net.SocketException) caught when processing request: Connection reset by peer
-Nov 08, 2026 5:15:17 AM org.apache.http.impl.execchain.RetryExec execute
-INFO: Retrying request
-Server returned error response: HTTP 413 while processing the request POST http://assignments.bridgesuncc.org/assignments/2040.00?apikey=1321549621122&amp;username=bridges_testing HTTP/1.1
+<pre><code>Server returned error response: HTTP 413 while processing the request POST http://assignments.bridgesuncc.org/assignments/2040.00?apikey=1321549621122&amp;username=bridges_testing HTTP/1.1
 There was a problem sending the visualization representation to the server. 
 Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
 Exception in thread &quot;main&quot; java.io.IOException: Server errored, but gave an invalid report: {&quot;msg&quot;:&quot;The volume of data in the assignment is too large for BRIDGES to handle. Try a smaller assignment. For reference, a BRIDGES assignment has to be smaller than about 17MB once serialized to JSON.&quot;}. Consider filing a bug report about this at https://github.com/BridgesUNCC/bridgesAPI.
@@ -2414,11 +2410,17 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 38
-poem
-How can my muse want subject to invent
- While thou dost breathe that pour'st into my verse,
- Thine o...
+<pre><code>The First Part Of King Henry The Fourth
+play
+1598
+
+THE FIRST PART OF KING HENRY THE FOURTH
+
+by William Shakespeare
+
+Dramatis Personae
+
+ King Henr...
 </code></pre>
 </div>
     
@@ -3482,22 +3484,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5442
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q1667630 &quot;Steven Geray&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q2064625 &quot;Roland Lesaffre&quot;
-
-Actor-Movie Data:
-	Movie: Q331017 &quot;To Catch a Thief&quot;
-	Actor: Q2373976 &quot;Dominique Davray&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

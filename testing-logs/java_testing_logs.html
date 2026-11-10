@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Nov  9 09:06:54 PM EST 2026</p>
+	<p>Running at Tue Nov 10 01:07:23 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.2
-	Date:Nov 09 2026  20:44:40.516 EST
-	Location: 72 km WNW of Petersville, Alaska
-	Lat/Long:62.654,-152.127
+	Magnitude:1.08
+	Date:Nov 10 2026  00:45:36.030 EST
+	Location: 8 km NW of The Geysers, CA
+	Lat/Long:38.8343315124512,-122.816665649414
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.2
-	Date:Nov 09 2026  20:44:40.516 EST
-	Location: 72 km WNW of Petersville, Alaska
-	Lat/Long:62.654,-152.127
+	Magnitude:1.08
+	Date:Nov 10 2026  00:45:36.030 EST
+	Location: 8 km NW of The Geysers, CA
+	Lat/Long:38.8343315124512,-122.816665649414
 Earthquake 0:
-	Magnitude:1.6
-	Date:Jan 02 2026  07:44:41.588 EST
-	Location: 21 km ESE of Denali National Park, Alaska
-	Lat/Long:63.467,-151.33
+	Magnitude:1.55
+	Date:Jan 02 2026  13:52:09.340 EST
+	Location: 2 km ENE of Berkeley, CA
+	Lat/Long:37.8776664733887,-122.254501342773
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Vanquish: The Oath of Brothers
-iPhone
-7.6
-[Action]
+<pre><code>Hard Truck: Apocalypse
+PC
+4.0
+[Racing, Action]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Clark_Gable
-What_Price_Gloria?_(1925)
+<pre><code>Charles_Grodin_(I)
+King_Kong_(1976)
 </code></pre>
 </div>
     
@@ -2410,11 +2410,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 9
+<pre><code>Sonnet 119
 poem
-Is it for fear to wet a widow's eye,
- That thou consum'st thy self in single life?
- Ah, if thou issu...
+What potions have I drunk of Siren tears
+ Distilled from limbecks foul as hell within,
+ Applying fea...
 </code></pre>
 </div>
     
@@ -3478,13 +3478,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5442
+
+Actor-Movie Data:
+	Movie: Q34414 &quot;Q34414&quot;
+	Actor: Q3925 &quot;Grace Kelly&quot;
+
+Actor-Movie Data:
+	Movie: Q34414 &quot;Q34414&quot;
+	Actor: Q7374 &quot;Alfred Hitchcock&quot;
+
+Actor-Movie Data:
+	Movie: Q34414 &quot;Q34414&quot;
+	Actor: Q102462 &quot;James Stewart&quot;
+
 </code></pre>
 </div>
     

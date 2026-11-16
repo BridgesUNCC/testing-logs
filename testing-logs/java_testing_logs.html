@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sun Nov 15 09:06:59 PM EST 2026</p>
+	<p>Running at Mon Nov 16 01:06:27 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.4
-	Date:Nov 15 2026  20:37:36.629 EST
-	Location: 45 km W of Happy Valley, Alaska
-	Lat/Long:60.019,-152.534
+	Magnitude:2.1
+	Date:Nov 16 2026  00:41:12.619 EST
+	Location: 33 km S of Skwentna, Alaska
+	Lat/Long:61.69,-151.381
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.4
-	Date:Nov 15 2026  20:37:36.629 EST
-	Location: 45 km W of Happy Valley, Alaska
-	Lat/Long:60.019,-152.534
+	Magnitude:2.1
+	Date:Nov 16 2026  00:41:12.619 EST
+	Location: 33 km S of Skwentna, Alaska
+	Lat/Long:61.69,-151.381
 Earthquake 0:
-	Magnitude:2.07
-	Date:Jan 07 2026  20:13:41.660 EST
-	Location: 39 km ESE of Alamo, Nevada
-	Lat/Long:37.1966,-114.7663
+	Magnitude:1.96
+	Date:Jan 07 2026  23:34:24.320 EST
+	Location: 10 km WSW of Patterson, CA
+	Lat/Long:37.4410018920898,-121.235336303711
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Buzz! Quiz World
-PlayStation Portable
-5.9
-[Trivia]
+<pre><code>NBA Live 09
+PlayStation 2
+5.5
+[Sports]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Christian_Slater
-Gleaming_the_Cube_(1989)
+<pre><code>Bill_Murray_(I)
+Getting_G'd_Up_(2000)
 </code></pre>
 </div>
     
@@ -2410,11 +2410,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 20
+<pre><code>Sonnet 10
 poem
-A woman's face with nature's own hand painted,
- Hast thou the master mistress of my passion,
- A woma...
+For shame deny that thou bear'st love to any
+ Who for thy self art so unprovident.
+ Grant if thou wi...
 </code></pre>
 </div>
     
@@ -3478,13 +3478,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5440
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q102551 &quot;Ernest Borgnine&quot;
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q180251 &quot;Paddy Chayefsky&quot;
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q266416 &quot;Betsy Blair&quot;
+
 </code></pre>
 </div>
     

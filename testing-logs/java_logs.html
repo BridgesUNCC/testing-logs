@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Nov 17 05:42:18 AM EST 2026</p>
+	<p>Running at Tue Nov 17 09:41:27 AM EST 2026</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -402,13 +402,13 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summary39" class="failure">
+  <div id="summary39" class="success">
     <h2><a href="java_logs.html#javalog39">Assignment 39</a> </h2>
     <p>
       <ul>
         <li> Build Scaffold : <a href="java_logs.html#javalog39-buildscaffold">success</a></li>
         <li> Build Answer : <a href="java_logs.html#javalog39-buildanswer">success</a></li>
-        <li> Run Answer : <a href="java_logs.html#javalog39-runanswer">error</a></li>
+        <li> Run Answer : <a href="java_logs.html#javalog39-runanswer">success</a></li>
       </ul>
     </p>
   </div>
@@ -2005,8 +2005,10 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.793118134853372E12
-Alarm clock
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:69)
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
 </div>
@@ -2029,7 +2031,10 @@ could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumb
 <h3 id="javalog31-runanswer">Run Answer for Assignment 31</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Alarm clock
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:68)
 could not run java_answer for assignment in ../assignmentdb/31-TemporalPageRank/java_answer
 </code></pre>
 </div>
@@ -2281,13 +2286,35 @@ http://assignments.bridgesuncc.org/assignments/38/bridges_testing
 <pre><code>Compiling java_answer/ for assignment in ../assignmentdb/39-BookDistance/java_answer
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalog39-runanswer">Run Answer for Assignment 39</h3>
 <pre><code>Guessing BookDistance.java is the right java file where main is
 
 80
-Alarm clock
-could not run java_answer for assignment in ../assignmentdb/39-BookDistance/java_answer
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/139/bridges_testing
+
+
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/139/bridges_testing
+
+
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/139/bridges_testing
+
+
+
+Check Your Visualization at the following link:
+
+http://assignments.bridgesuncc.org/assignments/139/bridges_testing
+
+
 </code></pre>
 </div>
     
@@ -2459,23 +2486,23 @@ total vertices:23230
 Set size: 23230
 Grid
 ===grid stats===
-0)Source Point:-20.11265713588992,-57.10410416453463
-0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:111.54903285593862
-0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:111.54903285593862
+0)Source Point:-56.344480139424675,-32.399774988450865
+0)[ALG]Closest Point: -73.9157579,40.6132625
+0)[ALG]Min Dist:75.09762609716249
+0)[BFA]Closest Point: -73.9157579,40.6132625
+0)[BFA]Min Dist:75.09762609716249
 0)Difference:0.0
-Source Point:-34.744641054915625,40.66069638262055
-Source Point:-18.954028947886464,40.733511024030335
-Source Point:-67.56028103081803,40.779283244417556
-Source Point:-12.03489839093752,40.80452852263485
-Source Point:-53.18158088779374,40.72320251786673
-Source Point:-63.02878182842987,40.798333594769765
-Source Point:-70.34882927230998,40.725101839050765
-Source Point:-43.73870635213714,40.80701613519921
-Source Point:-28.53035413294257,40.61399016029713
-Source Point:-48.399687445109876,40.692418506809354
-num cells examined:19
+Source Point:-17.53590636592915,40.63444602894575
+Source Point:-20.426995982654674,40.722846427532986
+Source Point:-24.19596873408073,40.62222933027134
+Source Point:-34.05566095641681,40.80053127611023
+Source Point:-44.731064016020795,40.62868883762086
+Source Point:-40.04069973606253,40.76922940335478
+Source Point:-69.42360815468567,40.68435285241553
+Source Point:-6.833649354396499,40.73213845466538
+Source Point:-46.82179340491564,40.648386435925545
+Source Point:-13.850315017400135,40.79472876045923
+num cells examined:3
 
 Check Your Visualization at the following link:
 
@@ -3257,7 +3284,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.13512
+Pi val: 3.14028
 
 Check Your Visualization at the following link:
 

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Mon Nov 16 09:41:34 PM EST 2026</p>
+	<p>Running at Tue Nov 17 01:39:18 AM EST 2026</p>
   <div id="summary0" class="success">
     <h2><a href="java_logs.html#javalog0">Assignment 0</a> </h2>
     <p>
@@ -2005,8 +2005,10 @@ Note: Recompile with -Xlint:unchecked for details.
 <h3 id="javalog30-runanswer">Run Answer for Assignment 30</h3>
 <pre><code>Guessing WikiDataActor.java is the right java file where main is
 
-Data Access Took: 1.793089356312091E12
-Alarm clock
+Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at WikiDataActor.main(WikiDataActor.java:69)
 could not run java_answer for assignment in ../assignmentdb/30-TemporalBaconNumber/java_answer
 </code></pre>
 </div>
@@ -2481,23 +2483,23 @@ total vertices:23230
 Set size: 23230
 Grid
 ===grid stats===
-0)Source Point:-52.249386554291235,-16.19368640101036
-0)[ALG]Closest Point: -73.9104829,40.6147818
-0)[ALG]Min Dist:60.79806867198401
-0)[BFA]Closest Point: -73.9104829,40.6147818
-0)[BFA]Min Dist:60.79806867198401
+0)Source Point:-72.38295576464976,-18.093394219223725
+0)[ALG]Closest Point: -73.9222475,40.6128304
+0)[ALG]Min Dist:58.726401457004556
+0)[BFA]Closest Point: -73.9222475,40.6128304
+0)[BFA]Min Dist:58.726401457004556
 0)Difference:0.0
-Source Point:-31.027969737551544,40.62687500822314
-Source Point:-32.05945020366056,40.752280022275166
-Source Point:-69.3792205987268,40.78121051078379
-Source Point:-6.132668009483197,40.71475396270608
-Source Point:-6.97737720637015,40.67705881536309
-Source Point:-15.151026151350571,40.695969602418536
-Source Point:-33.83634078721052,40.76842931627074
-Source Point:-40.82354860979002,40.61923753808066
-Source Point:-72.0003955283923,40.7015453769081
-Source Point:-20.122737730303307,40.63495334737967
-num cells examined:8
+Source Point:-68.99383287463179,40.77611746892446
+Source Point:-25.28178062658575,40.680879021109924
+Source Point:-24.65499890703998,40.721286880619765
+Source Point:-69.43470602227093,40.70282714112552
+Source Point:-6.539965972519823,40.70604963079688
+Source Point:-72.24506312132297,40.79436566608986
+Source Point:-72.48396086604086,40.745349648737594
+Source Point:-5.237695785190283,40.74910543260749
+Source Point:-70.96861289853601,40.6434239324793
+Source Point:-40.66627644331025,40.68779500095443
+num cells examined:19
 
 Check Your Visualization at the following link:
 
@@ -2827,8 +2829,6 @@ http://assignments.bridgesuncc.org/assignments/56/bridges_testing
 <pre><code>Guessing book_analysis.java is the right java file where main is
 
 80
-ERROR: Failed to get book with id = 1213
-ERROR: Failed to get book with id = 2874
 
 Check Your Visualization at the following link:
 
@@ -3281,7 +3281,7 @@ Shutting down ...
 <h3 id="javalog71-runanswer">Run Answer for Assignment 71</h3>
 <pre><code>Guessing Pi_Estimation.java is the right java file where main is
 
-Pi val: 3.13296
+Pi val: 3.14072
 
 Check Your Visualization at the following link:
 

@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Wed Nov 18 05:07:18 AM EST 2026</p>
+	<p>Running at Wed Nov 18 09:11:19 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -192,12 +192,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryface_shp_coll.java" class="success">
+  <div id="summaryface_shp_coll.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogface_shp_coll.java">Test face_shp_coll.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogface_shp_coll.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogface_shp_coll.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogface_shp_coll.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -462,12 +462,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarysong_lyrics_snippet.java" class="success">
+  <div id="summarysong_lyrics_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogsong_lyrics_snippet.java">Test song_lyrics_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogsong_lyrics_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.29
-	Date:Nov 18 2026  04:44:45.740 EST
-	Location: 5 km SSW of Pāhala, Hawaii
-	Lat/Long:19.1606674194336,-155.503173828125
+	Magnitude:2.93
+	Date:Nov 18 2026  08:56:48.541 EST
+	Location: 33 km SE of Mina, Nevada
+	Lat/Long:38.189,-117.8222
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.29
-	Date:Nov 18 2026  04:44:45.740 EST
-	Location: 5 km SSW of Pāhala, Hawaii
-	Lat/Long:19.1606674194336,-155.503173828125
+	Magnitude:2.93
+	Date:Nov 18 2026  08:56:48.541 EST
+	Location: 33 km SE of Mina, Nevada
+	Lat/Long:38.189,-117.8222
 Earthquake 0:
-	Magnitude:1.49
-	Date:Jan 09 2026  19:54:07.360 EST
-	Location: 2 km NW of The Geysers, CA
-	Lat/Long:38.7906684875488,-122.775001525879
+	Magnitude:1.0
+	Date:Jan 09 2026  22:42:02.071 EST
+	Location: 81 km NNW of Karluk, Alaska
+	Lat/Long:58.243,-154.984
 </code></pre>
 </div>
     
@@ -1365,14 +1365,43 @@ Earthquake 0:
 <pre><code>Compiling test face_shp_coll.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogface_shp_coll.java-runtest">Run Test for test face_shp_coll.java</h3>
-<pre><code>
-Check Your Visualization at the following link:
-
-http://assignments.bridgesuncc.org/assignments/2020/bridges_testing
-
-
+<pre><code>There was a problem sending the visualization representation to the server. 
+Connection reset
+Exception in thread &quot;main&quot; java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:328)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:355)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:808)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.apache.http.impl.conn.CPoolProxy.invoke(CPoolProxy.java:138)
+	at jdk.proxy2/jdk.proxy2.$Proxy2.receiveResponseHeader(Unknown Source)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:253)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:194)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:85)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:215)
+	at bridges.connect.Connector.executeHTTPRequest(Connector.java:487)
+	at bridges.connect.Connector.post(Connector.java:604)
+	at bridges.connect.Bridges.visualize(Bridges.java:599)
+	at face_shp_coll.main(face_shp_coll.java:101)
+could not run test face_shp_coll.java
 </code></pre>
 </div>
     
@@ -1409,10 +1438,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>NitroStreet Racing
-Wireless
+<pre><code>Unreal II: The Awakening (Special Edition)
+PC
 8.0
-[Racing]
+[Shooter]
 </code></pre>
 </div>
     
@@ -1685,8 +1714,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>James_Earl_Jones
-Ambulance,_The_(1990)
+<pre><code>James_Stewart_(I)
+Thunderbolt_(1947)
 </code></pre>
 </div>
     
@@ -2410,11 +2439,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 114
+<pre><code>Sonnet 140
 poem
-Or whether doth my mind being crowned with you
- Drink up the monarch's plague this flattery?
- Or whe...
+Be wise as thou art cruel, do not press
+ My tongue-tied patience with too much disdain:
+ Lest sorrow...
 </code></pre>
 </div>
     
@@ -2539,13 +2568,12 @@ http://assignments.bridgesuncc.org/assignments/2049/bridges_testing
 <pre><code>Compiling test song_lyrics_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogsong_lyrics_snippet.java-runtest">Run Test for test song_lyrics_snippet.java</h3>
-<pre><code>Harder Better Faster Stronger
-Daft Punk
-Homework / Discovery / Alive 1997
-2001-02-26
-
+<pre><code>Exception in thread &quot;main&quot; org.apache.http.client.HttpResponseException: HTTP Request Failed. Error Code: 404. Message: {&quot;error&quot;:&quot;Expecting value: line 1 column 1 (char 0)\n&quot;,&quot;data&quot;:&quot;&quot;}
+	at bridges.connect.DataSource.getSong(DataSource.java:983)
+	at song_lyrics_snippet.main(song_lyrics_snippet.java:24)
+could not run test song_lyrics_snippet.java
 </code></pre>
 </div>
     
@@ -3478,13 +3506,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5440
+
+Actor-Movie Data:
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q3925 &quot;Grace Kelly&quot;
+
+Actor-Movie Data:
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q7374 &quot;Alfred Hitchcock&quot;
+
+Actor-Movie Data:
+	Movie: Q331017 &quot;To Catch a Thief&quot;
+	Actor: Q83410 &quot;Cary Grant&quot;
+
 </code></pre>
 </div>
     

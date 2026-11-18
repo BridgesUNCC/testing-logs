@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Python</h1>
-	<p>Running at Wed Nov 18 09:25:28 AM EST 2026</p>
+	<p>Running at Wed Nov 18 01:22:46 PM EST 2026</p>
   <div id="summaryarray1d.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogarray1d.py">Test array1d.py</a> </h2>
     <p>
@@ -100,11 +100,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarycirc_sllist.py" class="success">
+  <div id="summarycirc_sllist.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogcirc_sllist.py">Test circ_sllist.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogcirc_sllist.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogcirc_sllist.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -116,11 +116,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarycolor_grid_rle_edgecase.py" class="success">
+  <div id="summarycolor_grid_rle_edgecase.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogcolor_grid_rle_edgecase.py">Test color_grid_rle_edgecase.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogcolor_grid_rle_edgecase.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogcolor_grid_rle_edgecase.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -156,11 +156,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summaryeq_test.py" class="success">
+  <div id="summaryeq_test.py" class="failure">
     <h2><a href="python_testing_logs.html#pythonlogeq_test.py">Test eq_test.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogeq_test.py-runtest">success</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogeq_test.py-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -388,11 +388,11 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarysong_lyrics_snippet.py" class="failure">
+  <div id="summarysong_lyrics_snippet.py" class="success">
     <h2><a href="python_testing_logs.html#pythonlogsong_lyrics_snippet.py">Test song_lyrics_snippet.py</a> </h2>
     <p>
       <ul>
-        <li> Run Test : <a href="python_testing_logs.html#pythonlogsong_lyrics_snippet.py-runtest">error</a></li>
+        <li> Run Test : <a href="python_testing_logs.html#pythonlogsong_lyrics_snippet.py-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -944,12 +944,12 @@ http://assignments.bridgesuncc.org/assignments/3008/bridges_testing
 <div class="success">
 <h3 id="pythonlogcancer_snippet.py-runtest">Run Test for test cancer_snippet.py</h3>
 <pre><code>Record 1:
-	Type: Mortality
-	Year: 2003
-	Population: 2324069
+	Type: Incidence
+	Year: 2007
+	Population: 2407275
 	Race: All Races
 	Gender: 
-	CrudeRate: 192.4(more rate information available) 
+	CrudeRate: 455.2(more rate information available) 
 	Location: 32.799, -86.8073
 	Count: 0
 </code></pre>
@@ -974,14 +974,92 @@ http://assignments.bridgesuncc.org/assignments/3010/bridges_testing
     <div id="pythonlogcirc_sllist.py" class="logdetails">
       <h2>Test circ_sllist.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogcirc_sllist.py-runtest">Run Test for test circ_sllist.py</h3>
-<pre><code>
-Check Your Visualization at the following link:
+<pre><code>Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/urllib3/connectionpool.py&quot;, line 791, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/connectionpool.py&quot;, line 537, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/connection.py&quot;, line 461, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/http/client.py&quot;, line 1457, in getresponse
+    response.begin()
+  File &quot;/usr/lib/python3.12/http/client.py&quot;, line 336, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/http/client.py&quot;, line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), &quot;iso-8859-1&quot;)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/socket.py&quot;, line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
 
-http://assignments.bridgesuncc.org/assignments/3011/bridges_testing
+During handling of the above exception, another exception occurred:
 
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/adapters.py&quot;, line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/connectionpool.py&quot;, line 845, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/util/retry.py&quot;, line 472, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/util/util.py&quot;, line 38, in reraise
+    raise value.with_traceback(tb)
+  File &quot;/usr/lib/python3/dist-packages/urllib3/connectionpool.py&quot;, line 791, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/connectionpool.py&quot;, line 537, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/connection.py&quot;, line 461, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/http/client.py&quot;, line 1457, in getresponse
+    response.begin()
+  File &quot;/usr/lib/python3.12/http/client.py&quot;, line 336, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/http/client.py&quot;, line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), &quot;iso-8859-1&quot;)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/socket.py&quot;, line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
 
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/circ_sllist.py&quot;, line 56, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/circ_sllist.py&quot;, line 52, in main
+    bridges.visualize()
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1-py3.12.egg/bridges/bridges.py&quot;, line 235, in visualize
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1-py3.12.egg/bridges/connector.py&quot;, line 92, in post
+  File &quot;/usr/lib/python3/dist-packages/requests/api.py&quot;, line 115, in post
+    return request(&quot;post&quot;, url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/api.py&quot;, line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/sessions.py&quot;, line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/sessions.py&quot;, line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/adapters.py&quot;, line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+could not run test circ_sllist.py
 </code></pre>
 </div>
     
@@ -1005,15 +1083,93 @@ http://assignments.bridgesuncc.org/assignments/3012/bridges_testing
     <div id="pythonlogcolor_grid_rle_edgecase.py" class="logdetails">
       <h2>Test color_grid_rle_edgecase.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogcolor_grid_rle_edgecase.py-runtest">Run Test for test color_grid_rle_edgecase.py</h3>
 <pre><code>RLE ran
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/urllib3/connectionpool.py&quot;, line 791, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/connectionpool.py&quot;, line 537, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/connection.py&quot;, line 461, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/http/client.py&quot;, line 1457, in getresponse
+    response.begin()
+  File &quot;/usr/lib/python3.12/http/client.py&quot;, line 336, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/http/client.py&quot;, line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), &quot;iso-8859-1&quot;)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/socket.py&quot;, line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
 
-Check Your Visualization at the following link:
+During handling of the above exception, another exception occurred:
 
-http://assignments.bridgesuncc.org/assignments/3013/bridges_testing
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/adapters.py&quot;, line 486, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/connectionpool.py&quot;, line 845, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/util/retry.py&quot;, line 472, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/util/util.py&quot;, line 38, in reraise
+    raise value.with_traceback(tb)
+  File &quot;/usr/lib/python3/dist-packages/urllib3/connectionpool.py&quot;, line 791, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/connectionpool.py&quot;, line 537, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/urllib3/connection.py&quot;, line 461, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/http/client.py&quot;, line 1457, in getresponse
+    response.begin()
+  File &quot;/usr/lib/python3.12/http/client.py&quot;, line 336, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/http/client.py&quot;, line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), &quot;iso-8859-1&quot;)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/socket.py&quot;, line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
 
+During handling of the above exception, another exception occurred:
 
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/color_grid_rle_edgecase.py&quot;, line 46, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/color_grid_rle_edgecase.py&quot;, line 42, in main
+    bridges.visualize()
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1-py3.12.egg/bridges/bridges.py&quot;, line 235, in visualize
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1-py3.12.egg/bridges/connector.py&quot;, line 92, in post
+  File &quot;/usr/lib/python3/dist-packages/requests/api.py&quot;, line 115, in post
+    return request(&quot;post&quot;, url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/api.py&quot;, line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/sessions.py&quot;, line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/sessions.py&quot;, line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/adapters.py&quot;, line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+could not run test color_grid_rle_edgecase.py
 </code></pre>
 </div>
     
@@ -1023,7 +1179,7 @@ http://assignments.bridgesuncc.org/assignments/3013/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogdisplay_game.py-runtest">Run Test for test display_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7eaf31e534a0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x78c87e2f6600&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1081,10 +1237,10 @@ First 10 elevations:
     
 <div class="success">
 <h3 id="pythonlogeq_snippet.py-runtest">Run Test for test eq_snippet.py</h3>
-<pre><code>Magnitude: 2.93
-Date: 2026-11-18 13:56:48
-Location:33 km SE of Mina, Nevada
-Lat/Long:38.189,-117.8222
+<pre><code>Magnitude: 1.6
+Date: 2026-11-18 18:07:01
+Location:67 km ENE of Pedro Bay, Alaska
+Lat/Long:60.078,-153.054
 </code></pre>
 </div>
     
@@ -1092,16 +1248,67 @@ Lat/Long:38.189,-117.8222
     <div id="pythonlogeq_test.py" class="logdetails">
       <h2>Test eq_test.py full log</h2>
     
-<div class="success">
+<div class="failure">
 <h3 id="pythonlogeq_test.py-runtest">Run Test for test eq_test.py</h3>
-<pre><code>Magnitude: 2.93
-Date: 2026-11-18 13:56:48
-Location:33 km SE of Mina, Nevada
-Lat/Long:38.189,-117.8222
-Magnitude: 1
-Date: 2026-01-10 03:42:02
-Location:81 km NNW of Karluk, Alaska
-Lat/Long:58.243,-154.984
+<pre><code>Magnitude: 1.6
+Date: 2026-11-18 18:07:01
+Location:67 km ENE of Pedro Bay, Alaska
+Lat/Long:60.078,-153.054
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 907, in _error_catcher
+    yield
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 1301, in read_chunked
+    self._update_chunk_length()
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 1224, in _update_chunk_length
+    line = self._fp.fp.readline(_MAX_CHUNK_LINE_LENGTH + 1)  # type: ignore[union-attr]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3.12/socket.py&quot;, line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 816, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 1152, in stream
+    yield from self.read_chunked(amt, decode_content=decode_content)
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 1289, in read_chunked
+    with self._error_catcher():
+  File &quot;/usr/lib/python3.12/contextlib.py&quot;, line 158, in __exit__
+    self.gen.throw(value)
+  File &quot;/usr/lib/python3/dist-packages/urllib3/response.py&quot;, line 924, in _error_catcher
+    raise ProtocolError(f&quot;Connection broken: {e!r}&quot;, e) from e
+urllib3.exceptions.ProtocolError: (&quot;Connection broken: ConnectionResetError(104, 'Connection reset by peer')&quot;, ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/eq_test.py&quot;, line 43, in &lt;module&gt;
+    main()
+  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/eq_test.py&quot;, line 29, in main
+    my_list = get_earthquake_usgs_data() # this is a different code path
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 429, in get_earthquake_usgs_data
+  File &quot;/usr/lib/python3/dist-packages/requests/api.py&quot;, line 73, in get
+    return request(&quot;get&quot;, url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/api.py&quot;, line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/sessions.py&quot;, line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/sessions.py&quot;, line 747, in send
+    r.content
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 899, in content
+    self._content = b&quot;&quot;.join(self.iter_content(CONTENT_CHUNK_SIZE)) or b&quot;&quot;
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File &quot;/usr/lib/python3/dist-packages/requests/models.py&quot;, line 818, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: (&quot;Connection broken: ConnectionResetError(104, 'Connection reset by peer')&quot;, ConnectionResetError(104, 'Connection reset by peer'))
+could not run test eq_test.py
 </code></pre>
 </div>
     
@@ -1142,7 +1349,7 @@ http://assignments.bridgesuncc.org/assignments/3019/bridges_testing
     
 <div class="success">
 <h3 id="pythonloggame_size_test.py-runtest">Run Test for test game_size_test.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x78ce8ead7d70&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7a8613d919d0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1161,10 +1368,10 @@ client disconnect disconnected
     
 <div class="success">
 <h3 id="pythonloggame_snippet.py-runtest">Run Test for test game_snippet.py</h3>
-<pre><code>Final Fantasy XIII-2
-Xbox 360
-8
-['RPG']
+<pre><code>Tiger Woods PGA Tour 08
+PlayStation 3
+8.5
+['Sports']
 </code></pre>
 </div>
     
@@ -1329,8 +1536,8 @@ C
     
 <div class="success">
 <h3 id="pythonlogimdb_snippet.py-runtest">Run Test for test imdb_snippet.py</h3>
-<pre><code>Billy_Bob_Thornton
-Tombstone_(1993)
+<pre><code>Adam_Sandler_(I)
+50_First_Dates_(2004)
 </code></pre>
 </div>
     
@@ -1340,7 +1547,7 @@ Tombstone_(1993)
     
 <div class="success">
 <h3 id="pythonloginput_game.py-runtest">Run Test for test input_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x741e8539d3a0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7aaa1a3b6f30&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1407,7 +1614,7 @@ http://assignments.bridgesuncc.org/assignments/3031/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogminimal_game.py-runtest">Run Test for test minimal_game.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7dce710a8080&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x779043731460&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1481,7 +1688,7 @@ http://assignments.bridgesuncc.org/assignments/3034/bridges_testing
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_state.py-runtest">Run Test for test non_blocking_game_state.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x717f545206b0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x7a08f28caae0&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:
@@ -1551,12 +1758,13 @@ Cartesian Coordinate of first vertex: 834.4847597780021, -5147.953884206995
     
 <div class="success">
 <h3 id="pythonlogreddit.py-runtest">Run Test for test reddit.py</h3>
-<pre><code>Title: United Airlines cancels Denver 9/11 flyover after 'concerns in the community'
-Author: CircumspectCapybara
-Score: 5586
-Comment Count: 211
+<pre><code>Title: Man whose 16 grandchildren found living in filthy conditions is found incompetent to stand trial
+Author: AudibleNod
+Score: 9794
+Comment Count: 695
 Subreddit: news
 Title: Former Lostprophets singer Ian Watkins dead after being attacked in Wakefield prison
+Title: Flint Twp. 7-year-old dies weighing 255 lbs.; parents charged with 2nd-degree murder
 Title: Space datacenters proposed by Musk and Bezos ‘catastrophic’ for planet, experts warn
 Title: Malibu residents evacuate after massive, expanding sinkhole opens at Nicolas Cage's house
 Title: US Marshals find 79 missing children in Ohio during Operation Meridian
@@ -1565,7 +1773,6 @@ Title: The Tate brothers must stay locked up during their UK extradition fight, 
 Title: Brazil Supreme Court removes federal police chief, deepening crisis at the top court
 Title: O’Charley’s closing all locations nationwide after 55 years
 Title: Norway's PM: Zelenskyy's plane almost hit by drone
-Title: Man whose 16 grandchildren found living in filthy conditions is found incompetent to stand trial
 =====
 Available subreddits:
 gadgets
@@ -1626,30 +1833,46 @@ PostTime: 1745944341
 URL: /r/AskHistorians/comments/1kandgx/joint_subreddit_statement_the_attack_on_us/
 Text: 
 
-Title: If a human being consumed only the most purely necessary chemicals and nutrients to survive, what would their excrement look like?
-Author: Dakoolestkat123
-Score: 1155
-Vote Ratio: 0.89
-Comment Count: 245
+Title: How do mosquitos find small containers of water?
+Author: Next_Doughnut2
+Score: 308
+Vote Ratio: 0.9
+Comment Count: 34
 Subreddit: askscience
-PostTime: 1755871539
-URL: https://www.reddit.com/r/askscience/comments/1mx7gl1/if_a_human_being_consumed_only_the_most_purely/
-Text: I started wondering this because of what I’ve learned about urine. From what I’ve been told, urine is used to flush waste and harmful chemicals out of the body, which is why drinking lots of water will end up with more clear pee, because there’s less chemicals that need to be flushed out. That got me to thinking, well, what if a person drank only absolutely molecularly pure H2O, what would it look like then? Well, probably not fundamentally different, because there’s still other chemicals they consume or that the body creates that need to be flushed out. So, what if they only ate purely (on a chemical level) the basic fundamental nutrients needed to function?
+PostTime: 1756092243
+URL: https://www.reddit.com/r/askscience/comments/1mzfv13/how_do_mosquitos_find_small_containers_of_water/
+Text: 
 
-
-This isn’t a question of quantity, but of quality. In this hypothetical, the person is not on starvation rations eating barely enough to cling to life, they’re eating enough to function healthily, but this person is just somehow chomping down on blocks of pure sodium and whatnot for lunch (disregarding however they would manage to do that). As the body constantly uses up different nutrients at different times, the person would be eating different amounts of whatever chemicals on different days based on what their body most and least needed at the time. 
-
-Would they just barely ever need to use the restroom, and flush out close to nothing when they did? Or would their excrement still at least slightly comparable to that of a normal persons? 
-
-Title: What is the eardrum made out of that makes it hear so well?
-Author: mmv456
-Score: 193
+Title: AskScience AMA Series: I am an evolutionary biologist at the University of Maryland. My lab studies patterns and mechanisms of species divergence, coevolution and adaptation across diverse biological systems using genomic data and methods. Ask me anything about coevolution!
+Author: AskScienceModerator
+Score: 212
 Vote Ratio: 0.86
-Comment Count: 52
+Comment Count: 23
 Subreddit: askscience
-PostTime: 1755912778
-URL: https://www.reddit.com/r/askscience/comments/1mxokso/what_is_the_eardrum_made_out_of_that_makes_it/
-Text: Sorry if this might be a bit of a stupid question, but I've been trying to understand exactly why the ears/eardrum catches all kinds of sounds via vibration when, say, another thin membrane like the surface of a balloon or a tissue, doesn't vibrate.
+PostTime: 1756149316
+URL: https://www.reddit.com/r/askscience/comments/1mzzrm7/askscience_ama_series_i_am_an_evolutionary/
+Text: Hi Reddit! I am an evolutionary biologist here to answer your questions about coevolution and genetics. In my current research, I use genomic, population genetic, phylogenetic and functional genomic approaches to study species and genome divergence. Work in my lab involves field collections, molecular biology methods and computational approaches to analyze large genomic datasets.
+
+I will be joined by a postdoc in my group, **Kevin Quinteros**, from **1 to 3 p.m. ET (17-19 UT)**\* - ask us anything!
+
+**Carlos Machado** joined the University of Maryland in 2009 as an associate professor of biology and was promoted to professor in 2016. He directed the Behavior, Ecology, Evolution and Systematics interdisciplinary graduate program from 2013 to 2015. Carlos was appointed associate dean for research in UMD’s College of Computer, Mathematical, and Natural Sciences in 2025. 
+
+As an evolutionary biologist, Carlos studies the genetics of species divergence, plant-insect coevolution and evolutionary genomics. He has been continuously funded by the National Science Foundation since 2005. Carlos has authored more than 60 peer-reviewed publications and advised more than 50 postdocs and graduate, undergraduate and high school students. He serves as an associate editor of coevolution for the journal *Frontiers in Ecology and Evolution*, as a review editor for evolutionary and population genetics for the journal *Frontiers in Genetics*, and on the editorial board of the journal *Fly*.
+
+He earned his bachelor's degree in biology from Universidad Nacional de Colombia in 1992 and his Ph.D. in evolutionary genetics from the University of California, Irvine in 1998. Before arriving at UMD, Machado held a faculty position at the University of Arizona.
+
+**Kevin Quinteros** is a postdoctoral researcher interested in the evolution of plant-insect interactions. His work combines field research and genomic techniques to study the mechanisms driving co-evolution and speciation in these interactions. Currently, he focuses on the genomics of fig and fig-wasp mutualism, investigating how insect chemosensory genes influence host specificity and adaptation.
+
+Other links:
+
+* [Lab Website](https://machado-lab-umd.github.io/)
+* [Google Scholar](https://scholar.google.com/citations?user=0uj4niwAAAAJ&amp;hl=en)
+
+Username: [/u/umd-science](https://www.reddit.com/u/umd-science/)
+
+https://preview.redd.it/u6u3o4r8h6lf1.jpg?width=5000&amp;format=pjpg&amp;auto=webp&amp;s=ddb9c5547c2cb4fd902ca71d7d168f924bea7bdb
+
+
 
 </code></pre>
 </div>
@@ -1670,30 +1893,46 @@ PostTime: 1745944341
 URL: /r/AskHistorians/comments/1kandgx/joint_subreddit_statement_the_attack_on_us/
 Text: 
 
-Title: If a human being consumed only the most purely necessary chemicals and nutrients to survive, what would their excrement look like?
-Author: Dakoolestkat123
-Score: 1155
-Vote Ratio: 0.89
-Comment Count: 245
+Title: How do mosquitos find small containers of water?
+Author: Next_Doughnut2
+Score: 308
+Vote Ratio: 0.9
+Comment Count: 34
 Subreddit: askscience
-PostTime: 1755871539
-URL: https://www.reddit.com/r/askscience/comments/1mx7gl1/if_a_human_being_consumed_only_the_most_purely/
-Text: I started wondering this because of what I’ve learned about urine. From what I’ve been told, urine is used to flush waste and harmful chemicals out of the body, which is why drinking lots of water will end up with more clear pee, because there’s less chemicals that need to be flushed out. That got me to thinking, well, what if a person drank only absolutely molecularly pure H2O, what would it look like then? Well, probably not fundamentally different, because there’s still other chemicals they consume or that the body creates that need to be flushed out. So, what if they only ate purely (on a chemical level) the basic fundamental nutrients needed to function?
+PostTime: 1756092243
+URL: https://www.reddit.com/r/askscience/comments/1mzfv13/how_do_mosquitos_find_small_containers_of_water/
+Text: 
 
-
-This isn’t a question of quantity, but of quality. In this hypothetical, the person is not on starvation rations eating barely enough to cling to life, they’re eating enough to function healthily, but this person is just somehow chomping down on blocks of pure sodium and whatnot for lunch (disregarding however they would manage to do that). As the body constantly uses up different nutrients at different times, the person would be eating different amounts of whatever chemicals on different days based on what their body most and least needed at the time. 
-
-Would they just barely ever need to use the restroom, and flush out close to nothing when they did? Or would their excrement still at least slightly comparable to that of a normal persons? 
-
-Title: What is the eardrum made out of that makes it hear so well?
-Author: mmv456
-Score: 193
+Title: AskScience AMA Series: I am an evolutionary biologist at the University of Maryland. My lab studies patterns and mechanisms of species divergence, coevolution and adaptation across diverse biological systems using genomic data and methods. Ask me anything about coevolution!
+Author: AskScienceModerator
+Score: 212
 Vote Ratio: 0.86
-Comment Count: 52
+Comment Count: 23
 Subreddit: askscience
-PostTime: 1755912778
-URL: https://www.reddit.com/r/askscience/comments/1mxokso/what_is_the_eardrum_made_out_of_that_makes_it/
-Text: Sorry if this might be a bit of a stupid question, but I've been trying to understand exactly why the ears/eardrum catches all kinds of sounds via vibration when, say, another thin membrane like the surface of a balloon or a tissue, doesn't vibrate.
+PostTime: 1756149316
+URL: https://www.reddit.com/r/askscience/comments/1mzzrm7/askscience_ama_series_i_am_an_evolutionary/
+Text: Hi Reddit! I am an evolutionary biologist here to answer your questions about coevolution and genetics. In my current research, I use genomic, population genetic, phylogenetic and functional genomic approaches to study species and genome divergence. Work in my lab involves field collections, molecular biology methods and computational approaches to analyze large genomic datasets.
+
+I will be joined by a postdoc in my group, **Kevin Quinteros**, from **1 to 3 p.m. ET (17-19 UT)**\* - ask us anything!
+
+**Carlos Machado** joined the University of Maryland in 2009 as an associate professor of biology and was promoted to professor in 2016. He directed the Behavior, Ecology, Evolution and Systematics interdisciplinary graduate program from 2013 to 2015. Carlos was appointed associate dean for research in UMD’s College of Computer, Mathematical, and Natural Sciences in 2025. 
+
+As an evolutionary biologist, Carlos studies the genetics of species divergence, plant-insect coevolution and evolutionary genomics. He has been continuously funded by the National Science Foundation since 2005. Carlos has authored more than 60 peer-reviewed publications and advised more than 50 postdocs and graduate, undergraduate and high school students. He serves as an associate editor of coevolution for the journal *Frontiers in Ecology and Evolution*, as a review editor for evolutionary and population genetics for the journal *Frontiers in Genetics*, and on the editorial board of the journal *Fly*.
+
+He earned his bachelor's degree in biology from Universidad Nacional de Colombia in 1992 and his Ph.D. in evolutionary genetics from the University of California, Irvine in 1998. Before arriving at UMD, Machado held a faculty position at the University of Arizona.
+
+**Kevin Quinteros** is a postdoctoral researcher interested in the evolution of plant-insect interactions. His work combines field research and genomic techniques to study the mechanisms driving co-evolution and speciation in these interactions. Currently, he focuses on the genomics of fig and fig-wasp mutualism, investigating how insect chemosensory genes influence host specificity and adaptation.
+
+Other links:
+
+* [Lab Website](https://machado-lab-umd.github.io/)
+* [Google Scholar](https://scholar.google.com/citations?user=0uj4niwAAAAJ&amp;hl=en)
+
+Username: [/u/umd-science](https://www.reddit.com/u/umd-science/)
+
+https://preview.redd.it/u6u3o4r8h6lf1.jpg?width=5000&amp;format=pjpg&amp;auto=webp&amp;s=ddb9c5547c2cb4fd902ca71d7d168f924bea7bdb
+
+
 
 </code></pre>
 </div>
@@ -1704,11 +1943,11 @@ Text: Sorry if this might be a bit of a stupid question, but I've been trying to
     
 <div class="success">
 <h3 id="pythonlogshakespeare_snippet.py-runtest">Run Test for test shakespeare_snippet.py</h3>
-<pre><code>Sonnet 119
+<pre><code>Sonnet 109
 poem
-What potions have I drunk of Siren tears
- Distilled from limbecks foul as hell within,
- Applying fea
+O never say that I was false of heart,
+ Though absence seemed my flame to qualify,
+ As easy might I 
 </code></pre>
 </div>
     
@@ -1817,17 +2056,13 @@ http://assignments.bridgesuncc.org/assignments/3046/bridges_testing
     <div id="pythonlogsong_lyrics_snippet.py" class="logdetails">
       <h2>Test song_lyrics_snippet.py full log</h2>
     
-<div class="failure">
+<div class="success">
 <h3 id="pythonlogsong_lyrics_snippet.py-runtest">Run Test for test song_lyrics_snippet.py</h3>
-<pre><code>Traceback (most recent call last):
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/song_lyrics_snippet.py&quot;, line 26, in &lt;module&gt;
-    main()
-  File &quot;/home/bridges-testing/bridges-client-testing/python/web_tutorial_testing/song_lyrics_snippet.py&quot;, line 15, in main
-    song = get_song(&quot;Harder Faster Better Stronger&quot;, &quot;Daft Punk&quot;)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;/home/bridges-testing/.local/lib/python3.12/site-packages/bridges-3.5.1-py3.12.egg/bridges/data_src_dependent/data_source.py&quot;, line 632, in get_song
-ConnectionError: HTTP Request Failed. Error Code: 404 when accessing http://static-data.bridgesuncc.org/api/songs/find/Harder%20Faster%20Better%20Stronger?artistName=Daft%20Punk
-could not run test song_lyrics_snippet.py
+<pre><code>Harder Better Faster Stronger
+Daft Punk
+Homework / Discovery / Alive 1997
+2001-02-26
+
 </code></pre>
 </div>
     
@@ -2426,11 +2661,11 @@ http://assignments.bridgesuncc.org/assignments/3078/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogtut_us_cities_snippet.py-runtest">Run Test for test tut_us_cities_snippet.py</h3>
-<pre><code>Charlotte, NC: population: 874579, elevation: 229, lat/long: 35.22709,-80.84313
-Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
-Fayetteville, NC: population: 201963, elevation: 29, lat/long: 35.05266,-78.87836
-Greensboro, NC: population: 285342, elevation: 266, lat/long: 36.07264,-79.79198
+<pre><code>Fayetteville, NC: population: 201963, elevation: 29, lat/long: 35.05266,-78.87836
 Raleigh, NC: population: 451066, elevation: 96, lat/long: 35.7721,-78.63861
+Charlotte, NC: population: 874579, elevation: 229, lat/long: 35.22709,-80.84313
+Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
+Greensboro, NC: population: 285342, elevation: 266, lat/long: 36.07264,-79.79198
 West Raleigh, NC: population: 338759, elevation: 122, lat/long: 35.78682,-78.66389
 Winston-Salem, NC: population: 241218, elevation: 293, lat/long: 36.09986,-80.24422
 </code></pre>
@@ -2517,36 +2752,36 @@ http://assignments.bridgesuncc.org/assignments/3084/bridges_testing
     
 <div class="success">
 <h3 id="pythonlogus_cities_snippet.py-runtest">Run Test for test us_cities_snippet.py</h3>
-<pre><code>Charlotte, NC: population: 874579, elevation: 229, lat/long: 35.22709,-80.84313
-Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
-Fayetteville, NC: population: 201963, elevation: 29, lat/long: 35.05266,-78.87836
-Greensboro, NC: population: 285342, elevation: 266, lat/long: 36.07264,-79.79198
+<pre><code>Fayetteville, NC: population: 201963, elevation: 29, lat/long: 35.05266,-78.87836
 Raleigh, NC: population: 451066, elevation: 96, lat/long: 35.7721,-78.63861
+Charlotte, NC: population: 874579, elevation: 229, lat/long: 35.22709,-80.84313
+Durham, NC: population: 257636, elevation: 123, lat/long: 35.99403,-78.89862
+Greensboro, NC: population: 285342, elevation: 266, lat/long: 36.07264,-79.79198
 West Raleigh, NC: population: 338759, elevation: 122, lat/long: 35.78682,-78.66389
 Winston-Salem, NC: population: 241218, elevation: 293, lat/long: 36.09986,-80.24422
 
 Cities with negative elevation..
 
 Bradenton Beach, FL: population: 1171, elevation: -3, lat/long: 27.46698,-82.70399
-Terrytown, LA: population: 23319, elevation: -1, lat/long: 29.91021,-90.03257
 Timberlane, LA: population: 10243, elevation: -1, lat/long: 29.87743,-90.03202
+Terrytown, LA: population: 23319, elevation: -1, lat/long: 29.91021,-90.03257
 Coachella, CA: population: 44635, elevation: -21, lat/long: 33.6803,-116.17389
 Calipatria, CA: population: 7424, elevation: -55, lat/long: 33.1256,-115.51415
 Desert Shores, CA: population: 1104, elevation: -60, lat/long: 33.4042,-116.03972
-Brawley, CA: population: 25897, elevation: -34, lat/long: 32.97866,-115.53027
 Mecca, CA: population: 8577, elevation: -57, lat/long: 33.57219,-116.0782
+Seeley, CA: population: 1739, elevation: -11, lat/long: 32.79311,-115.69111
+Brawley, CA: population: 25897, elevation: -34, lat/long: 32.97866,-115.53027
 Heber, CA: population: 4275, elevation: -3, lat/long: 32.73089,-115.52972
+Oasis, CA: population: 6890, elevation: -44, lat/long: 33.46586,-116.09889
 Indio, CA: population: 87533, elevation: -4, lat/long: 33.7207,-116.21677
 Holtville, CA: population: 6404, elevation: -3, lat/long: 32.81116,-115.38026
-Seeley, CA: population: 1739, elevation: -11, lat/long: 32.79311,-115.69111
-Oasis, CA: population: 6890, elevation: -44, lat/long: 33.46586,-116.09889
 Westmorland, CA: population: 2267, elevation: -50, lat/long: 33.03727,-115.62138
 Salton City, CA: population: 3763, elevation: -38, lat/long: 33.29865,-115.95611
 Niland, CA: population: 1006, elevation: -43, lat/long: 33.24004,-115.51888
 Vista Santa Rosa, CA: population: 2926, elevation: -21, lat/long: 33.6278,-116.21806
+Thermal, CA: population: 2865, elevation: -36, lat/long: 33.6403,-116.13945
 El Centro, CA: population: 43956, elevation: -12, lat/long: 32.792,-115.56305
 Imperial, CA: population: 17095, elevation: -18, lat/long: 32.84755,-115.56944
-Thermal, CA: population: 2865, elevation: -36, lat/long: 33.6403,-116.13945
 </code></pre>
 </div>
     
@@ -2597,7 +2832,7 @@ First 3 records:
     
 <div class="success">
 <h3 id="pythonlognon_blocking_game_fire.py-runtest">Run Test for test non_blocking_game_fire.py</h3>
-<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x710a2a2284a0&gt;
+<pre><code>Subscribing to keypress events.. &lt;bridges.input_helper.InputHelper object at 0x705eb8df6a20&gt;
 limiting number of frame to 10
 
 Check Your Visualization at the following link:

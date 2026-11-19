@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Thu Nov 19 05:07:05 AM EST 2026</p>
+	<p>Running at Thu Nov 19 09:07:01 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.34
-	Date:Nov 19 2026  04:41:28.570 EST
-	Location: 18 km SW of Toms Place, CA
-	Lat/Long:37.4490013122559,-118.831497192383
+	Magnitude:1.7
+	Date:Nov 19 2026  08:44:23.488 EST
+	Location: 15 km SSW of Cantwell, Alaska
+	Lat/Long:63.272,-149.114
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.34
-	Date:Nov 19 2026  04:41:28.570 EST
-	Location: 18 km SW of Toms Place, CA
-	Lat/Long:37.4490013122559,-118.831497192383
+	Magnitude:1.7
+	Date:Nov 19 2026  08:44:23.488 EST
+	Location: 15 km SSW of Cantwell, Alaska
+	Lat/Long:63.272,-149.114
 Earthquake 0:
-	Magnitude:1.0
-	Date:Jan 10 2026  18:23:32.127 EST
-	Location: 83 km NW of Karluk, Alaska
-	Lat/Long:58.161,-155.312
+	Magnitude:1.5
+	Date:Jan 10 2026  23:24:35.470 EST
+	Location: 3 km E of San Ramon, CA
+	Lat/Long:37.776668548584,-121.948669433594
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Prince of Persia: Warrior Within
-PC
-8.6
-[Action, Adventure]
+<pre><code>Sonic CD
+Xbox 360
+8.5
+[Platformer]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>James_Earl_Jones
-Matewan_(1987)
+<pre><code>Morgan_Freeman_(I)
+All_On_Accounta_Pullin'_A_Trigger_(2002)
 </code></pre>
 </div>
     
@@ -2410,11 +2410,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 35
+<pre><code>Sonnet 135
 poem
-No more be grieved at that which thou hast done,
- Roses have thorns, and silver fountains mud,
- Clou...
+Whoever hath her wish, thou hast thy will,
+ And 'Will' to boot, and 'Will' in over-plus,
+ More than ...
 </code></pre>
 </div>
     
@@ -3478,13 +3478,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5440
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q421707 &quot;Jerry Orbach&quot;
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q1368948 &quot;Glenn Strange&quot;
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q1374412 &quot;Joe Mantell&quot;
+
 </code></pre>
 </div>
     

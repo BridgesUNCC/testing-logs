@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Fri Nov 20 05:07:00 AM EST 2026</p>
+	<p>Running at Fri Nov 20 09:07:42 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.3
-	Date:Nov 20 2026  04:43:10.300 EST
-	Location: 12 km NW of Pinnacles, CA
-	Lat/Long:36.6033325195312,-121.237831115723
+	Magnitude:2.33
+	Date:Nov 20 2026  08:51:26.810 EST
+	Location: 6 km NW of Pinnacles, CA
+	Lat/Long:36.564998626709,-121.194000244141
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.3
-	Date:Nov 20 2026  04:43:10.300 EST
-	Location: 12 km NW of Pinnacles, CA
-	Lat/Long:36.6033325195312,-121.237831115723
+	Magnitude:2.33
+	Date:Nov 20 2026  08:51:26.810 EST
+	Location: 6 km NW of Pinnacles, CA
+	Lat/Long:36.564998626709,-121.194000244141
 Earthquake 0:
-	Magnitude:2.02
-	Date:Jan 12 2026  08:01:39.650 EST
-	Location: 7 km SSE of Pāhala, Hawaii
-	Lat/Long:19.1433334350586,-155.454162597656
+	Magnitude:1.72
+	Date:Jan 12 2026  15:45:39.050 EST
+	Location: 5 km ESE of Redway, CA
+	Lat/Long:40.0979995727539,-123.769668579102
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>The Legend of Zelda: Twilight Princess
-Wii
-9.5
-[Action, Adventure]
+<pre><code>Danny Phantom: The Urban Jungle
+Nintendo DS
+6.0
+[Action]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Clark_Gable
-Johnstown_Flood,_The_(1926)
+<pre><code>Brigitte_Bardot
+Tradita_(1954)
 </code></pre>
 </div>
     
@@ -2410,11 +2410,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 92
+<pre><code>Sonnet 68
 poem
-But do thy worst to steal thy self away,
- For term of life thou art assured mine,
- And life no longe...
+Thus is his cheek the map of days outworn,
+ When beauty lived and died as flowers do now,
+ Before th...
 </code></pre>
 </div>
     
@@ -3478,13 +3478,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5440
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q266416 &quot;Betsy Blair&quot;
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q421707 &quot;Jerry Orbach&quot;
+
+Actor-Movie Data:
+	Movie: Q237116 &quot;Marty&quot;
+	Actor: Q1368948 &quot;Glenn Strange&quot;
+
 </code></pre>
 </div>
     

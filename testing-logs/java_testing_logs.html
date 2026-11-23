@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Sun Nov 22 09:06:55 PM EST 2026</p>
+	<p>Running at Mon Nov 23 01:06:58 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.3
-	Date:Nov 22 2026  20:27:15.778 EST
-	Location: 24 km ENE of Skwentna, Alaska
-	Lat/Long:62.076,-150.962
+	Magnitude:1.8
+	Date:Nov 23 2026  01:02:08.094 EST
+	Location: 45 km NW of Beluga, Alaska
+	Lat/Long:61.388,-151.748
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:2.3
-	Date:Nov 22 2026  20:27:15.778 EST
-	Location: 24 km ENE of Skwentna, Alaska
-	Lat/Long:62.076,-150.962
+	Magnitude:1.8
+	Date:Nov 23 2026  01:02:08.094 EST
+	Location: 45 km NW of Beluga, Alaska
+	Lat/Long:61.388,-151.748
 Earthquake 0:
-	Magnitude:1.9
-	Date:Jan 15 2026  00:50:08.451 EST
-	Location: 71 km E of Port Alsworth, Alaska
-	Lat/Long:60.172,-153.033
+	Magnitude:1.04
+	Date:Jan 15 2026  03:52:56.800 EST
+	Location: 2 km S of Borrego Springs, CA
+	Lat/Long:33.2356666666667,-116.372
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>1 vs. 100
-Wireless
-7.5
-[Trivia]
+<pre><code>Monopoly
+PlayStation Portable
+7.6
+[Board]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Denzel_Washington
-Hurricane,_The_(1999)
+<pre><code>James_Stewart_(I)
+Mortal_Storm,_The_(1940)
 </code></pre>
 </div>
     
@@ -2410,11 +2410,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 41
+<pre><code>Sonnet 75
 poem
-Those pretty wrongs that liberty commits,
- When I am sometime absent from thy heart,
- Thy beauty, an...
+So are you to my thoughts as food to life,
+ Or as sweet-seasoned showers are to the ground;
+ And for...
 </code></pre>
 </div>
     
@@ -3478,22 +3478,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5440
-
-Actor-Movie Data:
-	Movie: Q73944 &quot;Two Tickets to Broadway&quot;
-	Actor: Q166212 &quot;Eddie Bracken&quot;
-
-Actor-Movie Data:
-	Movie: Q73944 &quot;Two Tickets to Broadway&quot;
-	Actor: Q205314 &quot;Janet Leigh&quot;
-
-Actor-Movie Data:
-	Movie: Q73944 &quot;Two Tickets to Broadway&quot;
-	Actor: Q237864 &quot;Vera Miles&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     

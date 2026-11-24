@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Nov 24 05:07:05 AM EST 2026</p>
+	<p>Running at Tue Nov 24 09:07:28 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="failure">
+  <div id="summarywikidata_actor_snippet.java" class="success">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.9
-	Date:Nov 24 2026  04:25:11.611 EST
-	Location: 74 km N of Yakutat, Alaska
-	Lat/Long:60.215,-139.65
+	Magnitude:1.28
+	Date:Nov 24 2026  08:40:37.640 EST
+	Location: 6 km NW of Pinnacles, CA
+	Lat/Long:36.5651664733887,-121.192832946777
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:1.9
-	Date:Nov 24 2026  04:25:11.611 EST
-	Location: 74 km N of Yakutat, Alaska
-	Lat/Long:60.215,-139.65
+	Magnitude:1.28
+	Date:Nov 24 2026  08:40:37.640 EST
+	Location: 6 km NW of Pinnacles, CA
+	Lat/Long:36.5651664733887,-121.192832946777
 Earthquake 0:
-	Magnitude:1.97
-	Date:Jan 15 2026  21:37:41.320 EST
-	Location: 5 km SW of Volcano, Hawaii
-	Lat/Long:19.3983325958252,-155.266326904297
+	Magnitude:1.12
+	Date:Jan 16 2026  00:27:56.710 EST
+	Location: 3 km WSW of Cobb, CA
+	Lat/Long:38.8144989013672,-122.759666442871
 </code></pre>
 </div>
     
@@ -1409,9 +1409,9 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>Skate
-Wireless
-8.0
+<pre><code>FIFA Soccer 11
+PlayStation Portable
+7.0
 [Sports]
 </code></pre>
 </div>
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Danny_Glover
-Kidnapped_(1994)
+<pre><code>Peter_Cushing
+Actor's_Notebook:_Christopher_Lee_(2002)
 </code></pre>
 </div>
     
@@ -2410,11 +2410,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 12
+<pre><code>Sonnet 6
 poem
-When I do count the clock that tells the time,
- And see the brave day sunk in hideous night,
- When I...
+Then let not winter's ragged hand deface,
+ In thee thy summer ere thou be distilled:
+ Make sweet som...
 </code></pre>
 </div>
     
@@ -3478,13 +3478,22 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="failure">
+<div class="success">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
-	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
-	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
-	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
-could not run test wikidata_actor_snippet.java
+<pre><code>Data Records in 1955: 5430
+
+Actor-Movie Data:
+	Movie: Q64110 &quot;Q64110&quot;
+	Actor: Q45553 &quot;Robert J. Wilke&quot;
+
+Actor-Movie Data:
+	Movie: Q64110 &quot;Q64110&quot;
+	Actor: Q78505 &quot;Peter Lorre&quot;
+
+Actor-Movie Data:
+	Movie: Q64110 &quot;Q64110&quot;
+	Actor: Q104027 &quot;Kirk Douglas&quot;
+
 </code></pre>
 </div>
     

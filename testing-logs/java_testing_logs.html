@@ -11,7 +11,7 @@ background-color: springgreen;
     </head>
     <body>
 	<h1>Testing logs for Java</h1>
-	<p>Running at Tue Nov 24 09:07:29 PM EST 2026</p>
+	<p>Running at Wed Nov 25 01:07:22 AM EST 2026</p>
   <div id="summaryarray1d.java" class="success">
     <h2><a href="java_testing_logs.html#javalogarray1d.java">Test array1d.java</a> </h2>
     <p>
@@ -822,12 +822,12 @@ background-color: springgreen;
       </ul>
     </p>
   </div>
-  <div id="summarywikidata_actor_snippet.java" class="success">
+  <div id="summarywikidata_actor_snippet.java" class="failure">
     <h2><a href="java_testing_logs.html#javalogwikidata_actor_snippet.java">Test wikidata_actor_snippet.java</a> </h2>
     <p>
       <ul>
         <li> Build Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-buildtest">success</a></li>
-        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">success</a></li>
+        <li> Run Test : <a href="java_testing_logs.html#javalogwikidata_actor_snippet.java-runtest">error</a></li>
       </ul>
     </p>
   </div>
@@ -1325,10 +1325,10 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_snippet.java-runtest">Run Test for test eq_snippet.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:4.3
-	Date:Nov 24 2026  20:19:56.424 EST
-	Location: 69 km SSW of Shihezi, China
-	Lat/Long:43.7,85.7992
+	Magnitude:1.05
+	Date:Nov 25 2026  00:35:28.530 EST
+	Location: 11 km NW of The Geysers, CA
+	Lat/Long:38.8488349914551,-122.848831176758
 </code></pre>
 </div>
     
@@ -1344,15 +1344,15 @@ first 10 elevations:
 <div class="success">
 <h3 id="javalogeq_test.java-runtest">Run Test for test eq_test.java</h3>
 <pre><code>Earthquake 0:
-	Magnitude:4.3
-	Date:Nov 24 2026  20:19:56.424 EST
-	Location: 69 km SSW of Shihezi, China
-	Lat/Long:43.7,85.7992
+	Magnitude:1.05
+	Date:Nov 25 2026  00:35:28.530 EST
+	Location: 11 km NW of The Geysers, CA
+	Lat/Long:38.8488349914551,-122.848831176758
 Earthquake 0:
-	Magnitude:2.8
-	Date:Jan 16 2026  11:02:48.739 EST
-	Location: 6 km N of Houston, Alaska
-	Lat/Long:61.691,-149.794
+	Magnitude:1.8
+	Date:Jan 16 2026  12:57:18.607 EST
+	Location: 59 km S of Whites City, New Mexico
+	Lat/Long:31.644,-104.456
 </code></pre>
 </div>
     
@@ -1409,10 +1409,10 @@ Shutting down ...
 </div>
 <div class="success">
 <h3 id="javaloggame_snippet.java-runtest">Run Test for test game_snippet.java</h3>
-<pre><code>The Walking Dead: Survival Instinct 
-Wii U
-4.5
-[Shooter]
+<pre><code>Overlord
+PC
+8.0
+[Adventure]
 </code></pre>
 </div>
     
@@ -1685,8 +1685,8 @@ Printing the first 300 characters of the book
 </div>
 <div class="success">
 <h3 id="javalogimdb_snippet.java-runtest">Run Test for test imdb_snippet.java</h3>
-<pre><code>Diane_Fischer_(II)
-Leonard_Nimoy_Demonstrates_the_Magnavision_Videodisc_Player_(1981)
+<pre><code>Alan_Rickman
+Harry_Potter_and_the_Prisoner_of_Azkaban_(2004)
 </code></pre>
 </div>
     
@@ -2410,10 +2410,11 @@ Same with huskies, arctic foxes, etc. who might get wet, covered in snow, etc.
 </div>
 <div class="success">
 <h3 id="javalogshakespeare_snippet.java-runtest">Run Test for test shakespeare_snippet.java</h3>
-<pre><code>Sonnet 58
+<pre><code>Sonnet 66
 poem
-That god forbid, that made me first your slave,
- I should in thought control your times of pleasure,...
+Tired with all these for restful death I cry,
+ As to behold desert a beggar born,
+ And needy nothing...
 </code></pre>
 </div>
     
@@ -3477,22 +3478,13 @@ http://assignments.bridgesuncc.org/assignments/2089/bridges_testing
 <pre><code>Compiling test wikidata_actor_snippet.java
 </code></pre>
 </div>
-<div class="success">
+<div class="failure">
 <h3 id="javalogwikidata_actor_snippet.java-runtest">Run Test for test wikidata_actor_snippet.java</h3>
-<pre><code>Data Records in 1955: 5430
-
-Actor-Movie Data:
-	Movie: Q427534 &quot;The Court-Martial of Billy Mitchell&quot;
-	Actor: Q93957 &quot;Gary Cooper&quot;
-
-Actor-Movie Data:
-	Movie: Q427534 &quot;The Court-Martial of Billy Mitchell&quot;
-	Actor: Q156532 &quot;Peter Graves&quot;
-
-Actor-Movie Data:
-	Movie: Q427534 &quot;The Court-Martial of Billy Mitchell&quot;
-	Actor: Q233843 &quot;Elizabeth Montgomery&quot;
-
+<pre><code>Exception in thread &quot;main&quot; java.io.IOException: Malformed JSON: Not from wikidata?
+	at bridges.connect.DataSource.populateWikidataActorMovie(DataSource.java:1630)
+	at bridges.connect.DataSource.getWikidataActorMovie(DataSource.java:1558)
+	at wikidata_actor_snippet.main(wikidata_actor_snippet.java:30)
+could not run test wikidata_actor_snippet.java
 </code></pre>
 </div>
     
